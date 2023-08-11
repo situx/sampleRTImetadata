@@ -38,7 +38,7 @@
 
 
 ###  https://situx.github.io/sampleRTImetadata#calibration
-:calibration rdf:type owl:ObjectProperty ;
+<http://objects.mainzed.org/ont#calibration> rdf:type owl:ObjectProperty ;
              rdfs:label "calibration"@en .
 
 
@@ -53,13 +53,13 @@
 
 
 ###  https://situx.github.io/sampleRTImetadata#acquisitionTime
-:acquisitionTime rdf:type owl:DatatypeProperty ;
+<http://objects.mainzed.org/ont#acquisitionTime> rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:dateTime ;
                  rdfs:label "acquisition time"@en .
 
 
 ###  https://situx.github.io/sampleRTImetadata#recordingtechnology
-:recordingtechnology rdf:type owl:DatatypeProperty ;
+<http://objects.mainzed.org/ont#recordingtechnology> rdf:type owl:DatatypeProperty ;
                      rdfs:label "recording technology"@en .
 
 
@@ -128,18 +128,18 @@
 
 
 ###  https://situx.github.io/sampleRTImetadata#CalibrationObject
-:CalibrationObject rdf:type owl:Class ;
+<http://objects.mainzed.org/ont#CalibrationObject> rdf:type owl:Class ;
                    rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                    rdfs:label "calibration object"@en .
 
 
 ###  https://situx.github.io/sampleRTImetadata#CalibrationSetup
-:CalibrationSetup rdf:type owl:Class ;
+<http://objects.mainzed.org/ont#CalibrationSetup> rdf:type owl:Class ;
                   rdfs:label "calibration setup"@en .
 
 
 ###  https://situx.github.io/sampleRTImetadata#RTIScanner
-:RTIScanner rdf:type owl:Class ;
+<http://objects.mainzed.org/ont#RTIScanner> rdf:type owl:Class ;
             rdfs:subClassOf <http://objects.mainzed.org/ont#Tool> ;
             rdfs:label "RTI Scanner"@en .
 
@@ -156,7 +156,7 @@
 
 
 ###  https://situx.github.io/sampleRTImetadata#calibrationobject1
-:calibrationobject1 rdf:type owl:NamedIndividual ,
+:alibrationobject1 rdf:type owl:NamedIndividual ,
                              :CalibrationObject ;
                     rdfs:label "Calibration Object for the RTI Dome"@en .
 
