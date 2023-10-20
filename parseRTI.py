@@ -32,7 +32,47 @@ def parseRTIBuilderXML(xmlfile,resgraph):
         print(item.tag)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Header":
             print("Header")
-            for hitem in item:
+            projectname=None
+            description=None
+            author=None
+            creationdate=None
+            lastmodificationdate=None
+            userinfo=None
+            host=None
+            timestamp=None
+            for citem in item:
+                for projectnamee in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}ProjectName"):                        
+                    print("Projectname: "+str(projectnamee.text))
+                    projectname=projectnamee.text
+                for desc in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}Description"):                        
+                    print("Description: "+str(desc.text))
+                    description=desc.text
+                for aut in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}Author"):                        
+                    print("Author: "+str(aut.text))
+                    author=aut.text
+                for cdate in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}CreationDate"):                        
+                    print("Creation Date: "+str(cdate.text))
+                    creationdate=cdate.text
+                for lmoddate in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}LastModificationDate"):                        
+                    print("Last Modification Date: "+str(lmoddate.text))
+                    lastmodificationdate=lmoddate.text
+                for uinfo in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}UserInfo"):                        
+                    print("User Info: "+str(uinfo.text))
+                    userinfo=uinfo.text
+                for hst in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}Host"):                        
+                    print("Host: "+str(hst.text))
+                    host=hst.text
+                for tstmp in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}Timestamp"):                        
+                    print("Timestamp: "+str(tstmp.text))
+                    timestamp=tstmp.text
+                resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))
+                resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Project "+str(projectname))))
+                if description!=None and description!="":
+                    resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(description))))
+                if author!=None and author!="":
+                    resgraph.add((URIRef(namespace+measureid),URIRef("http://purl.org/dc/terms/creator"),Literal(str(author))))
+                if creationdate!=None and creationdate!="":
+                    resgraph.add((URIRef(namespace+measureid),URIRef("http://purl.org/dc/terms/created"),Literal(str(creationdate))))
                 print(hitem)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}fileSec":
             print("fileSec")
@@ -52,6 +92,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                 seq="SEQ: "+str(hitem.get("SEQ"))
                 status="STATUS: "+str(hitem.get("STATUS"))
                 typee="TYPE: "+str(hitem.get("TYPE"))
+                
         print(item)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}dataSec":
             print("dataSec")
@@ -111,7 +152,8 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                     rescam={"id":camid,"vendor":thevendor}
                     resjson["systemdata"]["cameras"].append(rescam)
                     resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
-                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(thevendor)))                    
+                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(thevendor)))   
+                    resgraph.add((URIRef(namespace+camid),URIRef(ontnamespace+"cameraPosition"),Literal(position)))                       
                 if str(hitem.tag)=="measurement-sequences":
                     for ms in citem.iter("measurement-sequence"):
                         print("Vendor: "+str(ms.text))                    
