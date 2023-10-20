@@ -1,5 +1,10 @@
 import xml.etree.ElementTree as ET
 from rdflib import Graph
+from rdflib import URIRef, Literal
+import json
+
+namespace="http://i3mainz.de/metadata/"
+ontnamespace="http://objects.mainzed.org/ont#"
 
 def processRTIBuilderXMLMetadata():
     print("metadata")
@@ -17,7 +22,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
   
     # create empty list for news items
     newsitems = []
-  
+    resjson={}
     print(root)
     #print(root.children())
     for neighbor in root.iter('Header'):
@@ -53,11 +58,11 @@ def parseRTIBuilderXML(xmlfile,resgraph):
             for dataitem in item:
                 print(dataitem)
                 for param in dataitem:
-                    print(param)
+                    name="Process ID: "+str(param.get("ID"))
         # empty news dictionary
-      
-    # return news items list
-    return newsitems
+    resgraph.serialize("resgraph_rtibuilder.ttl")
+    with open("resgraph_rtibuilder.json", "w") as outfile:
+        outfile.write(json.dumps(resjson))
 
 def parseRTIOSCARXML(xmlfile,resgraph):
      # create element tree object
@@ -70,26 +75,43 @@ def parseRTIOSCARXML(xmlfile,resgraph):
     newsitems = []
   
     print(root)
-    
+    resjson={"systemdata":{}}
     for item in root:
     
         if str(item.tag)=="system-data":
             print("System data")
             for hitem in item:
                 if str(hitem.tag)=="cameras":
+                    resjson["systemdata"]["cameras"]=[]
+                    thevendor=None
+                    camid=None
+                    indexx=None
+                    position=None
+                    height=None
+                    width=None
                     for citem in hitem:
-                        for vendor in citem.iter("vendor"):
+                        for vendor in citem.iter("vendor"):                        
                             print("Vendor: "+str(vendor.text))
+                            thevendor=vendor.text
                         for idd in citem.iter("id"):
-                            print("ID: "+str(idd.text)) 
+                            print("ID: "+str(idd.text))
+                            camid=idd.text
                         for index in citem.iter("index"):
-                            print("Index: "+str(index.text)) 
+                            print("Index: "+str(index.text))
+                            indexx=index.text
                         for pos in citem.iter("position"):
-                            print("Position: "+str(pos.text))    
-                        for height in citem.iter("height"):
-                            print("Height: "+str(height.text))
-                        for width in citem.iter("width"):
-                            print("Width: "+str(width.text))   
+                            print("Position: "+str(pos.text))
+                            position=pos.text
+                        for heightt in citem.iter("height"):
+                            print("Height: "+str(heightt.text))
+                            height=heightt.text
+                        for widthh in citem.iter("width"):
+                            print("Width: "+str(widthh.text))
+                            width=widthh.text
+                    rescam={"id":camid,"vendor":thevendor}
+                    resjson["systemdata"]["cameras"].append(rescam)
+                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
+                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(thevendor)))                    
                 if str(hitem.tag)=="measurement-sequences":
                     for ms in citem.iter("measurement-sequence"):
                         print("Vendor: "+str(ms.text))                    
@@ -98,26 +120,72 @@ def parseRTIOSCARXML(xmlfile,resgraph):
             for hitem in item:
                 print("",end="")
                 if str(hitem.tag)=="images":
+                    coinside=None
+                    measureid=None
+                    ledsetid=None
+                    cameraindex=None
+                    exposureTime=None
+                    name=None
+                    formatt=None
+                    axisDistancePosition=None
+                    axisFocusPosition=None
                     for imitem in hitem:
-                        for coinside in imitem.iter("coin-side"):
-                            print("Coin Side: "+str(coinside.text))
+                        for coinsidee in imitem.iter("coin-side"):
+                            print("Coin Side: "+str(coinsidee.text))
+                            coinside=coinsidee.text
                         for mid in imitem.iter("measure-id"):
                             print("Measure ID: "+str(mid.text))
-                        for ledsetid in imitem.iter("led-set-id"):
-                            print("LED Set ID: "+str(ledsetid.text))
+                            measureid="measure_"+mid.text
+                        for ledsetidd in imitem.iter("led-set-id"):
+                            print("LED Set ID: "+str(ledsetidd.text))
+                            ledsetid="ledset_"+ledsetidd.text
                         for cindex in imitem.iter("camera-index"):
                             print("Camera Index: "+str(cindex.text)) 
+                            cameraindex="camera_"+cindex.text
                         for extime in imitem.iter("exposure-time"):
-                            print("Exposure Time: "+str(extime.text)) 
-                        for name in imitem.iter("name"):
-                            print("Name: "+str(name.text)) 
+                            print("Exposure Time: "+str(extime.text))
+                            exposureTime=extime.text
+                        for namee in imitem.iter("name"):
+                            print("Name: "+str(namee.text))
+                            name=namee.text                            
                         for formatt in imitem.iter("format"):
                             print("Format: "+str(formatt.text)) 
-                        for axisDistancePosition in imitem.iter("axisDistancePosition"):
-                            print("Axis Distance Position: "+str(axisDistancePosition.text))
-                        for axisFocusPosition in imitem.iter("axisFocusPosition"):
-                            print("Axis Focus Position: "+str(axisFocusPosition.text))                             
+                            name=namee.text  
+                        for axisDistancePositionn in imitem.iter("axisDistancePosition"):
+                            print("Axis Distance Position: "+str(axisDistancePositionn.text))
+                            axisDistancePosition=axisDistancePositionn.text
+                        for axisFocusPositionn in imitem.iter("axisFocusPosition"):
+                            print("Axis Focus Position: "+str(axisFocusPositionn.text))
+                            axisFocusPosition=axisFocusPositionn.text                         
+                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
+                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement "+str(measureid))))
+                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(name))))
+                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"setup"),URIRef(namespace+measureid+"_setup")))
+                        resgraph.add((URIRef(namespace+measureid+"_setup"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Setup for Measurement "+str(measureid))))
+                        resgraph.add((URIRef(namespace+measureid+"_setup"),URIRef("http://www.w3.org/2003/12/exif/exposureTime"),URIRef(namespace+measureid+"_setup_shutterTime_1")))
+                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"),URIRef(namespace+measureid+"_setup_shutterTime_1_value")))
+                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
+                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Shutter Time Measure for Measurement "+str(measureid))))
+                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"),Literal(str(exposureTime))))
+                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/seconds-Time")))
+                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"RTIScanner")))
+                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("RTI Scanner")))
+                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasComponent"),URIRef(namespace+"capturing_device_1_dome")))
+                        resgraph.add((URIRef(namespace+"capturing_device_1_dome"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"RTIDome")))
+                        resgraph.add((URIRef(namespace+"capturing_device_1_dome"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("RTI Dome of RTI Scanner")))
+                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"capturingdevice"),URIRef(namespace+"capturing_device_1")))
+                        resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
+                        resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Camera "+str(cameraindex))))
+                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasCamera"),URIRef(namespace+str(cameraindex))))
+                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"usesCamera"),URIRef(namespace+str(cameraindex))))
+                        resgraph.add((URIRef(namespace+ledsetid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
+                        resgraph.add((URIRef(namespace+ledsetid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid))))
+                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasLightSourceGroup"),URIRef(namespace+ledsetid)))
+                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+ledsetid)))
+    resgraph.serialize("resgraph_oscar.ttl")
+    with open("resgraph_oscar.json", "w") as outfile:
+        outfile.write(json.dumps(resjson))
     
 g=Graph()
 parseRTIBuilderXML("Fisch.xml",g)
-#parseRTIOSCARXML("digitalizationResult.xml",g)
+parseRTIOSCARXML("digitalizationResult.xml",g)
