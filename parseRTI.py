@@ -79,10 +79,32 @@ def parseRTIBuilderXML(xmlfile,resgraph):
             for hitem in item:
                 if str(hitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}fileGrp":
                     print("fileGroup")
+                    fileGroupUse=hitem.attrib["USE"]
+                    print("Use: "+str(fileGroupUse))
                     for gitem in hitem:
                         print("file")
                         if str(gitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}file":
-                            print(gitem)
+                            if fileGroupUse=="Original image files":
+                                location=None
+                                for locat in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}FLocat"):                        
+                                    print("File location: "+str(locat.attrib["{http://www.w3.org/1999/xlink/}href"]))
+                                    location=locat.attrib["{http://www.w3.org/1999/xlink/}href"]
+                                print("GITEM ID: "+str(gitem.attrib["ID"]))
+                                resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image")))
+                                resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
+                                resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement "+str(gitem.attrib["ID"]))))
+                                if location!=None:
+                                    resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/2004/02/skos/core#definition"),Literal(location)))
+                                print(gitem)
+                            elif fileGroupUse=="Images for BallDetection":
+                                print("Images for ball detection")
+                            elif fileGroupUse=="Stage1 and Stage2 images":
+                                print("Stage1 and Stage2 images")
+                            elif fileGroupUse=="Images for HighDetection":
+                                print("Images for HighDetection")
+                            elif fileGroupUse=="Blend Image":
+                                print("Blend Image")
+                                
                 print(hitem)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Processes":
             print("Processes")
@@ -92,14 +114,21 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                 seq="SEQ: "+str(hitem.get("SEQ"))
                 status="STATUS: "+str(hitem.get("STATUS"))
                 typee="TYPE: "+str(hitem.get("TYPE"))
-                
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
         print(item)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}dataSec":
             print("dataSec")
             for dataitem in item:
                 print(dataitem)
+                name=None
                 for param in dataitem:
-                    name="Process ID: "+str(param.get("ID"))
+                    name="Process ID: "+str(param.get("Name"))
+                if name=="BallDetectionInput":
+                    print("Ball Detection Input")
+                elif name=="BallDetectionOutput":
+                    print("Ball Detection Output")
+                else:
+                    print("Coordinate outputs")
         # empty news dictionary
     resgraph.serialize("resgraph_rtibuilder.ttl")
     with open("resgraph_rtibuilder.json", "w") as outfile:
