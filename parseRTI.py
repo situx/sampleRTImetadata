@@ -65,15 +65,15 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                 for tstmp in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}Timestamp"):                        
                     print("Timestamp: "+str(tstmp.text))
                     timestamp=tstmp.text
-                resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))
-                resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Project "+str(projectname))))
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Project "+str(projectname))))
                 if description!=None and description!="":
-                    resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(description))))
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(description))))
                 if author!=None and author!="":
-                    resgraph.add((URIRef(namespace+measureid),URIRef("http://purl.org/dc/terms/creator"),Literal(str(author))))
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://purl.org/dc/terms/creator"),Literal(str(author))))
                 if creationdate!=None and creationdate!="":
-                    resgraph.add((URIRef(namespace+measureid),URIRef("http://purl.org/dc/terms/created"),Literal(str(creationdate))))
-                print(hitem)
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://purl.org/dc/terms/created"),Literal(str(creationdate))))
+                print(citem)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}fileSec":
             print("fileSec")
             for hitem in item:
