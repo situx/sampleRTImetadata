@@ -154,6 +154,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                     datajson[res[0]]={}
                                 datajson[res[0]][name]=param.text
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                            resgraph.add((URIRef("http://www.w3.org/ns/prov#Activity"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#Class")))
                     print(datajson)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}computedData":
             print("computedData")
@@ -164,18 +165,20 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                     print("HighlightSphereID: "+str(highlightsphereid))
                     for hitem in dataitem:
                         print("Highlight: "+str(hitem.attrib))
-                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
-                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
+                        resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
+                        resgraph.add((URIRef(ontnamespace+"Highlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#Class")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
                         if "x" in hitem.attrib and "y" in hitem.attrib:
-                            resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                            resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
                 elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}LightDirections":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     for hitem in dataitem:
                         print("Highlight: "+str(hitem.attrib))
-                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
-                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
                         if "x" in hitem.attrib and "y" in hitem.attrib and "z" in hitem.attrib:
-                            resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                            resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
   
         # empty news dictionary
     resgraph.serialize("resgraph_rtibuilder.ttl")
@@ -191,7 +194,18 @@ def parseRTIOSCARXML(xmlfile,resgraph):
   
     # create empty list for news items
     newsitems = []
-  
+    camindexToURI=[]
+    mpid=namespace+xmlfile
+    resgraph.add((URIRef(mpid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))  
+    resgraph.add((URIRef(ontnamespace+"exposureTime"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"setup"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"usesCamera"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"usesLightSourceGroup"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"capturingdevice"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"pixelType"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"axisDistancePosition"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef(ontnamespace+"axisFocusPosition"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef("http://purl.org/dc/terms/created"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))    
     print(root)
     resjson={"systemdata":{}}
     for item in root:
@@ -226,11 +240,12 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                         for widthh in citem.iter("width"):
                             #print("Width: "+str(widthh.text))
                             width=widthh.text
-                    rescam={"id":camid,"vendor":thevendor}
-                    resjson["systemdata"]["cameras"].append(rescam)
-                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
-                    resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(thevendor,lang="en")))   
-                    resgraph.add((URIRef(namespace+camid),URIRef(ontnamespace+"cameraPosition"),Literal(position)))                       
+                        rescam={"id":camid,"vendor":thevendor}
+                        resjson["systemdata"]["cameras"].append(rescam)
+                        camindexToURI.append(str(namespace)+str(camid))
+                        resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
+                        resgraph.add((URIRef(namespace+camid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(thevendor,lang="en")))   
+                        resgraph.add((URIRef(namespace+camid),URIRef(ontnamespace+"cameraPosition"),Literal(position)))                       
                 if str(hitem.tag)=="measurement-sequences":
                     for ms in citem.iter("measurement-sequence"):
                         print("Vendor: "+str(ms.text))                    
@@ -260,7 +275,7 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                             ledsetid="ledset_"+ledsetidd.text
                         for cindex in imitem.iter("camera-index"):
                             #print("Camera Index: "+str(cindex.text)) 
-                            cameraindex="camera_"+cindex.text
+                            cameraindex=cindex.text
                         for extime in imitem.iter("exposure-time"):
                             #print("Exposure Time: "+str(extime.text))
                             exposureTime=extime.text
@@ -269,42 +284,56 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                             name=namee.text                            
                         for formatt in imitem.iter("format"):
                             #print("Format: "+str(formatt.text)) 
-                            name=namee.text  
+                            pixeltype=formatt.text  
                         for axisDistancePositionn in imitem.iter("axisDistancePosition"):
                             #print("Axis Distance Position: "+str(axisDistancePositionn.text))
                             axisDistancePosition=axisDistancePositionn.text
                         for axisFocusPositionn in imitem.iter("axisFocusPosition"):
                             #print("Axis Focus Position: "+str(axisFocusPositionn.text))
-                            axisFocusPosition=axisFocusPositionn.text                         
-                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
-                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement "+str(measureid),lang="en")))
-                        resgraph.add((URIRef(namespace+measureid),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(name),lang="en")))
-                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"setup"),URIRef(namespace+measureid+"_setup")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Setup for Measurement "+str(measureid),lang="en")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup"),URIRef("http://www.w3.org/2003/12/exif/exposureTime"),URIRef(namespace+measureid+"_setup_shutterTime_1")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"),URIRef(namespace+measureid+"_setup_shutterTime_1_value")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Shutter Time Measure for Measurement "+str(measureid),lang="en")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"),Literal(str(exposureTime),datatype="http://www.w3.org/2001/XMLSchema#integer")))
-                        resgraph.add((URIRef(namespace+measureid+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/seconds-Time")))
+                            axisFocusPosition=axisFocusPositionn.text 
+                        measureuri=namespace+name.replace(".tif","")
+                        resgraph.add((URIRef(measureuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
+                        resgraph.add((URIRef(mpid),URIRef(ontnamespace+"measurement"),URIRef(ontnamespace+"Measurement")))
+                        if "time-stamp" in imitem.attrib:
+                            resgraph.add((URIRef(measureuri),URIRef("http://purl.org/dc/terms/created"),Literal(imitem.attrib["time-stamp"],datatype="http://www.w3.org/2001/XMLSchema#dateTime")))                            
+                        resgraph.add((URIRef(measureuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement "+str(measureid)+" (Camera "+str(cameraindex)+" LED Set "+str(ledsetid)+" Exp "+str(exposureTime)+")",lang="en")))
+                        resgraph.add((URIRef(measureuri),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(name),lang="en")))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"axisDistancePosition"),Literal(str(axisDistancePosition),datatype="http://www.w3.org/2001/XMLSchema#double")))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"axisFocusPosition"),Literal(str(axisFocusPosition),datatype="http://www.w3.org/2001/XMLSchema#double")))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"pixelType"),URIRef(ontnamespace+pixeltype)))
+                        resgraph.add((URIRef(ontnamespace+pixeltype),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"PixelType")))
+                        resgraph.add((URIRef(ontnamespace+pixeltype),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(pixeltype)))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"setup"),URIRef(measureuri+"_setup")))
+                        resgraph.add((URIRef(measureuri+"_setup"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementSetup")))
+                        resgraph.add((URIRef(measureuri+"_setup"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Setup for Measurement "+str(measureid)+" (Camera "+str(cameraindex)+" LED Set "+str(ledsetid)+" Exp "+str(exposureTime)+")",lang="en")))
+                        resgraph.add((URIRef(measureuri+"_setup"),URIRef("http://www.w3.org/2003/12/exif/exposureTime"),URIRef(measureuri+"_setup_shutterTime_1")))
+                        resgraph.add((URIRef(measureuri+"_setup_shutterTime_1"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"),URIRef(measureuri+"_setup_shutterTime_1_value")))
+                        resgraph.add((URIRef(measureuri+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
+                        resgraph.add((URIRef(measureuri+"_setup_shutterTime_1_value"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Shutter Time Measure for Measurement "+str(measureid)+" (Camera "+str(cameraindex)+" LED Set "+str(ledsetid)+" Exp "+str(exposureTime)+")",lang="en")))
+                        resgraph.add((URIRef(measureuri+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"),Literal(str(exposureTime),datatype="http://www.w3.org/2001/XMLSchema#integer")))
+                        resgraph.add((URIRef(measureuri+"_setup_shutterTime_1_value"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/seconds-Time")))
                         resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"RTIScanner")))
                         resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("RTI Scanner",lang="en")))
                         resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasComponent"),URIRef(namespace+"capturing_device_1_dome")))
                         resgraph.add((URIRef(namespace+"capturing_device_1_dome"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"RTIDome")))
                         resgraph.add((URIRef(namespace+"capturing_device_1_dome"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("RTI Dome of RTI Scanner",lang="en")))
-                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"capturingdevice"),URIRef(namespace+"capturing_device_1")))
-                        resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
-                        resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Camera "+str(cameraindex),lang="en")))
-                        resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasCamera"),URIRef(namespace+str(cameraindex))))
-                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"usesCamera"),URIRef(namespace+str(cameraindex))))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"capturingdevice"),URIRef(namespace+"capturing_device_1")))
+                        if int(cameraindex)<len(camindexToURI):
+                            resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"usesCamera"),URIRef(str(camindexToURI[int(cameraindex)]))))
+                        else:
+                            resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Camera "+str(cameraindex),lang="en")))                            
+                            resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Camera")))
+                            resgraph.add((URIRef(namespace+str(cameraindex)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Camera "+str(cameraindex),lang="en")))
+                            resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasCamera"),URIRef(namespace+str(cameraindex))))
                         resgraph.add((URIRef(namespace+ledsetid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
                         resgraph.add((URIRef(namespace+ledsetid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
                         resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasLightSourceGroup"),URIRef(namespace+ledsetid)))
-                        resgraph.add((URIRef(namespace+measureid),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+ledsetid)))
+                        resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+ledsetid)))
     resgraph.serialize("resgraph_oscar.ttl")
     with open("resgraph_oscar.json", "w") as outfile:
         outfile.write(json.dumps(resjson))
     
 g=Graph()
 parseRTIBuilderXML("Fisch.xml",g)
-parseRTIOSCARXML("digitalizationResult.xml",g)
+g2=Graph()
+parseRTIOSCARXML("digitalizationResult.xml",g2)
