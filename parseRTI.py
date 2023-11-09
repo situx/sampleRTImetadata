@@ -25,6 +25,11 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     newsitems = []
     resjson={}
     print(root)
+    resgraph.add((URIRef(ontnamespace+"usedForCalibrationObjectDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef(ontnamespace+"usedForHighDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    
+    
     #print(root.children())
     for neighbor in root.iter('Header'):
         print(neighbor.attrib)
@@ -84,12 +89,12 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                     print("Use: "+str(fileGroupUse))
                     for gitem in hitem:
                         print("file")
-                        if str(gitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}file":
+                        if str(gitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}file" or str(gitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}fptr":
                             if fileGroupUse=="Original image files":
                                 location=None
-                                for locat in citem.iter("{http://alba.di.uminho.pt/XMLCarrier}FLocat"):                        
-                                    print("File location: "+str(locat.attrib["{http://www.w3.org/1999/xlink/}href"]))
-                                    location=locat.attrib["{http://www.w3.org/1999/xlink/}href"]
+                                for locat in gitem.iter("{http://alba.di.uminho.pt/XMLCarrier}FLocat"):                        
+                                    print("File location: "+str(locat.attrib["{http://www.w3.org/1999/xlink}href"]))
+                                    location=locat.attrib["{http://www.w3.org/1999/xlink}href"]
                                 print("GITEM ID: "+str(gitem.attrib["ID"]))
                                 resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image")))
                                 resgraph.add((URIRef(namespace+str(gitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
@@ -99,10 +104,17 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 print(gitem)
                             elif fileGroupUse=="Images for BallDetection":
                                 print("Images for ball detection")
+                                print("Ball Detect: "+str(gitem.text))
+                                resgraph.add((URIRef(namespace+str(gitem.text)),URIRef(ontnamespace+"usedForCalibrationObjectDetection"),Literal("true",datatype="http://www.w3.org/2001/XMLSchema#boolean")))
+                                resgraph.add((URIRef(namespace+str("CalibrationImages")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
+                                resgraph.add((URIRef(namespace+str("CalibrationImages")),URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef(namespace+str(gitem.text))))
                             elif fileGroupUse=="Stage1 and Stage2 images":
                                 print("Stage1 and Stage2 images")
                             elif fileGroupUse=="Images for HighDetection":
                                 print("Images for HighDetection")
+                                resgraph.add((URIRef(namespace+str("HighDetectionImages")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
+                                resgraph.add((URIRef(namespace+str("HighDetectionImages")),URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef(namespace+str(gitem.text))))
+                                resgraph.add((URIRef(namespace+str(gitem.text)),URIRef(ontnamespace+"usedForHighDetection"),Literal("true",datatype="http://www.w3.org/2001/XMLSchema#boolean")))
                             elif fileGroupUse=="Blend Image":
                                 print("Blend Image")
                                 
