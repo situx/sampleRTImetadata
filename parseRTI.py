@@ -28,7 +28,8 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     resgraph.add((URIRef(ontnamespace+"usedForCalibrationObjectDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
     resgraph.add((URIRef(ontnamespace+"usedForHighDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
     resgraph.add((URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
-    
+    resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))  
+    resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))      
     
     #print(root.children())
     for neighbor in root.iter('Header'):
@@ -138,18 +139,47 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                     print("Ball Detection Input")
                     uuid=dataitem.get("UUID")
                     print("UUID: "+str(uuid))
+                    areacounter=1
                     for param in dataitem:
                         print("Param tag: "+str(param.tag))
-                        if param.tag=="{http://alba.di.uminho.pt/XMLCarrier}param":
-                            name="Process ID: "+str(param.attrib["NAME"])
-                            print("Param Name: "+str(param.attrib["NAME"]))
+                        if param.tag=="{http://alba.di.uminho.pt/XMLCarrier}area":
+                            coords=param.attrib["COORDS"]
+                            coordarr=coords.split(";")
+                            wktstr="POLYGON(("
+                            for coord in coordarr:
+                                if len(coord)>0:
+                                    wktstr+=coord.replace("x:","").replace("y:","")+", "
+                            wktstr=wktstr[0:-2]+"))"
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectInput")))
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(areacounter)+"calibobjinp_extent")))                      
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input Extent for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                            areacounter+=1
                 elif dataitem.tag=="{http://alba.di.uminho.pt/XMLCarrier}Data" and dataitem.attrib["NAME"]=="BallDetectionOutput":
                     print("Ball Detection Output")
                     uuid=dataitem.get("UUID")
                     print("UUID: "+str(uuid))
+                    areacounter=1
                     for param in dataitem:
-                        name="Process ID: "+str(param.get("NAME"))
+                        if param.tag=="{http://alba.di.uminho.pt/XMLCarrier}area":
+                            coords=param.attrib["COORDS"]
+                            coordarr=coords.split(";")
+                            wktstr="POLYGON(("
+                            for coord in coordarr:
+                                if len(coord)>0:
+                                    wktstr+=coord.replace("x:","").replace("y:","")+", "
+                            wktstr=wktstr[0:-2]+"))"
+                            resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectOutput")))
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(areacounter)+"calibobjoup_extent")))                      
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output Extent for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                            areacounter+=1
                 elif dataitem.tag=="{http://alba.di.uminho.pt/XMLCarrier}Data" and dataitem.attrib["NAME"]=="":
                     uuid=dataitem.get("UUID")
                     print("Coordinate outputs "+str(uuid))
