@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<XMLCarrier
+    xmlns="http://alba.di.uminho.pt/XMLCarrier"
+    xmlns:xc="http://alba.di.uminho.pt/XMLCarrier"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alba.di.uminho.pt/XMLCarrier lptracker.xsd">
+    <xc:Header UUID="01c78769-73d2-401c-80fd-66852e541221">
+        <xc:ProjectName>Fisch</xc:ProjectName>
+        <xc:Description/>
+        <xc:Author>kacebe</xc:Author>
+        <xc:CreationDate>2017/4/5 9:49:21</xc:CreationDate>
+        <xc:LastModificationDate>2017/4/5 9:49:21</xc:LastModificationDate>
+        <xc:UserInfo>kacebe</xc:UserInfo>
+        <xc:Host>c-gv-bruhn</xc:Host>
+        <xc:Timestamp>4</xc:Timestamp>
+        <xc:AdditionalInfo>
+            <xc:Info MacAddress="" MemoryAvailable="89407488" OperatingSystem="Windows 10 x86" Processor="4"/>
+            <xc:Info2 NAME="AssemblyFiles" VALUE="assembly-files"/>
+            <xc:Info2 NAME="FinishedFiles" VALUE="finished-files"/>
+            <xc:Info2 NAME="Image height" VALUE="1334.0"/>
+            <xc:Info2 NAME="Image width" VALUE="2000.0"/>
+            <xc:Info2 NAME="JpegExports" VALUE="jpeg-exports"/>
+            <xc:Info2 NAME="OriginalCaptures" VALUE="original-captures"/>
+            <xc:Info2 NAME="ProjectPath" VALUE="C:\tmp\rti\fish_fossil-data-set_2000"/>
+            <xc:Info2 NAME="croppedDir" VALUE="cropped-files"/>
+        </xc:AdditionalInfo>
+    </xc:Header>
+    <xc:fileSec>
+        <xc:fileGrp ID="cdfd7e2b-6a3c-4609-b798-05461ec0e0b3" USE="Original image files">
+            <xc:file ID="81fb5616-d489-414b-9f1d-d3cd5c8586fd" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_01.jpg"/>
+            </xc:file>
+            <xc:file ID="93443afd-8774-4492-8bd0-35f87d665cd2" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_02.jpg"/>
+            </xc:file>
+            <xc:file ID="96ce0ab1-a541-4ae2-ac49-32b31beefa08" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_03.jpg"/>
+            </xc:file>
+            <xc:file ID="97175f81-00e7-46d7-b767-ce7dd441c431" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_04.jpg"/>
+            </xc:file>
+            <xc:file ID="9c38356e-055a-4aee-bf25-69edbc45db6f" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_05.jpg"/>
+            </xc:file>
+            <xc:file ID="9e9f122e-6384-49b5-bd19-5bcbbf25aee2" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_06.jpg"/>
+            </xc:file>
+            <xc:file ID="a33a95ad-ba43-41a8-aad9-a50b9e53c7ae" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_07.jpg"/>
+            </xc:file>
+            <xc:file ID="a8a5844a-a170-4e50-96b5-ec226ff9924e" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_08.jpg"/>
+            </xc:file>
+            <xc:file ID="b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_09.jpg"/>
+            </xc:file>
+            <xc:file ID="bf4b4623-c6ac-417c-ab07-a3c4751150ad" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_10.jpg"/>
+            </xc:file>
+            <xc:file ID="c4344110-d4f8-40e2-97ce-5c1516a140bd" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_11.jpg"/>
+            </xc:file>
+            <xc:file ID="c7ae008c-3701-42d6-a026-ee3c4d84f921" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_12.jpg"/>
+            </xc:file>
+            <xc:file ID="d6168165-9647-41c7-a0ca-0a7d433cd029" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_13.jpg"/>
+            </xc:file>
+            <xc:file ID="dde38c61-4673-4b87-bec2-2e7f3d509006" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_14.jpg"/>
+            </xc:file>
+            <xc:file ID="eaafe128-1cf9-4563-8edd-de8c78f486fa" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_15.jpg"/>
+            </xc:file>
+            <xc:file ID="fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_16.jpg"/>
+            </xc:file>
+            <xc:file ID="01ebf0f3-56e2-42d3-9c05-e691faa3c587" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_17.jpg"/>
+            </xc:file>
+            <xc:file ID="1098767a-d813-47ad-bd5c-ee52ece47cae" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_18.jpg"/>
+            </xc:file>
+            <xc:file ID="1678afac-9ca3-438d-a8ba-cf158a7f7b59" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_19.jpg"/>
+            </xc:file>
+            <xc:file ID="1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_20.jpg"/>
+            </xc:file>
+            <xc:file ID="271e8308-caaa-457a-af4e-a6dc72efd223" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_21.jpg"/>
+            </xc:file>
+            <xc:file ID="2973ffaf-22b8-4592-9340-4830b0b28e5a" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_22.jpg"/>
+            </xc:file>
+            <xc:file ID="35721cc4-b646-4f88-a126-89c29316de1a" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_23.jpg"/>
+            </xc:file>
+            <xc:file ID="3c46a616-f145-4ab1-afa4-cd1572d012a7" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_24.jpg"/>
+            </xc:file>
+            <xc:file ID="3e7f1b78-5301-4c83-9157-c129024005fd" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_25.jpg"/>
+            </xc:file>
+            <xc:file ID="45671633-e2b5-4d5d-a5d9-9df17a59b0b9" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_26.jpg"/>
+            </xc:file>
+            <xc:file ID="47f96e0e-2bbe-4041-8d90-bacf43e6812b" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_27.jpg"/>
+            </xc:file>
+            <xc:file ID="5274452b-ae9a-43a6-86de-4ed5c7318868" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_28.jpg"/>
+            </xc:file>
+            <xc:file ID="56ef3f2b-f2ec-4300-97ab-afa18041fd13" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_29.jpg"/>
+            </xc:file>
+            <xc:file ID="585e8982-e1c1-4965-8df5-8b8d5879a45f" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_30.jpg"/>
+            </xc:file>
+            <xc:file ID="5a51d10f-c02c-49ff-9f1e-a813c5de668b" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_31.jpg"/>
+            </xc:file>
+            <xc:file ID="5a61b970-95a6-4174-bcf7-cbe4983279b1" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_32.jpg"/>
+            </xc:file>
+            <xc:file ID="5db96a8e-c345-4009-b2a7-c7fd89a6944a" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_33.jpg"/>
+            </xc:file>
+            <xc:file ID="6981e782-9edf-4d95-85fb-405e2f4064f4" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_34.jpg"/>
+            </xc:file>
+            <xc:file ID="7aadf709-57ac-4bd1-ab28-67627a93e4a4" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_35.jpg"/>
+            </xc:file>
+            <xc:file ID="7fda8eac-c375-44ab-8084-bcc4f016ecf4" MIMETYPE="mimetype">
+                <xc:FLocat LOCTYPE="" xlink:href="jpeg-exports\fish_fossil_36.jpg"/>
+            </xc:file>
+        </xc:fileGrp>
+        <xc:fileGrp ID="bae4d3cd-a816-4d63-98e4-3d4b1d706cf8" USE="Images for BallDetection">
+            <xc:fptr>93443afd-8774-4492-8bd0-35f87d665cd2</xc:fptr>
+            <xc:fptr>96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:fptr>
+            <xc:fptr>9c38356e-055a-4aee-bf25-69edbc45db6f</xc:fptr>
+            <xc:fptr>9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:fptr>
+            <xc:fptr>a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:fptr>
+            <xc:fptr>b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:fptr>
+            <xc:fptr>c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:fptr>
+            <xc:fptr>1098767a-d813-47ad-bd5c-ee52ece47cae</xc:fptr>
+            <xc:fptr>5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:fptr>
+            <xc:fptr>7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:fptr>
+        </xc:fileGrp>
+        <xc:fileGrp ID="c5ec275b-1600-4324-8c02-02e1caf1a779" USE="Images for BallDetection">
+            <xc:fptr>93443afd-8774-4492-8bd0-35f87d665cd2</xc:fptr>
+            <xc:fptr>96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:fptr>
+            <xc:fptr>9c38356e-055a-4aee-bf25-69edbc45db6f</xc:fptr>
+            <xc:fptr>9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:fptr>
+            <xc:fptr>a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:fptr>
+            <xc:fptr>b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:fptr>
+            <xc:fptr>c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:fptr>
+            <xc:fptr>1098767a-d813-47ad-bd5c-ee52ece47cae</xc:fptr>
+            <xc:fptr>5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:fptr>
+            <xc:fptr>7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:fptr>
+        </xc:fileGrp>
+        <xc:fileGrp ID="fee298bd-159a-49b3-b262-bbc19996802e" USE="Stage1 and Stage2 images">
+            <xc:file ID="4b13368e-a102-481a-9d5b-78b213008808" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_edge1.jpg"/>
+            </xc:file>
+            <xc:file ID="748361c1-3953-4f07-976e-b8fee955b529" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_median1.jpg"/>
+            </xc:file>
+        </xc:fileGrp>
+        <xc:fileGrp ID="77b01d33-6a59-40a2-8feb-7effa021d1bf" USE="Stage1 and Stage2 images">
+            <xc:file ID="2bbe824a-25d2-40d4-9b23-9acaf4e79c28" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_edge0.jpg"/>
+            </xc:file>
+            <xc:file ID="6cb41155-59f7-472b-8fb3-845bdd3942de" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_median0.jpg"/>
+            </xc:file>
+        </xc:fileGrp>
+        <xc:fileGrp ID="bebdc7c3-d15b-4371-9a60-8fa758480bbf" USE="Images for HighDetection">
+            <xc:fptr>81fb5616-d489-414b-9f1d-d3cd5c8586fd</xc:fptr>
+            <xc:fptr>93443afd-8774-4492-8bd0-35f87d665cd2</xc:fptr>
+            <xc:fptr>96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:fptr>
+            <xc:fptr>97175f81-00e7-46d7-b767-ce7dd441c431</xc:fptr>
+            <xc:fptr>9c38356e-055a-4aee-bf25-69edbc45db6f</xc:fptr>
+            <xc:fptr>9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:fptr>
+            <xc:fptr>a33a95ad-ba43-41a8-aad9-a50b9e53c7ae</xc:fptr>
+            <xc:fptr>a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:fptr>
+            <xc:fptr>b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:fptr>
+            <xc:fptr>bf4b4623-c6ac-417c-ab07-a3c4751150ad</xc:fptr>
+            <xc:fptr>c4344110-d4f8-40e2-97ce-5c1516a140bd</xc:fptr>
+            <xc:fptr>c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:fptr>
+            <xc:fptr>d6168165-9647-41c7-a0ca-0a7d433cd029</xc:fptr>
+            <xc:fptr>dde38c61-4673-4b87-bec2-2e7f3d509006</xc:fptr>
+            <xc:fptr>eaafe128-1cf9-4563-8edd-de8c78f486fa</xc:fptr>
+            <xc:fptr>fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447</xc:fptr>
+            <xc:fptr>01ebf0f3-56e2-42d3-9c05-e691faa3c587</xc:fptr>
+            <xc:fptr>1098767a-d813-47ad-bd5c-ee52ece47cae</xc:fptr>
+            <xc:fptr>1678afac-9ca3-438d-a8ba-cf158a7f7b59</xc:fptr>
+            <xc:fptr>1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b</xc:fptr>
+            <xc:fptr>271e8308-caaa-457a-af4e-a6dc72efd223</xc:fptr>
+            <xc:fptr>2973ffaf-22b8-4592-9340-4830b0b28e5a</xc:fptr>
+            <xc:fptr>35721cc4-b646-4f88-a126-89c29316de1a</xc:fptr>
+            <xc:fptr>3c46a616-f145-4ab1-afa4-cd1572d012a7</xc:fptr>
+            <xc:fptr>3e7f1b78-5301-4c83-9157-c129024005fd</xc:fptr>
+            <xc:fptr>45671633-e2b5-4d5d-a5d9-9df17a59b0b9</xc:fptr>
+            <xc:fptr>47f96e0e-2bbe-4041-8d90-bacf43e6812b</xc:fptr>
+            <xc:fptr>5274452b-ae9a-43a6-86de-4ed5c7318868</xc:fptr>
+            <xc:fptr>56ef3f2b-f2ec-4300-97ab-afa18041fd13</xc:fptr>
+            <xc:fptr>585e8982-e1c1-4965-8df5-8b8d5879a45f</xc:fptr>
+            <xc:fptr>5a51d10f-c02c-49ff-9f1e-a813c5de668b</xc:fptr>
+            <xc:fptr>5a61b970-95a6-4174-bcf7-cbe4983279b1</xc:fptr>
+            <xc:fptr>5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:fptr>
+            <xc:fptr>6981e782-9edf-4d95-85fb-405e2f4064f4</xc:fptr>
+            <xc:fptr>7aadf709-57ac-4bd1-ab28-67627a93e4a4</xc:fptr>
+            <xc:fptr>7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:fptr>
+        </xc:fileGrp>
+        <xc:fileGrp ID="dfe6ff37-c2ab-48c6-bc92-0b27235a4d82" USE="Images for HighDetection">
+            <xc:fptr>81fb5616-d489-414b-9f1d-d3cd5c8586fd</xc:fptr>
+            <xc:fptr>93443afd-8774-4492-8bd0-35f87d665cd2</xc:fptr>
+            <xc:fptr>96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:fptr>
+            <xc:fptr>97175f81-00e7-46d7-b767-ce7dd441c431</xc:fptr>
+            <xc:fptr>9c38356e-055a-4aee-bf25-69edbc45db6f</xc:fptr>
+            <xc:fptr>9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:fptr>
+            <xc:fptr>a33a95ad-ba43-41a8-aad9-a50b9e53c7ae</xc:fptr>
+            <xc:fptr>a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:fptr>
+            <xc:fptr>b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:fptr>
+            <xc:fptr>bf4b4623-c6ac-417c-ab07-a3c4751150ad</xc:fptr>
+            <xc:fptr>c4344110-d4f8-40e2-97ce-5c1516a140bd</xc:fptr>
+            <xc:fptr>c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:fptr>
+            <xc:fptr>d6168165-9647-41c7-a0ca-0a7d433cd029</xc:fptr>
+            <xc:fptr>dde38c61-4673-4b87-bec2-2e7f3d509006</xc:fptr>
+            <xc:fptr>eaafe128-1cf9-4563-8edd-de8c78f486fa</xc:fptr>
+            <xc:fptr>fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447</xc:fptr>
+            <xc:fptr>01ebf0f3-56e2-42d3-9c05-e691faa3c587</xc:fptr>
+            <xc:fptr>1098767a-d813-47ad-bd5c-ee52ece47cae</xc:fptr>
+            <xc:fptr>1678afac-9ca3-438d-a8ba-cf158a7f7b59</xc:fptr>
+            <xc:fptr>1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b</xc:fptr>
+            <xc:fptr>271e8308-caaa-457a-af4e-a6dc72efd223</xc:fptr>
+            <xc:fptr>2973ffaf-22b8-4592-9340-4830b0b28e5a</xc:fptr>
+            <xc:fptr>35721cc4-b646-4f88-a126-89c29316de1a</xc:fptr>
+            <xc:fptr>3c46a616-f145-4ab1-afa4-cd1572d012a7</xc:fptr>
+            <xc:fptr>3e7f1b78-5301-4c83-9157-c129024005fd</xc:fptr>
+            <xc:fptr>45671633-e2b5-4d5d-a5d9-9df17a59b0b9</xc:fptr>
+            <xc:fptr>47f96e0e-2bbe-4041-8d90-bacf43e6812b</xc:fptr>
+            <xc:fptr>5274452b-ae9a-43a6-86de-4ed5c7318868</xc:fptr>
+            <xc:fptr>56ef3f2b-f2ec-4300-97ab-afa18041fd13</xc:fptr>
+            <xc:fptr>585e8982-e1c1-4965-8df5-8b8d5879a45f</xc:fptr>
+            <xc:fptr>5a51d10f-c02c-49ff-9f1e-a813c5de668b</xc:fptr>
+            <xc:fptr>5a61b970-95a6-4174-bcf7-cbe4983279b1</xc:fptr>
+            <xc:fptr>5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:fptr>
+            <xc:fptr>6981e782-9edf-4d95-85fb-405e2f4064f4</xc:fptr>
+            <xc:fptr>7aadf709-57ac-4bd1-ab28-67627a93e4a4</xc:fptr>
+            <xc:fptr>7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:fptr>
+        </xc:fileGrp>
+        <xc:fileGrp ID="6fec2c70-1ed7-46ac-bfd8-3649a8e71e60" USE="Blend Image">
+            <xc:file ID="a2da4b19-884a-4f60-89de-bd386932ba92" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_blend1.jpg"/>
+            </xc:file>
+        </xc:fileGrp>
+        <xc:fileGrp ID="52677a03-2fb9-4690-bace-4e15841ca056" USE="Blend Image">
+            <xc:file ID="b55f01e7-4189-4737-abb0-12413f1d7433" MIMETYPE="image/JPG">
+                <xc:FLocat LOCTYPE="" xlink:href="assembly-files\Fisch_blend2.jpg"/>
+            </xc:file>
+        </xc:fileGrp>
+    </xc:fileSec>
+    <xc:Processes>
+        <xc:process COMPID="9e275ec5-51a0-4ed2-afe3-c7ef08a8075d" ID="d59e0f33-1b75-4f09-992a-99500374b0fd" SEQ="1" STATUS="NONE" TYPE="PIPELINE">
+            <xc:description/>
+            <xc:Input/>
+            <xc:Output/>
+        </xc:process>
+        <xc:process COMPID="d6b14f9e-343f-4ea0-a11c-fb70c41fab64" ID="70f36fcd-28ef-40a4-bbbc-032e0cac6395" SEQ="2" STATUS="NONE" TYPE="PIPELINE">
+            <xc:description/>
+            <xc:Input/>
+            <xc:Output/>
+        </xc:process>
+        <xc:process COMPID="7169813b-ef73-4ca9-a405-75b14e6ee55e" ID="02ef95c3-8bb1-430b-87f8-456b0409ab7d" SEQ="3" STATUS="NONE" TYPE="PIPELINE">
+            <xc:description/>
+            <xc:Input/>
+            <xc:Output/>
+        </xc:process>
+        <xc:process COMPID="829a0cfe-8f31-4581-ad95-fb6457587137" ID="7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" SEQ="4" STATUS="NONE" TYPE="PIPELINE">
+            <xc:description/>
+            <xc:Input/>
+            <xc:Output/>
+        </xc:process>
+        <xc:process COMPID="c6d431ec-b330-3461-ae8a-dfe210c69fe6" ID="ec79488e-4d33-4c8b-8b2c-5786b2f2db87" SEQ="2" STATUS="STOPPED" TYPE="BALLDETECTION">
+            <xc:description/>
+            <xc:Input>
+                <xc:ref NAME="BDi" STATUS="ACTIVE">a6f24959-7dcf-4321-b656-d59d237697dd</xc:ref>
+            </xc:Input>
+            <xc:Output>
+                <xc:ref NAME="BDo" STATUS="ACTIVE">7043c783-0a6e-4d9f-b877-3164a285dbb0</xc:ref>
+            </xc:Output>
+        </xc:process>
+        <xc:process COMPID="b7c2c120-4cc6-37d3-b6d0-c16480557cd0" ID="4b6b99fe-5e04-465e-b6d7-0e7f594f2735" SEQ="3" STATUS="STOPPED" TYPE="HLTDETECTION">
+            <xc:description/>
+            <xc:Input>
+                <xc:ref NAME="HLi" STATUS="ACTIVE">48f45830-32a9-4d67-8a1a-fbf3eee3c409</xc:ref>
+            </xc:Input>
+            <xc:Output>
+                <xc:ref NAME="HLo" STATUS="ACTIVE">723bd2cc-dded-4d10-9693-9fe3a7f767be</xc:ref>
+            </xc:Output>
+        </xc:process>
+    </xc:Processes>
+    <xc:dataSec>
+        <xc:Data NAME="BallDetectionInput" UUID="a6f24959-7dcf-4321-b656-d59d237697dd">
+            <xc:description/>
+            <xc:area BEGIN="x:56.0 y:1046.0" COORDS="x:56.0 y:1046.0;x:56.0 y:1270.0;x:256.0 y:1270.0;x:256.0 y:1046.0;" END="x:256.0 y:1270.0" SHAPE="Rectangle" UUID="4f32a1f3-7376-4776-b310-d7e11e837ced" algorithm="0" binarize="false" fileGrpID="bae4d3cd-a816-4d63-98e4-3d4b1d706cf8" hough="true" projectName="Fisch" projectPath="C:\tmp\rti\fish_fossil-data-set_2000"/>
+            <xc:area BEGIN="x:56.0 y:100.0" COORDS="x:56.0 y:100.0;x:56.0 y:320.0;x:280.0 y:320.0;x:280.0 y:100.0;" END="x:280.0 y:320.0" SHAPE="Rectangle" UUID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a" algorithm="0" binarize="false" fileGrpID="c5ec275b-1600-4324-8c02-02e1caf1a779" hough="true" projectName="Fisch" projectPath="C:\tmp\rti\fish_fossil-data-set_2000"/>
+        </xc:Data>
+        <xc:Data NAME="BallDetectionOutput" UUID="7043c783-0a6e-4d9f-b877-3164a285dbb0">
+            <xc:description/>
+            <xc:area BEGIN="x:56.0 y:100.0" COORDS="x:56.0 y:100.0;x:56.0 y:320.0;x:280.0 y:320.0;x:280.0 y:100.0;" END="x:280.0 y:320.0" EdgeID="4b13368e-a102-481a-9d5b-78b213008808" MedianID="748361c1-3953-4f07-976e-b8fee955b529" SHAPE="Rectangle" UUID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a" fileGrpID="c5ec275b-1600-4324-8c02-02e1caf1a779" r="85.0" x="168.0" y="208.0"/>
+            <xc:area BEGIN="x:56.0 y:1046.0" COORDS="x:56.0 y:1046.0;x:56.0 y:1270.0;x:256.0 y:1270.0;x:256.0 y:1046.0;" END="x:256.0 y:1270.0" EdgeID="2bbe824a-25d2-40d4-9b23-9acaf4e79c28" MedianID="6cb41155-59f7-472b-8fb3-845bdd3942de" SHAPE="Rectangle" UUID="4f32a1f3-7376-4776-b310-d7e11e837ced" fileGrpID="bae4d3cd-a816-4d63-98e4-3d4b1d706cf8" r="85.0" x="149.0" y="1169.0"/>
+        </xc:Data>
+        <xc:Data NAME="" UUID="48f45830-32a9-4d67-8a1a-fbf3eee3c409">
+            <xc:description/>
+            <xc:area BEGIN="x:64.0 y:1084.0" COORDS="x:64.0 y:1084.0;x:64.0 y:1254.0;x:234.0 y:1254.0;x:234.0 y:1084.0;" END="x:234.0 y:1254.0" SHAPE="Rectangle" UUID="4f32a1f3-7376-4776-b310-d7e11e837ced" fileGrpID="bebdc7c3-d15b-4371-9a60-8fa758480bbf" projectName="Fisch" projectPath="C:\tmp\rti\fish_fossil-data-set_2000" r="85.0" threshold="250" x="149.0" y="1169.0"/>
+            <xc:area BEGIN="x:83.0 y:123.0" COORDS="x:83.0 y:123.0;x:83.0 y:293.0;x:253.0 y:293.0;x:253.0 y:123.0;" END="x:253.0 y:293.0" SHAPE="Rectangle" UUID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a" fileGrpID="dfe6ff37-c2ab-48c6-bc92-0b27235a4d82" projectName="Fisch" projectPath="C:\tmp\rti\fish_fossil-data-set_2000" r="85.0" threshold="250" x="168.0" y="208.0"/>
+        </xc:Data>
+        <xc:Data NAME="" UUID="5760e663-69a1-4f88-a15a-f391e4299777">
+            <xc:description/>
+            <xc:param NAME="x1" TYPE="Float">124.689316</xc:param>
+            <xc:param NAME="y1" TYPE="Float">183.15533</xc:param>
+            <xc:param NAME="img1" TYPE="UUID">81fb5616-d489-414b-9f1d-d3cd5c8586fd</xc:param>
+            <xc:param NAME="x2" TYPE="Float">131.55556</xc:param>
+            <xc:param NAME="y2" TYPE="Float">197.92224</xc:param>
+            <xc:param NAME="img2" TYPE="UUID">93443afd-8774-4492-8bd0-35f87d665cd2</xc:param>
+            <xc:param NAME="x3" TYPE="Float">141.68932</xc:param>
+            <xc:param NAME="y3" TYPE="Float">196.11652</xc:param>
+            <xc:param NAME="img3" TYPE="UUID">96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:param>
+            <xc:param NAME="x4" TYPE="Float">115.32895</xc:param>
+            <xc:param NAME="y4" TYPE="Float">201.76315</xc:param>
+            <xc:param NAME="img4" TYPE="UUID">97175f81-00e7-46d7-b767-ce7dd441c431</xc:param>
+            <xc:param NAME="x5" TYPE="Float">128.51219</xc:param>
+            <xc:param NAME="y5" TYPE="Float">207.91464</xc:param>
+            <xc:param NAME="img5" TYPE="UUID">9c38356e-055a-4aee-bf25-69edbc45db6f</xc:param>
+            <xc:param NAME="x6" TYPE="Float">140.86598</xc:param>
+            <xc:param NAME="y6" TYPE="Float">205.25772</xc:param>
+            <xc:param NAME="img6" TYPE="UUID">9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:param>
+            <xc:param NAME="x7" TYPE="Float">122.70329</xc:param>
+            <xc:param NAME="y7" TYPE="Float">234.25275</xc:param>
+            <xc:param NAME="img7" TYPE="UUID">a33a95ad-ba43-41a8-aad9-a50b9e53c7ae</xc:param>
+            <xc:param NAME="x8" TYPE="Float">138.72632</xc:param>
+            <xc:param NAME="y8" TYPE="Float">227.6</xc:param>
+            <xc:param NAME="img8" TYPE="UUID">a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:param>
+            <xc:param NAME="x9" TYPE="Float">148.5</xc:param>
+            <xc:param NAME="y9" TYPE="Float">223.56976</xc:param>
+            <xc:param NAME="img9" TYPE="UUID">b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:param>
+            <xc:param NAME="x10" TYPE="Float">142.64383</xc:param>
+            <xc:param NAME="y10" TYPE="Float">248.863</xc:param>
+            <xc:param NAME="img10" TYPE="UUID">bf4b4623-c6ac-417c-ab07-a3c4751150ad</xc:param>
+            <xc:param NAME="x11" TYPE="Float">148.1831</xc:param>
+            <xc:param NAME="y11" TYPE="Float">235.46478</xc:param>
+            <xc:param NAME="img11" TYPE="UUID">c4344110-d4f8-40e2-97ce-5c1516a140bd</xc:param>
+            <xc:param NAME="x12" TYPE="Float">150.55556</xc:param>
+            <xc:param NAME="y12" TYPE="Float">228.45679</xc:param>
+            <xc:param NAME="img12" TYPE="UUID">c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:param>
+            <xc:param NAME="x13" TYPE="Float">164.73239</xc:param>
+            <xc:param NAME="y13" TYPE="Float">252.07043</xc:param>
+            <xc:param NAME="img13" TYPE="UUID">d6168165-9647-41c7-a0ca-0a7d433cd029</xc:param>
+            <xc:param NAME="x14" TYPE="Float">167.47272</xc:param>
+            <xc:param NAME="y14" TYPE="Float">241.43637</xc:param>
+            <xc:param NAME="img14" TYPE="UUID">dde38c61-4673-4b87-bec2-2e7f3d509006</xc:param>
+            <xc:param NAME="x15" TYPE="Float">168.90164</xc:param>
+            <xc:param NAME="y15" TYPE="Float">232.36066</xc:param>
+            <xc:param NAME="img15" TYPE="UUID">eaafe128-1cf9-4563-8edd-de8c78f486fa</xc:param>
+            <xc:param NAME="x16" TYPE="Float">181.63159</xc:param>
+            <xc:param NAME="y16" TYPE="Float">252.4737</xc:param>
+            <xc:param NAME="img16" TYPE="UUID">fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447</xc:param>
+            <xc:param NAME="x17" TYPE="Float">173.55737</xc:param>
+            <xc:param NAME="y17" TYPE="Float">241.60657</xc:param>
+            <xc:param NAME="img17" TYPE="UUID">01ebf0f3-56e2-42d3-9c05-e691faa3c587</xc:param>
+            <xc:param NAME="x18" TYPE="Float">172.69012</xc:param>
+            <xc:param NAME="y18" TYPE="Float">230.02817</xc:param>
+            <xc:param NAME="img18" TYPE="UUID">1098767a-d813-47ad-bd5c-ee52ece47cae</xc:param>
+            <xc:param NAME="x19" TYPE="Float">202.91803</xc:param>
+            <xc:param NAME="y19" TYPE="Float">234.45901</xc:param>
+            <xc:param NAME="img19" TYPE="UUID">1678afac-9ca3-438d-a8ba-cf158a7f7b59</xc:param>
+            <xc:param NAME="x20" TYPE="Float">194.94116</xc:param>
+            <xc:param NAME="y20" TYPE="Float">226.30884</xc:param>
+            <xc:param NAME="img20" TYPE="UUID">1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b</xc:param>
+            <xc:param NAME="x21" TYPE="Float">189.93939</xc:param>
+            <xc:param NAME="y21" TYPE="Float">221.62122</xc:param>
+            <xc:param NAME="img21" TYPE="UUID">271e8308-caaa-457a-af4e-a6dc72efd223</xc:param>
+            <xc:param NAME="x22" TYPE="Float">211.7258</xc:param>
+            <xc:param NAME="y22" TYPE="Float">222.19354</xc:param>
+            <xc:param NAME="img22" TYPE="UUID">2973ffaf-22b8-4592-9340-4830b0b28e5a</xc:param>
+            <xc:param NAME="x23" TYPE="Float">203.54547</xc:param>
+            <xc:param NAME="y23" TYPE="Float">220.30304</xc:param>
+            <xc:param NAME="img23" TYPE="UUID">35721cc4-b646-4f88-a126-89c29316de1a</xc:param>
+            <xc:param NAME="x24" TYPE="Float">191.19116</xc:param>
+            <xc:param NAME="y24" TYPE="Float">216.73529</xc:param>
+            <xc:param NAME="img24" TYPE="UUID">3c46a616-f145-4ab1-afa4-cd1572d012a7</xc:param>
+            <xc:param NAME="x25" TYPE="Float">213.49335</xc:param>
+            <xc:param NAME="y25" TYPE="Float">198.48001</xc:param>
+            <xc:param NAME="img25" TYPE="UUID">3e7f1b78-5301-4c83-9157-c129024005fd</xc:param>
+            <xc:param NAME="x26" TYPE="Float">196.18918</xc:param>
+            <xc:param NAME="y26" TYPE="Float">196.82434</xc:param>
+            <xc:param NAME="img26" TYPE="UUID">45671633-e2b5-4d5d-a5d9-9df17a59b0b9</xc:param>
+            <xc:param NAME="x27" TYPE="Float">188.40323</xc:param>
+            <xc:param NAME="y27" TYPE="Float">203.2258</xc:param>
+            <xc:param NAME="img27" TYPE="UUID">47f96e0e-2bbe-4041-8d90-bacf43e6812b</xc:param>
+            <xc:param NAME="x28" TYPE="Float">204.86365</xc:param>
+            <xc:param NAME="y28" TYPE="Float">176.90909</xc:param>
+            <xc:param NAME="img28" TYPE="UUID">5274452b-ae9a-43a6-86de-4ed5c7318868</xc:param>
+            <xc:param NAME="x29" TYPE="Float">193.0141</xc:param>
+            <xc:param NAME="y29" TYPE="Float">184.95773</xc:param>
+            <xc:param NAME="img29" TYPE="UUID">56ef3f2b-f2ec-4300-97ab-afa18041fd13</xc:param>
+            <xc:param NAME="x30" TYPE="Float">183.56522</xc:param>
+            <xc:param NAME="y30" TYPE="Float">189.69565</xc:param>
+            <xc:param NAME="img30" TYPE="UUID">585e8982-e1c1-4965-8df5-8b8d5879a45f</xc:param>
+            <xc:param NAME="x31" TYPE="Float">172.03226</xc:param>
+            <xc:param NAME="y31" TYPE="Float">155.83871</xc:param>
+            <xc:param NAME="img31" TYPE="UUID">5a51d10f-c02c-49ff-9f1e-a813c5de668b</xc:param>
+            <xc:param NAME="x32" TYPE="Float">165.68</xc:param>
+            <xc:param NAME="y32" TYPE="Float">175.10666</xc:param>
+            <xc:param NAME="img32" TYPE="UUID">5a61b970-95a6-4174-bcf7-cbe4983279b1</xc:param>
+            <xc:param NAME="x33" TYPE="Float">163.52325</xc:param>
+            <xc:param NAME="y33" TYPE="Float">184.40698</xc:param>
+            <xc:param NAME="img33" TYPE="UUID">5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:param>
+            <xc:param NAME="x34" TYPE="Float">146.21739</xc:param>
+            <xc:param NAME="y34" TYPE="Float">161.02174</xc:param>
+            <xc:param NAME="img34" TYPE="UUID">6981e782-9edf-4d95-85fb-405e2f4064f4</xc:param>
+            <xc:param NAME="x35" TYPE="Float">148.6747</xc:param>
+            <xc:param NAME="y35" TYPE="Float">174.31326</xc:param>
+            <xc:param NAME="img35" TYPE="UUID">7aadf709-57ac-4bd1-ab28-67627a93e4a4</xc:param>
+            <xc:param NAME="x36" TYPE="Float">156.02197</xc:param>
+            <xc:param NAME="y36" TYPE="Float">178.03296</xc:param>
+            <xc:param NAME="img36" TYPE="UUID">7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:param>
+            <xc:param NAME="numBalls" TYPE="Integer">36</xc:param>
+        </xc:Data>
+        <xc:Data NAME="" UUID="0cb383b7-a5f2-4354-a30f-c8ee8b08a691">
+            <xc:description/>
+            <xc:param NAME="x1" TYPE="Float">107.9881</xc:param>
+            <xc:param NAME="y1" TYPE="Float">1143.619</xc:param>
+            <xc:param NAME="img1" TYPE="UUID">81fb5616-d489-414b-9f1d-d3cd5c8586fd</xc:param>
+            <xc:param NAME="x2" TYPE="Float">113.06329</xc:param>
+            <xc:param NAME="y2" TYPE="Float">1159.3671</xc:param>
+            <xc:param NAME="img2" TYPE="UUID">93443afd-8774-4492-8bd0-35f87d665cd2</xc:param>
+            <xc:param NAME="x3" TYPE="Float">122.6747</xc:param>
+            <xc:param NAME="y3" TYPE="Float">1158.4579</xc:param>
+            <xc:param NAME="img3" TYPE="UUID">96ce0ab1-a541-4ae2-ac49-32b31beefa08</xc:param>
+            <xc:param NAME="x4" TYPE="Float">96.46478</xc:param>
+            <xc:param NAME="y4" TYPE="Float">1160.7042</xc:param>
+            <xc:param NAME="img4" TYPE="UUID">97175f81-00e7-46d7-b767-ce7dd441c431</xc:param>
+            <xc:param NAME="x5" TYPE="Float">108.95999</xc:param>
+            <xc:param NAME="y5" TYPE="Float">1168.84</xc:param>
+            <xc:param NAME="img5" TYPE="UUID">9c38356e-055a-4aee-bf25-69edbc45db6f</xc:param>
+            <xc:param NAME="x6" TYPE="Float">121.59036</xc:param>
+            <xc:param NAME="y6" TYPE="Float">1167.2289</xc:param>
+            <xc:param NAME="img6" TYPE="UUID">9e9f122e-6384-49b5-bd19-5bcbbf25aee2</xc:param>
+            <xc:param NAME="x7" TYPE="Float">99.895355</xc:param>
+            <xc:param NAME="y7" TYPE="Float">1193.907</xc:param>
+            <xc:param NAME="img7" TYPE="UUID">a33a95ad-ba43-41a8-aad9-a50b9e53c7ae</xc:param>
+            <xc:param NAME="x8" TYPE="Float">117.69696</xc:param>
+            <xc:param NAME="y8" TYPE="Float">1189.9495</xc:param>
+            <xc:param NAME="img8" TYPE="UUID">a8a5844a-a170-4e50-96b5-ec226ff9924e</xc:param>
+            <xc:param NAME="x9" TYPE="Float">128.25</xc:param>
+            <xc:param NAME="y9" TYPE="Float">1186.409</xc:param>
+            <xc:param NAME="img9" TYPE="UUID">b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f</xc:param>
+            <xc:param NAME="x10" TYPE="Float">120.404495</xc:param>
+            <xc:param NAME="y10" TYPE="Float">1212.5618</xc:param>
+            <xc:param NAME="img10" TYPE="UUID">bf4b4623-c6ac-417c-ab07-a3c4751150ad</xc:param>
+            <xc:param NAME="x11" TYPE="Float">127.30487</xc:param>
+            <xc:param NAME="y11" TYPE="Float">1198.8414</xc:param>
+            <xc:param NAME="img11" TYPE="UUID">c4344110-d4f8-40e2-97ce-5c1516a140bd</xc:param>
+            <xc:param NAME="x12" TYPE="Float">130.11237</xc:param>
+            <xc:param NAME="y12" TYPE="Float">1191.7079</xc:param>
+            <xc:param NAME="img12" TYPE="UUID">c7ae008c-3701-42d6-a026-ee3c4d84f921</xc:param>
+            <xc:param NAME="x13" TYPE="Float">144.75641</xc:param>
+            <xc:param NAME="y13" TYPE="Float">1216.4359</xc:param>
+            <xc:param NAME="img13" TYPE="UUID">d6168165-9647-41c7-a0ca-0a7d433cd029</xc:param>
+            <xc:param NAME="x14" TYPE="Float">148.0548</xc:param>
+            <xc:param NAME="y14" TYPE="Float">1205.452</xc:param>
+            <xc:param NAME="img14" TYPE="UUID">dde38c61-4673-4b87-bec2-2e7f3d509006</xc:param>
+            <xc:param NAME="x15" TYPE="Float">149.66666</xc:param>
+            <xc:param NAME="y15" TYPE="Float">1196.0934</xc:param>
+            <xc:param NAME="img15" TYPE="UUID">eaafe128-1cf9-4563-8edd-de8c78f486fa</xc:param>
+            <xc:param NAME="x16" TYPE="Float">163.89474</xc:param>
+            <xc:param NAME="y16" TYPE="Float">1216.0526</xc:param>
+            <xc:param NAME="img16" TYPE="UUID">fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447</xc:param>
+            <xc:param NAME="x17" TYPE="Float">154.87323</xc:param>
+            <xc:param NAME="y17" TYPE="Float">1205.2113</xc:param>
+            <xc:param NAME="img17" TYPE="UUID">01ebf0f3-56e2-42d3-9c05-e691faa3c587</xc:param>
+            <xc:param NAME="x18" TYPE="Float">152.88312</xc:param>
+            <xc:param NAME="y18" TYPE="Float">1193.3766</xc:param>
+            <xc:param NAME="img18" TYPE="UUID">1098767a-d813-47ad-bd5c-ee52ece47cae</xc:param>
+            <xc:param NAME="x19" TYPE="Float">185.96667</xc:param>
+            <xc:param NAME="y19" TYPE="Float">1195.05</xc:param>
+            <xc:param NAME="img19" TYPE="UUID">1678afac-9ca3-438d-a8ba-cf158a7f7b59</xc:param>
+            <xc:param NAME="x20" TYPE="Float">176.87097</xc:param>
+            <xc:param NAME="y20" TYPE="Float">1187.9839</xc:param>
+            <xc:param NAME="img20" TYPE="UUID">1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b</xc:param>
+            <xc:param NAME="x21" TYPE="Float">170.98462</xc:param>
+            <xc:param NAME="y21" TYPE="Float">1183.5692</xc:param>
+            <xc:param NAME="img21" TYPE="UUID">271e8308-caaa-457a-af4e-a6dc72efd223</xc:param>
+            <xc:param NAME="x22" TYPE="Float">193.8421</xc:param>
+            <xc:param NAME="y22" TYPE="Float">1181.0176</xc:param>
+            <xc:param NAME="img22" TYPE="UUID">2973ffaf-22b8-4592-9340-4830b0b28e5a</xc:param>
+            <xc:param NAME="x23" TYPE="Float">185.08197</xc:param>
+            <xc:param NAME="y23" TYPE="Float">1181.1147</xc:param>
+            <xc:param NAME="img23" TYPE="UUID">35721cc4-b646-4f88-a126-89c29316de1a</xc:param>
+            <xc:param NAME="x24" TYPE="Float">171.87302</xc:param>
+            <xc:param NAME="y24" TYPE="Float">1178.5873</xc:param>
+            <xc:param NAME="img24" TYPE="UUID">3c46a616-f145-4ab1-afa4-cd1572d012a7</xc:param>
+            <xc:param NAME="x25" TYPE="Float">192.5</xc:param>
+            <xc:param NAME="y25" TYPE="Float">1157.0441</xc:param>
+            <xc:param NAME="img25" TYPE="UUID">3e7f1b78-5301-4c83-9157-c129024005fd</xc:param>
+            <xc:param NAME="x26" TYPE="Float">175.86566</xc:param>
+            <xc:param NAME="y26" TYPE="Float">1158.791</xc:param>
+            <xc:param NAME="img26" TYPE="UUID">45671633-e2b5-4d5d-a5d9-9df17a59b0b9</xc:param>
+            <xc:param NAME="x27" TYPE="Float">168.93846</xc:param>
+            <xc:param NAME="y27" TYPE="Float">1165.1692</xc:param>
+            <xc:param NAME="img27" TYPE="UUID">47f96e0e-2bbe-4041-8d90-bacf43e6812b</xc:param>
+            <xc:param NAME="x28" TYPE="Float">182.79105</xc:param>
+            <xc:param NAME="y28" TYPE="Float">1137.8955</xc:param>
+            <xc:param NAME="img28" TYPE="UUID">5274452b-ae9a-43a6-86de-4ed5c7318868</xc:param>
+            <xc:param NAME="x29" TYPE="Float">172.45001</xc:param>
+            <xc:param NAME="y29" TYPE="Float">1147.1333</xc:param>
+            <xc:param NAME="img29" TYPE="UUID">56ef3f2b-f2ec-4300-97ab-afa18041fd13</xc:param>
+            <xc:param NAME="x30" TYPE="Float">163.22414</xc:param>
+            <xc:param NAME="y30" TYPE="Float">1152.5172</xc:param>
+            <xc:param NAME="img30" TYPE="UUID">585e8982-e1c1-4965-8df5-8b8d5879a45f</xc:param>
+            <xc:param NAME="x31" TYPE="Float">151.73685</xc:param>
+            <xc:param NAME="y31" TYPE="Float">1120.4474</xc:param>
+            <xc:param NAME="img31" TYPE="UUID">5a51d10f-c02c-49ff-9f1e-a813c5de668b</xc:param>
+            <xc:param NAME="x32" TYPE="Float">146.41428</xc:param>
+            <xc:param NAME="y32" TYPE="Float">1139.1143</xc:param>
+            <xc:param NAME="img32" TYPE="UUID">5a61b970-95a6-4174-bcf7-cbe4983279b1</xc:param>
+            <xc:param NAME="x33" TYPE="Float">144.38962</xc:param>
+            <xc:param NAME="y33" TYPE="Float">1147.1818</xc:param>
+            <xc:param NAME="img33" TYPE="UUID">5db96a8e-c345-4009-b2a7-c7fd89a6944a</xc:param>
+            <xc:param NAME="x34" TYPE="Float">129.46053</xc:param>
+            <xc:param NAME="y34" TYPE="Float">1124.9342</xc:param>
+            <xc:param NAME="img34" TYPE="UUID">6981e782-9edf-4d95-85fb-405e2f4064f4</xc:param>
+            <xc:param NAME="x35" TYPE="Float">130.57745</xc:param>
+            <xc:param NAME="y35" TYPE="Float">1137.5493</xc:param>
+            <xc:param NAME="img35" TYPE="UUID">7aadf709-57ac-4bd1-ab28-67627a93e4a4</xc:param>
+            <xc:param NAME="x36" TYPE="Float">137.44156</xc:param>
+            <xc:param NAME="y36" TYPE="Float">1141.5974</xc:param>
+            <xc:param NAME="img36" TYPE="UUID">7fda8eac-c375-44ab-8084-bcc4f016ecf4</xc:param>
+            <xc:param NAME="numBalls" TYPE="Integer">36</xc:param>
+        </xc:Data>
+        <xc:Data NAME="" UUID="723bd2cc-dded-4d10-9693-9fe3a7f767be">
+            <xc:description/>
+            <xc:area BEGIN="x:83.0 y:123.0" BlendID="a2da4b19-884a-4f60-89de-bd386932ba92" COORDS="x:83.0 y:123.0;x:83.0 y:293.0;x:253.0 y:293.0;x:253.0 y:123.0;" END="x:253.0 y:293.0" Ref_HighLights="5760e663-69a1-4f88-a15a-f391e4299777" SHAPE="Rectangle" UUID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a" fileGrpID="dfe6ff37-c2ab-48c6-bc92-0b27235a4d82"/>
+            <xc:area BEGIN="x:64.0 y:1084.0" BlendID="b55f01e7-4189-4737-abb0-12413f1d7433" COORDS="x:64.0 y:1084.0;x:64.0 y:1254.0;x:234.0 y:1254.0;x:234.0 y:1084.0;" END="x:234.0 y:1254.0" Ref_HighLights="0cb383b7-a5f2-4354-a30f-c8ee8b08a691" SHAPE="Rectangle" UUID="4f32a1f3-7376-4776-b310-d7e11e837ced" fileGrpID="bebdc7c3-d15b-4371-9a60-8fa758480bbf"/>
+        </xc:Data>
+    </xc:dataSec>
+    <xc:computedData>
+        <xc:Images ID="cdfd7e2b-6a3c-4609-b798-05461ec0e0b3"/>
+        <xc:Spheres>
+            <xc:sphere ID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a" Order="1" r="85.0" x="168.0" y="208.0"/>
+            <xc:sphere ID="4f32a1f3-7376-4776-b310-d7e11e837ced" Order="0" r="85.0" x="149.0" y="1169.0"/>
+        </xc:Spheres>
+        <xc:HighLights SphereID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a">
+            <xc:highlight ImageID="81fb5616-d489-414b-9f1d-d3cd5c8586fd" x="124.689316" y="183.15533"/>
+            <xc:highlight ImageID="93443afd-8774-4492-8bd0-35f87d665cd2" x="131.55556" y="197.92224"/>
+            <xc:highlight ImageID="96ce0ab1-a541-4ae2-ac49-32b31beefa08" x="141.68932" y="196.11652"/>
+            <xc:highlight ImageID="97175f81-00e7-46d7-b767-ce7dd441c431" x="115.32895" y="201.76315"/>
+            <xc:highlight ImageID="9c38356e-055a-4aee-bf25-69edbc45db6f" x="128.51219" y="207.91464"/>
+            <xc:highlight ImageID="9e9f122e-6384-49b5-bd19-5bcbbf25aee2" x="140.86598" y="205.25772"/>
+            <xc:highlight ImageID="a33a95ad-ba43-41a8-aad9-a50b9e53c7ae" x="122.70329" y="234.25275"/>
+            <xc:highlight ImageID="a8a5844a-a170-4e50-96b5-ec226ff9924e" x="138.72632" y="227.6"/>
+            <xc:highlight ImageID="b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f" x="148.5" y="223.56976"/>
+            <xc:highlight ImageID="bf4b4623-c6ac-417c-ab07-a3c4751150ad" x="142.64383" y="248.863"/>
+            <xc:highlight ImageID="c4344110-d4f8-40e2-97ce-5c1516a140bd" x="148.1831" y="235.46478"/>
+            <xc:highlight ImageID="c7ae008c-3701-42d6-a026-ee3c4d84f921" x="150.55556" y="228.45679"/>
+            <xc:highlight ImageID="d6168165-9647-41c7-a0ca-0a7d433cd029" x="164.73239" y="252.07043"/>
+            <xc:highlight ImageID="dde38c61-4673-4b87-bec2-2e7f3d509006" x="167.47272" y="241.43637"/>
+            <xc:highlight ImageID="eaafe128-1cf9-4563-8edd-de8c78f486fa" x="168.90164" y="232.36066"/>
+            <xc:highlight ImageID="fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447" x="181.63159" y="252.4737"/>
+            <xc:highlight ImageID="01ebf0f3-56e2-42d3-9c05-e691faa3c587" x="173.55737" y="241.60657"/>
+            <xc:highlight ImageID="1098767a-d813-47ad-bd5c-ee52ece47cae" x="172.69012" y="230.02817"/>
+            <xc:highlight ImageID="1678afac-9ca3-438d-a8ba-cf158a7f7b59" x="202.91803" y="234.45901"/>
+            <xc:highlight ImageID="1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b" x="194.94116" y="226.30884"/>
+            <xc:highlight ImageID="271e8308-caaa-457a-af4e-a6dc72efd223" x="189.93939" y="221.62122"/>
+            <xc:highlight ImageID="2973ffaf-22b8-4592-9340-4830b0b28e5a" x="211.7258" y="222.19354"/>
+            <xc:highlight ImageID="35721cc4-b646-4f88-a126-89c29316de1a" x="203.54547" y="220.30304"/>
+            <xc:highlight ImageID="3c46a616-f145-4ab1-afa4-cd1572d012a7" x="191.19116" y="216.73529"/>
+            <xc:highlight ImageID="3e7f1b78-5301-4c83-9157-c129024005fd" x="213.49335" y="198.48001"/>
+            <xc:highlight ImageID="45671633-e2b5-4d5d-a5d9-9df17a59b0b9" x="196.18918" y="196.82434"/>
+            <xc:highlight ImageID="47f96e0e-2bbe-4041-8d90-bacf43e6812b" x="188.40323" y="203.2258"/>
+            <xc:highlight ImageID="5274452b-ae9a-43a6-86de-4ed5c7318868" x="204.86365" y="176.90909"/>
+            <xc:highlight ImageID="56ef3f2b-f2ec-4300-97ab-afa18041fd13" x="193.0141" y="184.95773"/>
+            <xc:highlight ImageID="585e8982-e1c1-4965-8df5-8b8d5879a45f" x="183.56522" y="189.69565"/>
+            <xc:highlight ImageID="5a51d10f-c02c-49ff-9f1e-a813c5de668b" x="172.03226" y="155.83871"/>
+            <xc:highlight ImageID="5a61b970-95a6-4174-bcf7-cbe4983279b1" x="165.68" y="175.10666"/>
+            <xc:highlight ImageID="5db96a8e-c345-4009-b2a7-c7fd89a6944a" x="163.52325" y="184.40698"/>
+            <xc:highlight ImageID="6981e782-9edf-4d95-85fb-405e2f4064f4" x="146.21739" y="161.02174"/>
+            <xc:highlight ImageID="7aadf709-57ac-4bd1-ab28-67627a93e4a4" x="148.6747" y="174.31326"/>
+            <xc:highlight ImageID="7fda8eac-c375-44ab-8084-bcc4f016ecf4" x="156.02197" y="178.03296"/>
+        </xc:HighLights>
+        <xc:HighLights SphereID="4f32a1f3-7376-4776-b310-d7e11e837ced">
+            <xc:highlight ImageID="81fb5616-d489-414b-9f1d-d3cd5c8586fd" x="107.9881" y="1143.619"/>
+            <xc:highlight ImageID="93443afd-8774-4492-8bd0-35f87d665cd2" x="113.06329" y="1159.3671"/>
+            <xc:highlight ImageID="96ce0ab1-a541-4ae2-ac49-32b31beefa08" x="122.6747" y="1158.4579"/>
+            <xc:highlight ImageID="97175f81-00e7-46d7-b767-ce7dd441c431" x="96.46478" y="1160.7042"/>
+            <xc:highlight ImageID="9c38356e-055a-4aee-bf25-69edbc45db6f" x="108.95999" y="1168.84"/>
+            <xc:highlight ImageID="9e9f122e-6384-49b5-bd19-5bcbbf25aee2" x="121.59036" y="1167.2289"/>
+            <xc:highlight ImageID="a33a95ad-ba43-41a8-aad9-a50b9e53c7ae" x="99.895355" y="1193.907"/>
+            <xc:highlight ImageID="a8a5844a-a170-4e50-96b5-ec226ff9924e" x="117.69696" y="1189.9495"/>
+            <xc:highlight ImageID="b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f" x="128.25" y="1186.409"/>
+            <xc:highlight ImageID="bf4b4623-c6ac-417c-ab07-a3c4751150ad" x="120.404495" y="1212.5618"/>
+            <xc:highlight ImageID="c4344110-d4f8-40e2-97ce-5c1516a140bd" x="127.30487" y="1198.8414"/>
+            <xc:highlight ImageID="c7ae008c-3701-42d6-a026-ee3c4d84f921" x="130.11237" y="1191.7079"/>
+            <xc:highlight ImageID="d6168165-9647-41c7-a0ca-0a7d433cd029" x="144.75641" y="1216.4359"/>
+            <xc:highlight ImageID="dde38c61-4673-4b87-bec2-2e7f3d509006" x="148.0548" y="1205.452"/>
+            <xc:highlight ImageID="eaafe128-1cf9-4563-8edd-de8c78f486fa" x="149.66666" y="1196.0934"/>
+            <xc:highlight ImageID="fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447" x="163.89474" y="1216.0526"/>
+            <xc:highlight ImageID="01ebf0f3-56e2-42d3-9c05-e691faa3c587" x="154.87323" y="1205.2113"/>
+            <xc:highlight ImageID="1098767a-d813-47ad-bd5c-ee52ece47cae" x="152.88312" y="1193.3766"/>
+            <xc:highlight ImageID="1678afac-9ca3-438d-a8ba-cf158a7f7b59" x="185.96667" y="1195.05"/>
+            <xc:highlight ImageID="1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b" x="176.87097" y="1187.9839"/>
+            <xc:highlight ImageID="271e8308-caaa-457a-af4e-a6dc72efd223" x="170.98462" y="1183.5692"/>
+            <xc:highlight ImageID="2973ffaf-22b8-4592-9340-4830b0b28e5a" x="193.8421" y="1181.0176"/>
+            <xc:highlight ImageID="35721cc4-b646-4f88-a126-89c29316de1a" x="185.08197" y="1181.1147"/>
+            <xc:highlight ImageID="3c46a616-f145-4ab1-afa4-cd1572d012a7" x="171.87302" y="1178.5873"/>
+            <xc:highlight ImageID="3e7f1b78-5301-4c83-9157-c129024005fd" x="192.5" y="1157.0441"/>
+            <xc:highlight ImageID="45671633-e2b5-4d5d-a5d9-9df17a59b0b9" x="175.86566" y="1158.791"/>
+            <xc:highlight ImageID="47f96e0e-2bbe-4041-8d90-bacf43e6812b" x="168.93846" y="1165.1692"/>
+            <xc:highlight ImageID="5274452b-ae9a-43a6-86de-4ed5c7318868" x="182.79105" y="1137.8955"/>
+            <xc:highlight ImageID="56ef3f2b-f2ec-4300-97ab-afa18041fd13" x="172.45001" y="1147.1333"/>
+            <xc:highlight ImageID="585e8982-e1c1-4965-8df5-8b8d5879a45f" x="163.22414" y="1152.5172"/>
+            <xc:highlight ImageID="5a51d10f-c02c-49ff-9f1e-a813c5de668b" x="151.73685" y="1120.4474"/>
+            <xc:highlight ImageID="5a61b970-95a6-4174-bcf7-cbe4983279b1" x="146.41428" y="1139.1143"/>
+            <xc:highlight ImageID="5db96a8e-c345-4009-b2a7-c7fd89a6944a" x="144.38962" y="1147.1818"/>
+            <xc:highlight ImageID="6981e782-9edf-4d95-85fb-405e2f4064f4" x="129.46053" y="1124.9342"/>
+            <xc:highlight ImageID="7aadf709-57ac-4bd1-ab28-67627a93e4a4" x="130.57745" y="1137.5493"/>
+            <xc:highlight ImageID="7fda8eac-c375-44ab-8084-bcc4f016ecf4" x="137.44156" y="1141.5974"/>
+        </xc:HighLights>
+        <xc:LightDirections SphereID="9dcfef6e-0bd8-405b-afa7-6ac1011d208a">
+            <xc:lightdirection ImageID="81fb5616-d489-414b-9f1d-d3cd5c8586fd" x="-0.8247194" y="0.47309062" z="0.30987605"/>
+            <xc:lightdirection ImageID="93443afd-8774-4492-8bd0-35f87d665cd2" x="-0.76799643" y="0.21236937" z="0.6042191"/>
+            <xc:lightdirection ImageID="96ce0ab1-a541-4ae2-ac49-32b31beefa08" x="-0.5822731" y="0.26298946" z="0.76928186"/>
+            <xc:lightdirection ImageID="97175f81-00e7-46d7-b767-ce7dd441c431" x="-0.9684453" y="0.114674844" z="0.22127672"/>
+            <xc:lightdirection ImageID="9c38356e-055a-4aee-bf25-69edbc45db6f" x="-0.8227771" y="0.001778532" z="0.56836146"/>
+            <xc:lightdirection ImageID="9e9f122e-6384-49b5-bd19-5bcbbf25aee2" x="-0.60469276" y="0.061112817" z="0.7941107"/>
+            <xc:lightdirection ImageID="a33a95ad-ba43-41a8-aad9-a50b9e53c7ae" x="-0.83963716" y="-0.486631" z="0.24124618"/>
+            <xc:lightdirection ImageID="a8a5844a-a170-4e50-96b5-ec226ff9924e" x="-0.62684673" y="-0.4197012" z="0.6564405"/>
+            <xc:lightdirection ImageID="b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f" x="-0.4386069" y="-0.3502054" z="0.8276353"/>
+            <xc:lightdirection ImageID="bf4b4623-c6ac-417c-ab07-a3c4751150ad" x="-0.49194592" y="-0.79280066" z="0.35980046"/>
+            <xc:lightdirection ImageID="c4344110-d4f8-40e2-97ce-5c1516a140bd" x="-0.42766848" y="-0.5927176" z="0.68248487"/>
+            <xc:lightdirection ImageID="c7ae008c-3701-42d6-a026-ee3c4d84f921" x="-0.3893855" y="-0.45662546" z="0.7999201"/>
+            <xc:lightdirection ImageID="d6168165-9647-41c7-a0ca-0a7d433cd029" x="-0.065677226" y="-0.88579273" z="0.45941022"/>
+            <xc:lightdirection ImageID="dde38c61-4673-4b87-bec2-2e7f3d509006" x="-0.011406176" y="-0.7232954" z="0.6904446"/>
+            <xc:lightdirection ImageID="eaafe128-1cf9-4563-8edd-de8c78f486fa" x="0.020323914" y="-0.54911375" z="0.8355005"/>
+            <xc:lightdirection ImageID="fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447" x="0.26845312" y="-0.87584066" z="0.40104365"/>
+            <xc:lightdirection ImageID="01ebf0f3-56e2-42d3-9c05-e691faa3c587" x="0.119802766" y="-0.7244718" z="0.67881364"/>
+            <xc:lightdirection ImageID="1098767a-d813-47ad-bd5c-ee52ece47cae" x="0.10641156" y="-0.49978456" z="0.85958827"/>
+            <xc:lightdirection ImageID="1678afac-9ca3-438d-a8ba-cf158a7f7b59" x="0.7040625" y="-0.5335009" z="0.46869254"/>
+            <xc:lightdirection ImageID="1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b" x="0.5855155" y="-0.39790815" z="0.70628655"/>
+            <xc:lightdirection ImageID="271e8308-caaa-457a-af4e-a6dc72efd223" x="0.49182048" y="-0.30534995" z="0.8153981"/>
+            <xc:lightdirection ImageID="2973ffaf-22b8-4592-9340-4830b0b28e5a" x="0.86538273" y="-0.2809062" z="0.4149752"/>
+            <xc:lightdirection ImageID="35721cc4-b646-4f88-a126-89c29316de1a" x="0.75001556" y="-0.25959626" z="0.6083473"/>
+            <xc:lightdirection ImageID="3c46a616-f145-4ab1-afa4-cd1572d012a7" x="0.5219679" y="-0.19660684" z="0.8299972"/>
+            <xc:lightdirection ImageID="3e7f1b78-5301-4c83-9157-c129024005fd" x="0.89622694" y="0.18754545" z="0.402"/>
+            <xc:lightdirection ImageID="45671633-e2b5-4d5d-a5d9-9df17a59b0b9" x="0.61963147" y="0.2456542" z="0.7454602"/>
+            <xc:lightdirection ImageID="47f96e0e-2bbe-4041-8d90-bacf43e6812b" x="0.46525952" y="0.10886718" z="0.878454"/>
+            <xc:lightdirection ImageID="5274452b-ae9a-43a6-86de-4ed5c7318868" x="0.7142711" y="0.6024184" z="0.35624266"/>
+            <xc:lightdirection ImageID="56ef3f2b-f2ec-4300-97ab-afa18041fd13" x="0.53940165" y="0.49688128" z="0.6798197"/>
+            <xc:lightdirection ImageID="585e8982-e1c1-4965-8df5-8b8d5879a45f" x="0.35130325" y="0.4131249" z="0.8401868"/>
+            <xc:lightdirection ImageID="5a51d10f-c02c-49ff-9f1e-a813c5de668b" x="0.07477629" y="0.9673063" z="0.24233665"/>
+            <xc:lightdirection ImageID="5a61b970-95a6-4174-bcf7-cbe4983279b1" x="-0.050313253" y="0.7133473" z="0.69900227"/>
+            <xc:lightdirection ImageID="5db96a8e-c345-4009-b2a7-c7fd89a6944a" x="-0.10104406" y="0.53251505" z="0.8403677"/>
+            <xc:lightdirection ImageID="6981e782-9edf-4d95-85fb-405e2f4064f4" x="-0.40644354" y="0.8765713" z="0.25773323"/>
+            <xc:lightdirection ImageID="7aadf709-57ac-4bd1-ab28-67627a93e4a4" x="-0.40447575" y="0.7050586" z="0.5824876"/>
+            <xc:lightdirection ImageID="7fda8eac-c375-44ab-8084-bcc4f016ecf4" x="-0.26073223" y="0.6523089" z="0.71169645"/>
+        </xc:LightDirections>
+        <xc:LightDirections SphereID="4f32a1f3-7376-4776-b310-d7e11e837ced">
+            <xc:lightdirection ImageID="81fb5616-d489-414b-9f1d-d3cd5c8586fd" x="-0.79459935" y="0.49175268" z="0.35607743"/>
+            <xc:lightdirection ImageID="93443afd-8774-4492-8bd0-35f87d665cd2" x="-0.7602652" y="0.20379119" z="0.6168193"/>
+            <xc:lightdirection ImageID="96ce0ab1-a541-4ae2-ac49-32b31beefa08" x="-0.58393097" y="0.23383842" z="0.7773958"/>
+            <xc:lightdirection ImageID="97175f81-00e7-46d7-b767-ce7dd441c431" x="-0.96423507" y="0.15226127" z="0.2169498"/>
+            <xc:lightdirection ImageID="9c38356e-055a-4aee-bf25-69edbc45db6f" x="-0.83104193" y="0.0033215557" z="0.5561999"/>
+            <xc:lightdirection ImageID="9e9f122e-6384-49b5-bd19-5bcbbf25aee2" x="-0.610333" y="0.03943766" z="0.7911626"/>
+            <xc:lightdirection ImageID="a33a95ad-ba43-41a8-aad9-a50b9e53c7ae" x="-0.8802309" y="-0.44647297" z="0.16079617"/>
+            <xc:lightdirection ImageID="a8a5844a-a170-4e50-96b5-ec226ff9924e" x="-0.66027695" y="-0.4418883" z="0.60726357"/>
+            <xc:lightdirection ImageID="b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f" x="-0.4627838" y="-0.38827133" z="0.7969169"/>
+            <xc:lightdirection ImageID="bf4b4623-c6ac-417c-ab07-a3c4751150ad" x="-0.5315722" y="-0.80978554" z="0.24835135"/>
+            <xc:lightdirection ImageID="c4344110-d4f8-40e2-97ce-5c1516a140bd" x="-0.4598798" y="-0.63256" z="0.6232001"/>
+            <xc:lightdirection ImageID="c7ae008c-3701-42d6-a026-ee3c4d84f921" x="-0.41672137" y="-0.5010083" z="0.7585077"/>
+            <xc:lightdirection ImageID="d6168165-9647-41c7-a0ca-0a7d433cd029" x="-0.082704194" y="-0.92448795" z="0.37213174"/>
+            <xc:lightdirection ImageID="dde38c61-4673-4b87-bec2-2e7f3d509006" x="-0.020089703" y="-0.774763" z="0.63193256"/>
+            <xc:lightdirection ImageID="eaafe128-1cf9-4563-8edd-de8c78f486fa" x="0.014867347" y="-0.6042193" z="0.7966793"/>
+            <xc:lightdirection ImageID="fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447" x="0.28533605" y="-0.9013787" z="0.32572964"/>
+            <xc:lightdirection ImageID="01ebf0f3-56e2-42d3-9c05-e691faa3c587" x="0.124660835" y="-0.76859426" z="0.6274731"/>
+            <xc:lightdirection ImageID="1098767a-d813-47ad-bd5c-ee52ece47cae" x="0.087430045" y="-0.5488492" z="0.8313366"/>
+            <xc:lightdirection ImageID="1678afac-9ca3-438d-a8ba-cf158a7f7b59" x="0.73648095" y="-0.5189908" z="0.43387127"/>
+            <xc:lightdirection ImageID="1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b" x="0.6019705" y="-0.41002297" z="0.68521"/>
+            <xc:lightdirection ImageID="271e8308-caaa-457a-af4e-a6dc72efd223" x="0.49175435" y="-0.32588574" z="0.8074504"/>
+            <xc:lightdirection ImageID="2973ffaf-22b8-4592-9340-4830b0b28e5a" x="0.88383657" y="-0.23686613" z="0.40339473"/>
+            <xc:lightdirection ImageID="35721cc4-b646-4f88-a126-89c29316de1a" x="0.75911605" y="-0.25487792" z="0.5989825"/>
+            <xc:lightdirection ImageID="3c46a616-f145-4ab1-afa4-cd1572d012a7" x="0.51477015" y="-0.21576715" z="0.82973266"/>
+            <xc:lightdirection ImageID="3e7f1b78-5301-4c83-9157-c129024005fd" x="0.867475" y="0.23842464" z="0.4366244"/>
+            <xc:lightdirection ImageID="45671633-e2b5-4d5d-a5d9-9df17a59b0b9" x="0.594903" y="0.22606388" z="0.77135307"/>
+            <xc:lightdirection ImageID="47f96e0e-2bbe-4041-8d90-bacf43e6812b" x="0.45556048" y="0.08752762" z="0.8858914"/>
+            <xc:lightdirection ImageID="5274452b-ae9a-43a6-86de-4ed5c7318868" x="0.66902953" y="0.6158384" z="0.416104"/>
+            <xc:lightdirection ImageID="56ef3f2b-f2ec-4300-97ab-afa18041fd13" x="0.5110037" y="0.4765014" z="0.71541715"/>
+            <xc:lightdirection ImageID="585e8982-e1c1-4965-8df5-8b8d5879a45f" x="0.3235205" y="0.37489238" z="0.86878663"/>
+            <xc:lightdirection ImageID="5a51d10f-c02c-49ff-9f1e-a813c5de668b" x="0.05281626" y="0.93697876" z="0.34537116"/>
+            <xc:lightdirection ImageID="5a61b970-95a6-4174-bcf7-cbe4983279b1" x="-0.0569259" y="0.65794843" z="0.7509083"/>
+            <xc:lightdirection ImageID="5db96a8e-c345-4009-b2a7-c7fd89a6944a" x="-0.10467975" y="0.49538788" z="0.8623416"/>
+            <xc:lightdirection ImageID="6981e782-9edf-4d95-85fb-405e2f4064f4" x="-0.37867424" y="0.8539933" z="0.35679302"/>
+            <xc:lightdirection ImageID="7aadf709-57ac-4bd1-ab28-67627a93e4a4" x="-0.39159545" y="0.66852564" z="0.6322392"/>
+            <xc:lightdirection ImageID="7fda8eac-c375-44ab-8084-bcc4f016ecf4" x="-0.25477287" y="0.6040119" z="0.7551559"/>
+        </xc:LightDirections>
+    </xc:computedData>
+    <xc:Log>
+        <xc:event COMPID="226f19f4-ee3c-40c2-875b-8c872704d69b" DATEF="" DATES="" LEVEL="Information" USER="">HSHfitter Path found : C:\RTIbuilder_v2_0_2\Fitters\HSHfitter\hshfitter.exe</xc:event>
+        <xc:event COMPID="af5aaca8-45d7-462f-8b1b-1fb2cace2187" DATEF="" DATES="" LEVEL="WARNING" USER="">Unable to automatically locate the Crop folder definition!</xc:event>
+        <xc:event COMPID="9fe8b3af-dcfb-42c4-aec1-990b0766445d" DATEF="" DATES="" LEVEL="WARNING" USER="">LPCompute started! Spheres detected : 2</xc:event>
+        <xc:event COMPID="ee394ce6-7370-400d-86f1-0bfca44f2a22" DATEF="" DATES="" LEVEL="WARNING" USER="">Getting HighLights from sphere : 9dcfef6e-0bd8-405b-afa7-6ac1011d208a!</xc:event>
+        <xc:event COMPID="8592e203-4a17-428f-9242-22ad9c72cfcf" DATEF="" DATES="" LEVEL="WARNING" USER="">Writing LightDirections for sphere : 9dcfef6e-0bd8-405b-afa7-6ac1011d208a!</xc:event>
+        <xc:event COMPID="83926f13-843f-4772-a6dd-719b7bf2abfa" DATEF="" DATES="" LEVEL="WARNING" USER="">Getting HighLights from sphere : 4f32a1f3-7376-4776-b310-d7e11e837ced!</xc:event>
+        <xc:event COMPID="25819676-9442-4003-907f-812d9b98937a" DATEF="" DATES="" LEVEL="WARNING" USER="">Writing LightDirections for sphere : 4f32a1f3-7376-4776-b310-d7e11e837ced!</xc:event>
+        <xc:event COMPID="d995b545-5335-480c-8f6c-e7937f9f5291" DATEF="" DATES="" LEVEL="INFO" USER="">Number of images used : 72</xc:event>
+        <xc:event COMPID="ffb35f92-d9d9-4e97-bc21-6768d9713487" DATEF="" DATES="" LEVEL="INFO" USER="">Dont need to resize images!</xc:event>
+        <xc:event COMPID="a6cc3633-42f0-41ea-b3de-a0c637671ae5" DATEF="" DATES="" LEVEL="INFO" USER="">Write LP : Valid image's paths indeed!</xc:event>
+        <xc:event COMPID="3cac8442-ab44-4016-a310-5a43ac034074" DATEF="" DATES="" LEVEL="WARNING" USER="">Command line to execute : C:\RTIbuilder_v2_0_2\Fitters\HSHfitter\hshfitter.exe C:\tmp\rti\fish_fossil-data-set_2000\assembly-files\Fisch.lp 2 4 C:\tmp\rti\fish_fossil-data-set_2000\finished-files\Fisch_2000.rti</xc:event>
+        <xc:event COMPID="9a86ea83-950f-4c7f-9f15-41115645d5de" DATEF="" DATES="" LEVEL="WARNING" USER="">Saved HSHfitter Path : C:\RTIbuilder_v2_0_2\Fitters\HSHfitter\hshfitter.exe</xc:event>
+        <xc:event COMPID="125ecc8c-e9cd-4576-b6a2-c900af58dc88" DATEF="" DATES="" LEVEL="WARNING" USER="">Fitter return ok!HSH was generated successfully</xc:event>
+    </xc:Log>
+</XMLCarrier>

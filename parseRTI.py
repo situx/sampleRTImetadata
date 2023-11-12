@@ -29,17 +29,26 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     resgraph.add((URIRef(ontnamespace+"usedForHighDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
     resgraph.add((URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))  
+    resgraph.add((URIRef(ontnamespace+"calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"calibrationobject"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))    
     resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))      
-    
+    resgraph.add((URIRef("https://w3id.org/function/ontology#required"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef(ontnamespace+"radius"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
+    resgraph.add((URIRef("https://w3id.org/function/ontology#executes"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef("https://w3id.org/function/ontology#expects"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef("https://w3id.org/function/ontology#returns"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"hasHighlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"hasLightDirection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+   
     #print(root.children())
     for neighbor in root.iter('Header'):
         print(neighbor.attrib)
+    projectname=xmlfile[xmlfile.rfind("/")+1:]
     # iterate news items
     for item in root:
         print(item.tag)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Header":
             print("Header")
-            projectname=None
             description=None
             author=None
             creationdate=None
@@ -120,6 +129,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 print("Blend Image")
                                 
                 print(hitem)
+                resgraph.add((URIRef(namespace+projectname),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightProjection")))
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Processes":
             print("Processes")
             for hitem in item:
@@ -128,7 +138,39 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                 seq="SEQ: "+str(hitem.get("SEQ"))
                 status="STATUS: "+str(hitem.get("STATUS"))
                 typee="TYPE: "+str(hitem.get("TYPE"))
-                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("https://w3id.org/function/ontology#Function")))
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Function "+str(hitem.attrib["ID"])))) 
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_exec"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_exec"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("https://w3id.org/function/ontology#Execution")))
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_exec"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Function execution of function "+str(hitem.attrib["ID"]))))   
+                resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_exec"),URIRef("https://w3id.org/function/ontology#executes"),URIRef(namespace+str(hitem.attrib["ID"]))))          
+                for param in hitem.iter("{http://alba.di.uminho.pt/XMLCarrier}Input"):                        
+                    location=locat.attrib["{http://www.w3.org/1999/xlink}href"]
+                    paramname=None
+                    paramstatus=None
+                    paramid=None
+                    for ref in param.iter("{http://alba.di.uminho.pt/XMLCarrier}ref"):
+                        paramname="Name: "+str(ref.get("NAME"))
+                        paramstatus="Status: "+str(ref.get("STATUS"))
+                        paramid=ref.text
+                    parid=namespace+str(hitem.attrib["ID"])+"_input1"
+                    if paramid!=None:
+                        parid=namespace+str(parid)
+                    resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("https://w3id.org/function/ontology#expects"),URIRef(parid))) 
+                    resgraph.add((URIRef(namespace+str(parid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("https://w3id.org/function/ontology#Parameter")))
+                    resgraph.add((URIRef(namespace+str(parid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Input parameter 1 of function execution for function "+str(hitem.attrib["ID"]))))
+                    resgraph.add((URIRef(namespace+str(parid)),URIRef("https://w3id.org/function/ontology#required"),Literal("true",datatype="http://www.w3.org/2001/XMLSchema#boolean")))
+                    if paramname!=None:
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_input1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Parameter: "+str(paramname))))
+                for param in hitem.iter("{http://alba.di.uminho.pt/XMLCarrier}Output"):                        
+                    location=locat.attrib["{http://www.w3.org/1999/xlink}href"]
+                    resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("https://w3id.org/function/ontology#returns"),URIRef(namespace+str(hitem.attrib["ID"])+"_output1")))
+                    resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_output1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("https://w3id.org/function/ontology#Output")))
+                    resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_output1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Output of funtion execution for function "+str(hitem.attrib["ID"]))))
+                    resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_output1"),URIRef("https://w3id.org/function/ontology#required"),Literal("true",datatype="http://www.w3.org/2001/XMLSchema#boolean")))
+                    if paramname!=None:
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_output1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Output: "+str(paramname))))
+
         print(item)
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}dataSec":
             print("dataSec")
@@ -150,13 +192,13 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 if len(coord)>0:
                                     wktstr+=coord.replace("x:","").replace("y:","")+", "
                             wktstr=wktstr[0:-2]+"))"
-                            resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectInput")))
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input for Calibration Object "+str(areacounter))))
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(areacounter)+"calibobjinp_extent")))                      
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input Extent for Calibration Object "+str(areacounter))))
-                            resgraph.add((URIRef(namespace+"calibobjinp_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectInput")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(uuid)+"_input"+str(areacounter)+"_extent")))                      
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input Extent for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
                             areacounter+=1
                 elif dataitem.tag=="{http://alba.di.uminho.pt/XMLCarrier}Data" and dataitem.attrib["NAME"]=="BallDetectionOutput":
                     print("Ball Detection Output")
@@ -173,12 +215,12 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                     wktstr+=coord.replace("x:","").replace("y:","")+", "
                             wktstr=wktstr[0:-2]+"))"
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectOutput")))
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output for Calibration Object "+str(areacounter))))
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(areacounter)+"calibobjoup_extent")))                      
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output Extent for Calibration Object "+str(areacounter))))
-                            resgraph.add((URIRef(namespace+"calibobjoup_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                            resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectOutput")))
+                            resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent")))                      
+                            resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output Extent for Calibration Object "+str(areacounter))))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
                             areacounter+=1
                 elif dataitem.tag=="{http://alba.di.uminho.pt/XMLCarrier}Data" and dataitem.attrib["NAME"]=="":
                     uuid=dataitem.get("UUID")
@@ -202,26 +244,47 @@ def parseRTIBuilderXML(xmlfile,resgraph):
             print("computedData")
             for dataitem in item:
                 print("Computed Data "+str(dataitem))
-                if str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}HighLights":
+                if str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Spheres":
+                    for hitem in dataitem:
+                        print("Sphere: "+str(hitem.attrib["ID"]))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObject")))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Sphere "+str(hitem.attrib["Order"]),lang="en")))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationSphere")))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(namespace+str(hitem.attrib["ID"]+"_position"))))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_position"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Sphere "+str(hitem.attrib["Order"])+" Geometry")))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_position"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                        resgraph.add((URIRef(namespace+str(hitem.attrib["ID"])+"_position"),URIRef(ontnamespace+"radius"),Literal(str(hitem.attrib["r"]),datatype="http://www.w3.org/2001/XMLSchema#double")))
+                elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}HighLights":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     print("HighlightSphereID: "+str(highlightsphereid))
                     for hitem in dataitem:
                         print("Highlight: "+str(hitem.attrib))
                         resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"ReferencePoint")))
                         resgraph.add((URIRef(ontnamespace+"Highlight"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#Class")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight_calibration")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Highlight Point Measurement "+str(highlightsphereid)+" Calibration")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+str(highlightsphereid))))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration setup for highlight point measurement "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid))))
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
                         if "x" in hitem.attrib and "y" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                    resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
                 elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}LightDirections":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     for hitem in dataitem:
                         print("Highlight: "+str(hitem.attrib))
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+str(highlightsphereid))))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
+                        resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration setup for light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid))))
                         if "x" in hitem.attrib and "y" in hitem.attrib and "z" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-  
+                        resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
         # empty news dictionary
     resgraph.serialize("resgraph_rtibuilder.ttl")
     with open("resgraph_rtibuilder.json", "w") as outfile:
