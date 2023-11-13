@@ -102,6 +102,11 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                     timestamp=tstmp.text
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Project "+str(projectname),lang="en")))
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef(ontnamespace+"measurementSeries"),URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"))) 
+                resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementSeries")))  
+                resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/2000/01/rdf-schema#"),Literal("MeasurementSeries for Measurement Project "+str(projectname))))  
+                resgraph.add((URIRef(ontnamespace+"exposureTime"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+                resgraph.add((URIRef(ontnamespace+"measurementSeries"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
                 if description!=None and description!="":
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(description),lang="en")))
                 if author!=None and author!="":
@@ -148,7 +153,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 print("Blend Image")
                                 
                 print(hitem)
-                resgraph.add((URIRef(namespace+projectname),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightProjection")))
+                resgraph.add((URIRef(namespace+projectname+"_result"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightProjection")))
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Processes":
             print("Processes")
             for hitem in item:
@@ -294,7 +299,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"PixelCoordinateSystem")))
                         if "x" in hitem.attrib and "y" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-                        resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
+                        resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
                         resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
                         resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
                         ledsetid+=1
@@ -311,7 +316,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration setup for light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid))))
                         if "x" in hitem.attrib and "y" in hitem.attrib and "z" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-                        resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
+                        resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
         # empty news dictionary
     resgraph.serialize("resgraph_rtibuilder.ttl")
     with open("resgraph_rtibuilder.json", "w") as outfile:
