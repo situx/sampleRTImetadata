@@ -1,35 +1,69 @@
-# This is a basic workflow to help you get started with Actions
+name: Java CI
 
-name: CI
+on: [push]
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request: 
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch: 
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"  
-  build:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    
+  ontdocI:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc I      
     with: 
-        version: v016
-        rdffilepath: sampleRTI.ttl
-        docpath: docs
-        prefixns: https://situx.github.io/sampleRTImetadata/
-        prefixnsshort: rti
-        indexpages: true
-        createcollections: true
-        createnonNSPages: true
-        createVOWL: true
-        metadatatable: true
-        preferredlang: en
-        license: CC BY-SA 4.0
-        ghpages: true
+          rdffilepath: sampleRTI.ttl
+          docpath: docs/sampleRTI/
+          prefixns: https://situx.github.io/sampleRTImetadata/
+          prefixnsshort: ex
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+          ghpagesfolder: sampleRTI/
+
+  ontdocII:
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc II      
+    with: 
+          rdffilepath: resgraph_oscar.ttl
+          docpath: docs/oscar/
+          prefixns: http://i3mainz.de/metadata/
+          prefixnsshort: ex
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+          ghpagesfolder: oscar/
+  
+  ontdocIII:
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc III      
+    with: 
+          rdffilepath: resgraph_rtibuilder.ttl
+          docpath: docs/rtibuilder/
+          prefixns: http://i3mainz.de/metadata/
+          prefixnsshort: ex
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+          ghpagesfolder: rtibuilder/
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Initial checkout
+      uses: actions/checkout@v1
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs/
