@@ -271,7 +271,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
                         if "x" in hitem.attrib and "y" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-                    resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
+                        resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
                 elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}LightDirections":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     for hitem in dataitem:
