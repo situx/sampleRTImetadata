@@ -277,6 +277,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                 elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}HighLights":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     print("HighlightSphereID: "+str(highlightsphereid))
+                    ledsetid=1
                     for hitem in dataitem:
                         print("Highlight: "+str(hitem.attrib))
                         resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
@@ -293,6 +294,9 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         if "x" in hitem.attrib and "y" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
                         resgraph.add((URIRef(namespace+projectname),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
+                        resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
+                        resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
+                        ledsetid+=1
                 elif str(dataitem.tag)=="{http://alba.di.uminho.pt/XMLCarrier}LightDirections":
                     highlightsphereid=dataitem.attrib["SphereID"]
                     for hitem in dataitem:
