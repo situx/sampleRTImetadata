@@ -49,6 +49,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis2"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis2"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Pixel Coordinate System Y Axis")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis2"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"),URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/pixel")))
+    resgraph.add((URIRef("http://www.opengis.net/ont/crs/3DCoordinateSystem"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystem")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/3DCoordinateSystem")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"DomeCoordinateSystem_axis1")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem_axis1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
@@ -155,6 +156,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 
                 print(hitem)
                 resgraph.add((URIRef(namespace+projectname+"_result"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightProjection")))
+                resgraph.add((URIRef(namespace+projectname+"_result"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light Projection Result")))
         if str(item.tag)=="{http://alba.di.uminho.pt/XMLCarrier}Processes":
             print("Processes")
             for hitem in item:
@@ -247,6 +249,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                             resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
                             resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output Extent for Calibration Object "+str(areacounter))))
                             resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktstr,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                            resgraph.add((URIRef(namespace+str(uuid)+"_"+str(areacounter)+"_extent"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"PixelCoordinateSystem")))
                             areacounter+=1
                 elif dataitem.tag=="{http://alba.di.uminho.pt/XMLCarrier}Data" and dataitem.attrib["NAME"]=="":
                     uuid=dataitem.get("UUID")
