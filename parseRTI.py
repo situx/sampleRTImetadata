@@ -329,7 +329,11 @@ def parseRTIOSCARXML(xmlfile,resgraph):
     camindexToURI=[]
     mpid=namespace+xmlfile
     resgraph.add((URIRef(mpid),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))  
+    resgraph.add((URIRef(mpid),URIRef(ontnamespace+"measurementSeries"),URIRef(str(mpid)+"_ms"))) 
+    resgraph.add((URIRef(str(mpid)+"_ms"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementSeries")))  
+    resgraph.add((URIRef(str(mpid)+"_ms"),URIRef("http://www.w3.org/2000/01/rdf-schema#"),Literal("MeasurementSeries for Measurement Project "+str(mpid))))  
     resgraph.add((URIRef(ontnamespace+"exposureTime"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"measurementSeries"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     resgraph.add((URIRef(ontnamespace+"setup"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     resgraph.add((URIRef(ontnamespace+"usesCamera"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     resgraph.add((URIRef(ontnamespace+"usesLightSourceGroup"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
@@ -425,7 +429,7 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                             axisFocusPosition=axisFocusPositionn.text 
                         measureuri=namespace+name.replace(".tif","")
                         resgraph.add((URIRef(measureuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
-                        resgraph.add((URIRef(mpid),URIRef(ontnamespace+"measurement"),URIRef(ontnamespace+"Measurement")))
+                        resgraph.add((URIRef(str(mpid)+"_ms"),URIRef(ontnamespace+"measurement"),URIRef(ontnamespace+"Measurement")))
                         if "time-stamp" in imitem.attrib:
                             resgraph.add((URIRef(measureuri),URIRef("http://purl.org/dc/terms/created"),Literal(imitem.attrib["time-stamp"],datatype="http://www.w3.org/2001/XMLSchema#dateTime")))                            
                         resgraph.add((URIRef(measureuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement "+str(measureid)+" (Camera "+str(cameraindex)+" LED Set "+str(ledsetid)+" Exp "+str(exposureTime)+")",lang="en")))
