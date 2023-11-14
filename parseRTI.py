@@ -23,7 +23,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
   
     # create empty list for news items
     newsitems = []
-    resjson={}
+    resjson={"projects":[{"measurement_series":[{"measurements":[]}]}]}
     print(root)
     resgraph.add((URIRef(ontnamespace+"usedForCalibrationObjectDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
     resgraph.add((URIRef(ontnamespace+"usedForHighDetection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
