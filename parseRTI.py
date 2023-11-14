@@ -235,6 +235,8 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                     areacounter=1
                     for param in dataitem:
                         if param.tag=="{http://alba.di.uminho.pt/XMLCarrier}area":
+                            uuid=param.get("UUID")
+                            print("UUID: "+str(uuid))
                             coords=param.attrib["COORDS"]
                             coordarr=coords.split(";")
                             wktstr="POLYGON(("
