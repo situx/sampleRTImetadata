@@ -324,8 +324,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration setup for light direction vector "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid))))
                         if "x" in hitem.attrib and "y" in hitem.attrib and "z" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-                        resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
-        # empty news dictionary
+                        resgraph.add((URIRef(namespace+projectname+"_result"),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
     resgraph.serialize("resgraph_rtibuilder.ttl")
     with open("resgraph_rtibuilder.json", "w") as outfile:
         outfile.write(json.dumps(resjson))
