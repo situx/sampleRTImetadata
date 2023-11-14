@@ -215,10 +215,15 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                             coords=param.attrib["COORDS"]
                             coordarr=coords.split(";")
                             wktstr="POLYGON(("
+                            first=True
+                            firststr=None
                             for coord in coordarr:
                                 if len(coord)>0:
                                     wktstr+=coord.replace("x:","").replace("y:","")+", "
-                            wktstr=wktstr[0:-2]+"))"
+                                    if first:
+                                        firststr=coord.replace("x:","").replace("y:","")
+                                        first=False
+                            wktstr=wktstr+firststr+"))"
                             resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
                             resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectInput")))
                             resgraph.add((URIRef(namespace+str(uuid)+"_input"+str(areacounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Input for Calibration Object "+str(areacounter))))
@@ -240,10 +245,15 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                             coords=param.attrib["COORDS"]
                             coordarr=coords.split(";")
                             wktstr="POLYGON(("
+                            first=True
+                            firststr=None
                             for coord in coordarr:
                                 if len(coord)>0:
                                     wktstr+=coord.replace("x:","").replace("y:","")+", "
-                            wktstr=wktstr[0:-2]+"))"
+                                if first:
+                                    firststr=coord.replace("x:","").replace("y:","")
+                                    first=False
+                            wktstr=wktstr+firststr+"))"
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/prov#Activity")))
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObjectOutput")))
                             resgraph.add((URIRef(namespace+str(uuid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration Object Output for Calibration Object "+str(areacounter))))
@@ -307,7 +317,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"PixelCoordinateSystem")))
                         if "x" in hitem.attrib and "y" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-                        resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
+                        #resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
                         resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
                         resgraph.add((URIRef(namespace+"ledset_"+str(ledsetid)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
                         ledsetid+=1

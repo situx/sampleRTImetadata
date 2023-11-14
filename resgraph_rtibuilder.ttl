@@ -1,41 +1,473 @@
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns2: <http://objects.mainzed.org/ont#> .
-@prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns4: <https://w3id.org/function/ontology#> .
-@prefix ns5: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix ns6: <http://www.opengis.net/ont/crs/> .
+@prefix ns3: <https://w3id.org/function/ontology#> .
+@prefix ns4: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns5: <http://www.opengis.net/ont/crs/> .
+@prefix ns6: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix ns7: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns4:executes <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> .
+    ns3:executes <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> .
 
 <http://i3mainz.de/metadata/0cb383b7-a5f2-4354-a30f-c8ee8b08a691> a <http://www.w3.org/ns/prov#Activity> .
 
 <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns4:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
+    ns3:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
 
 <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> rdfs:label "Parameter: Name: HLi" .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> ;
+    ns1:asWKT "POINT(154.87323 1205.2113)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> ;
+    ns1:asWKT "POINT(152.88312 1193.3766)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> ;
+    ns1:asWKT "POINT(185.96667 1195.05)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> ;
+    ns1:asWKT "POINT(176.87097 1187.9839)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> ;
+    ns1:asWKT "POINT(170.98462 1183.5692)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> ;
+    ns1:asWKT "POINT(193.8421 1181.0176)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35721cc4-b646-4f88-a126-89c29316de1a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> ;
+    ns1:asWKT "POINT(185.08197 1181.1147)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> ;
+    ns1:asWKT "POINT(171.87302 1178.5873)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> ;
+    ns1:asWKT "POINT(192.5 1157.0441)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> ;
+    ns1:asWKT "POINT(175.86566 1158.791)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> ;
+    ns1:asWKT "POINT(168.93846 1165.1692)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> ;
+    ns1:asWKT "POINT(182.79105 1137.8955)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> ;
+    ns1:asWKT "POINT(172.45001 1147.1333)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> ;
+    ns1:asWKT "POINT(163.22414 1152.5172)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> ;
+    ns1:asWKT "POINT(151.73685 1120.4474)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> ;
+    ns1:asWKT "POINT(146.41428 1139.1143)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> ;
+    ns1:asWKT "POINT(144.38962 1147.1818)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> ;
+    ns1:asWKT "POINT(129.46053 1124.9342)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> ;
+    ns1:asWKT "POINT(130.57745 1137.5493)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> ;
+    ns1:asWKT "POINT(137.44156 1141.5974)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> ;
+    ns1:asWKT "POINT(107.9881 1143.619)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> ;
+    ns1:asWKT "POINT(113.06329 1159.3671)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> ;
+    ns1:asWKT "POINT(122.6747 1158.4579)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> ;
+    ns1:asWKT "POINT(96.46478 1160.7042)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> ;
+    ns1:asWKT "POINT(108.95999 1168.84)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> ;
+    ns1:asWKT "POINT(121.59036 1167.2289)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> ;
+    ns1:asWKT "POINT(99.895355 1193.907)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> ;
+    ns1:asWKT "POINT(117.69696 1189.9495)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> ;
+    ns1:asWKT "POINT(128.25 1186.409)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> ;
+    ns1:asWKT "POINT(120.404495 1212.5618)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> ;
+    ns1:asWKT "POINT(127.30487 1198.8414)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> ;
+    ns1:asWKT "POINT(130.11237 1191.7079)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> ;
+    ns1:asWKT "POINT(144.75641 1216.4359)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> ;
+    ns1:asWKT "POINT(148.0548 1205.452)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> ;
+    ns1:asWKT "POINT(149.66666 1196.0934)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> ;
+    ns1:asWKT "POINT(163.89474 1216.0526)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/5760e663-69a1-4f88-a15a-f391e4299777> a <http://www.w3.org/ns/prov#Activity> .
 
 <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns4:executes <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> .
+    ns3:executes <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> .
 
 <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns4:executes <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> .
+    ns3:executes <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> .
 
-<http://i3mainz.de/metadata/CalibrationImages> a ns3:Collection ;
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> ;
+    ns1:asWKT "POINT(173.55737 241.60657)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> ;
+    ns1:asWKT "POINT(172.69012 230.02817)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> ;
+    ns1:asWKT "POINT(202.91803 234.45901)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> ;
+    ns1:asWKT "POINT(194.94116 226.30884)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> ;
+    ns1:asWKT "POINT(189.93939 221.62122)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> ;
+    ns1:asWKT "POINT(211.7258 222.19354)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35721cc4-b646-4f88-a126-89c29316de1a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> ;
+    ns1:asWKT "POINT(203.54547 220.30304)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> ;
+    ns1:asWKT "POINT(191.19116 216.73529)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> ;
+    ns1:asWKT "POINT(213.49335 198.48001)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> ;
+    ns1:asWKT "POINT(196.18918 196.82434)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> ;
+    ns1:asWKT "POINT(188.40323 203.2258)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> ;
+    ns1:asWKT "POINT(204.86365 176.90909)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> ;
+    ns1:asWKT "POINT(193.0141 184.95773)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> ;
+    ns1:asWKT "POINT(183.56522 189.69565)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> ;
+    ns1:asWKT "POINT(172.03226 155.83871)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> ;
+    ns1:asWKT "POINT(165.68 175.10666)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> ;
+    ns1:asWKT "POINT(163.52325 184.40698)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> ;
+    ns1:asWKT "POINT(146.21739 161.02174)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> ;
+    ns1:asWKT "POINT(148.6747 174.31326)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> ;
+    ns1:asWKT "POINT(156.02197 178.03296)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> ;
+    ns1:asWKT "POINT(124.689316 183.15533)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> ;
+    ns1:asWKT "POINT(131.55556 197.92224)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> ;
+    ns1:asWKT "POINT(141.68932 196.11652)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> ;
+    ns1:asWKT "POINT(115.32895 201.76315)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> ;
+    ns1:asWKT "POINT(128.51219 207.91464)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> ;
+    ns1:asWKT "POINT(140.86598 205.25772)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> ;
+    ns1:asWKT "POINT(122.70329 234.25275)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> ;
+    ns1:asWKT "POINT(138.72632 227.6)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> ;
+    ns1:asWKT "POINT(148.5 223.56976)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> ;
+    ns1:asWKT "POINT(142.64383 248.863)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> ;
+    ns1:asWKT "POINT(148.1831 235.46478)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> ;
+    ns1:asWKT "POINT(150.55556 228.45679)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> ;
+    ns1:asWKT "POINT(164.73239 252.07043)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> ;
+    ns1:asWKT "POINT(167.47272 241.43637)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> ;
+    ns1:asWKT "POINT(168.90164 232.36066)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight> a ns2:Highlight ;
+    rdfs:label "Image highlight point fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> ;
+    ns1:asWKT "POINT(181.63159 252.4737)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/CalibrationImages> a ns4:Collection ;
     rdfs:member <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a>,
         <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4>,
@@ -128,7 +560,7 @@
         <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_ld>,
         <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_ld> .
 
-<http://i3mainz.de/metadata/HighDetectionImages> a ns3:Collection ;
+<http://i3mainz.de/metadata/HighDetectionImages> a ns4:Collection ;
     rdfs:member <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
         <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59>,
@@ -177,40 +609,40 @@
     ns1:hasGeometry <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2_extent> .
 
 <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns4:executes <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> .
+    ns3:executes <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> .
 
 <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns4:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns4:executes <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> .
+    ns3:executes <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> .
 
 <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> rdfs:label "Parameter: Name: BDi" .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> a ns4:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns4:required true .
+    ns3:required true .
 
 ns2:calibration a owl:ObjectProperty .
 
@@ -238,38 +670,32 @@ ns1:hasGeometry a owl:ObjectProperty .
 
 rdfs:member a owl:ObjectProperty .
 
-ns4:executes a owl:ObjectProperty .
+ns3:executes a owl:ObjectProperty .
 
-ns4:expects a owl:ObjectProperty .
+ns3:expects a owl:ObjectProperty .
 
-ns4:required a owl:DatatypeProperty .
+ns3:required a owl:DatatypeProperty .
 
-ns4:returns a owl:ObjectProperty .
+ns3:returns a owl:ObjectProperty .
 
-<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> a ns4:Function ;
+<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> a ns3:Function ;
     rdfs:label "Function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns4:expects <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> .
+    ns3:expects <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> .
 
-<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> a ns4:Function ;
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> a ns3:Function ;
     rdfs:label "Function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns4:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> .
+    ns3:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> .
 
-<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735",
         "Output: Name: HLi" ;
-    ns4:required true .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> ;
-    ns1:asWKT "POINT(154.87323 1205.2113)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+    ns3:required true .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -287,12 +713,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> ;
-    ns1:asWKT "POINT(152.88312 1193.3766)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -308,12 +728,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> ;
-    ns1:asWKT "POINT(185.96667 1195.05)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -331,12 +745,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> ;
-    ns1:asWKT "POINT(176.87097 1187.9839)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -352,12 +760,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> ;
-    ns1:asWKT "POINT(170.98462 1183.5692)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -375,12 +777,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> ;
-    ns1:asWKT "POINT(193.8421 1181.0176)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -396,12 +792,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 35721cc4-b646-4f88-a126-89c29316de1a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> ;
-    ns1:asWKT "POINT(185.08197 1181.1147)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 35721cc4-b646-4f88-a126-89c29316de1a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -419,12 +809,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 35721cc4-b646-4f88-a126-89c29316de1a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> ;
-    ns1:asWKT "POINT(171.87302 1178.5873)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -440,12 +824,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> ;
-    ns1:asWKT "POINT(192.5 1157.0441)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -463,12 +841,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> ;
-    ns1:asWKT "POINT(175.86566 1158.791)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -484,12 +856,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> ;
-    ns1:asWKT "POINT(168.93846 1165.1692)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -507,12 +873,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> ;
-    ns1:asWKT "POINT(182.79105 1137.8955)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -528,12 +888,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> ;
-    ns1:asWKT "POINT(172.45001 1147.1333)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -551,12 +905,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> ;
-    ns1:asWKT "POINT(163.22414 1152.5172)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -572,12 +920,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> ;
-    ns1:asWKT "POINT(151.73685 1120.4474)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -595,12 +937,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> ;
-    ns1:asWKT "POINT(146.41428 1139.1143)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -616,12 +952,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> ;
-    ns1:asWKT "POINT(144.38962 1147.1818)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -639,12 +969,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> ;
-    ns1:asWKT "POINT(129.46053 1124.9342)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -660,12 +984,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> ;
-    ns1:asWKT "POINT(130.57745 1137.5493)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -683,12 +1001,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> ;
-    ns1:asWKT "POINT(137.44156 1141.5974)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -704,12 +1016,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> ;
-    ns1:asWKT "POINT(107.9881 1143.619)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -727,12 +1033,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> ;
-    ns1:asWKT "POINT(113.06329 1159.3671)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -748,12 +1048,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> ;
-    ns1:asWKT "POINT(122.6747 1158.4579)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -771,12 +1065,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> ;
-    ns1:asWKT "POINT(96.46478 1160.7042)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -792,12 +1080,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> ;
-    ns1:asWKT "POINT(108.95999 1168.84)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -815,12 +1097,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> ;
-    ns1:asWKT "POINT(121.59036 1167.2289)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -836,12 +1112,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> ;
-    ns1:asWKT "POINT(99.895355 1193.907)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -859,12 +1129,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> ;
-    ns1:asWKT "POINT(117.69696 1189.9495)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -880,12 +1144,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> ;
-    ns1:asWKT "POINT(128.25 1186.409)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -903,12 +1161,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> ;
-    ns1:asWKT "POINT(120.404495 1212.5618)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -924,12 +1176,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> ;
-    ns1:asWKT "POINT(127.30487 1198.8414)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -947,12 +1193,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> ;
-    ns1:asWKT "POINT(130.11237 1191.7079)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -968,12 +1208,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> ;
-    ns1:asWKT "POINT(144.75641 1216.4359)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -991,12 +1225,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> ;
-    ns1:asWKT "POINT(148.0548 1205.452)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
@@ -1012,12 +1240,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> ;
-    ns1:asWKT "POINT(149.66666 1196.0934)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -1037,13 +1259,7 @@ ns4:returns a owl:ObjectProperty .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Output Extent for Calibration Object 2" ;
-    ns1:asWKT "POLYGON((56.0 1046.0, 56.0 1270.0, 256.0 1270.0, 256.0 1046.0))"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> ;
-    ns1:asWKT "POINT(163.89474 1216.0526)"^^ns1:wktLiteral ;
+    ns1:asWKT "POLYGON((56.0 1046.0, 56.0 1270.0, 256.0 1270.0, 256.0 1046.0, 56.0 1046.0))"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> a ns2:Calibration ;
@@ -1067,29 +1283,23 @@ ns4:returns a owl:ObjectProperty .
     ns1:asWKT "POINT(149.0 1169.0)"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> a ns4:Function ;
+<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> a ns3:Function ;
     rdfs:label "Function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns4:expects <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> .
+    ns3:expects <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> .
 
-<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns4:Function ;
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns3:Function ;
     rdfs:label "Function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns4:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .
+    ns3:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .
 
-<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns4:required true .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> ;
-    ns1:asWKT "POINT(173.55737 241.60657)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+    ns3:required true .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1107,12 +1317,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> ;
-    ns1:asWKT "POINT(172.69012 230.02817)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1128,12 +1332,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 1098767a-d813-47ad-bd5c-ee52ece47cae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> ;
-    ns1:asWKT "POINT(202.91803 234.45901)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1151,12 +1349,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 1678afac-9ca3-438d-a8ba-cf158a7f7b59 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> ;
-    ns1:asWKT "POINT(194.94116 226.30884)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1172,12 +1364,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> ;
-    ns1:asWKT "POINT(189.93939 221.62122)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1195,12 +1381,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 271e8308-caaa-457a-af4e-a6dc72efd223 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> ;
-    ns1:asWKT "POINT(211.7258 222.19354)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1216,12 +1396,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 2973ffaf-22b8-4592-9340-4830b0b28e5a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 35721cc4-b646-4f88-a126-89c29316de1a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> ;
-    ns1:asWKT "POINT(203.54547 220.30304)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 35721cc4-b646-4f88-a126-89c29316de1a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1239,12 +1413,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 35721cc4-b646-4f88-a126-89c29316de1a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> ;
-    ns1:asWKT "POINT(191.19116 216.73529)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1260,12 +1428,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> ;
-    ns1:asWKT "POINT(213.49335 198.48001)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1283,12 +1445,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 3e7f1b78-5301-4c83-9157-c129024005fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> ;
-    ns1:asWKT "POINT(196.18918 196.82434)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1304,12 +1460,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 45671633-e2b5-4d5d-a5d9-9df17a59b0b9 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> ;
-    ns1:asWKT "POINT(188.40323 203.2258)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1327,12 +1477,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 47f96e0e-2bbe-4041-8d90-bacf43e6812b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> ;
-    ns1:asWKT "POINT(204.86365 176.90909)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1348,12 +1492,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 5274452b-ae9a-43a6-86de-4ed5c7318868 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> ;
-    ns1:asWKT "POINT(193.0141 184.95773)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1371,12 +1509,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> ;
-    ns1:asWKT "POINT(183.56522 189.69565)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1392,12 +1524,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 585e8982-e1c1-4965-8df5-8b8d5879a45f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> ;
-    ns1:asWKT "POINT(172.03226 155.83871)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1415,12 +1541,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> ;
-    ns1:asWKT "POINT(165.68 175.10666)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1436,12 +1556,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 5a61b970-95a6-4174-bcf7-cbe4983279b1 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> ;
-    ns1:asWKT "POINT(163.52325 184.40698)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1459,12 +1573,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> ;
-    ns1:asWKT "POINT(146.21739 161.02174)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1480,12 +1588,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 6981e782-9edf-4d95-85fb-405e2f4064f4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> ;
-    ns1:asWKT "POINT(148.6747 174.31326)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1503,12 +1605,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 7aadf709-57ac-4bd1-ab28-67627a93e4a4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> ;
-    ns1:asWKT "POINT(156.02197 178.03296)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1524,12 +1620,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 7fda8eac-c375-44ab-8084-bcc4f016ecf4 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> ;
-    ns1:asWKT "POINT(124.689316 183.15533)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1547,12 +1637,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 81fb5616-d489-414b-9f1d-d3cd5c8586fd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> ;
-    ns1:asWKT "POINT(131.55556 197.92224)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1568,12 +1652,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 93443afd-8774-4492-8bd0-35f87d665cd2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> ;
-    ns1:asWKT "POINT(141.68932 196.11652)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1591,12 +1669,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 96ce0ab1-a541-4ae2-ac49-32b31beefa08 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> ;
-    ns1:asWKT "POINT(115.32895 201.76315)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1612,12 +1684,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 97175f81-00e7-46d7-b767-ce7dd441c431 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> ;
-    ns1:asWKT "POINT(128.51219 207.91464)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1635,12 +1701,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector 9c38356e-055a-4aee-bf25-69edbc45db6f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> ;
-    ns1:asWKT "POINT(140.86598 205.25772)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1656,12 +1716,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> ;
-    ns1:asWKT "POINT(122.70329 234.25275)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1679,12 +1733,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector a33a95ad-ba43-41a8-aad9-a50b9e53c7ae using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> ;
-    ns1:asWKT "POINT(138.72632 227.6)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1700,12 +1748,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector a8a5844a-a170-4e50-96b5-ec226ff9924e using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> ;
-    ns1:asWKT "POINT(148.5 223.56976)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1723,12 +1765,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> ;
-    ns1:asWKT "POINT(142.64383 248.863)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1744,12 +1780,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector bf4b4623-c6ac-417c-ab07-a3c4751150ad using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> ;
-    ns1:asWKT "POINT(148.1831 235.46478)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1767,12 +1797,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector c4344110-d4f8-40e2-97ce-5c1516a140bd using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> ;
-    ns1:asWKT "POINT(150.55556 228.45679)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1788,12 +1812,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector c7ae008c-3701-42d6-a026-ee3c4d84f921 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> ;
-    ns1:asWKT "POINT(164.73239 252.07043)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1811,12 +1829,6 @@ ns4:returns a owl:ObjectProperty .
     rdfs:label "Calibration setup for light direction vector d6168165-9647-41c7-a0ca-0a7d433cd029 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
 
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> ;
-    ns1:asWKT "POINT(167.47272 241.43637)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
         "Highlight Point Measurement 9dcfef6e-0bd8-405b-afa7-6ac1011d208a Calibration" ;
@@ -1832,12 +1844,6 @@ ns4:returns a owl:ObjectProperty .
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_ld_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for light direction vector dde38c61-4673-4b87-bec2-2e7f3d509006 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a" ;
     ns2:calibrationobject <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> ;
-    ns1:asWKT "POINT(168.90164 232.36066)"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight_calibration> a ns2:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement eaafe128-1cf9-4563-8edd-de8c78f486fa using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1857,13 +1863,7 @@ ns4:returns a owl:ObjectProperty .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Output Extent for Calibration Object 1" ;
-    ns1:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0))"^^ns1:wktLiteral ;
-    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
-
-<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight> a ns2:Highlight ;
-    rdfs:label "Image highlight point fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
-    ns2:calibration <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> ;
-    ns1:asWKT "POINT(181.63159 252.4737)"^^ns1:wktLiteral ;
+    ns1:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0, 56.0 100.0))"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight_calibration> a ns2:Calibration ;
@@ -1887,89 +1887,17 @@ ns4:returns a owl:ObjectProperty .
     ns1:asWKT "POINT(168.0 208.0)"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns6:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns5:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns6:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns5:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns6:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns5:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
 <http://i3mainz.de/metadata/Fisch_ms> a ns2:MeasurementSeries ;
     rdfs:label "MeasurementSeries for Measurement Project Fisch"@en ;
-    ns2:hasHighlight <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_271e8308-caaa-457a-af4e-a6dc72efd223_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3e7f1b78-5301-4c83-9157-c129024005fd_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_93443afd-8774-4492-8bd0-35f87d665cd2_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_97175f81-00e7-46d7-b767-ce7dd441c431_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight>,
-        <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1098767a-d813-47ad-bd5c-ee52ece47cae_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1678afac-9ca3-438d-a8ba-cf158a7f7b59_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_271e8308-caaa-457a-af4e-a6dc72efd223_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_2973ffaf-22b8-4592-9340-4830b0b28e5a_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_35721cc4-b646-4f88-a126-89c29316de1a_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_3e7f1b78-5301-4c83-9157-c129024005fd_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_45671633-e2b5-4d5d-a5d9-9df17a59b0b9_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_47f96e0e-2bbe-4041-8d90-bacf43e6812b_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5274452b-ae9a-43a6-86de-4ed5c7318868_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_56ef3f2b-f2ec-4300-97ab-afa18041fd13_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_585e8982-e1c1-4965-8df5-8b8d5879a45f_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5a61b970-95a6-4174-bcf7-cbe4983279b1_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_6981e782-9edf-4d95-85fb-405e2f4064f4_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7aadf709-57ac-4bd1-ab28-67627a93e4a4_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_7fda8eac-c375-44ab-8084-bcc4f016ecf4_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_81fb5616-d489-414b-9f1d-d3cd5c8586fd_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_93443afd-8774-4492-8bd0-35f87d665cd2_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_96ce0ab1-a541-4ae2-ac49-32b31beefa08_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_97175f81-00e7-46d7-b767-ce7dd441c431_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9c38356e-055a-4aee-bf25-69edbc45db6f_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a33a95ad-ba43-41a8-aad9-a50b9e53c7ae_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_a8a5844a-a170-4e50-96b5-ec226ff9924e_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_bf4b4623-c6ac-417c-ab07-a3c4751150ad_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c4344110-d4f8-40e2-97ce-5c1516a140bd_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_c7ae008c-3701-42d6-a026-ee3c4d84f921_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_d6168165-9647-41c7-a0ca-0a7d433cd029_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_dde38c61-4673-4b87-bec2-2e7f3d509006_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_highlight>,
-        <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_highlight> ;
     ns2:measurement <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
         <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59>,
@@ -2007,200 +1935,200 @@ ns4:returns a owl:ObjectProperty .
         <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa>,
         <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns6:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns5:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns5:hasUnit ns5:pixel .
+    ns6:hasUnit ns6:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns6:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns5:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns5:hasUnit ns5:pixel .
+    ns6:hasUnit ns6:pixel .
 
 <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input1_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Input Extent for Calibration Object 1" ;
-    ns1:asWKT "POLYGON((56.0 1046.0, 56.0 1270.0, 256.0 1270.0, 256.0 1046.0))"^^ns1:wktLiteral ;
+    ns1:asWKT "POLYGON((56.0 1046.0, 56.0 1270.0, 256.0 1270.0, 256.0 1046.0, 56.0 1046.0))"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Input Extent for Calibration Object 2" ;
-    ns1:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0))"^^ns1:wktLiteral ;
+    ns1:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0, 56.0 100.0))"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> a ns4:Function ;
+<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> a ns3:Function ;
     rdfs:label "Function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns4:expects <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> .
+    ns3:expects <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> .
 
-<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns4:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> a ns4:Function ;
+<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> a ns3:Function ;
     rdfs:label "Function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns4:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> ;
-    ns4:returns <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> .
+    ns3:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> .
 
-<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> a ns4:Output ;
+<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function ec79488e-4d33-4c8b-8b2c-5786b2f2db87",
         "Output: Name: BDi" ;
-    ns4:required true .
+    ns3:required true .
 
-ns6:3DCoordinateSystem rdfs:subClassOf ns6:CoordinateSystem .
+ns5:3DCoordinateSystem rdfs:subClassOf ns5:CoordinateSystem .
 
 <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_17.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_17.jpg" .
 
 <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 1678afac-9ca3-438d-a8ba-cf158a7f7b59"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_19.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_19.jpg" .
 
 <http://i3mainz.de/metadata/1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_20.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_20.jpg" .
 
 <http://i3mainz.de/metadata/271e8308-caaa-457a-af4e-a6dc72efd223> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 271e8308-caaa-457a-af4e-a6dc72efd223"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_21.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_21.jpg" .
 
 <http://i3mainz.de/metadata/2973ffaf-22b8-4592-9340-4830b0b28e5a> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 2973ffaf-22b8-4592-9340-4830b0b28e5a"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_22.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_22.jpg" .
 
 <http://i3mainz.de/metadata/35721cc4-b646-4f88-a126-89c29316de1a> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 35721cc4-b646-4f88-a126-89c29316de1a"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_23.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_23.jpg" .
 
 <http://i3mainz.de/metadata/3c46a616-f145-4ab1-afa4-cd1572d012a7> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 3c46a616-f145-4ab1-afa4-cd1572d012a7"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_24.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_24.jpg" .
 
 <http://i3mainz.de/metadata/3e7f1b78-5301-4c83-9157-c129024005fd> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 3e7f1b78-5301-4c83-9157-c129024005fd"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_25.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_25.jpg" .
 
 <http://i3mainz.de/metadata/45671633-e2b5-4d5d-a5d9-9df17a59b0b9> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 45671633-e2b5-4d5d-a5d9-9df17a59b0b9"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_26.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_26.jpg" .
 
 <http://i3mainz.de/metadata/47f96e0e-2bbe-4041-8d90-bacf43e6812b> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 47f96e0e-2bbe-4041-8d90-bacf43e6812b"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_27.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_27.jpg" .
 
 <http://i3mainz.de/metadata/5274452b-ae9a-43a6-86de-4ed5c7318868> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 5274452b-ae9a-43a6-86de-4ed5c7318868"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_28.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_28.jpg" .
 
 <http://i3mainz.de/metadata/56ef3f2b-f2ec-4300-97ab-afa18041fd13> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 56ef3f2b-f2ec-4300-97ab-afa18041fd13"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_29.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_29.jpg" .
 
 <http://i3mainz.de/metadata/585e8982-e1c1-4965-8df5-8b8d5879a45f> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 585e8982-e1c1-4965-8df5-8b8d5879a45f"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_30.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_30.jpg" .
 
 <http://i3mainz.de/metadata/5a51d10f-c02c-49ff-9f1e-a813c5de668b> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 5a51d10f-c02c-49ff-9f1e-a813c5de668b"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_31.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_31.jpg" .
 
 <http://i3mainz.de/metadata/5a61b970-95a6-4174-bcf7-cbe4983279b1> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 5a61b970-95a6-4174-bcf7-cbe4983279b1"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_32.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_32.jpg" .
 
 <http://i3mainz.de/metadata/6981e782-9edf-4d95-85fb-405e2f4064f4> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 6981e782-9edf-4d95-85fb-405e2f4064f4"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_34.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_34.jpg" .
 
 <http://i3mainz.de/metadata/7aadf709-57ac-4bd1-ab28-67627a93e4a4> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 7aadf709-57ac-4bd1-ab28-67627a93e4a4"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_35.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_35.jpg" .
 
 <http://i3mainz.de/metadata/81fb5616-d489-414b-9f1d-d3cd5c8586fd> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 81fb5616-d489-414b-9f1d-d3cd5c8586fd"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_01.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_01.jpg" .
 
 <http://i3mainz.de/metadata/97175f81-00e7-46d7-b767-ce7dd441c431> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 97175f81-00e7-46d7-b767-ce7dd441c431"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_04.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_04.jpg" .
 
 <http://i3mainz.de/metadata/a33a95ad-ba43-41a8-aad9-a50b9e53c7ae> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement a33a95ad-ba43-41a8-aad9-a50b9e53c7ae"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_07.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_07.jpg" .
 
 <http://i3mainz.de/metadata/bf4b4623-c6ac-417c-ab07-a3c4751150ad> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement bf4b4623-c6ac-417c-ab07-a3c4751150ad"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_10.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_10.jpg" .
 
 <http://i3mainz.de/metadata/c4344110-d4f8-40e2-97ce-5c1516a140bd> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement c4344110-d4f8-40e2-97ce-5c1516a140bd"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_11.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_11.jpg" .
 
 <http://i3mainz.de/metadata/d6168165-9647-41c7-a0ca-0a7d433cd029> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement d6168165-9647-41c7-a0ca-0a7d433cd029"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_13.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_13.jpg" .
 
 <http://i3mainz.de/metadata/dde38c61-4673-4b87-bec2-2e7f3d509006> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement dde38c61-4673-4b87-bec2-2e7f3d509006"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_14.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_14.jpg" .
 
 <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement eaafe128-1cf9-4563-8edd-de8c78f486fa"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_15.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_15.jpg" .
 
 <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447"@en ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_16.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_16.jpg" .
 
 <http://i3mainz.de/metadata/ledset_1> a ns2:LightSourceGroup ;
     rdfs:label "LightSource Group 1"@en .
@@ -2317,70 +2245,70 @@ ns2:CalibrationSphere rdfs:subClassOf ns2:CalibrationObject .
     rdfs:label "Measurement 1098767a-d813-47ad-bd5c-ee52ece47cae"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_18.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_18.jpg" .
 
 <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 5db96a8e-c345-4009-b2a7-c7fd89a6944a"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_33.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_33.jpg" .
 
 <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 7fda8eac-c375-44ab-8084-bcc4f016ecf4"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_36.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_36.jpg" .
 
 <http://i3mainz.de/metadata/93443afd-8774-4492-8bd0-35f87d665cd2> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 93443afd-8774-4492-8bd0-35f87d665cd2"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_02.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_02.jpg" .
 
 <http://i3mainz.de/metadata/96ce0ab1-a541-4ae2-ac49-32b31beefa08> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 96ce0ab1-a541-4ae2-ac49-32b31beefa08"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_03.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_03.jpg" .
 
 <http://i3mainz.de/metadata/9c38356e-055a-4aee-bf25-69edbc45db6f> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 9c38356e-055a-4aee-bf25-69edbc45db6f"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_05.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_05.jpg" .
 
 <http://i3mainz.de/metadata/9e9f122e-6384-49b5-bd19-5bcbbf25aee2> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement 9e9f122e-6384-49b5-bd19-5bcbbf25aee2"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_06.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_06.jpg" .
 
 <http://i3mainz.de/metadata/a8a5844a-a170-4e50-96b5-ec226ff9924e> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement a8a5844a-a170-4e50-96b5-ec226ff9924e"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_08.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_08.jpg" .
 
 <http://i3mainz.de/metadata/b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_09.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_09.jpg" .
 
 <http://i3mainz.de/metadata/c7ae008c-3701-42d6-a026-ee3c4d84f921> a ns2:Measurement,
         ns7:Image ;
     rdfs:label "Measurement c7ae008c-3701-42d6-a026-ee3c4d84f921"@en ;
     ns2:usedForCalibrationObjectDetection true ;
     ns2:usedForHighDetection true ;
-    ns3:definition "jpeg-exports\\fish_fossil_12.jpg" .
+    ns4:definition "jpeg-exports\\fish_fossil_12.jpg" .
 
 <http://www.w3.org/ns/prov#Activity> a owl:Class .
 
@@ -2400,14 +2328,14 @@ ns2:CalibrationSphere rdfs:subClassOf ns2:CalibrationObject .
     ns1:hasGeometry <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent>,
         <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_position> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns6:3DCoordinateSystem ;
-    ns6:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns5:3DCoordinateSystem ;
+    ns5:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 
 ns2:Highlight rdfs:subClassOf ns2:ReferencePoint .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns6:CoordinateSystem ;
-    ns6:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns5:CoordinateSystem ;
+    ns5:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 
