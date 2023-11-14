@@ -46,7 +46,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"PixelCoordinateSystem_axis2")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis2"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis2"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Pixel Coordinate System Y Axis")))
-    resgraph.add((URIRef(namespace+"DomeCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/3DCoordinateSystem")))
+    resgraph.add((URIRef(namespace+"DomeCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystem")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"DomeCoordinateSystem_axis1")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem_axis1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
     resgraph.add((URIRef(namespace+"DomeCoordinateSystem_axis1"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Dome Coordinate System X Axis")))
