@@ -54,16 +54,3 @@ jobs:
           preferredlang: en
           ghpages: true
           ghpagesfolder: rtibuilder/
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Initial checkout
-      uses: actions/checkout@v1
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-         BRANCH: gh-pages
-         FOLDER: docs/
