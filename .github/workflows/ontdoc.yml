@@ -57,3 +57,21 @@ jobs:
           preferredlang: en
           ghpages: true
           ghpagesfolder: rtibuilder/
+
+  ontdocIII:
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc IV      
+    with: 
+          version: v017dev
+          rdffilepath: resgraph_relight.ttl
+          docpath: docs/relight/
+          prefixns: http://i3mainz.de/metadata/
+          prefixnsshort: ex
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+          ghpagesfolder: relight/

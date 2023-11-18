@@ -8,8 +8,9 @@ namespace="http://i3mainz.de/metadata/"
 ontnamespace="http://objects.mainzed.org/ont#"
 
 def parseRelightJSON(jsonfile,resgraph):
-    with open(jsonfile', 'r',encoding="utf-8") as f:
+    with open(jsonfile, 'r',encoding="utf-8") as f:
         rjson = json.load(f)
+    projectname="project1"
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystem")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"PixelCoordinateSystem_axis1")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
@@ -35,29 +36,27 @@ def parseRelightJSON(jsonfile,resgraph):
     resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef(ontnamespace+"measurementSeries"),URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"))) 
     resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementSeries")))  
     resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("MeasurementSeries for Measurement Project "+str(projectname),lang="en")))
+    resjson={}
     if "images" in rjson:
         imagecounter=1
         for image in rjson["images"]:
-            print("Highlight: "+str(hitem.attrib))
             if "filename" in image:
-                imageid=filename
+                imageid=image["filename"]
             else:
                 imageid="image_"+str(imagecounter)
                 imagecounter+=1
             resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
             resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image")))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(str(imageid)+" using sphere "+str(highlightsphereid),lang="en")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(highlightsphereid)+"_"+str(str(imageid)+"_ld_calibration")))
+            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(imageid),lang="en")))
+            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+str(highlightsphereid))))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration setup for light direction vector "+str(imageid)+" using sphere "+str(highlightsphereid))))
             if "direction" in image:
                 if "x" in image["direction"] and "y" in image["direction"] and "z" in image["direction"]:
-                resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(image["direction"]["x"])+" "+str(image["direction"]["y"])+" "+str(image["direction"]["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-            resgraph.add((URIRef(namespace+projectname+"_result"),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
-    
+                    resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(image["direction"]["x"])+" "+str(image["direction"]["y"])+" "+str(image["direction"]["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+    resgraph.serialize("resgraph_relight.ttl")
+    with open("resgraph_relight.json", "w") as outfile:
+        outfile.write(json.dumps(resjson))
 
 def processRTIBuilderXMLMetadata():
     print("metadata")
@@ -550,3 +549,5 @@ g=Graph()
 parseRTIBuilderXML("Fisch.xml",g)
 g2=Graph()
 parseRTIOSCARXML("digitalizationResult.xml",g2)
+g3=Graph()
+parseRelightJSON("gerti.relight",g3)
