@@ -58,7 +58,7 @@ jobs:
           ghpages: true
           ghpagesfolder: rtibuilder/
 
-  ontdocIII:
+  ontdocIV:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     name: Ontdoc IV      
     with: 
