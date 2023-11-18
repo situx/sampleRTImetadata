@@ -8,6 +8,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     name: Ontdoc I      
     with: 
+          version: v017dev
           rdffilepath: sampleRTI.ttl
           docpath: docs/sampleRTI/
           prefixns: https://situx.github.io/sampleRTImetadata/
@@ -25,6 +26,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     name: Ontdoc II      
     with: 
+          version: v017dev
           rdffilepath: resgraph_oscar.ttl
           docpath: docs/oscar/
           prefixns: http://i3mainz.de/metadata/
@@ -42,6 +44,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     name: Ontdoc III      
     with: 
+          version: v017dev
           rdffilepath: resgraph_rtibuilder.ttl
           docpath: docs/rtibuilder/
           prefixns: http://i3mainz.de/metadata/
@@ -54,16 +57,3 @@ jobs:
           preferredlang: en
           ghpages: true
           ghpagesfolder: rtibuilder/
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Initial checkout
-      uses: actions/checkout@v1
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-         BRANCH: gh-pages
-         FOLDER: docs/
