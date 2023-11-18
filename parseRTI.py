@@ -45,6 +45,7 @@ def parseRelightJSON(jsonfile,resgraph):
             else:
                 imageid="image_"+str(imagecounter)
                 imagecounter+=1
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_ms"),URIRef(ontnamespace+"measurement"),URIRef(namespace+str(imageid))))
             resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
             resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image")))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
