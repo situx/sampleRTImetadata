@@ -1,0 +1,9 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/21.JPG_ld> rdfs:label "Light direction vector 21.JPG"@en ;
+    ns1:calibration <http://i3mainz.de/metadata/21.JPG_ld_calibration> ;
+    geo:asWKT "POINT Z(-0.7013615965843201 -0.6594593524932861 0.27056482434272766)"^^geo:wktLiteral ;
+    geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+

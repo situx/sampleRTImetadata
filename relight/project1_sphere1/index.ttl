@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/project1_sphere1> a <http://objects.mainzed.org/ont#CalibrationObject> ;
+    rdfs:label "project1 Calibration Sphere 1" .
+

@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns1:3DCoordinateSystem ;
+    ns1:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
+        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
+

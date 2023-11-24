@@ -1,0 +1,1 @@
+{"http://www.opengis.net/ont/crs/axis": ["http://i3mainz.de/metadata/DomeCoordinateSystem_axis1", "http://i3mainz.de/metadata/DomeCoordinateSystem_axis2", "http://i3mainz.de/metadata/DomeCoordinateSystem_axis3"], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://www.opengis.net/ont/crs/3DCoordinateSystem"]}
