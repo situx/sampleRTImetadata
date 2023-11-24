@@ -1,0 +1,7 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/sampleRTImetadata/ls1> a <http://objects.mainzed.org/ont#LightSource>,
+        owl:NamedIndividual ;
+    rdfs:label "Light Source 1: Azimuth 0°"@en .
+

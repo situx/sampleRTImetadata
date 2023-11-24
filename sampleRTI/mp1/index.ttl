@@ -1,0 +1,13 @@
+@prefix ns1: <https://situx.github.io/sampleRTImetadata/> .
+@prefix ns2: <http://objects.mainzed.org/ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:mp1 a <http://object.mainzed.org/ont#MeasurementProject>,
+        owl:NamedIndividual ;
+    rdfs:label "Measurement Project 1 (Scanning of an object using RTI)"@en ;
+    ns2:measurementSeries ns1:mp1_ms1 ;
+    ns2:numberofmeasurements 4 ;
+    ns1:recordingtechnology "RTI" .
+
