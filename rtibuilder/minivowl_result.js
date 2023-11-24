@@ -133,14 +133,14 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 16,
-   "target": 23,
-   "valueTo": "inSRS",
+   "source": 5,
+   "target": 13,
+   "valueTo": "hasLightDirection",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 16,
+   "source": 13,
    "target": 24,
    "valueTo": "inSRS",
    "propertyTo": "class",
@@ -154,14 +154,14 @@ var minivowlresult={
    "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
   },
   {
-   "source": 13,
+   "source": 16,
    "target": 24,
    "valueTo": "inSRS",
    "propertyTo": "class",
    "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
   },
   {
-   "source": 2,
+   "source": 16,
    "target": 23,
    "valueTo": "inSRS",
    "propertyTo": "class",
@@ -170,6 +170,13 @@ var minivowlresult={
   {
    "source": 2,
    "target": 24,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 2,
+   "target": 23,
    "valueTo": "inSRS",
    "propertyTo": "class",
    "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
@@ -187,13 +194,41 @@ var minivowlresult={
    "valueTo": "calibration",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#calibration"
+  },
+  {
+   "source": 15,
+   "target": 17,
+   "valueTo": "measurement",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurement"
+  },
+  {
+   "source": 15,
+   "target": 18,
+   "valueTo": "measurement",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
    "source": 12,
-   "target": 22,
-   "valueTo": "calibrationobject",
+   "target": 19,
+   "valueTo": "usesLightSourceGroup",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
+   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+  },
+  {
+   "source": 0,
+   "target": 10,
+   "valueTo": "executes",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/function/ontology#executes"
+  },
+  {
+   "source": 1,
+   "target": 10,
+   "valueTo": "executes",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/function/ontology#executes"
   },
   {
    "source": 12,
@@ -211,17 +246,31 @@ var minivowlresult={
   },
   {
    "source": 12,
-   "target": 19,
-   "valueTo": "usesLightSourceGroup",
+   "target": 22,
+   "valueTo": "calibrationobject",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
   },
   {
-   "source": 5,
-   "target": 13,
-   "valueTo": "hasLightDirection",
+   "source": 0,
+   "target": 16,
+   "valueTo": "BoundingBox",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
+   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
+  },
+  {
+   "source": 21,
+   "target": 16,
+   "valueTo": "BoundingBox",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
+  },
+  {
+   "source": 22,
+   "target": 16,
+   "valueTo": "BoundingBox",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
   },
   {
    "source": 3,
@@ -238,18 +287,25 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 22,
-   "target": 16,
-   "valueTo": "hasBoundingBox",
+   "source": 24,
+   "target": 14,
+   "valueTo": "axis",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
-   "source": 21,
-   "target": 16,
-   "valueTo": "hasBoundingBox",
+   "source": 23,
+   "target": 14,
+   "valueTo": "axis",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
+  },
+  {
+   "source": 10,
+   "target": 11,
+   "valueTo": "returns",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/function/ontology#returns"
   },
   {
    "source": 0,
@@ -266,74 +322,18 @@ var minivowlresult={
    "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
   },
   {
-   "source": 15,
-   "target": 17,
-   "valueTo": "measurement",
+   "source": 21,
+   "target": 16,
+   "valueTo": "hasBoundingBox",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurement"
-  },
-  {
-   "source": 15,
-   "target": 18,
-   "valueTo": "measurement",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurement"
-  },
-  {
-   "source": 0,
-   "target": 10,
-   "valueTo": "executes",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/function/ontology#executes"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "executes",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/function/ontology#executes"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
   },
   {
    "source": 22,
    "target": 16,
-   "valueTo": "BoundingBox",
+   "valueTo": "hasBoundingBox",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
-  },
-  {
-   "source": 0,
-   "target": 16,
-   "valueTo": "BoundingBox",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
-  },
-  {
-   "source": 21,
-   "target": 16,
-   "valueTo": "BoundingBox",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#BoundingBox"
-  },
-  {
-   "source": 23,
-   "target": 14,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
-  },
-  {
-   "source": 24,
-   "target": 14,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
-  },
-  {
-   "source": 10,
-   "target": 11,
-   "valueTo": "returns",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/function/ontology#returns"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
   },
   {
    "source": 4,
