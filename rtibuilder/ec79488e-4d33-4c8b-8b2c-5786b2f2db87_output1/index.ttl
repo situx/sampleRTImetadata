@@ -1,0 +1,9 @@
+@prefix ns1: <https://w3id.org/function/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> a ns1:Output ;
+    rdfs:label "Output of funtion execution for function ec79488e-4d33-4c8b-8b2c-5786b2f2db87",
+        "Output: Name: BDi" ;
+    ns1:required true .
+

@@ -1,0 +1,8 @@
+@prefix ns1: <https://w3id.org/function/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns1:Function ;
+    rdfs:label "Function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
+    ns1:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
+    ns1:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .
+

@@ -1,0 +1,8 @@
+@prefix ns1: <https://w3id.org/function/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> a ns1:Output ;
+    rdfs:label "Output of funtion execution for function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
+    ns1:required true .
+

@@ -1,0 +1,13 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> a <http://objects.mainzed.org/ont#CalibrationObjectOutput>,
+        <http://objects.mainzed.org/ont#CalibrationSphere>,
+        prov:Activity ;
+    rdfs:label "Calibration Object Output for Calibration Object 1",
+        "Calibration Object Sphere 1"@en ;
+    geo:BoundingBox <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> ;
+    geo:hasBoundingBox <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> ;
+    geo:hasGeometry <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_position> .
+

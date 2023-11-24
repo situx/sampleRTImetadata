@@ -1,0 +1,8 @@
+@prefix ns1: <https://w3id.org/function/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> a ns1:Parameter ;
+    rdfs:label "Input parameter 1 of function execution for function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
+    ns1:required true .
+

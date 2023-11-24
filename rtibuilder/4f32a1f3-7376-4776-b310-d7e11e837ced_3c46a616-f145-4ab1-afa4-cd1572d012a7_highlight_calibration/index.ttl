@@ -1,0 +1,9 @@
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_3c46a616-f145-4ab1-afa4-cd1572d012a7_highlight_calibration> a ns1:Calibration ;
+    rdfs:label "Calibration setup for highlight point measurement 3c46a616-f145-4ab1-afa4-cd1572d012a7 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
+        "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
+    ns1:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> ;
+    ns1:usesLightSourceGroup <http://i3mainz.de/metadata/ledset_24> .
+

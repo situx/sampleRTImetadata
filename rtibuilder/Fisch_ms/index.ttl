@@ -1,0 +1,42 @@
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/Fisch_ms> a ns1:MeasurementSeries ;
+    rdfs:label "MeasurementSeries for Measurement Project Fisch"@en ;
+    ns1:measurement <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
+        <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
+        <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59>,
+        <http://i3mainz.de/metadata/1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b>,
+        <http://i3mainz.de/metadata/271e8308-caaa-457a-af4e-a6dc72efd223>,
+        <http://i3mainz.de/metadata/2973ffaf-22b8-4592-9340-4830b0b28e5a>,
+        <http://i3mainz.de/metadata/35721cc4-b646-4f88-a126-89c29316de1a>,
+        <http://i3mainz.de/metadata/3c46a616-f145-4ab1-afa4-cd1572d012a7>,
+        <http://i3mainz.de/metadata/3e7f1b78-5301-4c83-9157-c129024005fd>,
+        <http://i3mainz.de/metadata/45671633-e2b5-4d5d-a5d9-9df17a59b0b9>,
+        <http://i3mainz.de/metadata/47f96e0e-2bbe-4041-8d90-bacf43e6812b>,
+        <http://i3mainz.de/metadata/5274452b-ae9a-43a6-86de-4ed5c7318868>,
+        <http://i3mainz.de/metadata/56ef3f2b-f2ec-4300-97ab-afa18041fd13>,
+        <http://i3mainz.de/metadata/585e8982-e1c1-4965-8df5-8b8d5879a45f>,
+        <http://i3mainz.de/metadata/5a51d10f-c02c-49ff-9f1e-a813c5de668b>,
+        <http://i3mainz.de/metadata/5a61b970-95a6-4174-bcf7-cbe4983279b1>,
+        <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a>,
+        <http://i3mainz.de/metadata/6981e782-9edf-4d95-85fb-405e2f4064f4>,
+        <http://i3mainz.de/metadata/7aadf709-57ac-4bd1-ab28-67627a93e4a4>,
+        <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4>,
+        <http://i3mainz.de/metadata/81fb5616-d489-414b-9f1d-d3cd5c8586fd>,
+        <http://i3mainz.de/metadata/93443afd-8774-4492-8bd0-35f87d665cd2>,
+        <http://i3mainz.de/metadata/96ce0ab1-a541-4ae2-ac49-32b31beefa08>,
+        <http://i3mainz.de/metadata/97175f81-00e7-46d7-b767-ce7dd441c431>,
+        <http://i3mainz.de/metadata/9c38356e-055a-4aee-bf25-69edbc45db6f>,
+        <http://i3mainz.de/metadata/9e9f122e-6384-49b5-bd19-5bcbbf25aee2>,
+        <http://i3mainz.de/metadata/a33a95ad-ba43-41a8-aad9-a50b9e53c7ae>,
+        <http://i3mainz.de/metadata/a8a5844a-a170-4e50-96b5-ec226ff9924e>,
+        <http://i3mainz.de/metadata/b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f>,
+        <http://i3mainz.de/metadata/bf4b4623-c6ac-417c-ab07-a3c4751150ad>,
+        <http://i3mainz.de/metadata/c4344110-d4f8-40e2-97ce-5c1516a140bd>,
+        <http://i3mainz.de/metadata/c7ae008c-3701-42d6-a026-ee3c4d84f921>,
+        <http://i3mainz.de/metadata/d6168165-9647-41c7-a0ca-0a7d433cd029>,
+        <http://i3mainz.de/metadata/dde38c61-4673-4b87-bec2-2e7f3d509006>,
+        <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa>,
+        <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> .
+

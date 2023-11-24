@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://i3mainz.de/metadata/CalibrationImages> a skos:Collection ;
+    rdfs:member <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
+        <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a>,
+        <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4>,
+        <http://i3mainz.de/metadata/93443afd-8774-4492-8bd0-35f87d665cd2>,
+        <http://i3mainz.de/metadata/96ce0ab1-a541-4ae2-ac49-32b31beefa08>,
+        <http://i3mainz.de/metadata/9c38356e-055a-4aee-bf25-69edbc45db6f>,
+        <http://i3mainz.de/metadata/9e9f122e-6384-49b5-bd19-5bcbbf25aee2>,
+        <http://i3mainz.de/metadata/a8a5844a-a170-4e50-96b5-ec226ff9924e>,
+        <http://i3mainz.de/metadata/b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f>,
+        <http://i3mainz.de/metadata/c7ae008c-3701-42d6-a026-ee3c4d84f921> .
+

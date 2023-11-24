@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+    rdfs:label "Dome Coordinate System Y Axis" .
+

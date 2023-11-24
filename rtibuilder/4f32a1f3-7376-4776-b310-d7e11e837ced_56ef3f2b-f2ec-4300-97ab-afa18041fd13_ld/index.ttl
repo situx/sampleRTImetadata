@@ -1,0 +1,10 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_ld> a ns1:LightDirection ;
+    rdfs:label "Light direction vector 56ef3f2b-f2ec-4300-97ab-afa18041fd13 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns1:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_56ef3f2b-f2ec-4300-97ab-afa18041fd13_ld_calibration> ;
+    geo:asWKT "POINT Z(0.5110037 0.4765014 0.71541715)"^^geo:wktLiteral ;
+    geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+

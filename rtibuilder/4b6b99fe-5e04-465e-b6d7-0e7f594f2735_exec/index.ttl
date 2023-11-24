@@ -1,0 +1,9 @@
+@prefix ns1: <https://w3id.org/function/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_exec> a prov:Activity,
+        ns1:Execution ;
+    rdfs:label "Function execution of function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
+    ns1:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
+

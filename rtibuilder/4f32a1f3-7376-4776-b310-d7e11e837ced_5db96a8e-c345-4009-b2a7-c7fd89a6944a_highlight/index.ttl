@@ -1,0 +1,10 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight> a ns1:Highlight ;
+    rdfs:label "Image highlight point 5db96a8e-c345-4009-b2a7-c7fd89a6944a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
+    ns1:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5db96a8e-c345-4009-b2a7-c7fd89a6944a_highlight_calibration> ;
+    geo:asWKT "POINT(144.38962 1147.1818)"^^geo:wktLiteral ;
+    geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+

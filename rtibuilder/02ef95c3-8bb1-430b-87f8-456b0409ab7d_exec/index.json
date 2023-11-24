@@ -1,0 +1,1 @@
+{"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://www.w3.org/ns/prov#Activity", "https://w3id.org/function/ontology#Execution"], "http://www.w3.org/2000/01/rdf-schema#label": ["Function execution of function 02ef95c3-8bb1-430b-87f8-456b0409ab7d"], "https://w3id.org/function/ontology#executes": ["http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d"]}

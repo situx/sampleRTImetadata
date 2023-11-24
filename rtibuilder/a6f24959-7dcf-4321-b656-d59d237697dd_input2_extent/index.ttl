@@ -1,0 +1,8 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "Calibration Object Input Extent for Calibration Object 2" ;
+    geo:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0, 56.0 100.0))"^^geo:wktLiteral ;
+    geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+

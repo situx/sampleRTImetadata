@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns1:CoordinateSystem ;
+    ns1:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+        <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
+

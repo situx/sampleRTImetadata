@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/bf4b4623-c6ac-417c-ab07-a3c4751150ad> a ns1:Measurement,
+        dcterms:Image ;
+    rdfs:label "Measurement bf4b4623-c6ac-417c-ab07-a3c4751150ad"@en ;
+    ns1:usedForHighDetection true ;
+    skos:definition "jpeg-exports\\fish_fossil_10.jpg" .
+
