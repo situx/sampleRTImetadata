@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/ledset_23> a <http://objects.mainzed.org/ont#LightSourceGroup> ;
+    rdfs:label "LightSource Group ledset_23"@en .
+

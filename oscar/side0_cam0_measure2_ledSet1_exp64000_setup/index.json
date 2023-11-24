@@ -1,0 +1,1 @@
+{"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://objects.mainzed.org/ont#MeasurementSetup"], "http://www.w3.org/2000/01/rdf-schema#label": ["Measurement Setup for Measurement measure_2 (Camera 0 LED Set ledset_1 Exp 64000)"], "http://www.w3.org/2003/12/exif/exposureTime": ["http://i3mainz.de/metadata/side0_cam0_measure2_ledSet1_exp64000_setup_shutterTime_1"]}

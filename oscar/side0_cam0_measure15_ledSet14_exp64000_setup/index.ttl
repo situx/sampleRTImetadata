@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.w3.org/2003/12/exif/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/side0_cam0_measure15_ledSet14_exp64000_setup> a <http://objects.mainzed.org/ont#MeasurementSetup> ;
+    rdfs:label "Measurement Setup for Measurement measure_15 (Camera 0 LED Set ledset_14 Exp 64000)"@en ;
+    ns1:exposureTime <http://i3mainz.de/metadata/side0_cam0_measure15_ledSet14_exp64000_setup_shutterTime_1> .
+

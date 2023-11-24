@@ -1,0 +1,32 @@
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/capturing_device_1> a ns1:RTIScanner ;
+    rdfs:label "RTI Scanner"@en ;
+    ns1:hasComponent <http://i3mainz.de/metadata/capturing_device_1_dome> ;
+    ns1:hasLightSourceGroup <http://i3mainz.de/metadata/ledset_0>,
+        <http://i3mainz.de/metadata/ledset_1>,
+        <http://i3mainz.de/metadata/ledset_10>,
+        <http://i3mainz.de/metadata/ledset_11>,
+        <http://i3mainz.de/metadata/ledset_12>,
+        <http://i3mainz.de/metadata/ledset_13>,
+        <http://i3mainz.de/metadata/ledset_14>,
+        <http://i3mainz.de/metadata/ledset_15>,
+        <http://i3mainz.de/metadata/ledset_16>,
+        <http://i3mainz.de/metadata/ledset_17>,
+        <http://i3mainz.de/metadata/ledset_18>,
+        <http://i3mainz.de/metadata/ledset_19>,
+        <http://i3mainz.de/metadata/ledset_2>,
+        <http://i3mainz.de/metadata/ledset_20>,
+        <http://i3mainz.de/metadata/ledset_21>,
+        <http://i3mainz.de/metadata/ledset_22>,
+        <http://i3mainz.de/metadata/ledset_23>,
+        <http://i3mainz.de/metadata/ledset_24>,
+        <http://i3mainz.de/metadata/ledset_3>,
+        <http://i3mainz.de/metadata/ledset_4>,
+        <http://i3mainz.de/metadata/ledset_5>,
+        <http://i3mainz.de/metadata/ledset_6>,
+        <http://i3mainz.de/metadata/ledset_7>,
+        <http://i3mainz.de/metadata/ledset_8>,
+        <http://i3mainz.de/metadata/ledset_9> .
+

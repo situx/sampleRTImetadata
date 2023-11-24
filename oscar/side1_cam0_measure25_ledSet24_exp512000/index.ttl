@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/side1_cam0_measure25_ledSet24_exp512000> a ns1:Measurement ;
+    rdfs:label "Measurement measure_25 (Camera 0 LED Set ledset_24 Exp 512000)"@en ;
+    ns1:axisDistancePosition -1.45e+02 ;
+    ns1:axisFocusPosition -1.6017e+01 ;
+    ns1:capturingdevice <http://i3mainz.de/metadata/capturing_device_1> ;
+    ns1:pixelType ns1:BayerGR8 ;
+    ns1:setup <http://i3mainz.de/metadata/side1_cam0_measure25_ledSet24_exp512000_setup> ;
+    ns1:usesCamera <http://i3mainz.de/metadata/50-0503522880> ;
+    ns1:usesLightSourceGroup <http://i3mainz.de/metadata/ledset_24> ;
+    dcterms:created "2023-Jul-04 07:11:37.681122"^^xsd:dateTime ;
+    rdfs:comment "side1_cam0_measure25_ledSet24_exp512000.tif"@en .
+

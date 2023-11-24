@@ -1,0 +1,9 @@
+@prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/side1_cam0_measure20_ledSet19_exp2000_setup_shutterTime_1_value> a ns1:Measure ;
+    rdfs:label "Shutter Time Measure Value for Measurement measure_20 (Camera 0 LED Set ledset_19 Exp 2000)"@en ;
+    ns1:hasNumericalValue 2000 ;
+    ns1:hasUnit ns1:seconds-Time .
+

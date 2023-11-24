@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.w3.org/2003/12/exif/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/side0_cam0_measure22_ledSet21_exp32000_setup> a <http://objects.mainzed.org/ont#MeasurementSetup> ;
+    rdfs:label "Measurement Setup for Measurement measure_22 (Camera 0 LED Set ledset_21 Exp 32000)"@en ;
+    ns1:exposureTime <http://i3mainz.de/metadata/side0_cam0_measure22_ledSet21_exp32000_setup_shutterTime_1> .
+
