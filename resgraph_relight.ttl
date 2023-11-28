@@ -1,7 +1,7 @@
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns2: <http://objects.mainzed.org/ont#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns4: <http://www.opengis.net/ont/crs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -201,7 +201,66 @@
     rdfs:label "project1 Calibration Sphere 1" ;
     ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere1_bbox> ;
     ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere1_centroid> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere1_ld0> .
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere1_ld0>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld1>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld10>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld11>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld12>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld13>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld14>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld15>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld16>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld17>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld18>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld19>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld2>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld20>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld21>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld22>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld23>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld24>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld25>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld26>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld27>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld28>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld29>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld3>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld30>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld31>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld32>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld33>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld34>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld35>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld36>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld37>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld38>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld39>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld4>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld40>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld41>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld42>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld43>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld44>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld45>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld46>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld47>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld48>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld49>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld5>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld50>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld51>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld52>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld53>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld54>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld55>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld56>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld57>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld58>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld59>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld6>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld7>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld8>,
+        <http://i3mainz.de/metadata/project1_sphere1_ld9> .
 
 <http://i3mainz.de/metadata/project1_sphere1_highlight0> a ns2:Highlight ;
     rdfs:label "Image highlight point 0 using sphere 1"@en ;
@@ -564,7 +623,66 @@
 
 <http://i3mainz.de/metadata/project1_sphere2> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere2_bbox> ;
     ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere2_centroid> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere2_ld0> .
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere2_ld0>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld1>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld10>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld11>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld12>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld13>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld14>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld15>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld16>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld17>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld18>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld19>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld2>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld20>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld21>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld22>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld23>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld24>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld25>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld26>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld27>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld28>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld29>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld3>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld30>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld31>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld32>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld33>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld34>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld35>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld36>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld37>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld38>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld39>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld4>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld40>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld41>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld42>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld43>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld44>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld45>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld46>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld47>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld48>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld49>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld5>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld50>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld51>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld52>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld53>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld54>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld55>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld56>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld57>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld58>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld59>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld6>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld7>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld8>,
+        <http://i3mainz.de/metadata/project1_sphere2_ld9> .
 
 <http://i3mainz.de/metadata/project1_sphere2_highlight0> a ns2:Highlight ;
     rdfs:label "Image highlight point 0 using sphere 2"@en ;
@@ -929,7 +1047,66 @@
 
 <http://i3mainz.de/metadata/project1_sphere3> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere3_bbox> ;
     ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere3_centroid> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0> .
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld1>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld10>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld11>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld12>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld13>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld14>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld15>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld16>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld17>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld18>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld19>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld2>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld20>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld21>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld22>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld23>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld24>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld25>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld26>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld27>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld28>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld29>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld3>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld30>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld31>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld32>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld33>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld34>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld35>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld36>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld37>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld38>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld39>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld4>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld40>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld41>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld42>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld43>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld44>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld45>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld46>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld47>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld48>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld49>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld5>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld50>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld51>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld52>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld53>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld54>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld55>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld56>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld57>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld58>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld59>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld6>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld7>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld8>,
+        <http://i3mainz.de/metadata/project1_sphere3_ld9> .
 
 <http://i3mainz.de/metadata/project1_sphere3_highlight0> a ns2:Highlight ;
     rdfs:label "Image highlight point 0 using sphere 3"@en ;
@@ -1292,7 +1469,66 @@
 
 <http://i3mainz.de/metadata/project1_sphere4> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere4_bbox> ;
     ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere4_centroid> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere4_ld0> .
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere4_ld0>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld1>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld10>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld11>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld12>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld13>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld14>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld15>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld16>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld17>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld18>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld19>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld2>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld20>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld21>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld22>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld23>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld24>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld25>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld26>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld27>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld28>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld29>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld3>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld30>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld31>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld32>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld33>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld34>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld35>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld36>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld37>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld38>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld39>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld4>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld40>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld41>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld42>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld43>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld44>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld45>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld46>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld47>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld48>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld49>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld5>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld50>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld51>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld52>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld53>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld54>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld55>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld56>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld57>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld58>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld59>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld6>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld7>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld8>,
+        <http://i3mainz.de/metadata/project1_sphere4_ld9> .
 
 <http://i3mainz.de/metadata/project1_sphere4_highlight0> a ns2:Highlight ;
     rdfs:label "Image highlight point 0 using sphere 4"@en ;
@@ -2254,22 +2490,22 @@
     ns1:asWKT "POINT Z(0.8679607510566711 -0.3554009199142456 0.26114708185195923)"^^ns1:wktLiteral ;
     ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
 <http://i3mainz.de/metadata/project1_ms> a ns2:MeasurementSeries ;
     rdfs:label "MeasurementSeries for Measurement Project project1"@en ;
@@ -2335,63 +2571,1243 @@
         <http://i3mainz.de/metadata/9.JPG> .
 
 <http://i3mainz.de/metadata/project1_sphere1_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
-    rdfs:label "project1 Calibration Sphere 1 Bounding Box",
-        "project1 Calibration Sphere 1 Centroid" ;
+    rdfs:label "project1 Calibration Sphere 1 Bounding Box" ;
     ns1:asWKT "POLYGON((1889.5971470681231 2234.3646425602287, 1820.9282093192553 2441.308727289507, 2056.145397406487 2514.3108019831416, [1889.5971470681231, 2234.3646425602287] [1820.9282093192553, 2441.308727289507]))"^^ns1:wktLiteral .
 
-<http://i3mainz.de/metadata/project1_sphere1_centroid> ns1:asWKT "POINT(1970.1474905228824 2375.9581805764174)"^^ns1:wktLiteral .
+<http://i3mainz.de/metadata/project1_sphere1_centroid> rdfs:label "project1 Calibration Sphere 1 Centroid" ;
+    ns1:asWKT "POINT(1970.1474905228824 2375.9581805764174)"^^ns1:wktLiteral .
 
 <http://i3mainz.de/metadata/project1_sphere1_ld0> a ns2:LightDirection ;
     rdfs:label "Light direction vector 0 for calbration object sphere 1"@en ;
     ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
     ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
+<http://i3mainz.de/metadata/project1_sphere1_ld1> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 1 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld10> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 10 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld11> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 11 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld12> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 12 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld13> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 13 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld14> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 14 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld15> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 15 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld16> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 16 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld17> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 17 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld18> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 18 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld19> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 19 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld2> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 2 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld20> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 20 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld21> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 21 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld22> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 22 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld23> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 23 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld24> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 24 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld25> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 25 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld26> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 26 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld27> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 27 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld28> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 28 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld29> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 29 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld3> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 3 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld30> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 30 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld31> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 31 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld32> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 32 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld33> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 33 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld34> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 34 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld35> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 35 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld36> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 36 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld37> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 37 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld38> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 38 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld39> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 39 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld4> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 4 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld40> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 40 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld41> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 41 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld42> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 42 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld43> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 43 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld44> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 44 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld45> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 45 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld46> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 46 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld47> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 47 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld48> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 48 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld49> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 49 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld5> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 5 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld50> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 50 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld51> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 51 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld52> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 52 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld53> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 53 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld54> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 54 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld55> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 55 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld56> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 56 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld57> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 57 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld58> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 58 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld59> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 59 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld6> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 6 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld7> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 7 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld8> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 8 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld9> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 9 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
 <http://i3mainz.de/metadata/project1_sphere2_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
-    rdfs:label "project1 Calibration Sphere 2 Bounding Box",
-        "project1 Calibration Sphere 2 Centroid" ;
+    rdfs:label "project1 Calibration Sphere 2 Bounding Box" ;
     ns1:asWKT "POLYGON((3293.5074912704795 1914.7782631825507, 3092.7325568115775 2144.909656159245, 2839.5092323825797 2143.9701473544155, 2845.0774000940646 1504.9071943410622, [3293.5074912704795, 1914.7782631825507] [3092.7325568115775, 2144.909656159245]))"^^ns1:wktLiteral .
 
-<http://i3mainz.de/metadata/project1_sphere2_centroid> ns1:asWKT "POINT(2963.844889079939 1826.2021782880274)"^^ns1:wktLiteral .
+<http://i3mainz.de/metadata/project1_sphere2_centroid> rdfs:label "project1 Calibration Sphere 2 Centroid" ;
+    ns1:asWKT "POINT(2963.844889079939 1826.2021782880274)"^^ns1:wktLiteral .
 
 <http://i3mainz.de/metadata/project1_sphere2_ld0> a ns2:LightDirection ;
     rdfs:label "Light direction vector 0 for calbration object sphere 2"@en ;
     ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
     ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
+<http://i3mainz.de/metadata/project1_sphere2_ld1> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 1 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld10> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 10 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld11> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 11 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld12> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 12 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld13> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 13 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld14> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 14 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld15> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 15 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld16> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 16 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld17> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 17 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld18> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 18 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld19> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 19 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld2> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 2 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld20> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 20 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld21> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 21 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld22> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 22 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld23> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 23 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld24> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 24 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld25> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 25 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld26> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 26 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld27> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 27 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld28> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 28 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld29> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 29 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld3> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 3 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld30> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 30 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld31> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 31 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld32> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 32 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld33> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 33 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld34> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 34 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld35> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 35 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld36> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 36 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld37> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 37 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld38> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 38 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld39> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 39 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld4> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 4 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld40> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 40 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld41> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 41 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld42> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 42 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld43> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 43 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld44> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 44 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld45> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 45 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld46> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 46 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld47> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 47 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld48> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 48 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld49> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 49 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld5> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 5 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld50> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 50 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld51> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 51 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld52> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 52 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld53> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 53 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld54> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 54 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld55> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 55 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld56> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 56 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld57> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 57 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld58> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 58 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld59> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 59 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld6> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 6 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld7> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 7 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld8> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 8 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld9> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 9 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
 <http://i3mainz.de/metadata/project1_sphere3_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
-    rdfs:label "project1 Calibration Sphere 3 Bounding Box",
-        "project1 Calibration Sphere 3 Centroid" ;
+    rdfs:label "project1 Calibration Sphere 3 Bounding Box" ;
     ns1:asWKT "POLYGON((2932.6299564150895 575.2839200687366, 2680.2648405358796 651.2648151721547, 2764.774203457028 481.47077407370006, [2932.6299564150895, 575.2839200687366] [2680.2648405358796, 651.2648151721547]))"^^ns1:wktLiteral .
 
-<http://i3mainz.de/metadata/project1_sphere3_centroid> ns1:asWKT "POINT(2804.6291353162933 607.2351364123681)"^^ns1:wktLiteral .
+<http://i3mainz.de/metadata/project1_sphere3_centroid> rdfs:label "project1 Calibration Sphere 3 Centroid" ;
+    ns1:asWKT "POINT(2804.6291353162933 607.2351364123681)"^^ns1:wktLiteral .
 
 <http://i3mainz.de/metadata/project1_sphere3_ld0> a ns2:LightDirection ;
     rdfs:label "Light direction vector 0 for calbration object sphere 3"@en ;
     ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
     ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
+<http://i3mainz.de/metadata/project1_sphere3_ld1> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 1 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld10> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 10 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld11> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 11 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld12> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 12 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld13> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 13 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld14> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 14 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld15> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 15 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld16> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 16 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld17> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 17 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld18> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 18 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld19> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 19 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld2> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 2 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld20> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 20 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld21> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 21 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld22> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 22 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld23> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 23 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld24> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 24 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld25> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 25 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld26> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 26 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld27> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 27 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld28> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 28 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld29> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 29 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld3> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 3 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld30> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 30 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld31> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 31 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld32> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 32 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld33> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 33 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld34> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 34 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld35> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 35 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld36> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 36 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld37> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 37 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld38> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 38 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld39> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 39 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld4> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 4 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld40> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 40 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld41> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 41 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld42> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 42 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld43> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 43 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld44> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 44 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld45> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 45 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld46> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 46 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld47> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 47 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld48> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 48 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld49> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 49 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld5> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 5 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld50> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 50 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld51> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 51 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld52> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 52 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld53> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 53 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld54> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 54 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld55> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 55 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld56> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 56 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld57> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 57 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld58> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 58 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld59> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 59 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld6> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 6 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld7> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 7 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld8> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 8 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld9> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 9 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
 <http://i3mainz.de/metadata/project1_sphere4_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
-    rdfs:label "project1 Calibration Sphere 4 Bounding Box",
-        "project1 Calibration Sphere 4 Centroid" ;
+    rdfs:label "project1 Calibration Sphere 4 Bounding Box" ;
     ns1:asWKT "POLYGON((4147.533921651803 2110.965181048139, 3754.4501835942683 2406.927747761796, 4283.63404252856 2482.273499031219, [4147.533921651803, 2110.965181048139] [3754.4501835942683, 2406.927747761796]))"^^ns1:wktLiteral .
 
-<http://i3mainz.de/metadata/project1_sphere4_centroid> ns1:asWKT "POINT(4030.449948831783 2364.4787525137112)"^^ns1:wktLiteral .
+<http://i3mainz.de/metadata/project1_sphere4_centroid> rdfs:label "project1 Calibration Sphere 4 Centroid" ;
+    ns1:asWKT "POINT(4030.449948831783 2364.4787525137112)"^^ns1:wktLiteral .
 
 <http://i3mainz.de/metadata/project1_sphere4_ld0> a ns2:LightDirection ;
     rdfs:label "Light direction vector 0 for calbration object sphere 4"@en ;
     ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
     ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
+<http://i3mainz.de/metadata/project1_sphere4_ld1> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 1 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
-        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
-        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
+<http://i3mainz.de/metadata/project1_sphere4_ld10> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 10 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/project1_sphere4_ld11> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 11 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld12> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 12 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld13> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 13 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld14> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 14 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld15> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 15 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld16> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 16 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld17> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 17 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld18> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 18 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld19> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 19 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld2> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 2 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld20> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 20 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld21> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 21 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld22> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 22 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld23> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 23 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld24> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 24 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld25> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 25 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld26> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 26 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld27> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 27 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld28> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 28 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld29> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 29 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld3> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 3 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld30> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 30 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld31> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 31 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld32> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 32 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld33> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 33 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld34> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 34 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld35> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 35 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld36> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 36 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld37> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 37 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld38> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 38 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld39> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 39 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld4> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 4 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld40> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 40 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld41> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 41 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld42> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 42 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld43> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 43 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld44> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 44 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld45> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 45 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld46> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 46 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld47> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 47 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld48> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 48 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld49> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 49 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld5> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 5 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld50> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 50 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld51> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 51 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld52> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 52 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld53> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 53 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld54> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 54 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld55> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 55 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld56> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 56 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld57> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 57 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld58> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 58 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld59> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 59 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld6> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 6 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld7> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 7 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld8> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 8 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld9> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 9 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+ns4:3DCoordinateSystem rdfs:subClassOf ns4:CoordinateSystem .
+
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns4:CoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 
 ns2:Highlight rdfs:subClassOf ns2:ReferencePoint .
+
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns4:3DCoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
+        <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 

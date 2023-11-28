@@ -73,7 +73,7 @@ def parseRelightJSON(jsonfile,resgraph):
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wkt,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             if "center" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasCentroid"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid")))
-                resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Centroid")))
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Centroid")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(sphere["center"][0])+" "+str(sphere["center"][1])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             if "radius" in sphere:
                 resgraph.add((URIRef(namespace+str(imageid)+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasMetricPerimeter"),Literal(str(sphere["radius"]),datatype="http://www.w3.org/2001/XMLSchema#double")))
@@ -86,6 +86,7 @@ def parseRelightJSON(jsonfile,resgraph):
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(dire[0])+" "+str(dire[1])+" "+str(dire[2])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                    ldcounter+=1
             if "lights" in sphere:
                 lightcounter=0
                 for highlight in sphere["lights"]:
