@@ -57,6 +57,8 @@ def parseRelightJSON(jsonfile,resgraph):
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(imageid),lang="en")))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
+            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
+            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration of light direction vector "+str(imageid),lang="en")))
             resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
             if "direction" in image:
                 if "x" in image["direction"] and "y" in image["direction"] and "z" in image["direction"]:
@@ -65,6 +67,7 @@ def parseRelightJSON(jsonfile,resgraph):
         spherecounter=1
         resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObject")))
         resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter))))
+        resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter))))
         for sphere in rjson["spheres"]:
             if "border" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasBoundingBox"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox")))
