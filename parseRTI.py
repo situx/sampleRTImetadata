@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from rdflib import Graph
 from rdflib import URIRef, Literal
+import argparse
 import json
 import re
 
@@ -589,7 +590,13 @@ def parseRTIOSCARXML(xmlfile,resgraph):
     resgraph.serialize("resgraph_oscar.ttl")
     with open("resgraph_oscar.json", "w") as outfile:
         outfile.write(json.dumps(resjson))
-    
+
+parser=argparse.ArgumentParser()
+parser.add_argument("-i","--input",nargs='*',help="the input file(s) to parse",action="store",required=True)
+parser.add_argument("-o","--output",nargs='*',help="the output path(s)",action="store",required=True)
+#args, unknown=parser.parse_known_args()
+#print(args)
+#print("The following arguments were not recognized: "+str(unknown))    
 g=Graph()
 parseRTIBuilderXML("Fisch.xml",g)
 g2=Graph()
