@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/54.JPG_ld_calibration> a <http://objects.mainzed.org/ont#Calibration> ;
+    rdfs:label "Calibration of light direction vector 54.JPG"@en .
+

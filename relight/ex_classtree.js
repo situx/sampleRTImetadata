@@ -466,7 +466,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightSourceGroup",
         "parent": "#",
         "type": "class",
-        "text": "LightSourceGroup (ns1:LightSourceGroup) [60]",
+        "text": "LightSourceGroup (ns2:LightSourceGroup) [60]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -491,7 +491,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementProject",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementProject (ns1:MeasurementProject) [1]",
+        "text": "MeasurementProject (ns2:MeasurementProject) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurementSeries": {
@@ -508,42 +508,6 @@ var tree={
           "from": {}
         },
         "instancecount": 3
-      },
-      {
-        "id": "http://i3mainz.de/metadata/project1_sphere1",
-        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
-        "type": "geoinstance",
-        "text": "project1 Calibration Sphere 1 (project1_sphere1)",
-        "data": {}
-      },
-      {
-        "id": "http://objects.mainzed.org/ont#CalibrationObject",
-        "parent": "#",
-        "type": "geoclass",
-        "text": "CalibrationObject (ns1:CalibrationObject) [1]",
-        "data": {
-          "to": {
-            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
-              "instancecount": 1,
-              "http://www.opengis.net/ont/sf#Polygon": 1
-            },
-            "http://www.opengis.net/ont/geosparql#hasCentroid": {
-              "instancecount": 1
-            },
-            "http://www.opengis.net/ont/geosparql#hasLightDirection": {
-              "instancecount": 60,
-              "http://objects.mainzed.org/ont#LightDirection": 60
-            },
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
-              "instancecount": 1
-            },
-            "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 1
-            }
-          },
-          "from": {}
-        },
-        "instancecount": 64
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_highlight0",
@@ -2229,7 +2193,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Highlight",
         "parent": "http://objects.mainzed.org/ont#ReferencePoint",
         "type": "geoclass",
-        "text": "Highlight (ns1:Highlight) [240]",
+        "text": "Highlight (ns2:Highlight) [240]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#asWKT": {
@@ -2254,7 +2218,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#ReferencePoint",
         "parent": "#",
         "type": "class",
-        "text": "ReferencePoint (ns1:ReferencePoint)",
+        "text": "ReferencePoint (ns2:ReferencePoint)",
         "data": {}
       },
       {
@@ -2681,7 +2645,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Measurement",
         "parent": "#",
         "type": "geoclass",
-        "text": "Measurement (ns1:Measurement) [60]",
+        "text": "Measurement (ns2:Measurement) [60]",
         "data": {}
       },
       {
@@ -5232,11 +5196,12 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightDirection",
         "parent": "#",
         "type": "halfgeoclass",
-        "text": "LightDirection (ns1:LightDirection) [300]",
+        "text": "LightDirection (ns2:LightDirection) [300]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibration": {
-              "instancecount": 1
+              "instancecount": 1,
+              "http://objects.mainzed.org/ont#Calibration": 1
             },
             "http://www.opengis.net/ont/geosparql#inSRS": {
               "instancecount": 1,
@@ -5251,11 +5216,455 @@ var tree={
           },
           "from": {
             "http://www.opengis.net/ont/geosparql#hasLightDirection": {
-              "instancecount": 0
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#CalibrationObject": 1
             }
           }
         },
         "instancecount": 4
+      },
+      {
+        "id": "http://i3mainz.de/metadata/1.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 1.JPG (1.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/10.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 10.JPG (10.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/11.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 11.JPG (11.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/12.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 12.JPG (12.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/13.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 13.JPG (13.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/14.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 14.JPG (14.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/15.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 15.JPG (15.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/16.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 16.JPG (16.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/17.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 17.JPG (17.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/18.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 18.JPG (18.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/19.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 19.JPG (19.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/2.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 2.JPG (2.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/20.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 20.JPG (20.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/21.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 21.JPG (21.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/22.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 22.JPG (22.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/23.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 23.JPG (23.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/24.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 24.JPG (24.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/25.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 25.JPG (25.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/26.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 26.JPG (26.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/27.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 27.JPG (27.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/28.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 28.JPG (28.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/29.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 29.JPG (29.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/3.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 3.JPG (3.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/30.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 30.JPG (30.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/31.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 31.JPG (31.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/32.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 32.JPG (32.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/33.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 33.JPG (33.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/34.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 34.JPG (34.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/35.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 35.JPG (35.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/36.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 36.JPG (36.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/37.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 37.JPG (37.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/38.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 38.JPG (38.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/39.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 39.JPG (39.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/4.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 4.JPG (4.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/40.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 40.JPG (40.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/41.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 41.JPG (41.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/42.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 42.JPG (42.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/43.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 43.JPG (43.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/44.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 44.JPG (44.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/45.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 45.JPG (45.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/46.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 46.JPG (46.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/47.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 47.JPG (47.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/48.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 48.JPG (48.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/49.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 49.JPG (49.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/5.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 5.JPG (5.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/50.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 50.JPG (50.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/51.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 51.JPG (51.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/52.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 52.JPG (52.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/53.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 53.JPG (53.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/54.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 54.JPG (54.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/55.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 55.JPG (55.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/56.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 56.JPG (56.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/57.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 57.JPG (57.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/58.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 58.JPG (58.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/59.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 59.JPG (59.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/6.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 6.JPG (6.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/60.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 60.JPG (60.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/7.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 7.JPG (7.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/8.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 8.JPG (8.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/9.JPG_ld_calibration",
+        "parent": "http://objects.mainzed.org/ont#Calibration",
+        "type": "instance",
+        "text": "Calibration of light direction vector 9.JPG (9.JPG_ld_calibration)",
+        "data": {}
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#Calibration",
+        "parent": "#",
+        "type": "class",
+        "text": "Calibration (ns2:Calibration) [60]",
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://objects.mainzed.org/ont#calibration": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#LightDirection": 1
+            }
+          }
+        },
+        "instancecount": 2
       },
       {
         "id": "http://i3mainz.de/metadata/DomeCoordinateSystem_axis1",
@@ -5329,7 +5738,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSeries",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSeries (ns1:MeasurementSeries) [1]",
+        "text": "MeasurementSeries (ns2:MeasurementSeries) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurement": {
@@ -5352,6 +5761,47 @@ var tree={
           }
         },
         "instancecount": 62
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1",
+        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 1 (project1_sphere1)",
+        "data": {}
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#CalibrationObject",
+        "parent": "#",
+        "type": "geoclass",
+        "text": "CalibrationObject (ns2:CalibrationObject) [1]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/sf#Polygon": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasCentroid": {
+              "instancecount": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasLightDirection": {
+              "instancecount": 60,
+              "http://objects.mainzed.org/ont#LightDirection": 60
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://objects.mainzed.org/ont#calibrationobject": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#Calibration": 1
+            }
+          }
+        },
+        "instancecount": 64
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_bbox",
