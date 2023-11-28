@@ -61,43 +61,43 @@ def parseRelightJSON(jsonfile,resgraph):
         resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObject")))
         resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter))))
         for sphere in rjson["spheres"]:
-            if "border" in rjson["spheres"][sphere]:
+            if "border" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasBoundingBox"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox")))
                 wkt="POLYGON(("
-                for point in rjson["spheres"][sphere]["border"]:
-                    wkt+=point[0]+" "+point[1]+", "
-                wkt+=rjson["spheres"][sphere]["border"][0]+" "+rjson["spheres"][sphere]["border"][1]+"))"
+                for point in sphere["border"]:
+                    print(point)
+                    wkt+=str(point[0])+" "+str(point[1])+", "
+                wkt+=str(sphere["border"][0])+" "+str(sphere["border"][1])+"))"
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Bounding Box")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wkt,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-            if "center" in rjson["spheres"][sphere]:
+            if "center" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasCentroid"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Centroid")))
-                resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+rjson["spheres"][sphere]["center"][0]+" "+rjson["spheres"][sphere]["center"][1]+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-            if "radius" in rjson["spheres"][sphere]:
-                resgraph.add((URIRef(namespace+str(imageid)+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasMetricPerimeter"),Literal(rjson["spheres"][sphere]["radius"],datatype="http://www.w3.org/2001/XMLSchema#double")))
-            if "directions" in rjson["spheres"][sphere]:
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(sphere["center"][0])+" "+str(sphere["center"][1])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+            if "radius" in sphere:
+                resgraph.add((URIRef(namespace+str(imageid)+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasMetricPerimeter"),Literal(str(sphere["radius"]),datatype="http://www.w3.org/2001/XMLSchema#double")))
+            if "directions" in sphere:
                 ldcounter=0
-                for dire in rjson["spheres"][sphere]["directions"]:
+                for dire in sphere["directions"]:
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasLightDirection"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(ldcounter)+" for calbration object sphere "+str(spherecounter),lang="en")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(dire[0])+" "+str(dire[1])+" "+str(dire[2])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
-            if "lights" in rjson["spheres"][sphere]:
+            if "lights" in sphere:
                 lightcounter=0
-                for highlight in rjson["spheres"][sphere]["lights"]:
+                for highlight in sphere["lights"]:
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
                     resgraph.add((URIRef(ontnamespace+"Highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef(ontnamespace+"ReferencePoint")))  
-                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(hitem.attrib["ImageID"])+" using sphere "+str(highlightsphereid),lang="en")))
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(lightcounter)+" using sphere "+str(spherecounter),lang="en")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"PixelCoordinateSystem")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(highlight[0])+" "+str(highlight[1])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
                     #resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_highlight")))
                     resgraph.add((URIRef(namespace+"ledset_"+str(lightcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightSourceGroup")))
-                    resgraph.add((URIRef(namespace+"ledset_"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
-                    lightcounter+=1
-                                
+                    resgraph.add((URIRef(namespace+"ledset_"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(lightcounter),lang="en")))
+                    lightcounter+=1                         
             spherecounter+=1
     resgraph.serialize("resgraph_relight.ttl")
     with open("resgraph_relight.json", "w") as outfile:

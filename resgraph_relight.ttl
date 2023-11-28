@@ -1,640 +1,2279 @@
-@prefix ns1: <http://objects.mainzed.org/ont#> .
-@prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix ns4: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns2: <http://objects.mainzed.org/ont#> .
+@prefix ns3: <http://www.opengis.net/ont/crs/> .
+@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns4:CoordinateSystem ;
-    ns4:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
-        <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
+<http://i3mainz.de/metadata/9.JPG_sphere1> ns1:hasMetricPerimeter 1.629021e+02 .
 
-<http://i3mainz.de/metadata/project1> a ns1:MeasurementProject ;
+<http://i3mainz.de/metadata/9.JPG_sphere2> ns1:hasMetricPerimeter 3.422286e+02 .
+
+<http://i3mainz.de/metadata/9.JPG_sphere3> ns1:hasMetricPerimeter 1.319284e+02 .
+
+<http://i3mainz.de/metadata/9.JPG_sphere4> ns1:hasMetricPerimeter 2.79245e+02 .
+
+<http://i3mainz.de/metadata/ledset_0> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 0"@en .
+
+<http://i3mainz.de/metadata/ledset_1> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 1"@en .
+
+<http://i3mainz.de/metadata/ledset_10> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 10"@en .
+
+<http://i3mainz.de/metadata/ledset_11> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 11"@en .
+
+<http://i3mainz.de/metadata/ledset_12> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 12"@en .
+
+<http://i3mainz.de/metadata/ledset_13> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 13"@en .
+
+<http://i3mainz.de/metadata/ledset_14> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 14"@en .
+
+<http://i3mainz.de/metadata/ledset_15> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 15"@en .
+
+<http://i3mainz.de/metadata/ledset_16> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 16"@en .
+
+<http://i3mainz.de/metadata/ledset_17> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 17"@en .
+
+<http://i3mainz.de/metadata/ledset_18> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 18"@en .
+
+<http://i3mainz.de/metadata/ledset_19> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 19"@en .
+
+<http://i3mainz.de/metadata/ledset_2> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 2"@en .
+
+<http://i3mainz.de/metadata/ledset_20> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 20"@en .
+
+<http://i3mainz.de/metadata/ledset_21> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 21"@en .
+
+<http://i3mainz.de/metadata/ledset_22> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 22"@en .
+
+<http://i3mainz.de/metadata/ledset_23> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 23"@en .
+
+<http://i3mainz.de/metadata/ledset_24> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 24"@en .
+
+<http://i3mainz.de/metadata/ledset_25> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 25"@en .
+
+<http://i3mainz.de/metadata/ledset_26> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 26"@en .
+
+<http://i3mainz.de/metadata/ledset_27> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 27"@en .
+
+<http://i3mainz.de/metadata/ledset_28> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 28"@en .
+
+<http://i3mainz.de/metadata/ledset_29> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 29"@en .
+
+<http://i3mainz.de/metadata/ledset_3> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 3"@en .
+
+<http://i3mainz.de/metadata/ledset_30> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 30"@en .
+
+<http://i3mainz.de/metadata/ledset_31> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 31"@en .
+
+<http://i3mainz.de/metadata/ledset_32> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 32"@en .
+
+<http://i3mainz.de/metadata/ledset_33> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 33"@en .
+
+<http://i3mainz.de/metadata/ledset_34> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 34"@en .
+
+<http://i3mainz.de/metadata/ledset_35> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 35"@en .
+
+<http://i3mainz.de/metadata/ledset_36> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 36"@en .
+
+<http://i3mainz.de/metadata/ledset_37> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 37"@en .
+
+<http://i3mainz.de/metadata/ledset_38> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 38"@en .
+
+<http://i3mainz.de/metadata/ledset_39> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 39"@en .
+
+<http://i3mainz.de/metadata/ledset_4> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 4"@en .
+
+<http://i3mainz.de/metadata/ledset_40> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 40"@en .
+
+<http://i3mainz.de/metadata/ledset_41> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 41"@en .
+
+<http://i3mainz.de/metadata/ledset_42> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 42"@en .
+
+<http://i3mainz.de/metadata/ledset_43> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 43"@en .
+
+<http://i3mainz.de/metadata/ledset_44> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 44"@en .
+
+<http://i3mainz.de/metadata/ledset_45> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 45"@en .
+
+<http://i3mainz.de/metadata/ledset_46> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 46"@en .
+
+<http://i3mainz.de/metadata/ledset_47> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 47"@en .
+
+<http://i3mainz.de/metadata/ledset_48> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 48"@en .
+
+<http://i3mainz.de/metadata/ledset_49> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 49"@en .
+
+<http://i3mainz.de/metadata/ledset_5> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 5"@en .
+
+<http://i3mainz.de/metadata/ledset_50> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 50"@en .
+
+<http://i3mainz.de/metadata/ledset_51> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 51"@en .
+
+<http://i3mainz.de/metadata/ledset_52> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 52"@en .
+
+<http://i3mainz.de/metadata/ledset_53> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 53"@en .
+
+<http://i3mainz.de/metadata/ledset_54> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 54"@en .
+
+<http://i3mainz.de/metadata/ledset_55> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 55"@en .
+
+<http://i3mainz.de/metadata/ledset_56> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 56"@en .
+
+<http://i3mainz.de/metadata/ledset_57> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 57"@en .
+
+<http://i3mainz.de/metadata/ledset_58> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 58"@en .
+
+<http://i3mainz.de/metadata/ledset_59> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 59"@en .
+
+<http://i3mainz.de/metadata/ledset_6> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 6"@en .
+
+<http://i3mainz.de/metadata/ledset_7> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 7"@en .
+
+<http://i3mainz.de/metadata/ledset_8> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 8"@en .
+
+<http://i3mainz.de/metadata/ledset_9> a ns2:LightSourceGroup ;
+    rdfs:label "LightSource Group 9"@en .
+
+<http://i3mainz.de/metadata/project1> a ns2:MeasurementProject ;
     rdfs:label "Measurement Project project1"@en ;
-    ns1:measurementSeries <http://i3mainz.de/metadata/project1_ms> .
+    ns2:measurementSeries <http://i3mainz.de/metadata/project1_ms> .
 
-<http://i3mainz.de/metadata/project1_sphere1> a ns1:CalibrationObject ;
-    rdfs:label "project1 Calibration Sphere 1" .
+<http://i3mainz.de/metadata/project1_sphere1> a ns2:CalibrationObject ;
+    rdfs:label "project1 Calibration Sphere 1" ;
+    ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere1_bbox> ;
+    ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere1_centroid> ;
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere1_ld0> .
 
-<http://i3mainz.de/metadata/1.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/project1_sphere1_highlight0> a ns2:Highlight ;
+    rdfs:label "Image highlight point 0 using sphere 1"@en ;
+    ns1:asWKT "POINT(2076.0128311258277 2375.1829470198677)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight1> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1 using sphere 1"@en ;
+    ns1:asWKT "POINT(2052.4976214584567 2422.1980780620142)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight10> a ns2:Highlight ;
+    rdfs:label "Image highlight point 10 using sphere 1"@en ;
+    ns1:asWKT "POINT(2014.8265339056902 2432.779911564406)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight11> a ns2:Highlight ;
+    rdfs:label "Image highlight point 11 using sphere 1"@en ;
+    ns1:asWKT "POINT(2071.219994325168 2407.8233424761183)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight12> a ns2:Highlight ;
+    rdfs:label "Image highlight point 12 using sphere 1"@en ;
+    ns1:asWKT "POINT(1984.5482898783673 2445.542865091263)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight13> a ns2:Highlight ;
+    rdfs:label "Image highlight point 13 using sphere 1"@en ;
+    ns1:asWKT "POINT(1951.6718465539661 2444.909297789337)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight14> a ns2:Highlight ;
+    rdfs:label "Image highlight point 14 using sphere 1"@en ;
+    ns1:asWKT "POINT(1913.6568670618121 2424.919068585944)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight15> a ns2:Highlight ;
+    rdfs:label "Image highlight point 15 using sphere 1"@en ;
+    ns1:asWKT "POINT(1892.8785099618835 2391.704172839095)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight16> a ns2:Highlight ;
+    rdfs:label "Image highlight point 16 using sphere 1"@en ;
+    ns1:asWKT "POINT(1894.931896624295 2355.8710834245308)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight17> a ns2:Highlight ;
+    rdfs:label "Image highlight point 17 using sphere 1"@en ;
+    ns1:asWKT "POINT(1953.5607521473341 2368.5663081327866)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight18> a ns2:Highlight ;
+    rdfs:label "Image highlight point 18 using sphere 1"@en ;
+    ns1:asWKT "POINT(1975.4212996075012 2342.0331617967727)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight19> a ns2:Highlight ;
+    rdfs:label "Image highlight point 19 using sphere 1"@en ;
+    ns1:asWKT "POINT(2000.0079187091908 2361.4111576398673)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight2> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2 using sphere 1"@en ;
+    ns1:asWKT "POINT(2029.7448155846666 2450.768453618214)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight20> a ns2:Highlight ;
+    rdfs:label "Image highlight point 20 using sphere 1"@en ;
+    ns1:asWKT "POINT(1985.9013718578829 2391.641066375416)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight21> a ns2:Highlight ;
+    rdfs:label "Image highlight point 21 using sphere 1"@en ;
+    ns1:asWKT "POINT(1926.8497418579732 2345.8261681332597)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight22> a ns2:Highlight ;
+    rdfs:label "Image highlight point 22 using sphere 1"@en ;
+    ns1:asWKT "POINT(2055.8115797232003 2442.797199246581)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight23> a ns2:Highlight ;
+    rdfs:label "Image highlight point 23 using sphere 1"@en ;
+    ns1:asWKT "POINT(1955.7373763810735 2322.2427324222767)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight24> a ns2:Highlight ;
+    rdfs:label "Image highlight point 24 using sphere 1"@en ;
+    ns1:asWKT "POINT(1989.10530889556 2321.9280494548902)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight25> a ns2:Highlight ;
+    rdfs:label "Image highlight point 25 using sphere 1"@en ;
+    ns1:asWKT "POINT(2015.047781330968 2340.568474125254)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight26> a ns2:Highlight ;
+    rdfs:label "Image highlight point 26 using sphere 1"@en ;
+    ns1:asWKT "POINT(2023.4635796866985 2376.410290810086)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight27> a ns2:Highlight ;
+    rdfs:label "Image highlight point 27 using sphere 1"@en ;
+    ns1:asWKT "POINT(2007.7313156586863 2407.0583194803858)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight28> a ns2:Highlight ;
+    rdfs:label "Image highlight point 28 using sphere 1"@en ;
+    ns1:asWKT "POINT(1970.854598733952 2420.8347337575083)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight29> a ns2:Highlight ;
+    rdfs:label "Image highlight point 29 using sphere 1"@en ;
+    ns1:asWKT "POINT(1930.5330254041571 2394.5341185527327)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight3> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3 using sphere 1"@en ;
+    ns1:asWKT "POINT(1992.6088995528412 2469.62236106134)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight30> a ns2:Highlight ;
+    rdfs:label "Image highlight point 30 using sphere 1"@en ;
+    ns1:asWKT "POINT(1907.8942853327992 2328.062687762868)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight31> a ns2:Highlight ;
+    rdfs:label "Image highlight point 31 using sphere 1"@en ;
+    ns1:asWKT "POINT(1929.9170579029733 2310.0208205756276)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight32> a ns2:Highlight ;
+    rdfs:label "Image highlight point 32 using sphere 1"@en ;
+    ns1:asWKT "POINT(1958.846888024938 2298.3426499947464)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight33> a ns2:Highlight ;
+    rdfs:label "Image highlight point 33 using sphere 1"@en ;
+    ns1:asWKT "POINT(2021.5922614890349 2472.5916251493845)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight34> a ns2:Highlight ;
+    rdfs:label "Image highlight point 34 using sphere 1"@en ;
+    ns1:asWKT "POINT(1984.9476189486375 2299.2220166704774)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight35> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35 using sphere 1"@en ;
+    ns1:asWKT "POINT(2005.4286603168525 2306.8854400995547)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight36> a ns2:Highlight ;
+    rdfs:label "Image highlight point 36 using sphere 1"@en ;
+    ns1:asWKT "POINT(2025.2101910828026 2320.966282942792)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight37> a ns2:Highlight ;
+    rdfs:label "Image highlight point 37 using sphere 1"@en ;
+    ns1:asWKT "POINT(2038.1290500843465 2340.042405910069)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight38> a ns2:Highlight ;
+    rdfs:label "Image highlight point 38 using sphere 1"@en ;
+    ns1:asWKT "POINT(2045.5155931634586 2362.5180382098424)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight39> a ns2:Highlight ;
+    rdfs:label "Image highlight point 39 using sphere 1"@en ;
+    ns1:asWKT "POINT(1892.7702989916422 2311.764210492673)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight4> a ns2:Highlight ;
+    rdfs:label "Image highlight point 4 using sphere 1"@en ;
+    ns1:asWKT "POINT(1943.5654546608287 2471.6800082492546)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight40> a ns2:Highlight ;
+    rdfs:label "Image highlight point 40 using sphere 1"@en ;
+    ns1:asWKT "POINT(1924.9059063136456 2289.18116089613)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight41> a ns2:Highlight ;
+    rdfs:label "Image highlight point 41 using sphere 1"@en ;
+    ns1:asWKT "POINT(1959.8482379555335 2279.2203527623624)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight42> a ns2:Highlight ;
+    rdfs:label "Image highlight point 42 using sphere 1"@en ;
+    ns1:asWKT "POINT(1990.0876762448688 2283.80550597894)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight43> a ns2:Highlight ;
+    rdfs:label "Image highlight point 43 using sphere 1"@en ;
+    ns1:asWKT "POINT(2015.4667527816105 2292.732436955054)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight44> a ns2:Highlight ;
+    rdfs:label "Image highlight point 44 using sphere 1"@en ;
+    ns1:asWKT "POINT(1973.626650171477 2489.6585025917284)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight45> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45 using sphere 1"@en ;
+    ns1:asWKT "POINT(2038.8349012065046 2311.790557789823)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight46> a ns2:Highlight ;
+    rdfs:label "Image highlight point 46 using sphere 1"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight47> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47 using sphere 1"@en ;
+    ns1:asWKT "POINT(2062.5250516986707 2362.5808862629247)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight48> a ns2:Highlight ;
+    rdfs:label "Image highlight point 48 using sphere 1"@en ;
+    ns1:asWKT "POINT(1868.7968256513027 2317.783006012024)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight49> a ns2:Highlight ;
+    rdfs:label "Image highlight point 49 using sphere 1"@en ;
+    ns1:asWKT "POINT(1902.652565935188 2284.6761596581896)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight5> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5 using sphere 1"@en ;
+    ns1:asWKT "POINT(1896.9721136097494 2448.378917492011)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight50> a ns2:Highlight ;
+    rdfs:label "Image highlight point 50 using sphere 1"@en ;
+    ns1:asWKT "POINT(1940.7886469469404 2268.7943857808095)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight51> a ns2:Highlight ;
+    rdfs:label "Image highlight point 51 using sphere 1"@en ;
+    ns1:asWKT "POINT(1978.0467593042465 2267.642075600039)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight52> a ns2:Highlight ;
+    rdfs:label "Image highlight point 52 using sphere 1"@en ;
+    ns1:asWKT "POINT(2010.2423300446005 2275.2707122584134)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight53> a ns2:Highlight ;
+    rdfs:label "Image highlight point 53 using sphere 1"@en ;
+    ns1:asWKT "POINT(2036.7112544749402 2291.7014096062053)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight54> a ns2:Highlight ;
+    rdfs:label "Image highlight point 54 using sphere 1"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight55> a ns2:Highlight ;
+    rdfs:label "Image highlight point 55 using sphere 1"@en ;
+    ns1:asWKT "POINT(1914.655217472466 2479.964345715886)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight56> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56 using sphere 1"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight57> a ns2:Highlight ;
+    rdfs:label "Image highlight point 57 using sphere 1"@en ;
+    ns1:asWKT "POINT(1865.1623721647718 2437.028566531452)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight58> a ns2:Highlight ;
+    rdfs:label "Image highlight point 58 using sphere 1"@en ;
+    ns1:asWKT "POINT(1850.9132148917058 2373.176190238547)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight59> a ns2:Highlight ;
+    rdfs:label "Image highlight point 59 using sphere 1"@en ;
+    ns1:asWKT "POINT(2061.7175370906252 2392.2962197418583)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight6> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6 using sphere 1"@en ;
+    ns1:asWKT "POINT(1869.7627388882822 2398.7234247024135)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight7> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7 using sphere 1"@en ;
+    ns1:asWKT "POINT(1873.8022234003245 2348.7386701367136)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight8> a ns2:Highlight ;
+    rdfs:label "Image highlight point 8 using sphere 1"@en ;
+    ns1:asWKT "POINT(2043.576110273347 2387.2727311343797)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_highlight9> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9 using sphere 1"@en ;
+    ns1:asWKT "POINT(2034.207922685161 2411.00756114095)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld> ns1:asWKT "POINT Z(-0.013090441934764385 0.7257680296897888 0.6878150105476379)"^^ns1:wktLiteral,
+        "POINT Z(-0.02054884284734726 0.9076094627380371 0.41931241750717163)"^^ns1:wktLiteral,
+        "POINT Z(-0.05487964302301407 0.9868956208229065 0.15174123644828796)"^^ns1:wktLiteral,
+        "POINT Z(-0.0633222907781601 -0.6840444803237915 0.7266865968704224)"^^ns1:wktLiteral,
+        "POINT Z(-0.1902988851070404 -0.8960407972335815 0.4011199474334717)"^^ns1:wktLiteral,
+        "POINT Z(-0.2595917284488678 0.9652826189994812 -0.029010549187660217)"^^ns1:wktLiteral,
+        "POINT Z(-0.2833520472049713 -0.10471781343221664 0.9532816410064697)"^^ns1:wktLiteral,
+        "POINT Z(-0.3264739513397217 0.7916332483291626 0.5164605975151062)"^^ns1:wktLiteral,
+        "POINT Z(-0.3394732177257538 0.461933970451355 0.819374680519104)"^^ns1:wktLiteral,
+        "POINT Z(-0.3931710720062256 0.8903297185897827 0.22962918877601624)"^^ns1:wktLiteral,
+        "POINT Z(-0.4284042716026306 -0.8569954037666321 0.28640642762184143)"^^ns1:wktLiteral,
+        "POINT Z(-0.4827077388763428 -0.45505571365356445 0.74827641248703)"^^ns1:wktLiteral,
+        "POINT Z(-0.5596216320991516 0.5943139791488647 0.5775938034057617)"^^ns1:wktLiteral,
+        "POINT Z(-0.590280294418335 0.806899905204773 0.021948959678411484)"^^ns1:wktLiteral,
+        "POINT Z(-0.6352250576019287 -0.6552820801734924 0.4087720513343811)"^^ns1:wktLiteral,
+        "POINT Z(-0.6940858364105225 0.29740265011787415 0.655588686466217)"^^ns1:wktLiteral,
+        "POINT Z(-0.6973431706428528 0.6575236320495605 0.28526341915130615)"^^ns1:wktLiteral,
+        "POINT Z(-0.7095559239387512 -0.09164120256900787 0.698664665222168)"^^ns1:wktLiteral,
+        "POINT Z(-0.8010875582695007 -0.46599042415618896 0.3756484389305115)"^^ns1:wktLiteral,
+        "POINT Z(-0.8434237837791443 0.5118081569671631 0.16336676478385925)"^^ns1:wktLiteral,
+        "POINT Z(-0.8741493225097656 0.3047378957271576 0.37815040349960327)"^^ns1:wktLiteral,
+        "POINT Z(-0.8971891403198242 -0.1805737316608429 0.4030444622039795)"^^ns1:wktLiteral,
+        "POINT Z(-0.9543480277061462 0.048011425882577896 0.29481297731399536)"^^ns1:wktLiteral,
+        "POINT Z(0 0 0)"^^ns1:wktLiteral,
+        "POINT Z(0.0025311962235718966 0.220728799700737 0.9753319621086121)"^^ns1:wktLiteral,
+        "POINT Z(0.04820115491747856 -0.9901272058486938 0.131623312830925)"^^ns1:wktLiteral,
+        "POINT Z(0.07823361456394196 0.9949220418930054 -0.06332220137119293)"^^ns1:wktLiteral,
+        "POINT Z(0.19378085434436798 -0.4253370463848114 0.8840460181236267)"^^ns1:wktLiteral,
+        "POINT Z(0.24933737516403198 0.5282185077667236 0.8116748332977295)"^^ns1:wktLiteral,
+        "POINT Z(0.2514539361000061 0.9584880471229553 0.13443054258823395)"^^ns1:wktLiteral,
+        "POINT Z(0.25854212045669556 0.8948952555656433 0.36375606060028076)"^^ns1:wktLiteral,
+        "POINT Z(0.29188045859336853 -0.8932425379753113 0.3419409394264221)"^^ns1:wktLiteral,
+        "POINT Z(0.2969557046890259 -0.6965168118476868 0.6532087922096252)"^^ns1:wktLiteral,
+        "POINT Z(0.3657275438308716 0.7187224626541138 0.5913386344909668)"^^ns1:wktLiteral,
+        "POINT Z(0.36923885345458984 0.9223958849906921 -0.11335115134716034)"^^ns1:wktLiteral,
+        "POINT Z(0.39650967717170715 -0.07081151008605957 0.9152954816818237)"^^ns1:wktLiteral,
+        "POINT Z(0.48020538687705994 0.8110581040382385 0.3340471386909485)"^^ns1:wktLiteral,
+        "POINT Z(0.4860384464263916 -0.8701971173286438 0.08076886087656021)"^^ns1:wktLiteral,
+        "POINT Z(0.5001535415649414 0.8616655468940735 0.08590006828308105)"^^ns1:wktLiteral,
+        "POINT Z(0.5479064583778381 0.28975221514701843 0.7847561240196228)"^^ns1:wktLiteral,
+        "POINT Z(0.6147418022155762 -0.2683258056640625 0.7416830658912659)"^^ns1:wktLiteral,
+        "POINT Z(0.6164775490760803 0.7764266133308411 -0.13083261251449585)"^^ns1:wktLiteral,
+        "POINT Z(0.6210323572158813 -0.5585951209068298 0.5498093366622925)"^^ns1:wktLiteral,
+        "POINT Z(0.6548389196395874 -0.7136831283569336 0.2486814260482788)"^^ns1:wktLiteral,
+        "POINT Z(0.6647385358810425 0.4983351528644562 0.5565831065177917)"^^ns1:wktLiteral,
+        "POINT Z(0.6919934749603271 0.6539875268936157 0.30568838119506836)"^^ns1:wktLiteral,
+        "POINT Z(0.7372537851333618 0.6718674302101135 0.07107080519199371)"^^ns1:wktLiteral,
+        "POINT Z(0.7789481282234192 0.08625095337629318 0.6211285591125488)"^^ns1:wktLiteral,
+        "POINT Z(0.7938286066055298 -0.6080952286720276 -0.007501788437366486)"^^ns1:wktLiteral,
+        "POINT Z(0.8250198364257812 -0.3211938440799713 0.4649481177330017)"^^ns1:wktLiteral,
+        "POINT Z(0.8372615575790405 0.4482814073562622 0.3131083846092224)"^^ns1:wktLiteral,
+        "POINT Z(0.8823825120925903 -0.43474534153938293 0.17999312281608582)"^^ns1:wktLiteral,
+        "POINT Z(0.9163509011268616 -0.06257621198892593 0.3954557180404663)"^^ns1:wktLiteral,
+        "POINT Z(0.9211916327476501 0.20378191769123077 0.33148011565208435)"^^ns1:wktLiteral,
+        "POINT Z(0.9551777243614197 -0.29345640540122986 -0.03897427022457123)"^^ns1:wktLiteral,
+        "POINT Z(0.9806647896766663 -0.1365114450454712 0.1402185708284378)"^^ns1:wktLiteral,
+        "POINT Z(0.982269287109375 0.16138775646686554 0.09539937973022461)"^^ns1:wktLiteral,
+        "POINT Z(0.996246337890625 0.008169899694621563 -0.08617737889289856)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere2> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere2_bbox> ;
+    ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere2_centroid> ;
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere2_ld0> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight0> a ns2:Highlight ;
+    rdfs:label "Image highlight point 0 using sphere 2"@en ;
+    ns1:asWKT "POINT(3198.1923817801685 1869.423402789197)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight1> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1 using sphere 2"@en ;
+    ns1:asWKT "POINT(3107.5886808122195 1974.5611412530586)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight10> a ns2:Highlight ;
+    rdfs:label "Image highlight point 10 using sphere 2"@en ;
+    ns1:asWKT "POINT(3022.725051508908 1982.3593140225428)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight11> a ns2:Highlight ;
+    rdfs:label "Image highlight point 11 using sphere 2"@en ;
+    ns1:asWKT "POINT(3159.5567988374505 1958.5757144834267)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight12> a ns2:Highlight ;
+    rdfs:label "Image highlight point 12 using sphere 2"@en ;
+    ns1:asWKT "POINT(2952.7091430312084 1991.5823398582081)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight13> a ns2:Highlight ;
+    rdfs:label "Image highlight point 13 using sphere 2"@en ;
+    ns1:asWKT "POINT(2891.596618198256 1973.533497824572)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight14> a ns2:Highlight ;
+    rdfs:label "Image highlight point 14 using sphere 2"@en ;
+    ns1:asWKT "POINT(2833.173901014603 1928.0719678868393)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight15> a ns2:Highlight ;
+    rdfs:label "Image highlight point 15 using sphere 2"@en ;
+    ns1:asWKT "POINT(2802.9888061974575 1875.9549151200097)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight16> a ns2:Highlight ;
+    rdfs:label "Image highlight point 16 using sphere 2"@en ;
+    ns1:asWKT "POINT(2795.783381826899 1815.7743051475254)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight17> a ns2:Highlight ;
+    rdfs:label "Image highlight point 17 using sphere 2"@en ;
+    ns1:asWKT "POINT(2895.706400392099 1834.7472284676246)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight18> a ns2:Highlight ;
+    rdfs:label "Image highlight point 18 using sphere 2"@en ;
+    ns1:asWKT "POINT(2948.5951188140157 1758.0543953694873)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight19> a ns2:Highlight ;
+    rdfs:label "Image highlight point 19 using sphere 2"@en ;
+    ns1:asWKT "POINT(3017.8087779086936 1806.0396389207892)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight2> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2 using sphere 2"@en ;
+    ns1:asWKT "POINT(3035.1125488168054 2019.044645754944)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight20> a ns2:Highlight ;
+    rdfs:label "Image highlight point 20 using sphere 2"@en ;
+    ns1:asWKT "POINT(2970.7042902801277 1881.894273359654)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight21> a ns2:Highlight ;
+    rdfs:label "Image highlight point 21 using sphere 2"@en ;
+    ns1:asWKT "POINT(2840.0075456777104 1786.4076437056196)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight22> a ns2:Highlight ;
+    rdfs:label "Image highlight point 22 using sphere 2"@en ;
+    ns1:asWKT "POINT(3089.6856496173873 2027.6709324211076)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight23> a ns2:Highlight ;
+    rdfs:label "Image highlight point 23 using sphere 2"@en ;
+    ns1:asWKT "POINT(2890.31600868778 1718.8521922488014)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight24> a ns2:Highlight ;
+    rdfs:label "Image highlight point 24 using sphere 2"@en ;
+    ns1:asWKT "POINT(2982.0320381582164 1699.9795341164963)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight25> a ns2:Highlight ;
+    rdfs:label "Image highlight point 25 using sphere 2"@en ;
+    ns1:asWKT "POINT(3057.8575994922835 1747.2125520486666)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight26> a ns2:Highlight ;
+    rdfs:label "Image highlight point 26 using sphere 2"@en ;
+    ns1:asWKT "POINT(3078.6889243631936 1851.8836782966503)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight27> a ns2:Highlight ;
+    rdfs:label "Image highlight point 27 using sphere 2"@en ;
+    ns1:asWKT "POINT(3023.560244687201 1927.7830096384437)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight28> a ns2:Highlight ;
+    rdfs:label "Image highlight point 28 using sphere 2"@en ;
+    ns1:asWKT "POINT(2929.965952653613 1945.0341524771434)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight29> a ns2:Highlight ;
+    rdfs:label "Image highlight point 29 using sphere 2"@en ;
+    ns1:asWKT "POINT(2852.9866463367653 1883.2945429624613)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight3> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3 using sphere 2"@en ;
+    ns1:asWKT "POINT(2951.41384333479 2030.5014682092446)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight30> a ns2:Highlight ;
+    rdfs:label "Image highlight point 30 using sphere 2"@en ;
+    ns1:asWKT "POINT(2807.709571110876 1758.6148851000742)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight31> a ns2:Highlight ;
+    rdfs:label "Image highlight point 31 using sphere 2"@en ;
+    ns1:asWKT "POINT(2840.4673069921323 1709.7848142343796)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight32> a ns2:Highlight ;
+    rdfs:label "Image highlight point 32 using sphere 2"@en ;
+    ns1:asWKT "POINT(2897.390931324363 1667.2448668244695)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight33> a ns2:Highlight ;
+    rdfs:label "Image highlight point 33 using sphere 2"@en ;
+    ns1:asWKT "POINT(2995.3310261376346 2058.9155262981503)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight34> a ns2:Highlight ;
+    rdfs:label "Image highlight point 34 using sphere 2"@en ;
+    ns1:asWKT "POINT(2957.250655562041 1655.2230740414855)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight35> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35 using sphere 2"@en ;
+    ns1:asWKT "POINT(3017.2592451805594 1663.5981446284732)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight36> a ns2:Highlight ;
+    rdfs:label "Image highlight point 36 using sphere 2"@en ;
+    ns1:asWKT "POINT(3074.873665787205 1696.3420339071602)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight37> a ns2:Highlight ;
+    rdfs:label "Image highlight point 37 using sphere 2"@en ;
+    ns1:asWKT "POINT(3115.582292894962 1751.356014889829)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight38> a ns2:Highlight ;
+    rdfs:label "Image highlight point 38 using sphere 2"@en ;
+    ns1:asWKT "POINT(3132.8425932944238 1814.9244245685843)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight39> a ns2:Highlight ;
+    rdfs:label "Image highlight point 39 using sphere 2"@en ;
+    ns1:asWKT "POINT(2774.2988200566933 1740.0701796856088)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight4> a ns2:Highlight ;
+    rdfs:label "Image highlight point 4 using sphere 2"@en ;
+    ns1:asWKT "POINT(2871.5433933836634 2008.4636214885138)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight40> a ns2:Highlight ;
+    rdfs:label "Image highlight point 40 using sphere 2"@en ;
+    ns1:asWKT "POINT(2820.8255993108714 1677.6321180202956)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight41> a ns2:Highlight ;
+    rdfs:label "Image highlight point 41 using sphere 2"@en ;
+    ns1:asWKT "POINT(2886.026075680688 1630.7486281200083)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight42> a ns2:Highlight ;
+    rdfs:label "Image highlight point 42 using sphere 2"@en ;
+    ns1:asWKT "POINT(2961.1082444341373 1619.0522418058133)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight43> a ns2:Highlight ;
+    rdfs:label "Image highlight point 43 using sphere 2"@en ;
+    ns1:asWKT "POINT(3032.186889478091 1629.1852672341613)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight44> a ns2:Highlight ;
+    rdfs:label "Image highlight point 44 using sphere 2"@en ;
+    ns1:asWKT "POINT(2902.7126974860844 2053.225664917845)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight45> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45 using sphere 2"@en ;
+    ns1:asWKT "POINT(3104.421603035937 1673.880319894048)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight46> a ns2:Highlight ;
+    rdfs:label "Image highlight point 46 using sphere 2"@en ;
+    ns1:asWKT "POINT(3154.161493494489 1740.2748442948484)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight47> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47 using sphere 2"@en ;
+    ns1:asWKT "POINT(3169.9074155745966 1824.1093209965438)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight48> a ns2:Highlight ;
+    rdfs:label "Image highlight point 48 using sphere 2"@en ;
+    ns1:asWKT "POINT(2735.111784414045 1768.699356128871)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight49> a ns2:Highlight ;
+    rdfs:label "Image highlight point 49 using sphere 2"@en ;
+    ns1:asWKT "POINT(2769.6519169106373 1688.7065174961663)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight5> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5 using sphere 2"@en ;
+    ns1:asWKT "POINT(2808.75077072249 1960.4583747700265)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight50> a ns2:Highlight ;
+    rdfs:label "Image highlight point 50 using sphere 2"@en ;
+    ns1:asWKT "POINT(2831.677682477352 1626.6394784885122)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight51> a ns2:Highlight ;
+    rdfs:label "Image highlight point 51 using sphere 2"@en ;
+    ns1:asWKT "POINT(2914.7401208642 1591.599586332074)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight52> a ns2:Highlight ;
+    rdfs:label "Image highlight point 52 using sphere 2"@en ;
+    ns1:asWKT "POINT(3002.707399472956 1588.0248734525187)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight53> a ns2:Highlight ;
+    rdfs:label "Image highlight point 53 using sphere 2"@en ;
+    ns1:asWKT "POINT(3085.7132403434416 1619.0483363732192)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight54> a ns2:Highlight ;
+    rdfs:label "Image highlight point 54 using sphere 2"@en ;
+    ns1:asWKT "POINT(3157.724771051645 1684.3775818055233)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight55> a ns2:Highlight ;
+    rdfs:label "Image highlight point 55 using sphere 2"@en ;
+    ns1:asWKT "POINT(2819.7297302396664 2012.1239888114792)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight56> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56 using sphere 2"@en ;
+    ns1:asWKT "POINT(3196.9700189707755 1770.0489758182648)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight57> a ns2:Highlight ;
+    rdfs:label "Image highlight point 57 using sphere 2"@en ;
+    ns1:asWKT "POINT(2759.1179150553517 1942.8556123549818)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight58> a ns2:Highlight ;
+    rdfs:label "Image highlight point 58 using sphere 2"@en ;
+    ns1:asWKT "POINT(2730.2474812023834 1856.8647899480472)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight59> a ns2:Highlight ;
+    rdfs:label "Image highlight point 59 using sphere 2"@en ;
+    ns1:asWKT "POINT(3152.193791105686 1904.8903714769808)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight6> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6 using sphere 2"@en ;
+    ns1:asWKT "POINT(2769.2547117286804 1889.0754765035479)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight7> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7 using sphere 2"@en ;
+    ns1:asWKT "POINT(2761.0867852141373 1811.026675432395)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight8> a ns2:Highlight ;
+    rdfs:label "Image highlight point 8 using sphere 2"@en ;
+    ns1:asWKT "POINT(3119.3576893895556 1884.9227481792968)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight9> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9 using sphere 2"@en ;
+    ns1:asWKT "POINT(3081.197860062327 1943.4353477300845)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld> ns1:asWKT "POINT Z(-0.019966458901762962 0.9748795628547668 0.22183595597743988)"^^ns1:wktLiteral,
+        "POINT Z(-0.05249547213315964 0.8831396102905273 0.4661637544631958)"^^ns1:wktLiteral,
+        "POINT Z(-0.06654074043035507 -0.9726657867431641 0.22247156500816345)"^^ns1:wktLiteral,
+        "POINT Z(-0.07785119861364365 -0.871752917766571 0.4837210476398468)"^^ns1:wktLiteral,
+        "POINT Z(-0.12961992621421814 0.39892518520355225 0.9077760577201843)"^^ns1:wktLiteral,
+        "POINT Z(-0.20393379032611847 0.9781559705734253 0.04027334600687027)"^^ns1:wktLiteral,
+        "POINT Z(-0.2207229733467102 -0.6761812567710876 0.7028941512107849)"^^ns1:wktLiteral,
+        "POINT Z(-0.25700023770332336 -0.9662892818450928 -0.015357162803411484)"^^ns1:wktLiteral,
+        "POINT Z(-0.3616848587989807 0.8191907405853271 0.4450962543487549)"^^ns1:wktLiteral,
+        "POINT Z(-0.3691181242465973 0.9112698435783386 0.1825900673866272)"^^ns1:wktLiteral,
+        "POINT Z(-0.40021926164627075 -0.7802106142044067 0.4807243347167969)"^^ns1:wktLiteral,
+        "POINT Z(-0.4394074082374573 0.5947682857513428 0.6731802225112915)"^^ns1:wktLiteral,
+        "POINT Z(-0.4452420771121979 -0.058298755437135696 0.8935103416442871)"^^ns1:wktLiteral,
+        "POINT Z(-0.44672682881355286 -0.8696693181991577 0.21002455055713654)"^^ns1:wktLiteral,
+        "POINT Z(-0.551182210445404 0.834186315536499 0.018204694613814354)"^^ns1:wktLiteral,
+        "POINT Z(-0.6100741028785706 -0.791716456413269 -0.03153716027736664)"^^ns1:wktLiteral,
+        "POINT Z(-0.6539360284805298 -0.3275027573108673 0.6819894313812256)"^^ns1:wktLiteral,
+        "POINT Z(-0.6608949899673462 0.6027336716651917 0.44713523983955383)"^^ns1:wktLiteral,
+        "POINT Z(-0.6841107606887817 0.7018199563026428 0.198598250746727)"^^ns1:wktLiteral,
+        "POINT Z(-0.7054437398910522 -0.5391322374343872 0.4600929319858551)"^^ns1:wktLiteral,
+        "POINT Z(-0.7207475900650024 0.2171591818332672 0.6583044528961182)"^^ns1:wktLiteral,
+        "POINT Z(-0.7438074946403503 -0.6398459672927856 0.19325533509254456)"^^ns1:wktLiteral,
+        "POINT Z(-0.8153644800186157 0.5788697600364685 -0.009512597694993019)"^^ns1:wktLiteral,
+        "POINT Z(-0.8305532336235046 0.3481016755104065 0.4347488582134247)"^^ns1:wktLiteral,
+        "POINT Z(-0.8586585521697998 -0.26378148794174194 0.43945977091789246)"^^ns1:wktLiteral,
+        "POINT Z(-0.8672448992729187 -0.49630752205848694 -0.03956132009625435)"^^ns1:wktLiteral,
+        "POINT Z(-0.8964032530784607 0.05069112777709961 0.4403313398361206)"^^ns1:wktLiteral,
+        "POINT Z(-0.89839106798172 0.40390926599502563 0.17248447239398956)"^^ns1:wktLiteral,
+        "POINT Z(-0.9338408708572388 -0.3013714849948883 0.1926565170288086)"^^ns1:wktLiteral,
+        "POINT Z(-0.9689334630966187 0.24445517361164093 -0.037545137107372284)"^^ns1:wktLiteral,
+        "POINT Z(-0.9767499566078186 0.07061076164245605 0.20241954922676086)"^^ns1:wktLiteral,
+        "POINT Z(-0.9904874563217163 -0.13053295016288757 -0.04354032874107361)"^^ns1:wktLiteral,
+        "POINT Z(0.0010660415282472968 -0.34233295917510986 0.939578115940094)"^^ns1:wktLiteral,
+        "POINT Z(0.07271274924278259 0.7021867632865906 0.7082701921463013)"^^ns1:wktLiteral,
+        "POINT Z(0.1367451399564743 -0.9906023144721985 0.0027968385256826878)"^^ns1:wktLiteral,
+        "POINT Z(0.16044774651527405 0.9843147397041321 0.07335633039474487)"^^ns1:wktLiteral,
+        "POINT Z(0.2583520710468292 0.8390703201293945 0.47876429557800293)"^^ns1:wktLiteral,
+        "POINT Z(0.28349143266677856 0.11339770257472992 0.9522466063499451)"^^ns1:wktLiteral,
+        "POINT Z(0.2885468304157257 -0.8208657503128052 0.49286922812461853)"^^ns1:wktLiteral,
+        "POINT Z(0.30792292952537537 -0.5830303430557251 0.7518371939659119)"^^ns1:wktLiteral,
+        "POINT Z(0.3137240409851074 0.922391414642334 0.22532492876052856)"^^ns1:wktLiteral,
+        "POINT Z(0.3298332393169403 -0.9148451685905457 0.23295582830905914)"^^ns1:wktLiteral,
+        "POINT Z(0.4997217357158661 0.43966346979141235 0.7463070154190063)"^^ns1:wktLiteral,
+        "POINT Z(0.5054110288619995 0.8589572310447693 0.08217167854309082)"^^ns1:wktLiteral,
+        "POINT Z(0.529746949672699 -0.8468462824821472 0.04711085557937622)"^^ns1:wktLiteral,
+        "POINT Z(0.5567468404769897 0.6693248748779297 0.49197274446487427)"^^ns1:wktLiteral,
+        "POINT Z(0.5947877764701843 -0.6183316707611084 0.5137056708335876)"^^ns1:wktLiteral,
+        "POINT Z(0.6204437613487244 -0.15193957090377808 0.7693919539451599)"^^ns1:wktLiteral,
+        "POINT Z(0.6540123820304871 0.7148851156234741 0.24740087985992432)"^^ns1:wktLiteral,
+        "POINT Z(0.6703064441680908 -0.7015857696533203 0.24179883301258087)"^^ns1:wktLiteral,
+        "POINT Z(0.7697093486785889 0.38525277376174927 0.5090460181236267)"^^ns1:wktLiteral,
+        "POINT Z(0.7936864495277405 -0.31146055459976196 0.5225458741188049)"^^ns1:wktLiteral,
+        "POINT Z(0.8036116361618042 0.5875682830810547 0.09471938014030457)"^^ns1:wktLiteral,
+        "POINT Z(0.827250063419342 -0.5592095851898193 0.054240528494119644)"^^ns1:wktLiteral,
+        "POINT Z(0.8589963316917419 0.0546046681702137 0.5090615153312683)"^^ns1:wktLiteral,
+        "POINT Z(0.883575975894928 0.40027058124542236 0.24305732548236847)"^^ns1:wktLiteral,
+        "POINT Z(0.8859526515007019 -0.37589216232299805 0.27164867520332336)"^^ns1:wktLiteral,
+        "POINT Z(0.9645655155181885 0.007811932358890772 0.26372772455215454)"^^ns1:wktLiteral,
+        "POINT Z(0.967734694480896 0.23251108825206757 0.09709884226322174)"^^ns1:wktLiteral,
+        "POINT Z(0.9799870252609253 -0.18136495351791382 0.08204974979162216)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere3> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere3_bbox> ;
+    ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere3_centroid> ;
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight0> a ns2:Highlight ;
+    rdfs:label "Image highlight point 0 using sphere 3"@en ;
+    ns1:asWKT "POINT(2879.337712127192 645.1445001973276)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight1> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1 using sphere 3"@en ;
+    ns1:asWKT "POINT(2846.5504661767695 666.1672427314182)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight10> a ns2:Highlight ;
+    rdfs:label "Image highlight point 10 using sphere 3"@en ;
+    ns1:asWKT "POINT(2822.5433161216292 662.9058418548142)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight11> a ns2:Highlight ;
+    rdfs:label "Image highlight point 11 using sphere 3"@en ;
+    ns1:asWKT "POINT(2860.6101095690283 666.2843827611396)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight12> a ns2:Highlight ;
+    rdfs:label "Image highlight point 12 using sphere 3"@en ;
+    ns1:asWKT "POINT(2804.3801146471633 665.3572181590565)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight13> a ns2:Highlight ;
+    rdfs:label "Image highlight point 13 using sphere 3"@en ;
+    ns1:asWKT "POINT(2786.4718218024177 662.0757057766186)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight14> a ns2:Highlight ;
+    rdfs:label "Image highlight point 14 using sphere 3"@en ;
+    ns1:asWKT "POINT(2768.2414602068743 653.1308072370525)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight15> a ns2:Highlight ;
+    rdfs:label "Image highlight point 15 using sphere 3"@en ;
+    ns1:asWKT "POINT(2753.9880685258395 638.6103216155573)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight16> a ns2:Highlight ;
+    rdfs:label "Image highlight point 16 using sphere 3"@en ;
+    ns1:asWKT "POINT(2746.499466966318 619.325064108105)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight17> a ns2:Highlight ;
+    rdfs:label "Image highlight point 17 using sphere 3"@en ;
+    ns1:asWKT "POINT(2784.052052567403 619.026175314998)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight18> a ns2:Highlight ;
+    rdfs:label "Image highlight point 18 using sphere 3"@en ;
+    ns1:asWKT "POINT(2799.869456866033 594.111910750885)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight19> a ns2:Highlight ;
+    rdfs:label "Image highlight point 19 using sphere 3"@en ;
+    ns1:asWKT "POINT(2824.186748522519 610.9997962094966)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight2> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2 using sphere 3"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight20> a ns2:Highlight ;
+    rdfs:label "Image highlight point 20 using sphere 3"@en ;
+    ns1:asWKT "POINT(2807.581051657504 632.0783299765935)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight21> a ns2:Highlight ;
+    rdfs:label "Image highlight point 21 using sphere 3"@en ;
+    ns1:asWKT "POINT(2764.0630043218666 605.0962052511929)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight22> a ns2:Highlight ;
+    rdfs:label "Image highlight point 22 using sphere 3"@en ;
+    ns1:asWKT "POINT(2839.9469476312192 680.0645842002021)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight23> a ns2:Highlight ;
+    rdfs:label "Image highlight point 23 using sphere 3"@en ;
+    ns1:asWKT "POINT(2775.8449418835903 577.7681530914394)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight24> a ns2:Highlight ;
+    rdfs:label "Image highlight point 24 using sphere 3"@en ;
+    ns1:asWKT "POINT(2814.774067996297 570.7824413027014)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight25> a ns2:Highlight ;
+    rdfs:label "Image highlight point 25 using sphere 3"@en ;
+    ns1:asWKT "POINT(2840.253137170056 591.9035049762008)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight26> a ns2:Highlight ;
+    rdfs:label "Image highlight point 26 using sphere 3"@en ;
+    ns1:asWKT "POINT(2840.543183544674 625.4817974639163)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight27> a ns2:Highlight ;
+    rdfs:label "Image highlight point 27 using sphere 3"@en ;
+    ns1:asWKT "POINT(2822.525978426611 644.9770147399333)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight28> a ns2:Highlight ;
+    rdfs:label "Image highlight point 28 using sphere 3"@en ;
+    ns1:asWKT "POINT(2797.027097327426 649.6041446334143)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight29> a ns2:Highlight ;
+    rdfs:label "Image highlight point 29 using sphere 3"@en ;
+    ns1:asWKT "POINT(2774.3426205969513 634.1142577826658)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight3> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3 using sphere 3"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight30> a ns2:Highlight ;
+    rdfs:label "Image highlight point 30 using sphere 3"@en ;
+    ns1:asWKT "POINT(2745.028161236886 596.2246875156869)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight31> a ns2:Highlight ;
+    rdfs:label "Image highlight point 31 using sphere 3"@en ;
+    ns1:asWKT "POINT(2752.7802951162184 572.8433881779403)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight32> a ns2:Highlight ;
+    rdfs:label "Image highlight point 32 using sphere 3"@en ;
+    ns1:asWKT "POINT(2774.7326941554916 547.7543342941889)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight33> a ns2:Highlight ;
+    rdfs:label "Image highlight point 33 using sphere 3"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight34> a ns2:Highlight ;
+    rdfs:label "Image highlight point 34 using sphere 3"@en ;
+    ns1:asWKT "POINT(2803.7469277146397 541.7911896309056)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight35> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35 using sphere 3"@en ;
+    ns1:asWKT "POINT(2832.964567101462 550.7554933029852)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight36> a ns2:Highlight ;
+    rdfs:label "Image highlight point 36 using sphere 3"@en ;
+    ns1:asWKT "POINT(2854.3295654492135 571.1029058917622)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight37> a ns2:Highlight ;
+    rdfs:label "Image highlight point 37 using sphere 3"@en ;
+    ns1:asWKT "POINT(2861.7232128161518 596.1380644099413)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight38> a ns2:Highlight ;
+    rdfs:label "Image highlight point 38 using sphere 3"@en ;
+    ns1:asWKT "POINT(2861.351296120038 619.0612507698337)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight39> a ns2:Highlight ;
+    rdfs:label "Image highlight point 39 using sphere 3"@en ;
+    ns1:asWKT "POINT(2726.5876735675974 593.8376860995538)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight4> a ns2:Highlight ;
+    rdfs:label "Image highlight point 4 using sphere 3"@en ;
+    ns1:asWKT "POINT(2782.5558833738287 674.712599791739)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight40> a ns2:Highlight ;
+    rdfs:label "Image highlight point 40 using sphere 3"@en ;
+    ns1:asWKT "POINT(2737.81124965599 559.8014268475982)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight41> a ns2:Highlight ;
+    rdfs:label "Image highlight point 41 using sphere 3"@en ;
+    ns1:asWKT "POINT(2765.6890969982633 528.6911022905813)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight42> a ns2:Highlight ;
+    rdfs:label "Image highlight point 42 using sphere 3"@en ;
+    ns1:asWKT "POINT(2806.5695420573998 521.5703117088287)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight43> a ns2:Highlight ;
+    rdfs:label "Image highlight point 43 using sphere 3"@en ;
+    ns1:asWKT "POINT(2844.0014650782978 531.9857334998559)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight44> a ns2:Highlight ;
+    rdfs:label "Image highlight point 44 using sphere 3"@en ;
+    ns1:asWKT "POINT(2791.9659772622394 685.8835843436674)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight45> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45 using sphere 3"@en ;
+    ns1:asWKT "POINT(2872.4231440379613 564.0861778662177)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight46> a ns2:Highlight ;
+    rdfs:label "Image highlight point 46 using sphere 3"@en ;
+    ns1:asWKT "POINT(2881.6081977780304 597.6331854548213)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight47> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47 using sphere 3"@en ;
+    ns1:asWKT "POINT(2876.1584415584416 627.6767414403778)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight48> a ns2:Highlight ;
+    rdfs:label "Image highlight point 48 using sphere 3"@en ;
+    ns1:asWKT "POINT(2716.838097845215 614.1515388526064)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight49> a ns2:Highlight ;
+    rdfs:label "Image highlight point 49 using sphere 3"@en ;
+    ns1:asWKT "POINT(2717.3443912763414 575.8203045918837)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight5> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5 using sphere 3"@en ;
+    ns1:asWKT "POINT(2761.9311238921364 665.6848953422591)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight50> a ns2:Highlight ;
+    rdfs:label "Image highlight point 50 using sphere 3"@en ;
+    ns1:asWKT "POINT(2739.0414805792393 538.042382821311)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight51> a ns2:Highlight ;
+    rdfs:label "Image highlight point 51 using sphere 3"@en ;
+    ns1:asWKT "POINT(2781.7401617250675 513.8363881401617)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight52> a ns2:Highlight ;
+    rdfs:label "Image highlight point 52 using sphere 3"@en ;
+    ns1:asWKT "POINT(2832.418080657981 514.2259045512666)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight53> a ns2:Highlight ;
+    rdfs:label "Image highlight point 53 using sphere 3"@en ;
+    ns1:asWKT "POINT(2874.4028133547517 540.4947249598403)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight54> a ns2:Highlight ;
+    rdfs:label "Image highlight point 54 using sphere 3"@en ;
+    ns1:asWKT "POINT(2892.276941846279 580.8735839191309)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight55> a ns2:Highlight ;
+    rdfs:label "Image highlight point 55 using sphere 3"@en ;
+    ns1:asWKT "POINT(2769.1131369798973 679.4800270115838)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight56> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56 using sphere 3"@en ;
+    ns1:asWKT "POINT(2890.9084415138404 617.2473384161)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight57> a ns2:Highlight ;
+    rdfs:label "Image highlight point 57 using sphere 3"@en ;
+    ns1:asWKT "POINT(2747.4005671992804 666.3175624265062)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight58> a ns2:Highlight ;
+    rdfs:label "Image highlight point 58 using sphere 3"@en ;
+    ns1:asWKT "POINT(2728.7837722766253 644.39030472599)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight59> a ns2:Highlight ;
+    rdfs:label "Image highlight point 59 using sphere 3"@en ;
+    ns1:asWKT "POINT(2862.691969624492 649.4546460176991)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight6> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6 using sphere 3"@en ;
+    ns1:asWKT "POINT(2743.4051355940924 648.2628003910874)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight7> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7 using sphere 3"@en ;
+    ns1:asWKT "POINT(2731.481461305369 623.4886112151441)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight8> a ns2:Highlight ;
+    rdfs:label "Image highlight point 8 using sphere 3"@en ;
+    ns1:asWKT "POINT(2852.4899861253543 638.4434155757978)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_highlight9> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9 using sphere 3"@en ;
+    ns1:asWKT "POINT(2839.308532778356 653.6854685682806)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld> ns1:asWKT "POINT Z(-0.0074657560326159 0.6701525449752808 0.7421858906745911)"^^ns1:wktLiteral,
+        "POINT Z(-0.06942253559827805 -0.11541450768709183 0.9908884763717651)"^^ns1:wktLiteral,
+        "POINT Z(-0.10561106353998184 -0.8291975259780884 0.5488877892494202)"^^ns1:wktLiteral,
+        "POINT Z(-0.14734669029712677 -0.9872843623161316 -0.05965372920036316)"^^ns1:wktLiteral,
+        "POINT Z(-0.2333376407623291 0.8972368836402893 0.3748593330383301)"^^ns1:wktLiteral,
+        "POINT Z(-0.2448170930147171 -0.9084036350250244 0.3389207720756531)"^^ns1:wktLiteral,
+        "POINT Z(-0.2783111035823822 -0.9537956118583679 0.11321166157722473)"^^ns1:wktLiteral,
+        "POINT Z(-0.3079267740249634 -0.46288391947746277 0.8312157392501831)"^^ns1:wktLiteral,
+        "POINT Z(-0.3912414312362671 0.5960702300071716 0.701163649559021)"^^ns1:wktLiteral,
+        "POINT Z(-0.41700279712677 0.15746276080608368 0.895161509513855)"^^ns1:wktLiteral,
+        "POINT Z(-0.42262929677963257 -0.9050529599189758 -0.04757733643054962)"^^ns1:wktLiteral,
+        "POINT Z(-0.4386149048805237 0.8169041275978088 0.3745459318161011)"^^ns1:wktLiteral,
+        "POINT Z(-0.4388889670372009 -0.627392590045929 0.643237829208374)"^^ns1:wktLiteral,
+        "POINT Z(-0.49482205510139465 -0.7870204448699951 0.3684426546096802)"^^ns1:wktLiteral,
+        "POINT Z(-0.5399720668792725 -0.8315474987030029 0.13022607564926147)"^^ns1:wktLiteral,
+        "POINT Z(-0.5901582837104797 -0.22387215495109558 0.7756252288818359)"^^ns1:wktLiteral,
+        "POINT Z(-0.6764769554138184 -0.7360231876373291 -0.0254727303981781)"^^ns1:wktLiteral,
+        "POINT Z(-0.6854951977729797 0.673809826374054 0.27582013607025146)"^^ns1:wktLiteral,
+        "POINT Z(-0.6884310841560364 -0.5921475291252136 0.4188365042209625)"^^ns1:wktLiteral,
+        "POINT Z(-0.6975765228271484 0.26979637145996094 0.6637747883796692)"^^ns1:wktLiteral,
+        "POINT Z(-0.7714782953262329 -0.6100541949272156 0.1807069629430771)"^^ns1:wktLiteral,
+        "POINT Z(-0.7924842238426208 -0.34266337752342224 0.5045300722122192)"^^ns1:wktLiteral,
+        "POINT Z(-0.7958164811134338 0.47092702984809875 0.3806624412536621)"^^ns1:wktLiteral,
+        "POINT Z(-0.808612585067749 -0.03713500499725342 0.5871683359146118)"^^ns1:wktLiteral,
+        "POINT Z(-0.883642315864563 -0.4677697718143463 0.01917456090450287)"^^ns1:wktLiteral,
+        "POINT Z(-0.9166065454483032 -0.30369338393211365 0.26000529527664185)"^^ns1:wktLiteral,
+        "POINT Z(-0.941072404384613 0.3227106034755707 0.10119587928056717)"^^ns1:wktLiteral,
+        "POINT Z(-0.9502861499786377 0.07037762552499771 0.30332037806510925)"^^ns1:wktLiteral,
+        "POINT Z(-0.9923226833343506 -0.10632632672786713 0.06317019462585449)"^^ns1:wktLiteral,
+        "POINT Z(0 0 0)"^^ns1:wktLiteral,
+        "POINT Z(0.0019405100028961897 -0.9474762678146362 0.31982046365737915)"^^ns1:wktLiteral,
+        "POINT Z(0.027493366971611977 0.8973698616027832 0.44042181968688965)"^^ns1:wktLiteral,
+        "POINT Z(0.048673324286937714 -0.6463531851768494 0.7614843845367432)"^^ns1:wktLiteral,
+        "POINT Z(0.15296731889247894 0.24926802515983582 0.9562773704528809)"^^ns1:wktLiteral,
+        "POINT Z(0.2509748935699463 -0.9117336869239807 0.3251972794532776)"^^ns1:wktLiteral,
+        "POINT Z(0.26507866382598877 -0.7700722217559814 0.5802775621414185)"^^ns1:wktLiteral,
+        "POINT Z(0.2891506552696228 0.8708800077438354 0.39744168519973755)"^^ns1:wktLiteral,
+        "POINT Z(0.3011426031589508 -0.3525078594684601 0.8860312104225159)"^^ns1:wktLiteral,
+        "POINT Z(0.3847593069076538 0.554500162601471 0.7378954887390137)"^^ns1:wktLiteral,
+        "POINT Z(0.4298349618911743 -0.9009047150611877 -0.060105100274086)"^^ns1:wktLiteral,
+        "POINT Z(0.46291235089302063 0.7830108404159546 0.4154590964317322)"^^ns1:wktLiteral,
+        "POINT Z(0.48157230019569397 -0.7944093346595764 0.37013763189315796)"^^ns1:wktLiteral,
+        "POINT Z(0.526655912399292 -0.043176114559173584 0.8489813804626465)"^^ns1:wktLiteral,
+        "POINT Z(0.5290753841400146 -0.5055750012397766 0.6815226674079895)"^^ns1:wktLiteral,
+        "POINT Z(0.5397851467132568 -0.832442045211792 0.12518903613090515)"^^ns1:wktLiteral,
+        "POINT Z(0.6646412014961243 -0.6000525951385498 0.4451841711997986)"^^ns1:wktLiteral,
+        "POINT Z(0.6746472120285034 -0.7379550337791443 -0.016539081931114197)"^^ns1:wktLiteral,
+        "POINT Z(0.6767702102661133 0.2912636995315552 0.6761267781257629)"^^ns1:wktLiteral,
+        "POINT Z(0.7215113639831543 0.6179948449134827 0.3122558891773224)"^^ns1:wktLiteral,
+        "POINT Z(0.7472798228263855 -0.6340516805648804 0.19887492060661316)"^^ns1:wktLiteral,
+        "POINT Z(0.7838640809059143 -0.34216636419296265 0.5181499719619751)"^^ns1:wktLiteral,
+        "POINT Z(0.7881796956062317 -0.04237810894846916 0.6139843463897705)"^^ns1:wktLiteral,
+        "POINT Z(0.821926474571228 0.4193931818008423 0.38541704416275024)"^^ns1:wktLiteral,
+        "POINT Z(0.880068302154541 -0.47443118691444397 0.019870981574058533)"^^ns1:wktLiteral,
+        "POINT Z(0.9038524627685547 -0.35140731930732727 0.2440565824508667)"^^ns1:wktLiteral,
+        "POINT Z(0.9513289928436279 0.022201400250196457 0.307376503944397)"^^ns1:wktLiteral,
+        "POINT Z(0.9583665728569031 0.26835593581199646 0.09756351262331009)"^^ns1:wktLiteral,
+        "POINT Z(0.9877904653549194 -0.14202100038528442 0.06403142213821411)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere4> ns1:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere4_bbox> ;
+    ns1:hasCentroid <http://i3mainz.de/metadata/project1_sphere4_centroid> ;
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere4_ld0> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight0> a ns2:Highlight ;
+    rdfs:label "Image highlight point 0 using sphere 4"@en ;
+    ns1:asWKT "POINT(4239.505660776637 2368.5973336154902)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight1> a ns2:Highlight ;
+    rdfs:label "Image highlight point 1 using sphere 4"@en ;
+    ns1:asWKT "POINT(4144.500387715182 2497.5000125069414)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight10> a ns2:Highlight ;
+    rdfs:label "Image highlight point 10 using sphere 4"@en ;
+    ns1:asWKT "POINT(4055.58511447071 2478.738725132533)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight11> a ns2:Highlight ;
+    rdfs:label "Image highlight point 11 using sphere 4"@en ;
+    ns1:asWKT "POINT(4194.8254973797075 2483.710374453681)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight12> a ns2:Highlight ;
+    rdfs:label "Image highlight point 12 using sphere 4"@en ;
+    ns1:asWKT "POINT(3995.735550277118 2473.145253501515)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight13> a ns2:Highlight ;
+    rdfs:label "Image highlight point 13 using sphere 4"@en ;
+    ns1:asWKT "POINT(3954.6913984484327 2448.27968289336)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight14> a ns2:Highlight ;
+    rdfs:label "Image highlight point 14 using sphere 4"@en ;
+    ns1:asWKT "POINT(3923.04225774857 2409.13851853022)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight15> a ns2:Highlight ;
+    rdfs:label "Image highlight point 15 using sphere 4"@en ;
+    ns1:asWKT "POINT(3909.1593162754407 2373.1222121074193)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight16> a ns2:Highlight ;
+    rdfs:label "Image highlight point 16 using sphere 4"@en ;
+    ns1:asWKT "POINT(3909.1476145066604 2337.496446345025)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight17> a ns2:Highlight ;
+    rdfs:label "Image highlight point 17 using sphere 4"@en ;
+    ns1:asWKT "POINT(3978.6923505851883 2354.281273983116)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight18> a ns2:Highlight ;
+    rdfs:label "Image highlight point 18 using sphere 4"@en ;
+    ns1:asWKT "POINT(4012.068902638785 2304.7935022468923)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight19> a ns2:Highlight ;
+    rdfs:label "Image highlight point 19 using sphere 4"@en ;
+    ns1:asWKT "POINT(4059.7401942695587 2332.7596098713007)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight2> a ns2:Highlight ;
+    rdfs:label "Image highlight point 2 using sphere 4"@en ;
+    ns1:asWKT "POINT(4052.552250581679 2526.5552808390244)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight20> a ns2:Highlight ;
+    rdfs:label "Image highlight point 20 using sphere 4"@en ;
+    ns1:asWKT "POINT(4024.728283093994 2388.0131347673764)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight21> a ns2:Highlight ;
+    rdfs:label "Image highlight point 21 using sphere 4"@en ;
+    ns1:asWKT "POINT(3945.0445926717616 2323.161669360083)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight22> a ns2:Highlight ;
+    rdfs:label "Image highlight point 22 using sphere 4"@en ;
+    ns1:asWKT "POINT(4099.783767451552 2548.9219056053344)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight23> a ns2:Highlight ;
+    rdfs:label "Image highlight point 23 using sphere 4"@en ;
+    ns1:asWKT "POINT(3975.0080907588663 2283.0613130799543)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight24> a ns2:Highlight ;
+    rdfs:label "Image highlight point 24 using sphere 4"@en ;
+    ns1:asWKT "POINT(4030.5669795723934 2264.962753944013)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight25> a ns2:Highlight ;
+    rdfs:label "Image highlight point 25 using sphere 4"@en ;
+    ns1:asWKT "POINT(4085.0036519897258 2287.389789036727)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight26> a ns2:Highlight ;
+    rdfs:label "Image highlight point 26 using sphere 4"@en ;
+    ns1:asWKT "POINT(4109.529170951962 2362.4752088298005)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight27> a ns2:Highlight ;
+    rdfs:label "Image highlight point 27 using sphere 4"@en ;
+    ns1:asWKT "POINT(4060.69367861667 2426.589985478738)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight28> a ns2:Highlight ;
+    rdfs:label "Image highlight point 28 using sphere 4"@en ;
+    ns1:asWKT "POINT(3991.8949479782386 2427.082215112924)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight29> a ns2:Highlight ;
+    rdfs:label "Image highlight point 29 using sphere 4"@en ;
+    ns1:asWKT "POINT(3948.924074911393 2380.5086200609676)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight3> a ns2:Highlight ;
+    rdfs:label "Image highlight point 3 using sphere 4"@en ;
+    ns1:asWKT "POINT(3976.8012281908714 2509.1959127973205)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight30> a ns2:Highlight ;
+    rdfs:label "Image highlight point 30 using sphere 4"@en ;
+    ns1:asWKT "POINT(3918.257813604865 2303.3399802008203)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight31> a ns2:Highlight ;
+    rdfs:label "Image highlight point 31 using sphere 4"@en ;
+    ns1:asWKT "POINT(3937.285505852927 2274.152149210981)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight32> a ns2:Highlight ;
+    rdfs:label "Image highlight point 32 using sphere 4"@en ;
+    ns1:asWKT "POINT(3971.1862032972094 2244.8659748871764)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight33> a ns2:Highlight ;
+    rdfs:label "Image highlight point 33 using sphere 4"@en ;
+    ns1:asWKT "POINT(3998.429702457135 2544.154446219101)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight34> a ns2:Highlight ;
+    rdfs:label "Image highlight point 34 using sphere 4"@en ;
+    ns1:asWKT "POINT(4006.965053925772 2230.3610067754444)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight35> a ns2:Highlight ;
+    rdfs:label "Image highlight point 35 using sphere 4"@en ;
+    ns1:asWKT "POINT(4047.5668374111124 2227.7029468482583)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight36> a ns2:Highlight ;
+    rdfs:label "Image highlight point 36 using sphere 4"@en ;
+    ns1:asWKT "POINT(4092.637583734731 2239.7778463927166)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight37> a ns2:Highlight ;
+    rdfs:label "Image highlight point 37 using sphere 4"@en ;
+    ns1:asWKT "POINT(4135.09827342751 2276.947590737475)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight38> a ns2:Highlight ;
+    rdfs:label "Image highlight point 38 using sphere 4"@en ;
+    ns1:asWKT "POINT(4163.093919652551 2326.8324026679074)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight39> a ns2:Highlight ;
+    rdfs:label "Image highlight point 39 using sphere 4"@en ;
+    ns1:asWKT "POINT(3894.410101800496 2289.235928593895)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight4> a ns2:Highlight ;
+    rdfs:label "Image highlight point 4 using sphere 4"@en ;
+    ns1:asWKT "POINT(3926.087130783306 2471.3414219743836)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight40> a ns2:Highlight ;
+    rdfs:label "Image highlight point 40 using sphere 4"@en ;
+    ns1:asWKT "POINT(3920.452075755152 2253.1209842883873)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight41> a ns2:Highlight ;
+    rdfs:label "Image highlight point 41 using sphere 4"@en ;
+    ns1:asWKT "POINT(3955.8201827601983 2220.2061492995017)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight42> a ns2:Highlight ;
+    rdfs:label "Image highlight point 42 using sphere 4"@en ;
+    ns1:asWKT "POINT(3999.089035608219 2201.7419292654863)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight43> a ns2:Highlight ;
+    rdfs:label "Image highlight point 43 using sphere 4"@en ;
+    ns1:asWKT "POINT(4046.8454516020493 2194.17401296368)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight44> a ns2:Highlight ;
+    rdfs:label "Image highlight point 44 using sphere 4"@en ;
+    ns1:asWKT "POINT(3930.630281344966 2507.787022514133)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight45> a ns2:Highlight ;
+    rdfs:label "Image highlight point 45 using sphere 4"@en ;
+    ns1:asWKT "POINT(4109.942689203747 2206.7516742161265)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight46> a ns2:Highlight ;
+    rdfs:label "Image highlight point 46 using sphere 4"@en ;
+    ns1:asWKT "POINT(4171.437930202524 2246.9538042321283)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight47> a ns2:Highlight ;
+    rdfs:label "Image highlight point 47 using sphere 4"@en ;
+    ns1:asWKT "POINT(4211.858703106783 2325.811026907162)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight48> a ns2:Highlight ;
+    rdfs:label "Image highlight point 48 using sphere 4"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight49> a ns2:Highlight ;
+    rdfs:label "Image highlight point 49 using sphere 4"@en ;
+    ns1:asWKT "POINT(0 0)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight5> a ns2:Highlight ;
+    rdfs:label "Image highlight point 5 using sphere 4"@en ;
+    ns1:asWKT "POINT(3894.651308714672 2426.7514016349796)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight50> a ns2:Highlight ;
+    rdfs:label "Image highlight point 50 using sphere 4"@en ;
+    ns1:asWKT "POINT(3920.479587869362 2221.0484635101666)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight51> a ns2:Highlight ;
+    rdfs:label "Image highlight point 51 using sphere 4"@en ;
+    ns1:asWKT "POINT(3964.9181145559774 2191.9105804062906)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight52> a ns2:Highlight ;
+    rdfs:label "Image highlight point 52 using sphere 4"@en ;
+    ns1:asWKT "POINT(4015.6808861360173 2173.0707185494143)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight53> a ns2:Highlight ;
+    rdfs:label "Image highlight point 53 using sphere 4"@en ;
+    ns1:asWKT "POINT(4075.845525115786 2171.4269147884893)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight54> a ns2:Highlight ;
+    rdfs:label "Image highlight point 54 using sphere 4"@en ;
+    ns1:asWKT "POINT(4148.471091965049 2196.5183563841847)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight55> a ns2:Highlight ;
+    rdfs:label "Image highlight point 55 using sphere 4"@en ;
+    ns1:asWKT "POINT(3886.6095377705697 2458.21923148899)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight56> a ns2:Highlight ;
+    rdfs:label "Image highlight point 56 using sphere 4"@en ;
+    ns1:asWKT "POINT(4214.007200360018 2259.4877243862193)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight57> a ns2:Highlight ;
+    rdfs:label "Image highlight point 57 using sphere 4"@en ;
+    ns1:asWKT "POINT(3864.178590640129 2405.01803538342)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight58> a ns2:Highlight ;
+    rdfs:label "Image highlight point 58 using sphere 4"@en ;
+    ns1:asWKT "POINT(3858.7997760393664 2352.452589741972)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight59> a ns2:Highlight ;
+    rdfs:label "Image highlight point 59 using sphere 4"@en ;
+    ns1:asWKT "POINT(4202.688205347289 2420.7005487659126)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight6> a ns2:Highlight ;
+    rdfs:label "Image highlight point 6 using sphere 4"@en ;
+    ns1:asWKT "POINT(3881.4958559002134 2377.4955276546857)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight7> a ns2:Highlight ;
+    rdfs:label "Image highlight point 7 using sphere 4"@en ;
+    ns1:asWKT "POINT(3884.4623937506144 2330.8964275180324)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight8> a ns2:Highlight ;
+    rdfs:label "Image highlight point 8 using sphere 4"@en ;
+    ns1:asWKT "POINT(4154.040481932753 2395.549707816497)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_highlight9> a ns2:Highlight ;
+    rdfs:label "Image highlight point 9 using sphere 4"@en ;
+    ns1:asWKT "POINT(4114.558193363994 2452.5659877021544)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld> ns1:asWKT "POINT Z(-0.025817101821303368 0.9226460456848145 0.3847827613353729)"^^ns1:wktLiteral,
+        "POINT Z(-0.044716209173202515 -0.6754324436187744 0.7360647916793823)"^^ns1:wktLiteral,
+        "POINT Z(-0.05505496263504028 0.9892611503601074 -0.13539326190948486)"^^ns1:wktLiteral,
+        "POINT Z(-0.06675615906715393 -0.3306194245815277 0.9414001703262329)"^^ns1:wktLiteral,
+        "POINT Z(-0.08028154075145721 0.3494020998477936 0.9335272312164307)"^^ns1:wktLiteral,
+        "POINT Z(-0.20768103003501892 0.7673863768577576 0.6066190600395203)"^^ns1:wktLiteral,
+        "POINT Z(-0.21224722266197205 -0.9637328386306763 0.1617717444896698)"^^ns1:wktLiteral,
+        "POINT Z(-0.23326672613620758 0.9696899056434631 0.07271909713745117)"^^ns1:wktLiteral,
+        "POINT Z(-0.27657413482666016 0.9062567353248596 0.31969594955444336)"^^ns1:wktLiteral,
+        "POINT Z(-0.342661052942276 -0.05348106101155281 0.9379355907440186)"^^ns1:wktLiteral,
+        "POINT Z(-0.34355807304382324 0.9283052086830139 -0.142187237739563)"^^ns1:wktLiteral,
+        "POINT Z(-0.38955456018447876 0.5324325561523438 0.751507043838501)"^^ns1:wktLiteral,
+        "POINT Z(-0.43004924058914185 -0.6490421891212463 0.6275363564491272)"^^ns1:wktLiteral,
+        "POINT Z(-0.43137839436531067 -0.8346733450889587 0.3423932194709778)"^^ns1:wktLiteral,
+        "POINT Z(-0.48993948101997375 0.8710958361625671 0.033931031823158264)"^^ns1:wktLiteral,
+        "POINT Z(-0.5043628215789795 0.8172546625137329 0.27877044677734375)"^^ns1:wktLiteral,
+        "POINT Z(-0.5284658074378967 -0.3445056080818176 0.7759122252464294)"^^ns1:wktLiteral,
+        "POINT Z(-0.5763566493988037 0.637816846370697 0.510884165763855)"^^ns1:wktLiteral,
+        "POINT Z(-0.5970662236213684 0.7849764823913574 -0.1652992069721222)"^^ns1:wktLiteral,
+        "POINT Z(-0.6017155647277832 -0.7931990623474121 0.09366703778505325)"^^ns1:wktLiteral,
+        "POINT Z(-0.6371819972991943 0.17820590734481812 0.7498278617858887)"^^ns1:wktLiteral,
+        "POINT Z(-0.6921156644821167 -0.4898918569087982 0.5300772190093994)"^^ns1:wktLiteral,
+        "POINT Z(-0.7202920317649841 0.692714273929596 0.036419451236724854)"^^ns1:wktLiteral,
+        "POINT Z(-0.7285602688789368 0.6343249082565308 0.25851836800575256)"^^ns1:wktLiteral,
+        "POINT Z(-0.742039144039154 -0.6187485456466675 0.2579307556152344)"^^ns1:wktLiteral,
+        "POINT Z(-0.7868288159370422 0.3634290099143982 0.4988183379173279)"^^ns1:wktLiteral,
+        "POINT Z(-0.7948973774909973 -0.02502567321062088 0.6062275171279907)"^^ns1:wktLiteral,
+        "POINT Z(-0.8514469265937805 -0.5243719220161438 0.008498400449752808)"^^ns1:wktLiteral,
+        "POINT Z(-0.8568833470344543 0.44743192195892334 0.25603845715522766)"^^ns1:wktLiteral,
+        "POINT Z(-0.8790205121040344 -0.23388391733169556 0.4154772162437439)"^^ns1:wktLiteral,
+        "POINT Z(-0.8791453242301941 0.47601017355918884 0.022755831480026245)"^^ns1:wktLiteral,
+        "POINT Z(-0.9217373728752136 -0.35041698813438416 0.1661568582057953)"^^ns1:wktLiteral,
+        "POINT Z(-0.9304807782173157 0.22962293028831482 0.2854449450969696)"^^ns1:wktLiteral,
+        "POINT Z(-0.9443181753158569 -0.0006584972143173218 0.3290330767631531)"^^ns1:wktLiteral,
+        "POINT Z(-0.969550371170044 0.2335854470729828 0.07355186343193054)"^^ns1:wktLiteral,
+        "POINT Z(-0.9722259640693665 -0.22556334733963013 -0.06243355572223663)"^^ns1:wktLiteral,
+        "POINT Z(-0.9908391237258911 0.07129225879907608 -0.11469630897045135)"^^ns1:wktLiteral,
+        "POINT Z(-0.9932193756103516 -0.051141656935214996 0.1044023334980011)"^^ns1:wktLiteral,
+        "POINT Z(0 0 0)"^^ns1:wktLiteral,
+        "POINT Z(0.023974373936653137 -0.9091539978981018 0.4157695770263672)"^^ns1:wktLiteral,
+        "POINT Z(0.046140022575855255 0.9930502772331238 0.10826922208070755)"^^ns1:wktLiteral,
+        "POINT Z(0.1406182497739792 0.6286653280258179 0.7648571729660034)"^^ns1:wktLiteral,
+        "POINT Z(0.22335703670978546 0.9747366309165955 -0.00028004497289657593)"^^ns1:wktLiteral,
+        "POINT Z(0.24749475717544556 0.8469972014427185 0.47046998143196106)"^^ns1:wktLiteral,
+        "POINT Z(0.28006812930107117 0.12514275312423706 0.9517884254455566)"^^ns1:wktLiteral,
+        "POINT Z(0.30167603492736816 -0.9134612083435059 0.27309370040893555)"^^ns1:wktLiteral,
+        "POINT Z(0.3355194926261902 -0.49273139238357544 0.80289626121521)"^^ns1:wktLiteral,
+        "POINT Z(0.3945416510105133 0.9015195965766907 0.17776213586330414)"^^ns1:wktLiteral,
+        "POINT Z(0.49651530385017395 0.6249756813049316 0.6023934483528137)"^^ns1:wktLiteral,
+        "POINT Z(0.5214669108390808 0.8302838206291199 0.1967257857322693)"^^ns1:wktLiteral,
+        "POINT Z(0.5449340343475342 -0.7089240550994873 0.447742760181427)"^^ns1:wktLiteral,
+        "POINT Z(0.5918518900871277 -0.11804384738206863 0.7973562479019165)"^^ns1:wktLiteral,
+        "POINT Z(0.6595456004142761 0.3104584515094757 0.6845546960830688)"^^ns1:wktLiteral,
+        "POINT Z(0.7146856188774109 0.6559721231460571 0.24274468421936035)"^^ns1:wktLiteral,
+        "POINT Z(0.7186031341552734 -0.5491986870765686 0.4266034960746765)"^^ns1:wktLiteral,
+        "POINT Z(0.759328305721283 0.5215519070625305 0.3891069293022156)"^^ns1:wktLiteral,
+        "POINT Z(0.8579457402229309 -0.2751484215259552 0.43384605646133423)"^^ns1:wktLiteral,
+        "POINT Z(0.8819912075996399 0.019751496613025665 0.4708518385887146)"^^ns1:wktLiteral,
+        "POINT Z(0.9110968112945557 0.23108011484146118 0.3413275480270386)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/1.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/1.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/1.JPG_ld> .
 
-<http://i3mainz.de/metadata/1.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/1.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 1.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/1.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.9617326259613037 -0.20264075696468353 0.18441012501716614)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/1.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.934573233127594 -0.15696868300437927 0.12164879590272903)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/10.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/10.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/10.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/10.JPG_ld> .
 
-<http://i3mainz.de/metadata/10.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/10.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 10.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/10.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.8203397989273071 -0.5717887282371521 0.010012447834014893)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/10.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.6593520045280457 -0.669424295425415 0.2486809343099594)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/11.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/11.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/11.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/11.JPG_ld> .
 
-<http://i3mainz.de/metadata/11.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/11.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 11.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/11.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.5394753813743591 -0.8419591784477234 0.008435309864580631)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/11.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.3362155258655548 -0.8458940982818604 0.29913559556007385)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/12.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/12.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/12.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/12.JPG_ld> .
 
-<http://i3mainz.de/metadata/12.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/12.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 12.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/12.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.15961191058158875 -0.9871326088905334 0.009654296562075615)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/12.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.0686795637011528 -0.9001939296722412 0.3022685647010803)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/13.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/13.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/13.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/13.JPG_ld> .
 
-<http://i3mainz.de/metadata/13.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/13.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 13.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/13.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.22087211906909943 -0.97506183385849 0.02167823538184166)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/13.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.41434401273727417 -0.8345636129379272 0.24557173252105713)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/14.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/14.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/14.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/14.JPG_ld> .
 
-<http://i3mainz.de/metadata/14.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/14.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 14.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/14.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.5789996981620789 -0.8146088123321533 0.03423184156417847)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/14.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.7101855278015137 -0.6192731261253357 0.2246025800704956)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/15.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/15.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/15.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/15.JPG_ld> .
 
-<http://i3mainz.de/metadata/15.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/15.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 15.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/15.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.8451952934265137 -0.5326807498931885 0.04354459047317505)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/15.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.8989319205284119 -0.2857852578163147 0.22020256519317627)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/16.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/16.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/16.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/16.JPG_ld> .
 
-<http://i3mainz.de/metadata/16.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/16.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 16.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/16.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.9833457469940186 -0.1700621098279953 0.06410931050777435)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/16.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.9342640042304993 0.0763101801276207 0.22853177785873413)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/17.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/17.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/17.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/17.JPG_ld> .
 
-<http://i3mainz.de/metadata/17.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/17.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 17.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/17.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.8841233849525452 -0.3954141438007355 0.2489447146654129)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/17.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.7416326403617859 -0.2730333209037781 0.5401355028152466)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/18.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/18.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/18.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/18.JPG_ld> .
 
-<http://i3mainz.de/metadata/18.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/18.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 18.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/18.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.676381528377533 -0.70100998878479 0.22603756189346313)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/18.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.5592248439788818 -0.5566665530204773 0.5379219055175781)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/19.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/19.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/19.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/19.JPG_ld> .
 
-<http://i3mainz.de/metadata/19.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/19.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 19.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/19.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.34566375613212585 -0.9097806215286255 0.22981677949428558)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/19.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.2789594531059265 -0.7416567206382751 0.5259851217269897)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/2.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/2.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/2.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/2.JPG_ld> .
 
-<http://i3mainz.de/metadata/2.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/2.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 2.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/2.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.030628986656665802 -0.9678792357444763 0.24954277276992798)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/2.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.793919563293457 -0.5349549055099487 0.10633266717195511)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/20.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/20.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/20.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/20.JPG_ld> .
 
-<http://i3mainz.de/metadata/20.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/20.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 20.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/20.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.3942468464374542 -0.877954363822937 0.2715981900691986)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/20.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.05225105956196785 -0.7911970615386963 0.5210716724395752)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/21.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/21.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/21.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/21.JPG_ld> .
 
-<http://i3mainz.de/metadata/21.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/21.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 21.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/21.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.7013615965843201 -0.6594593524932861 0.27056482434272766)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/21.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.35011857748031616 -0.7156376242637634 0.5191022157669067)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/22.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/22.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/22.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/22.JPG_ld> .
 
-<http://i3mainz.de/metadata/22.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/22.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 22.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/22.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.8957096934318542 -0.3336692452430725 0.29388606548309326)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/22.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.6404985189437866 -0.5037730932235718 0.4980723261833191)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/23.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/23.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/23.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/23.JPG_ld> .
 
-<http://i3mainz.de/metadata/23.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/23.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 23.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/23.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.9459937810897827 0.03742629289627075 0.3220171332359314)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/23.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.8002408742904663 -0.2370571792125702 0.4714984893798828)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/24.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/24.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/24.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/24.JPG_ld> .
 
-<http://i3mainz.de/metadata/24.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/24.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 24.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/24.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.8026841878890991 -0.33550629019737244 0.4930858314037323)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/24.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.8283635377883911 0.05876333266496658 0.4714737832546234)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/25.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/25.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/25.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/25.JPG_ld> .
 
-<http://i3mainz.de/metadata/25.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/25.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 25.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/25.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.6126132607460022 -0.6240096092224121 0.4850948750972748)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/25.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.34695491194725037 -0.030561991035938263 0.8624714612960815)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/26.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/26.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/26.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/26.JPG_ld> .
 
-<http://i3mainz.de/metadata/26.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/26.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 26.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/26.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.32161641120910645 -0.8162862658500671 0.47983288764953613)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/26.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.08481491357088089 0.3360404372215271 0.8654616475105286)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/27.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/27.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/27.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/27.JPG_ld> .
 
-<http://i3mainz.de/metadata/27.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/27.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 27.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/27.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.025832854211330414 -0.8655009865760803 0.500240683555603)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/27.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.26306474208831787 0.10001103579998016 0.8891403079032898)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/28.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/28.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/28.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/28.JPG_ld> .
 
-<http://i3mainz.de/metadata/28.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/28.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 28.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/28.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.33461833000183105 -0.7856747508049011 0.5203323364257812)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/28.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.02589699625968933 -0.27824467420578003 0.888573408126831)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/29.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/29.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/29.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/29.JPG_ld> .
 
-<http://i3mainz.de/metadata/29.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/29.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 29.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/29.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.6358261108398438 -0.5624159574508667 0.5285957455635071)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/29.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.6093019843101501 0.2046625018119812 0.6880307197570801)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/3.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/3.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/3.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/3.JPG_ld> .
 
-<http://i3mainz.de/metadata/3.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/3.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 3.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/3.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.794745147228241 -0.298925518989563 0.5282270312309265)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/3.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.513771653175354 -0.8173268437385559 0.06314941495656967)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/30.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/30.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/30.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/30.JPG_ld> .
 
-<http://i3mainz.de/metadata/30.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/30.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 30.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/30.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.8389448523521423 0.016643032431602478 0.5439618825912476)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/30.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.36146432161331177 0.5289539694786072 0.6917603015899658)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/31.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/31.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/31.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/31.JPG_ld> .
 
-<http://i3mainz.de/metadata/31.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/31.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 31.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/31.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.36391913890838623 -0.08820345997810364 0.9272448420524597)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/31.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.09593164175748825 0.609390914440155 0.7156262993812561)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/32.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/32.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/32.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/32.JPG_ld> .
 
-<http://i3mainz.de/metadata/32.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/32.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 32.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/32.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.04529748111963272 0.33716881275177 0.9403538107872009)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/32.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.45793360471725464 0.3808719515800476 0.7291821241378784)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/33.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/33.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/33.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/33.JPG_ld> .
 
-<http://i3mainz.de/metadata/33.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/33.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 33.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/33.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.34821996092796326 0.056363970041275024 0.9357168078422546)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/33.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.5521338582038879 -0.11153021454811096 0.7559579014778137)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/34.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/34.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/34.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/34.JPG_ld> .
 
-<http://i3mainz.de/metadata/34.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/34.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 34.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/34.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.06788952648639679 -0.3679254651069641 0.9273736476898193)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/34.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.2802468240261078 -0.4880119562149048 0.7537994384765625)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/35.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/35.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/35.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/35.JPG_ld> .
 
-<http://i3mainz.de/metadata/35.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/35.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 35.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/35.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.6474460363388062 0.1674279421567917 0.7434927821159363)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/35.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.16525474190711975 -0.5688053369522095 0.7279350757598877)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/36.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/36.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/36.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/36.JPG_ld> .
 
-<http://i3mainz.de/metadata/36.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/36.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 36.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/36.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.36834588646888733 0.5524662733078003 0.7477314472198486)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/36.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.5427685976028442 -0.27115973830223083 0.7211841344833374)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/37.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/37.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/37.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/37.JPG_ld> .
 
-<http://i3mainz.de/metadata/37.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/37.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 37.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/37.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.14735502004623413 0.6437549591064453 0.7509101629257202)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/37.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.7639176845550537 0.3381781578063965 0.46388736367225647)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/38.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/38.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/38.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/38.JPG_ld> .
 
-<http://i3mainz.de/metadata/38.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/38.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 38.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/38.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.5436351895332336 0.3937285542488098 0.7412412762641907)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/38.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.6033764481544495 0.5746220350265503 0.47147223353385925)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/39.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/39.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/39.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/39.JPG_ld> .
 
-<http://i3mainz.de/metadata/39.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/39.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 39.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/39.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.6580831408500671 -0.18633800745010376 0.7295235991477966)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/39.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.3194594979286194 0.7850313186645508 0.4610856771469116)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/4.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/4.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/4.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/4.JPG_ld> .
 
-<http://i3mainz.de/metadata/4.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/4.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 4.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/4.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.35040536522865295 -0.5943928956985474 0.7238185405731201)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/4.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.1368454545736313 -0.9415107369422913 0.08177914470434189)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/40.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/40.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/40.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/40.JPG_ld> .
 
-<http://i3mainz.de/metadata/40.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/40.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 40.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/40.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.1609201729297638 -0.6835115551948547 0.7119808197021484)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/40.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.019498310983181 0.8386110067367554 0.47295039892196655)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/41.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/41.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/41.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/41.JPG_ld> .
 
-<http://i3mainz.de/metadata/41.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/41.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 41.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/41.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.5806491374969482 -0.3477291464805603 0.73615962266922)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/41.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.27437490224838257 0.7818186283111572 0.4838724136352539)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/42.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/42.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/42.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/42.JPG_ld> .
 
-<http://i3mainz.de/metadata/42.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/42.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 42.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/42.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.7799065709114075 0.3109610676765442 0.5431841015815735)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/42.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.5432513356208801 0.615393340587616 0.48606446385383606)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/43.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/43.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/43.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/43.JPG_ld> .
 
-<http://i3mainz.de/metadata/43.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/43.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 43.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/43.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.6090420484542847 0.5691493153572083 0.5523918867111206)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/43.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.7229164838790894 0.3540329337120056 0.5096330642700195)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/44.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/44.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/44.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/44.JPG_ld> .
 
-<http://i3mainz.de/metadata/44.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/44.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 44.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/44.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.3032855689525604 0.7801682353019714 0.5471338033676147)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/44.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.805899441242218 0.05666966736316681 0.5108115673065186)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/45.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/45.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/45.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/45.JPG_ld> .
 
-<http://i3mainz.de/metadata/45.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/45.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 45.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/45.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.005963467061519623 0.8382018208503723 0.5453275442123413)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/45.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.8562914729118347 0.40195515751838684 0.1959560215473175)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/46.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/46.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/46.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/46.JPG_ld> .
 
-<http://i3mainz.de/metadata/46.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/46.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 46.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/46.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.30553701519966125 0.7891342043876648 0.5328361392021179)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/46.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.6483476161956787 0.6889477372169495 0.21132732927799225)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/47.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/47.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/47.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/47.JPG_ld> .
 
-<http://i3mainz.de/metadata/47.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/47.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 47.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/47.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.5946808457374573 0.61674565076828 0.5157319903373718)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/47.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.33813804388046265 0.8965413570404053 0.18570205569267273)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/48.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/48.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/48.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/48.JPG_ld> .
 
-<http://i3mainz.de/metadata/48.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/48.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 48.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/48.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.7922461032867432 0.33807501196861267 0.5079876184463501)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/48.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.00642852857708931 0.9501068592071533 0.21735185384750366)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/49.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/49.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/49.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/49.JPG_ld> .
 
-<http://i3mainz.de/metadata/49.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/49.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 49.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/49.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.871238112449646 0.01114029809832573 0.4907342493534088)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/49.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.3307324945926666 0.8900294899940491 0.2087383270263672)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/5.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/5.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/5.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/5.JPG_ld> .
 
-<http://i3mainz.de/metadata/5.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/5.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 5.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/5.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.8768196105957031 0.3788136839866638 0.29612085223197937)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/5.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.23946532607078552 -0.9342249631881714 0.037569865584373474)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/50.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/50.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/50.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/50.JPG_ld> .
 
-<http://i3mainz.de/metadata/50.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/50.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 50.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/50.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.6636978387832642 0.6780291199684143 0.31588250398635864)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/50.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.6519335508346558 0.6769163608551025 0.2204127162694931)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/51.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/51.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/51.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/51.JPG_ld> .
 
-<http://i3mainz.de/metadata/51.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/51.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 51.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/51.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.33873650431632996 0.8947603702545166 0.2909663915634155)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/51.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.8498635292053223 0.3594813644886017 0.26439282298088074)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/52.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/52.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/52.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/52.JPG_ld> .
 
-<http://i3mainz.de/metadata/52.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/52.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 52.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/52.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.013446800410747528 0.953410804271698 0.30137526988983154)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/52.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.9404460191726685 0.012218121439218521 0.2361278086900711)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/53.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/53.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/53.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/53.JPG_ld> .
 
-<http://i3mainz.de/metadata/53.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/53.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 53.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/53.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.3504471480846405 0.8925491571426392 0.2838006913661957)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/53.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.9348933100700378 0.21664565801620483 0.06299727410078049)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/54.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/54.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/54.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/54.JPG_ld> .
 
-<http://i3mainz.de/metadata/54.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/54.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 54.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/54.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.6822693347930908 0.6779685616493225 0.27361875772476196)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/54.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.7822390198707581 0.5694934129714966 0.037877414375543594)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/55.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/55.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/55.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/55.JPG_ld> .
 
-<http://i3mainz.de/metadata/55.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/55.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 55.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/55.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.8951416015625 0.36770346760749817 0.2520231306552887)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/55.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.5233338475227356 0.8145638108253479 0.02492877095937729)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/56.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/56.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/56.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/56.JPG_ld> .
 
-<http://i3mainz.de/metadata/56.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/56.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 56.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/56.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.9680837392807007 -0.02317024953663349 0.24955366551876068)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/56.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.17564897239208221 0.9496549963951111 0.052405811846256256)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/57.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/57.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/57.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/57.JPG_ld> .
 
-<http://i3mainz.de/metadata/57.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/57.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 57.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/57.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.9698377847671509 0.22434374690055847 0.09531273692846298)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/57.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.190945565700531 0.9417129755020142 0.055513396859169006)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/58.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/58.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/58.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/58.JPG_ld> .
 
-<http://i3mainz.de/metadata/58.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/58.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 58.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/58.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.8183939456939697 0.5700651407241821 0.07250559329986572)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/58.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.5166892409324646 0.8070288300514221 0.06582872569561005)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/59.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/59.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/59.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/59.JPG_ld> .
 
-<http://i3mainz.de/metadata/59.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/59.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 59.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/59.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.5504289865493774 0.8289947509765625 0.09897294640541077)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/59.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.7611483931541443 0.5620693564414978 0.12966956198215485)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/6.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/6.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/6.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/6.JPG_ld> .
 
-<http://i3mainz.de/metadata/6.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/6.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 6.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/6.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(-0.1832372397184372 0.9815888404846191 0.05392076075077057)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/6.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.5781386494636536 -0.769534170627594 0.05394758656620979)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/60.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/60.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/60.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/60.JPG_ld> .
 
-<http://i3mainz.de/metadata/60.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/60.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 60.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/60.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.18480929732322693 0.9822647571563721 0.031645238399505615)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/60.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.9049511551856995 0.20401400327682495 0.18341238796710968)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/7.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/7.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/7.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/7.JPG_ld> .
 
-<http://i3mainz.de/metadata/7.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/7.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 7.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/7.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.5371261239051819 0.8427920341491699 0.03460004925727844)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/7.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.8292588591575623 -0.480971097946167 0.062045205384492874)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/8.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/8.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/8.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/8.JPG_ld> .
 
-<http://i3mainz.de/metadata/8.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/8.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 8.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/8.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.8201707005500793 0.5717384815216064 0.02086097002029419)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/8.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(-0.954829216003418 -0.1197497621178627 0.03893772140145302)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/9.JPG> a ns1:Measurement,
+<http://i3mainz.de/metadata/9.JPG> a ns2:Measurement,
         <http://purl.org/dc/terms/Image> ;
-    ns1:hasLightDirection <http://i3mainz.de/metadata/9.JPG_ld> .
+    ns2:hasLightDirection <http://i3mainz.de/metadata/9.JPG_ld> .
 
-<http://i3mainz.de/metadata/9.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/9.JPG_ld> a ns2:LightDirection ;
     rdfs:label "Light direction vector 9.JPG"@en ;
-    ns1:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
-    ns2:asWKT "POINT Z(0.9784573912620544 0.20644064247608185 0.001854129135608673)"^^ns2:wktLiteral ;
-    ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:asWKT "POINT Z(0.8679607510566711 -0.3554009199142456 0.26114708185195923)"^^ns1:wktLiteral ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns4:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns3:hasUnit ns3:pixel .
+    ns4:hasUnit ns4:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns3:hasUnit ns3:pixel .
+    ns4:hasUnit ns4:pixel .
 
-<http://i3mainz.de/metadata/project1_ms> a ns1:MeasurementSeries ;
+<http://i3mainz.de/metadata/project1_ms> a ns2:MeasurementSeries ;
     rdfs:label "MeasurementSeries for Measurement Project project1"@en ;
-    ns1:measurement <http://i3mainz.de/metadata/1.JPG>,
+    ns2:measurement <http://i3mainz.de/metadata/1.JPG>,
         <http://i3mainz.de/metadata/10.JPG>,
         <http://i3mainz.de/metadata/11.JPG>,
         <http://i3mainz.de/metadata/12.JPG>,
@@ -695,10 +2334,64 @@
         <http://i3mainz.de/metadata/8.JPG>,
         <http://i3mainz.de/metadata/9.JPG> .
 
-ns4:3DCoordinateSystem rdfs:subClassOf ns4:CoordinateSystem .
+<http://i3mainz.de/metadata/project1_sphere1_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "project1 Calibration Sphere 1 Bounding Box",
+        "project1 Calibration Sphere 1 Centroid" ;
+    ns1:asWKT "POLYGON((1889.5971470681231 2234.3646425602287, 1820.9282093192553 2441.308727289507, 2056.145397406487 2514.3108019831416, [1889.5971470681231, 2234.3646425602287] [1820.9282093192553, 2441.308727289507]))"^^ns1:wktLiteral .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns4:3DCoordinateSystem ;
-    ns4:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/project1_sphere1_centroid> ns1:asWKT "POINT(1970.1474905228824 2375.9581805764174)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere1_ld0> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 0 for calbration object sphere 1"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere2_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "project1 Calibration Sphere 2 Bounding Box",
+        "project1 Calibration Sphere 2 Centroid" ;
+    ns1:asWKT "POLYGON((3293.5074912704795 1914.7782631825507, 3092.7325568115775 2144.909656159245, 2839.5092323825797 2143.9701473544155, 2845.0774000940646 1504.9071943410622, [3293.5074912704795, 1914.7782631825507] [3092.7325568115775, 2144.909656159245]))"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere2_centroid> ns1:asWKT "POINT(2963.844889079939 1826.2021782880274)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere2_ld0> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 0 for calbration object sphere 2"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere3_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "project1 Calibration Sphere 3 Bounding Box",
+        "project1 Calibration Sphere 3 Centroid" ;
+    ns1:asWKT "POLYGON((2932.6299564150895 575.2839200687366, 2680.2648405358796 651.2648151721547, 2764.774203457028 481.47077407370006, [2932.6299564150895, 575.2839200687366] [2680.2648405358796, 651.2648151721547]))"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere3_centroid> ns1:asWKT "POINT(2804.6291353162933 607.2351364123681)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere3_ld0> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 0 for calbration object sphere 3"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+<http://i3mainz.de/metadata/project1_sphere4_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "project1 Calibration Sphere 4 Bounding Box",
+        "project1 Calibration Sphere 4 Centroid" ;
+    ns1:asWKT "POLYGON((4147.533921651803 2110.965181048139, 3754.4501835942683 2406.927747761796, 4283.63404252856 2482.273499031219, [4147.533921651803, 2110.965181048139] [3754.4501835942683, 2406.927747761796]))"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere4_centroid> ns1:asWKT "POINT(4030.449948831783 2364.4787525137112)"^^ns1:wktLiteral .
+
+<http://i3mainz.de/metadata/project1_sphere4_ld0> a ns2:LightDirection ;
+    rdfs:label "Light direction vector 0 for calbration object sphere 4"@en ;
+    ns2:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    ns1:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
+
+ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
+
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
+    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
+
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
+    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+        <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
+
+ns2:Highlight rdfs:subClassOf ns2:ReferencePoint .
 
