@@ -1,0 +1,5 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://i3mainz.de/metadata/9.JPG_sphere4> geo:hasMetricPerimeter 2.79245e+02 .
+

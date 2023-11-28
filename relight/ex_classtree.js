@@ -43,30 +43,442 @@ var tree={
     "check_callback": true,
     "data": [
       {
-        "id": "http://i3mainz.de/metadata/PixelCoordinateSystem",
-        "parent": "http://www.opengis.net/ont/crs/CoordinateSystem",
+        "id": "http://i3mainz.de/metadata/ledset_0",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
         "type": "instance",
-        "text": "PixelCoordinateSystem",
+        "text": "LightSource Group 0 (ledset_0)",
         "data": {}
       },
       {
-        "id": "http://www.opengis.net/ont/crs/CoordinateSystem",
+        "id": "http://i3mainz.de/metadata/ledset_1",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 1 (ledset_1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_10",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 10 (ledset_10)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_11",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 11 (ledset_11)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_12",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 12 (ledset_12)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_13",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 13 (ledset_13)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_14",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 14 (ledset_14)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_15",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 15 (ledset_15)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_16",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 16 (ledset_16)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_17",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 17 (ledset_17)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_18",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 18 (ledset_18)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_19",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 19 (ledset_19)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_2",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 2 (ledset_2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_20",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 20 (ledset_20)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_21",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 21 (ledset_21)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_22",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 22 (ledset_22)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_23",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 23 (ledset_23)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_24",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 24 (ledset_24)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_25",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 25 (ledset_25)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_26",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 26 (ledset_26)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_27",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 27 (ledset_27)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_28",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 28 (ledset_28)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_29",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 29 (ledset_29)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_3",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 3 (ledset_3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_30",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 30 (ledset_30)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_31",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 31 (ledset_31)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_32",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 32 (ledset_32)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_33",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 33 (ledset_33)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_34",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 34 (ledset_34)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_35",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 35 (ledset_35)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_36",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 36 (ledset_36)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_37",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 37 (ledset_37)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_38",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 38 (ledset_38)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_39",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 39 (ledset_39)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_4",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 4 (ledset_4)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_40",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 40 (ledset_40)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_41",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 41 (ledset_41)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_42",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 42 (ledset_42)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_43",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 43 (ledset_43)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_44",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 44 (ledset_44)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_45",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 45 (ledset_45)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_46",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 46 (ledset_46)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_47",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 47 (ledset_47)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_48",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 48 (ledset_48)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_49",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 49 (ledset_49)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_5",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 5 (ledset_5)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_50",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 50 (ledset_50)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_51",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 51 (ledset_51)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_52",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 52 (ledset_52)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_53",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 53 (ledset_53)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_54",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 54 (ledset_54)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_55",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 55 (ledset_55)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_56",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 56 (ledset_56)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_57",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 57 (ledset_57)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_58",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 58 (ledset_58)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_59",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 59 (ledset_59)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_6",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 6 (ledset_6)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_7",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 7 (ledset_7)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_8",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 8 (ledset_8)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/ledset_9",
+        "parent": "http://objects.mainzed.org/ont#LightSourceGroup",
+        "type": "instance",
+        "text": "LightSource Group 9 (ledset_9)",
+        "data": {}
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#LightSourceGroup",
         "parent": "#",
         "type": "class",
-        "text": "CoordinateSystem (geocrs:CoordinateSystem) [1]",
+        "text": "LightSourceGroup (ns2:LightSourceGroup) [60]",
         "data": {
           "to": {
-            "http://www.opengis.net/ont/crs/axis": {
-              "instancecount": 2,
-              "http://www.opengis.net/ont/crs/CoordinateSystemAxis": 2
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
             }
           },
           "from": {}
         },
-        "instancecount": 3
+        "instancecount": 2
       },
       {
         "id": "http://i3mainz.de/metadata/project1",
@@ -79,7 +491,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementProject",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementProject (ns1:MeasurementProject) [1]",
+        "text": "MeasurementProject (ns2:MeasurementProject) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurementSeries": {
@@ -100,17 +512,28 @@ var tree={
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1",
         "parent": "http://objects.mainzed.org/ont#CalibrationObject",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "project1 Calibration Sphere 1 (project1_sphere1)",
         "data": {}
       },
       {
         "id": "http://objects.mainzed.org/ont#CalibrationObject",
         "parent": "#",
-        "type": "class",
-        "text": "CalibrationObject (ns1:CalibrationObject) [1]",
+        "type": "geoclass",
+        "text": "CalibrationObject (ns2:CalibrationObject) [1]",
         "data": {
           "to": {
+            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/sf#Polygon": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasCentroid": {
+              "instancecount": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasLightDirection": {
+              "instancecount": 1,
+              "http://objects.mainzed.org/ont#LightDirection": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -120,7 +543,1719 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 2
+        "instancecount": 5
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight0",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 0 using sphere 1 (project1_sphere1_highlight0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight1",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 1 using sphere 1 (project1_sphere1_highlight1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight10",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 10 using sphere 1 (project1_sphere1_highlight10)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight11",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 11 using sphere 1 (project1_sphere1_highlight11)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight12",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 12 using sphere 1 (project1_sphere1_highlight12)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight13",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 13 using sphere 1 (project1_sphere1_highlight13)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight14",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 14 using sphere 1 (project1_sphere1_highlight14)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight15",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 15 using sphere 1 (project1_sphere1_highlight15)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight16",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 16 using sphere 1 (project1_sphere1_highlight16)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight17",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 17 using sphere 1 (project1_sphere1_highlight17)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight18",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 18 using sphere 1 (project1_sphere1_highlight18)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight19",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 19 using sphere 1 (project1_sphere1_highlight19)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight2",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 2 using sphere 1 (project1_sphere1_highlight2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight20",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 20 using sphere 1 (project1_sphere1_highlight20)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight21",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 21 using sphere 1 (project1_sphere1_highlight21)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight22",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 22 using sphere 1 (project1_sphere1_highlight22)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight23",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 23 using sphere 1 (project1_sphere1_highlight23)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight24",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 24 using sphere 1 (project1_sphere1_highlight24)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight25",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 25 using sphere 1 (project1_sphere1_highlight25)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight26",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 26 using sphere 1 (project1_sphere1_highlight26)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight27",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 27 using sphere 1 (project1_sphere1_highlight27)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight28",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 28 using sphere 1 (project1_sphere1_highlight28)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight29",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 29 using sphere 1 (project1_sphere1_highlight29)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight3",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 3 using sphere 1 (project1_sphere1_highlight3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight30",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 30 using sphere 1 (project1_sphere1_highlight30)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight31",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 31 using sphere 1 (project1_sphere1_highlight31)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight32",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 32 using sphere 1 (project1_sphere1_highlight32)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight33",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 33 using sphere 1 (project1_sphere1_highlight33)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight34",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 34 using sphere 1 (project1_sphere1_highlight34)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight35",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 35 using sphere 1 (project1_sphere1_highlight35)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight36",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 36 using sphere 1 (project1_sphere1_highlight36)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight37",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 37 using sphere 1 (project1_sphere1_highlight37)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight38",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 38 using sphere 1 (project1_sphere1_highlight38)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight39",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 39 using sphere 1 (project1_sphere1_highlight39)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight4",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 4 using sphere 1 (project1_sphere1_highlight4)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight40",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 40 using sphere 1 (project1_sphere1_highlight40)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight41",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 41 using sphere 1 (project1_sphere1_highlight41)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight42",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 42 using sphere 1 (project1_sphere1_highlight42)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight43",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 43 using sphere 1 (project1_sphere1_highlight43)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight44",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 44 using sphere 1 (project1_sphere1_highlight44)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight45",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 45 using sphere 1 (project1_sphere1_highlight45)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight46",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 46 using sphere 1 (project1_sphere1_highlight46)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight47",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 47 using sphere 1 (project1_sphere1_highlight47)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight48",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 48 using sphere 1 (project1_sphere1_highlight48)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight49",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 49 using sphere 1 (project1_sphere1_highlight49)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight5",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 5 using sphere 1 (project1_sphere1_highlight5)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight50",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 50 using sphere 1 (project1_sphere1_highlight50)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight51",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 51 using sphere 1 (project1_sphere1_highlight51)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight52",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 52 using sphere 1 (project1_sphere1_highlight52)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight53",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 53 using sphere 1 (project1_sphere1_highlight53)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight54",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 54 using sphere 1 (project1_sphere1_highlight54)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight55",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 55 using sphere 1 (project1_sphere1_highlight55)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight56",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 56 using sphere 1 (project1_sphere1_highlight56)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight57",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 57 using sphere 1 (project1_sphere1_highlight57)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight58",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 58 using sphere 1 (project1_sphere1_highlight58)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight59",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 59 using sphere 1 (project1_sphere1_highlight59)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight6",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 6 using sphere 1 (project1_sphere1_highlight6)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight7",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 7 using sphere 1 (project1_sphere1_highlight7)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight8",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 8 using sphere 1 (project1_sphere1_highlight8)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_highlight9",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 9 using sphere 1 (project1_sphere1_highlight9)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight0",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 0 using sphere 2 (project1_sphere2_highlight0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight1",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 1 using sphere 2 (project1_sphere2_highlight1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight10",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 10 using sphere 2 (project1_sphere2_highlight10)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight11",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 11 using sphere 2 (project1_sphere2_highlight11)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight12",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 12 using sphere 2 (project1_sphere2_highlight12)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight13",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 13 using sphere 2 (project1_sphere2_highlight13)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight14",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 14 using sphere 2 (project1_sphere2_highlight14)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight15",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 15 using sphere 2 (project1_sphere2_highlight15)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight16",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 16 using sphere 2 (project1_sphere2_highlight16)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight17",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 17 using sphere 2 (project1_sphere2_highlight17)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight18",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 18 using sphere 2 (project1_sphere2_highlight18)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight19",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 19 using sphere 2 (project1_sphere2_highlight19)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight2",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 2 using sphere 2 (project1_sphere2_highlight2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight20",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 20 using sphere 2 (project1_sphere2_highlight20)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight21",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 21 using sphere 2 (project1_sphere2_highlight21)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight22",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 22 using sphere 2 (project1_sphere2_highlight22)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight23",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 23 using sphere 2 (project1_sphere2_highlight23)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight24",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 24 using sphere 2 (project1_sphere2_highlight24)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight25",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 25 using sphere 2 (project1_sphere2_highlight25)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight26",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 26 using sphere 2 (project1_sphere2_highlight26)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight27",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 27 using sphere 2 (project1_sphere2_highlight27)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight28",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 28 using sphere 2 (project1_sphere2_highlight28)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight29",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 29 using sphere 2 (project1_sphere2_highlight29)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight3",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 3 using sphere 2 (project1_sphere2_highlight3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight30",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 30 using sphere 2 (project1_sphere2_highlight30)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight31",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 31 using sphere 2 (project1_sphere2_highlight31)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight32",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 32 using sphere 2 (project1_sphere2_highlight32)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight33",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 33 using sphere 2 (project1_sphere2_highlight33)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight34",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 34 using sphere 2 (project1_sphere2_highlight34)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight35",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 35 using sphere 2 (project1_sphere2_highlight35)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight36",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 36 using sphere 2 (project1_sphere2_highlight36)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight37",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 37 using sphere 2 (project1_sphere2_highlight37)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight38",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 38 using sphere 2 (project1_sphere2_highlight38)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight39",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 39 using sphere 2 (project1_sphere2_highlight39)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight4",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 4 using sphere 2 (project1_sphere2_highlight4)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight40",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 40 using sphere 2 (project1_sphere2_highlight40)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight41",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 41 using sphere 2 (project1_sphere2_highlight41)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight42",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 42 using sphere 2 (project1_sphere2_highlight42)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight43",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 43 using sphere 2 (project1_sphere2_highlight43)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight44",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 44 using sphere 2 (project1_sphere2_highlight44)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight45",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 45 using sphere 2 (project1_sphere2_highlight45)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight46",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 46 using sphere 2 (project1_sphere2_highlight46)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight47",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 47 using sphere 2 (project1_sphere2_highlight47)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight48",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 48 using sphere 2 (project1_sphere2_highlight48)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight49",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 49 using sphere 2 (project1_sphere2_highlight49)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight5",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 5 using sphere 2 (project1_sphere2_highlight5)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight50",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 50 using sphere 2 (project1_sphere2_highlight50)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight51",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 51 using sphere 2 (project1_sphere2_highlight51)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight52",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 52 using sphere 2 (project1_sphere2_highlight52)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight53",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 53 using sphere 2 (project1_sphere2_highlight53)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight54",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 54 using sphere 2 (project1_sphere2_highlight54)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight55",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 55 using sphere 2 (project1_sphere2_highlight55)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight56",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 56 using sphere 2 (project1_sphere2_highlight56)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight57",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 57 using sphere 2 (project1_sphere2_highlight57)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight58",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 58 using sphere 2 (project1_sphere2_highlight58)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight59",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 59 using sphere 2 (project1_sphere2_highlight59)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight6",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 6 using sphere 2 (project1_sphere2_highlight6)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight7",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 7 using sphere 2 (project1_sphere2_highlight7)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight8",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 8 using sphere 2 (project1_sphere2_highlight8)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_highlight9",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 9 using sphere 2 (project1_sphere2_highlight9)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight0",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 0 using sphere 3 (project1_sphere3_highlight0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight1",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 1 using sphere 3 (project1_sphere3_highlight1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight10",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 10 using sphere 3 (project1_sphere3_highlight10)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight11",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 11 using sphere 3 (project1_sphere3_highlight11)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight12",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 12 using sphere 3 (project1_sphere3_highlight12)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight13",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 13 using sphere 3 (project1_sphere3_highlight13)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight14",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 14 using sphere 3 (project1_sphere3_highlight14)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight15",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 15 using sphere 3 (project1_sphere3_highlight15)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight16",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 16 using sphere 3 (project1_sphere3_highlight16)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight17",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 17 using sphere 3 (project1_sphere3_highlight17)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight18",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 18 using sphere 3 (project1_sphere3_highlight18)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight19",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 19 using sphere 3 (project1_sphere3_highlight19)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight2",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 2 using sphere 3 (project1_sphere3_highlight2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight20",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 20 using sphere 3 (project1_sphere3_highlight20)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight21",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 21 using sphere 3 (project1_sphere3_highlight21)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight22",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 22 using sphere 3 (project1_sphere3_highlight22)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight23",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 23 using sphere 3 (project1_sphere3_highlight23)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight24",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 24 using sphere 3 (project1_sphere3_highlight24)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight25",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 25 using sphere 3 (project1_sphere3_highlight25)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight26",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 26 using sphere 3 (project1_sphere3_highlight26)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight27",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 27 using sphere 3 (project1_sphere3_highlight27)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight28",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 28 using sphere 3 (project1_sphere3_highlight28)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight29",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 29 using sphere 3 (project1_sphere3_highlight29)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight3",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 3 using sphere 3 (project1_sphere3_highlight3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight30",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 30 using sphere 3 (project1_sphere3_highlight30)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight31",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 31 using sphere 3 (project1_sphere3_highlight31)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight32",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 32 using sphere 3 (project1_sphere3_highlight32)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight33",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 33 using sphere 3 (project1_sphere3_highlight33)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight34",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 34 using sphere 3 (project1_sphere3_highlight34)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight35",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 35 using sphere 3 (project1_sphere3_highlight35)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight36",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 36 using sphere 3 (project1_sphere3_highlight36)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight37",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 37 using sphere 3 (project1_sphere3_highlight37)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight38",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 38 using sphere 3 (project1_sphere3_highlight38)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight39",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 39 using sphere 3 (project1_sphere3_highlight39)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight4",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 4 using sphere 3 (project1_sphere3_highlight4)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight40",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 40 using sphere 3 (project1_sphere3_highlight40)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight41",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 41 using sphere 3 (project1_sphere3_highlight41)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight42",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 42 using sphere 3 (project1_sphere3_highlight42)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight43",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 43 using sphere 3 (project1_sphere3_highlight43)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight44",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 44 using sphere 3 (project1_sphere3_highlight44)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight45",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 45 using sphere 3 (project1_sphere3_highlight45)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight46",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 46 using sphere 3 (project1_sphere3_highlight46)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight47",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 47 using sphere 3 (project1_sphere3_highlight47)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight48",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 48 using sphere 3 (project1_sphere3_highlight48)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight49",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 49 using sphere 3 (project1_sphere3_highlight49)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight5",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 5 using sphere 3 (project1_sphere3_highlight5)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight50",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 50 using sphere 3 (project1_sphere3_highlight50)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight51",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 51 using sphere 3 (project1_sphere3_highlight51)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight52",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 52 using sphere 3 (project1_sphere3_highlight52)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight53",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 53 using sphere 3 (project1_sphere3_highlight53)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight54",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 54 using sphere 3 (project1_sphere3_highlight54)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight55",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 55 using sphere 3 (project1_sphere3_highlight55)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight56",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 56 using sphere 3 (project1_sphere3_highlight56)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight57",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 57 using sphere 3 (project1_sphere3_highlight57)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight58",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 58 using sphere 3 (project1_sphere3_highlight58)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight59",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 59 using sphere 3 (project1_sphere3_highlight59)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight6",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 6 using sphere 3 (project1_sphere3_highlight6)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight7",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 7 using sphere 3 (project1_sphere3_highlight7)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight8",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 8 using sphere 3 (project1_sphere3_highlight8)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_highlight9",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 9 using sphere 3 (project1_sphere3_highlight9)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight0",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 0 using sphere 4 (project1_sphere4_highlight0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight1",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 1 using sphere 4 (project1_sphere4_highlight1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight10",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 10 using sphere 4 (project1_sphere4_highlight10)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight11",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 11 using sphere 4 (project1_sphere4_highlight11)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight12",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 12 using sphere 4 (project1_sphere4_highlight12)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight13",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 13 using sphere 4 (project1_sphere4_highlight13)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight14",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 14 using sphere 4 (project1_sphere4_highlight14)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight15",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 15 using sphere 4 (project1_sphere4_highlight15)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight16",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 16 using sphere 4 (project1_sphere4_highlight16)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight17",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 17 using sphere 4 (project1_sphere4_highlight17)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight18",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 18 using sphere 4 (project1_sphere4_highlight18)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight19",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 19 using sphere 4 (project1_sphere4_highlight19)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight2",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 2 using sphere 4 (project1_sphere4_highlight2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight20",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 20 using sphere 4 (project1_sphere4_highlight20)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight21",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 21 using sphere 4 (project1_sphere4_highlight21)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight22",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 22 using sphere 4 (project1_sphere4_highlight22)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight23",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 23 using sphere 4 (project1_sphere4_highlight23)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight24",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 24 using sphere 4 (project1_sphere4_highlight24)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight25",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 25 using sphere 4 (project1_sphere4_highlight25)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight26",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 26 using sphere 4 (project1_sphere4_highlight26)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight27",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 27 using sphere 4 (project1_sphere4_highlight27)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight28",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 28 using sphere 4 (project1_sphere4_highlight28)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight29",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 29 using sphere 4 (project1_sphere4_highlight29)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight3",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 3 using sphere 4 (project1_sphere4_highlight3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight30",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 30 using sphere 4 (project1_sphere4_highlight30)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight31",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 31 using sphere 4 (project1_sphere4_highlight31)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight32",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 32 using sphere 4 (project1_sphere4_highlight32)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight33",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 33 using sphere 4 (project1_sphere4_highlight33)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight34",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 34 using sphere 4 (project1_sphere4_highlight34)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight35",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 35 using sphere 4 (project1_sphere4_highlight35)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight36",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 36 using sphere 4 (project1_sphere4_highlight36)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight37",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 37 using sphere 4 (project1_sphere4_highlight37)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight38",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 38 using sphere 4 (project1_sphere4_highlight38)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight39",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 39 using sphere 4 (project1_sphere4_highlight39)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight4",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 4 using sphere 4 (project1_sphere4_highlight4)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight40",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 40 using sphere 4 (project1_sphere4_highlight40)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight41",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 41 using sphere 4 (project1_sphere4_highlight41)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight42",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 42 using sphere 4 (project1_sphere4_highlight42)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight43",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 43 using sphere 4 (project1_sphere4_highlight43)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight44",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 44 using sphere 4 (project1_sphere4_highlight44)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight45",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 45 using sphere 4 (project1_sphere4_highlight45)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight46",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 46 using sphere 4 (project1_sphere4_highlight46)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight47",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 47 using sphere 4 (project1_sphere4_highlight47)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight48",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 48 using sphere 4 (project1_sphere4_highlight48)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight49",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 49 using sphere 4 (project1_sphere4_highlight49)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight5",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 5 using sphere 4 (project1_sphere4_highlight5)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight50",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 50 using sphere 4 (project1_sphere4_highlight50)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight51",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 51 using sphere 4 (project1_sphere4_highlight51)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight52",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 52 using sphere 4 (project1_sphere4_highlight52)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight53",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 53 using sphere 4 (project1_sphere4_highlight53)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight54",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 54 using sphere 4 (project1_sphere4_highlight54)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight55",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 55 using sphere 4 (project1_sphere4_highlight55)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight56",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 56 using sphere 4 (project1_sphere4_highlight56)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight57",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 57 using sphere 4 (project1_sphere4_highlight57)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight58",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 58 using sphere 4 (project1_sphere4_highlight58)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight59",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 59 using sphere 4 (project1_sphere4_highlight59)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight6",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 6 using sphere 4 (project1_sphere4_highlight6)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight7",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 7 using sphere 4 (project1_sphere4_highlight7)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight8",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 8 using sphere 4 (project1_sphere4_highlight8)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_highlight9",
+        "parent": "http://objects.mainzed.org/ont#Highlight",
+        "type": "geoinstance",
+        "text": "Image highlight point 9 using sphere 4 (project1_sphere4_highlight9)",
+        "data": {}
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#Highlight",
+        "parent": "http://objects.mainzed.org/ont#ReferencePoint",
+        "type": "geoclass",
+        "text": "Highlight (ns2:Highlight) [240]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 1
+            },
+            "http://www.opengis.net/ont/geosparql#inSRS": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {}
+        },
+        "instancecount": 4
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#ReferencePoint",
+        "parent": "#",
+        "type": "class",
+        "text": "ReferencePoint (ns2:ReferencePoint)",
+        "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/1.JPG_suniv0_",
@@ -546,7 +2681,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Measurement",
         "parent": "#",
         "type": "geoclass",
-        "text": "Measurement (ns1:Measurement) [60]",
+        "text": "Measurement (ns2:Measurement) [60]",
         "data": {}
       },
       {
@@ -1414,10 +3549,38 @@ var tree={
         "data": {}
       },
       {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_ld0",
+        "parent": "http://objects.mainzed.org/ont#LightDirection",
+        "type": "instance",
+        "text": "Light direction vector 0 for calbration object sphere 1 (project1_sphere1_ld0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_ld0",
+        "parent": "http://objects.mainzed.org/ont#LightDirection",
+        "type": "instance",
+        "text": "Light direction vector 0 for calbration object sphere 2 (project1_sphere2_ld0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_ld0",
+        "parent": "http://objects.mainzed.org/ont#LightDirection",
+        "type": "instance",
+        "text": "Light direction vector 0 for calbration object sphere 3 (project1_sphere3_ld0)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_ld0",
+        "parent": "http://objects.mainzed.org/ont#LightDirection",
+        "type": "instance",
+        "text": "Light direction vector 0 for calbration object sphere 4 (project1_sphere4_ld0)",
+        "data": {}
+      },
+      {
         "id": "http://objects.mainzed.org/ont#LightDirection",
         "parent": "#",
-        "type": "geoclass",
-        "text": "LightDirection (ns1:LightDirection) [60]",
+        "type": "halfgeoclass",
+        "text": "LightDirection (ns2:LightDirection) [64]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibration": {
@@ -1489,6 +3652,9 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -1499,11 +3665,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "http://i3mainz.de/metadata/project1_ms",
@@ -1516,7 +3682,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSeries",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSeries (ns1:MeasurementSeries) [1]",
+        "text": "MeasurementSeries (ns2:MeasurementSeries) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurement": {
@@ -1539,6 +3705,59 @@ var tree={
           }
         },
         "instancecount": 62
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_bbox",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "instance",
+        "text": "project1 Calibration Sphere 1 Bounding Box (project1_sphere1_bbox)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_bbox",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "instance",
+        "text": "project1 Calibration Sphere 2 Bounding Box (project1_sphere2_bbox)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_bbox",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "instance",
+        "text": "project1 Calibration Sphere 3 Bounding Box (project1_sphere3_bbox)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_bbox",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "instance",
+        "text": "project1 Calibration Sphere 4 Bounding Box (project1_sphere4_bbox)",
+        "data": {}
+      },
+      {
+        "id": "http://www.opengis.net/ont/sf#Polygon",
+        "parent": "#",
+        "type": "class",
+        "text": "Polygon (sf:Polygon) [4]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 2
+            }
+          },
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
+              "instancecount": 0
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
         "id": "http://i3mainz.de/metadata/DomeCoordinateSystem",
@@ -1565,11 +3784,42 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/geosparql#inSRS": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#LightDirection": 60
+              "http://objects.mainzed.org/ont#LightDirection": 64
             }
           }
         },
         "instancecount": 4
+      },
+      {
+        "id": "http://www.opengis.net/ont/crs/CoordinateSystem",
+        "parent": "#",
+        "type": "class",
+        "text": "CoordinateSystem (geocrs:CoordinateSystem) [1]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/crs/axis": {
+              "instancecount": 2,
+              "http://www.opengis.net/ont/crs/CoordinateSystemAxis": 2
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.opengis.net/ont/geosparql#inSRS": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#Highlight": 240
+            }
+          }
+        },
+        "instancecount": 3
+      },
+      {
+        "id": "http://i3mainz.de/metadata/PixelCoordinateSystem",
+        "parent": "http://www.opengis.net/ont/crs/CoordinateSystem",
+        "type": "instance",
+        "text": "PixelCoordinateSystem",
+        "data": {}
       }
     ]
   }

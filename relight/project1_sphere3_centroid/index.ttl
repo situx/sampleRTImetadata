@@ -1,0 +1,4 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+
+<http://i3mainz.de/metadata/project1_sphere3_centroid> geo:asWKT "POINT(2804.6291353162933 607.2351364123681)"^^geo:wktLiteral .
+

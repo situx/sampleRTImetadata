@@ -1,0 +1,1 @@
+{"http://www.opengis.net/ont/geosparql#asWKT": ["POINT(2034.207922685161 2411.00756114095)"], "http://www.opengis.net/ont/geosparql#inSRS": ["http://i3mainz.de/metadata/PixelCoordinateSystem"], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://objects.mainzed.org/ont#Highlight"], "http://www.w3.org/2000/01/rdf-schema#label": ["Image highlight point 9 using sphere 1"]}

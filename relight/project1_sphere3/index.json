@@ -1,0 +1,1 @@
+{"http://www.opengis.net/ont/geosparql#hasBoundingBox": ["http://i3mainz.de/metadata/project1_sphere3_bbox"], "http://www.opengis.net/ont/geosparql#hasCentroid": ["http://i3mainz.de/metadata/project1_sphere3_centroid"], "http://www.opengis.net/ont/geosparql#hasLightDirection": ["http://i3mainz.de/metadata/project1_sphere3_ld0"]}

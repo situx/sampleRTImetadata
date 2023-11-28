@@ -1,0 +1,6 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+
+<http://i3mainz.de/metadata/project1_sphere3> geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere3_bbox> ;
+    geo:hasCentroid <http://i3mainz.de/metadata/project1_sphere3_centroid> ;
+    geo:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0> .
+

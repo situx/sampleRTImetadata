@@ -1,0 +1,8 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/project1_sphere4_bbox> a <http://www.opengis.net/ont/sf#Polygon> ;
+    rdfs:label "project1 Calibration Sphere 4 Bounding Box",
+        "project1 Calibration Sphere 4 Centroid" ;
+    geo:asWKT "POLYGON((4147.533921651803 2110.965181048139, 3754.4501835942683 2406.927747761796, 4283.63404252856 2482.273499031219, [4147.533921651803, 2110.965181048139] [3754.4501835942683, 2406.927747761796]))"^^geo:wktLiteral .
+

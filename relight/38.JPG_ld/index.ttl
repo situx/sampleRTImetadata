@@ -5,6 +5,6 @@
 <http://i3mainz.de/metadata/38.JPG_ld> a ns1:LightDirection ;
     rdfs:label "Light direction vector 38.JPG"@en ;
     ns1:calibration <http://i3mainz.de/metadata/38.JPG_ld_calibration> ;
-    geo:asWKT "POINT Z(0.5436351895332336 0.3937285542488098 0.7412412762641907)"^^geo:wktLiteral ;
+    geo:asWKT "POINT Z(-0.6033764481544495 0.5746220350265503 0.47147223353385925)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 

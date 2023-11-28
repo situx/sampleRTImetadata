@@ -1,0 +1,8 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://i3mainz.de/metadata/project1_sphere2_highlight38> a <http://objects.mainzed.org/ont#Highlight> ;
+    rdfs:label "Image highlight point 38 using sphere 2"@en ;
+    geo:asWKT "POINT(3132.8425932944238 1814.9244245685843)"^^geo:wktLiteral ;
+    geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
+
