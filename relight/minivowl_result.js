@@ -53,6 +53,13 @@ var minivowlresult={
  ],
  "links": [
   {
+   "source": 5,
+   "target": 8,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
    "source": 7,
    "target": 4,
    "valueTo": "measurement",
@@ -81,18 +88,11 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 5,
-   "target": 8,
-   "valueTo": "inSRS",
+   "source": 1,
+   "target": 7,
+   "valueTo": "measurementSeries",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 0,
-   "target": 6,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
+   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
   },
   {
    "source": 8,
@@ -102,11 +102,11 @@ var minivowlresult={
    "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
-   "source": 1,
-   "target": 7,
-   "valueTo": "measurementSeries",
+   "source": 0,
+   "target": 6,
+   "valueTo": "axis",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
   }
  ]
 }
