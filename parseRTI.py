@@ -65,10 +65,10 @@ def parseRelightJSON(jsonfile,resgraph):
                     resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(image["direction"]["x"])+" "+str(image["direction"]["y"])+" "+str(image["direction"]["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
     if "spheres" in rjson:
         spherecounter=1
-        resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObject")))
-        resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter))))
-        resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter))))
         for sphere in rjson["spheres"]:
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"CalibrationObject")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter))))
+            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"calibrationobject"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter))))
             if "border" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasBoundingBox"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox")))
                 wkt="POLYGON(("
@@ -97,6 +97,7 @@ def parseRelightJSON(jsonfile,resgraph):
                     ldcounter+=1
             if "lights" in sphere:
                 lightcounter=0
+                resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter))))
                 for highlight in sphere["lights"]:
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
                     resgraph.add((URIRef(ontnamespace+"Highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef(ontnamespace+"ReferencePoint")))  
