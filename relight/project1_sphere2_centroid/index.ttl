@@ -1,4 +1,6 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere2_centroid> geo:asWKT "POINT(2963.844889079939 1826.2021782880274)"^^geo:wktLiteral .
+<http://i3mainz.de/metadata/project1_sphere2_centroid> rdfs:label "project1 Calibration Sphere 2 Centroid" ;
+    geo:asWKT "POINT(2963.844889079939 1826.2021782880274)"^^geo:wktLiteral .
 

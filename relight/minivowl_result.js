@@ -26,6 +26,16 @@ var minivowlresult={
    "uri": "http://objects.mainzed.org/ont#Highlight"
   },
   {
+   "name": "ObjectProperty",
+   "type": "class",
+   "uri": "http://www.w3.org/2002/07/owl#ObjectProperty"
+  },
+  {
+   "name": "DatatypeProperty",
+   "type": "class",
+   "uri": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  },
+  {
    "name": "Measurement",
    "type": "class",
    "uri": "http://objects.mainzed.org/ont#Measurement"
@@ -56,107 +66,107 @@ var minivowlresult={
    "uri": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
-   "name": "3DCoordinateSystem",
-   "type": "class",
-   "uri": "http://www.opengis.net/ont/crs/3DCoordinateSystem"
-  },
-  {
    "name": "CoordinateSystem",
    "type": "class",
    "uri": "http://www.opengis.net/ont/crs/CoordinateSystem"
+  },
+  {
+   "name": "3DCoordinateSystem",
+   "type": "class",
+   "uri": "http://www.opengis.net/ont/crs/3DCoordinateSystem"
   }
  ],
  "links": [
   {
-   "source": 3,
-   "target": 10,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 3,
-   "target": 11,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 6,
-   "target": 10,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 6,
-   "target": 11,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 4,
-   "target": 6,
+   "source": 7,
+   "target": 8,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 5,
-   "target": 6,
+   "source": 6,
+   "target": 8,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
+  },
+  {
+   "source": 3,
+   "target": 12,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 3,
+   "target": 13,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
   },
   {
    "source": 8,
-   "target": 4,
+   "target": 12,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 8,
+   "target": 13,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 10,
+   "target": 7,
    "valueTo": "measurement",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
-   "source": 8,
-   "target": 5,
+   "source": 10,
+   "target": 6,
    "valueTo": "measurement",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
    "source": 2,
-   "target": 6,
+   "target": 8,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
    "uriTo": "http://www.opengis.net/ont/geosparql#hasLightDirection"
   },
   {
-   "source": 10,
-   "target": 7,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
-  },
-  {
-   "source": 11,
-   "target": 7,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
-  },
-  {
-   "source": 2,
+   "source": 12,
    "target": 9,
-   "valueTo": "hasBoundingBox",
+   "valueTo": "axis",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
+  },
+  {
+   "source": 13,
+   "target": 9,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
    "source": 1,
-   "target": 8,
+   "target": 10,
    "valueTo": "measurementSeries",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
+  },
+  {
+   "source": 2,
+   "target": 11,
+   "valueTo": "hasBoundingBox",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
   }
  ]
 }
