@@ -466,7 +466,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightSourceGroup",
         "parent": "#",
         "type": "class",
-        "text": "LightSourceGroup (ns2:LightSourceGroup) [60]",
+        "text": "LightSourceGroup (ns1:LightSourceGroup) [60]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -491,7 +491,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementProject",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementProject (ns2:MeasurementProject) [1]",
+        "text": "MeasurementProject (ns1:MeasurementProject) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurementSeries": {
@@ -2193,7 +2193,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Highlight",
         "parent": "http://objects.mainzed.org/ont#ReferencePoint",
         "type": "geoclass",
-        "text": "Highlight (ns2:Highlight) [240]",
+        "text": "Highlight (ns1:Highlight) [240]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#asWKT": {
@@ -2218,7 +2218,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#ReferencePoint",
         "parent": "#",
         "type": "class",
-        "text": "ReferencePoint (ns2:ReferencePoint)",
+        "text": "ReferencePoint (ns1:ReferencePoint)",
         "data": {}
       },
       {
@@ -2645,7 +2645,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Measurement",
         "parent": "#",
         "type": "geoclass",
-        "text": "Measurement (ns2:Measurement) [60]",
+        "text": "Measurement (ns1:Measurement) [60]",
         "data": {}
       },
       {
@@ -3515,1693 +3515,1696 @@ var tree={
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld0",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 0 for calbration object sphere 1 (project1_sphere1_ld0)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld1",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 1 for calbration object sphere 1 (project1_sphere1_ld1)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld10",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 10 for calbration object sphere 1 (project1_sphere1_ld10)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld11",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 11 for calbration object sphere 1 (project1_sphere1_ld11)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld12",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 12 for calbration object sphere 1 (project1_sphere1_ld12)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld13",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 13 for calbration object sphere 1 (project1_sphere1_ld13)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld14",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 14 for calbration object sphere 1 (project1_sphere1_ld14)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld15",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 15 for calbration object sphere 1 (project1_sphere1_ld15)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld16",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 16 for calbration object sphere 1 (project1_sphere1_ld16)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld17",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 17 for calbration object sphere 1 (project1_sphere1_ld17)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld18",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 18 for calbration object sphere 1 (project1_sphere1_ld18)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld19",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 19 for calbration object sphere 1 (project1_sphere1_ld19)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld2",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 2 for calbration object sphere 1 (project1_sphere1_ld2)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld20",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 20 for calbration object sphere 1 (project1_sphere1_ld20)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld21",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 21 for calbration object sphere 1 (project1_sphere1_ld21)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld22",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 22 for calbration object sphere 1 (project1_sphere1_ld22)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld23",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 23 for calbration object sphere 1 (project1_sphere1_ld23)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld24",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 24 for calbration object sphere 1 (project1_sphere1_ld24)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld25",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 25 for calbration object sphere 1 (project1_sphere1_ld25)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld26",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 26 for calbration object sphere 1 (project1_sphere1_ld26)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld27",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 27 for calbration object sphere 1 (project1_sphere1_ld27)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld28",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 28 for calbration object sphere 1 (project1_sphere1_ld28)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld29",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 29 for calbration object sphere 1 (project1_sphere1_ld29)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld3",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 3 for calbration object sphere 1 (project1_sphere1_ld3)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld30",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 30 for calbration object sphere 1 (project1_sphere1_ld30)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld31",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 31 for calbration object sphere 1 (project1_sphere1_ld31)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld32",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 32 for calbration object sphere 1 (project1_sphere1_ld32)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld33",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 33 for calbration object sphere 1 (project1_sphere1_ld33)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld34",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 34 for calbration object sphere 1 (project1_sphere1_ld34)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld35",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 35 for calbration object sphere 1 (project1_sphere1_ld35)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld36",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 36 for calbration object sphere 1 (project1_sphere1_ld36)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld37",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 37 for calbration object sphere 1 (project1_sphere1_ld37)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld38",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 38 for calbration object sphere 1 (project1_sphere1_ld38)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld39",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 39 for calbration object sphere 1 (project1_sphere1_ld39)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld4",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 4 for calbration object sphere 1 (project1_sphere1_ld4)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld40",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 40 for calbration object sphere 1 (project1_sphere1_ld40)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld41",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 41 for calbration object sphere 1 (project1_sphere1_ld41)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld42",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 42 for calbration object sphere 1 (project1_sphere1_ld42)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld43",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 43 for calbration object sphere 1 (project1_sphere1_ld43)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld44",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 44 for calbration object sphere 1 (project1_sphere1_ld44)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld45",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 45 for calbration object sphere 1 (project1_sphere1_ld45)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld46",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 46 for calbration object sphere 1 (project1_sphere1_ld46)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld47",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 47 for calbration object sphere 1 (project1_sphere1_ld47)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld48",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 48 for calbration object sphere 1 (project1_sphere1_ld48)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld49",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 49 for calbration object sphere 1 (project1_sphere1_ld49)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld5",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 5 for calbration object sphere 1 (project1_sphere1_ld5)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld50",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 50 for calbration object sphere 1 (project1_sphere1_ld50)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld51",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 51 for calbration object sphere 1 (project1_sphere1_ld51)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld52",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 52 for calbration object sphere 1 (project1_sphere1_ld52)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld53",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 53 for calbration object sphere 1 (project1_sphere1_ld53)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld54",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 54 for calbration object sphere 1 (project1_sphere1_ld54)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld55",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 55 for calbration object sphere 1 (project1_sphere1_ld55)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld56",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 56 for calbration object sphere 1 (project1_sphere1_ld56)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld57",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 57 for calbration object sphere 1 (project1_sphere1_ld57)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld58",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 58 for calbration object sphere 1 (project1_sphere1_ld58)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld59",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 59 for calbration object sphere 1 (project1_sphere1_ld59)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld6",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 6 for calbration object sphere 1 (project1_sphere1_ld6)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld7",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 7 for calbration object sphere 1 (project1_sphere1_ld7)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld8",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 8 for calbration object sphere 1 (project1_sphere1_ld8)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_ld9",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 9 for calbration object sphere 1 (project1_sphere1_ld9)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld0",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 0 for calbration object sphere 2 (project1_sphere2_ld0)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld1",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 1 for calbration object sphere 2 (project1_sphere2_ld1)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld10",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 10 for calbration object sphere 2 (project1_sphere2_ld10)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld11",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 11 for calbration object sphere 2 (project1_sphere2_ld11)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld12",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 12 for calbration object sphere 2 (project1_sphere2_ld12)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld13",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 13 for calbration object sphere 2 (project1_sphere2_ld13)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld14",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 14 for calbration object sphere 2 (project1_sphere2_ld14)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld15",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 15 for calbration object sphere 2 (project1_sphere2_ld15)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld16",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 16 for calbration object sphere 2 (project1_sphere2_ld16)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld17",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 17 for calbration object sphere 2 (project1_sphere2_ld17)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld18",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 18 for calbration object sphere 2 (project1_sphere2_ld18)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld19",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 19 for calbration object sphere 2 (project1_sphere2_ld19)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld2",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 2 for calbration object sphere 2 (project1_sphere2_ld2)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld20",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 20 for calbration object sphere 2 (project1_sphere2_ld20)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld21",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 21 for calbration object sphere 2 (project1_sphere2_ld21)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld22",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 22 for calbration object sphere 2 (project1_sphere2_ld22)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld23",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 23 for calbration object sphere 2 (project1_sphere2_ld23)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld24",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 24 for calbration object sphere 2 (project1_sphere2_ld24)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld25",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 25 for calbration object sphere 2 (project1_sphere2_ld25)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld26",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 26 for calbration object sphere 2 (project1_sphere2_ld26)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld27",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 27 for calbration object sphere 2 (project1_sphere2_ld27)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld28",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 28 for calbration object sphere 2 (project1_sphere2_ld28)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld29",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 29 for calbration object sphere 2 (project1_sphere2_ld29)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld3",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 3 for calbration object sphere 2 (project1_sphere2_ld3)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld30",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 30 for calbration object sphere 2 (project1_sphere2_ld30)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld31",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 31 for calbration object sphere 2 (project1_sphere2_ld31)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld32",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 32 for calbration object sphere 2 (project1_sphere2_ld32)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld33",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 33 for calbration object sphere 2 (project1_sphere2_ld33)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld34",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 34 for calbration object sphere 2 (project1_sphere2_ld34)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld35",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 35 for calbration object sphere 2 (project1_sphere2_ld35)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld36",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 36 for calbration object sphere 2 (project1_sphere2_ld36)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld37",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 37 for calbration object sphere 2 (project1_sphere2_ld37)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld38",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 38 for calbration object sphere 2 (project1_sphere2_ld38)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld39",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 39 for calbration object sphere 2 (project1_sphere2_ld39)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld4",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 4 for calbration object sphere 2 (project1_sphere2_ld4)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld40",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 40 for calbration object sphere 2 (project1_sphere2_ld40)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld41",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 41 for calbration object sphere 2 (project1_sphere2_ld41)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld42",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 42 for calbration object sphere 2 (project1_sphere2_ld42)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld43",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 43 for calbration object sphere 2 (project1_sphere2_ld43)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld44",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 44 for calbration object sphere 2 (project1_sphere2_ld44)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld45",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 45 for calbration object sphere 2 (project1_sphere2_ld45)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld46",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 46 for calbration object sphere 2 (project1_sphere2_ld46)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld47",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 47 for calbration object sphere 2 (project1_sphere2_ld47)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld48",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 48 for calbration object sphere 2 (project1_sphere2_ld48)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld49",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 49 for calbration object sphere 2 (project1_sphere2_ld49)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld5",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 5 for calbration object sphere 2 (project1_sphere2_ld5)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld50",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 50 for calbration object sphere 2 (project1_sphere2_ld50)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld51",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 51 for calbration object sphere 2 (project1_sphere2_ld51)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld52",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 52 for calbration object sphere 2 (project1_sphere2_ld52)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld53",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 53 for calbration object sphere 2 (project1_sphere2_ld53)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld54",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 54 for calbration object sphere 2 (project1_sphere2_ld54)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld55",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 55 for calbration object sphere 2 (project1_sphere2_ld55)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld56",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 56 for calbration object sphere 2 (project1_sphere2_ld56)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld57",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 57 for calbration object sphere 2 (project1_sphere2_ld57)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld58",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 58 for calbration object sphere 2 (project1_sphere2_ld58)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld59",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 59 for calbration object sphere 2 (project1_sphere2_ld59)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld6",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 6 for calbration object sphere 2 (project1_sphere2_ld6)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld7",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 7 for calbration object sphere 2 (project1_sphere2_ld7)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld8",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 8 for calbration object sphere 2 (project1_sphere2_ld8)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere2_ld9",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 9 for calbration object sphere 2 (project1_sphere2_ld9)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld0",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 0 for calbration object sphere 3 (project1_sphere3_ld0)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld1",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 1 for calbration object sphere 3 (project1_sphere3_ld1)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld10",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 10 for calbration object sphere 3 (project1_sphere3_ld10)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld11",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 11 for calbration object sphere 3 (project1_sphere3_ld11)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld12",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 12 for calbration object sphere 3 (project1_sphere3_ld12)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld13",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 13 for calbration object sphere 3 (project1_sphere3_ld13)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld14",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 14 for calbration object sphere 3 (project1_sphere3_ld14)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld15",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 15 for calbration object sphere 3 (project1_sphere3_ld15)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld16",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 16 for calbration object sphere 3 (project1_sphere3_ld16)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld17",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 17 for calbration object sphere 3 (project1_sphere3_ld17)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld18",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 18 for calbration object sphere 3 (project1_sphere3_ld18)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld19",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 19 for calbration object sphere 3 (project1_sphere3_ld19)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld2",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 2 for calbration object sphere 3 (project1_sphere3_ld2)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld20",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 20 for calbration object sphere 3 (project1_sphere3_ld20)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld21",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 21 for calbration object sphere 3 (project1_sphere3_ld21)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld22",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 22 for calbration object sphere 3 (project1_sphere3_ld22)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld23",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 23 for calbration object sphere 3 (project1_sphere3_ld23)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld24",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 24 for calbration object sphere 3 (project1_sphere3_ld24)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld25",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 25 for calbration object sphere 3 (project1_sphere3_ld25)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld26",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 26 for calbration object sphere 3 (project1_sphere3_ld26)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld27",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 27 for calbration object sphere 3 (project1_sphere3_ld27)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld28",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 28 for calbration object sphere 3 (project1_sphere3_ld28)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld29",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 29 for calbration object sphere 3 (project1_sphere3_ld29)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld3",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 3 for calbration object sphere 3 (project1_sphere3_ld3)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld30",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 30 for calbration object sphere 3 (project1_sphere3_ld30)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld31",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 31 for calbration object sphere 3 (project1_sphere3_ld31)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld32",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 32 for calbration object sphere 3 (project1_sphere3_ld32)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld33",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 33 for calbration object sphere 3 (project1_sphere3_ld33)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld34",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 34 for calbration object sphere 3 (project1_sphere3_ld34)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld35",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 35 for calbration object sphere 3 (project1_sphere3_ld35)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld36",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 36 for calbration object sphere 3 (project1_sphere3_ld36)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld37",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 37 for calbration object sphere 3 (project1_sphere3_ld37)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld38",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 38 for calbration object sphere 3 (project1_sphere3_ld38)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld39",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 39 for calbration object sphere 3 (project1_sphere3_ld39)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld4",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 4 for calbration object sphere 3 (project1_sphere3_ld4)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld40",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 40 for calbration object sphere 3 (project1_sphere3_ld40)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld41",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 41 for calbration object sphere 3 (project1_sphere3_ld41)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld42",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 42 for calbration object sphere 3 (project1_sphere3_ld42)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld43",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 43 for calbration object sphere 3 (project1_sphere3_ld43)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld44",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 44 for calbration object sphere 3 (project1_sphere3_ld44)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld45",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 45 for calbration object sphere 3 (project1_sphere3_ld45)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld46",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 46 for calbration object sphere 3 (project1_sphere3_ld46)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld47",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 47 for calbration object sphere 3 (project1_sphere3_ld47)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld48",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 48 for calbration object sphere 3 (project1_sphere3_ld48)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld49",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 49 for calbration object sphere 3 (project1_sphere3_ld49)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld5",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 5 for calbration object sphere 3 (project1_sphere3_ld5)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld50",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 50 for calbration object sphere 3 (project1_sphere3_ld50)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld51",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 51 for calbration object sphere 3 (project1_sphere3_ld51)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld52",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 52 for calbration object sphere 3 (project1_sphere3_ld52)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld53",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 53 for calbration object sphere 3 (project1_sphere3_ld53)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld54",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 54 for calbration object sphere 3 (project1_sphere3_ld54)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld55",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 55 for calbration object sphere 3 (project1_sphere3_ld55)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld56",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 56 for calbration object sphere 3 (project1_sphere3_ld56)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld57",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 57 for calbration object sphere 3 (project1_sphere3_ld57)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld58",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 58 for calbration object sphere 3 (project1_sphere3_ld58)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld59",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 59 for calbration object sphere 3 (project1_sphere3_ld59)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld6",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 6 for calbration object sphere 3 (project1_sphere3_ld6)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld7",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 7 for calbration object sphere 3 (project1_sphere3_ld7)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld8",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 8 for calbration object sphere 3 (project1_sphere3_ld8)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere3_ld9",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 9 for calbration object sphere 3 (project1_sphere3_ld9)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld0",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 0 for calbration object sphere 4 (project1_sphere4_ld0)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld1",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 1 for calbration object sphere 4 (project1_sphere4_ld1)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld10",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 10 for calbration object sphere 4 (project1_sphere4_ld10)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld11",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 11 for calbration object sphere 4 (project1_sphere4_ld11)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld12",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 12 for calbration object sphere 4 (project1_sphere4_ld12)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld13",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 13 for calbration object sphere 4 (project1_sphere4_ld13)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld14",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 14 for calbration object sphere 4 (project1_sphere4_ld14)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld15",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 15 for calbration object sphere 4 (project1_sphere4_ld15)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld16",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 16 for calbration object sphere 4 (project1_sphere4_ld16)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld17",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 17 for calbration object sphere 4 (project1_sphere4_ld17)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld18",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 18 for calbration object sphere 4 (project1_sphere4_ld18)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld19",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 19 for calbration object sphere 4 (project1_sphere4_ld19)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld2",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 2 for calbration object sphere 4 (project1_sphere4_ld2)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld20",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 20 for calbration object sphere 4 (project1_sphere4_ld20)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld21",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 21 for calbration object sphere 4 (project1_sphere4_ld21)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld22",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 22 for calbration object sphere 4 (project1_sphere4_ld22)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld23",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 23 for calbration object sphere 4 (project1_sphere4_ld23)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld24",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 24 for calbration object sphere 4 (project1_sphere4_ld24)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld25",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 25 for calbration object sphere 4 (project1_sphere4_ld25)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld26",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 26 for calbration object sphere 4 (project1_sphere4_ld26)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld27",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 27 for calbration object sphere 4 (project1_sphere4_ld27)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld28",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 28 for calbration object sphere 4 (project1_sphere4_ld28)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld29",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 29 for calbration object sphere 4 (project1_sphere4_ld29)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld3",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 3 for calbration object sphere 4 (project1_sphere4_ld3)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld30",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 30 for calbration object sphere 4 (project1_sphere4_ld30)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld31",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 31 for calbration object sphere 4 (project1_sphere4_ld31)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld32",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 32 for calbration object sphere 4 (project1_sphere4_ld32)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld33",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 33 for calbration object sphere 4 (project1_sphere4_ld33)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld34",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 34 for calbration object sphere 4 (project1_sphere4_ld34)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld35",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 35 for calbration object sphere 4 (project1_sphere4_ld35)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld36",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 36 for calbration object sphere 4 (project1_sphere4_ld36)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld37",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 37 for calbration object sphere 4 (project1_sphere4_ld37)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld38",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 38 for calbration object sphere 4 (project1_sphere4_ld38)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld39",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 39 for calbration object sphere 4 (project1_sphere4_ld39)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld4",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 4 for calbration object sphere 4 (project1_sphere4_ld4)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld40",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 40 for calbration object sphere 4 (project1_sphere4_ld40)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld41",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 41 for calbration object sphere 4 (project1_sphere4_ld41)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld42",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 42 for calbration object sphere 4 (project1_sphere4_ld42)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld43",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 43 for calbration object sphere 4 (project1_sphere4_ld43)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld44",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 44 for calbration object sphere 4 (project1_sphere4_ld44)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld45",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 45 for calbration object sphere 4 (project1_sphere4_ld45)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld46",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 46 for calbration object sphere 4 (project1_sphere4_ld46)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld47",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 47 for calbration object sphere 4 (project1_sphere4_ld47)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld48",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 48 for calbration object sphere 4 (project1_sphere4_ld48)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld49",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 49 for calbration object sphere 4 (project1_sphere4_ld49)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld5",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 5 for calbration object sphere 4 (project1_sphere4_ld5)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld50",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 50 for calbration object sphere 4 (project1_sphere4_ld50)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld51",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 51 for calbration object sphere 4 (project1_sphere4_ld51)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld52",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 52 for calbration object sphere 4 (project1_sphere4_ld52)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld53",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 53 for calbration object sphere 4 (project1_sphere4_ld53)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld54",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 54 for calbration object sphere 4 (project1_sphere4_ld54)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld55",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 55 for calbration object sphere 4 (project1_sphere4_ld55)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld56",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 56 for calbration object sphere 4 (project1_sphere4_ld56)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld57",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 57 for calbration object sphere 4 (project1_sphere4_ld57)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld58",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 58 for calbration object sphere 4 (project1_sphere4_ld58)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld59",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 59 for calbration object sphere 4 (project1_sphere4_ld59)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld6",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 6 for calbration object sphere 4 (project1_sphere4_ld6)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld7",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 7 for calbration object sphere 4 (project1_sphere4_ld7)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld8",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 8 for calbration object sphere 4 (project1_sphere4_ld8)",
         "data": {}
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere4_ld9",
         "parent": "http://objects.mainzed.org/ont#LightDirection",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Light direction vector 9 for calbration object sphere 4 (project1_sphere4_ld9)",
         "data": {}
       },
       {
         "id": "http://objects.mainzed.org/ont#LightDirection",
         "parent": "#",
-        "type": "halfgeoclass",
-        "text": "LightDirection (ns2:LightDirection) [300]",
+        "type": "geoclass",
+        "text": "LightDirection (ns1:LightDirection) [300]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibration": {
               "instancecount": 1,
               "http://objects.mainzed.org/ont#Calibration": 1
+            },
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 1
             },
             "http://www.opengis.net/ont/geosparql#inSRS": {
               "instancecount": 1,
@@ -5221,7 +5224,7 @@ var tree={
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 5
       },
       {
         "id": "http://i3mainz.de/metadata/1.JPG_ld_calibration",
@@ -5647,7 +5650,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Calibration",
         "parent": "#",
         "type": "class",
-        "text": "Calibration (ns2:Calibration) [60]",
+        "text": "Calibration (ns1:Calibration) [60]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -5708,9 +5711,6 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
-            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -5721,11 +5721,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 2
       },
       {
         "id": "http://i3mainz.de/metadata/project1_ms",
@@ -5738,7 +5738,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSeries",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSeries (ns2:MeasurementSeries) [1]",
+        "text": "MeasurementSeries (ns1:MeasurementSeries) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurement": {
@@ -5761,47 +5761,6 @@ var tree={
           }
         },
         "instancecount": 62
-      },
-      {
-        "id": "http://i3mainz.de/metadata/project1_sphere1",
-        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
-        "type": "geoinstance",
-        "text": "project1 Calibration Sphere 1 (project1_sphere1)",
-        "data": {}
-      },
-      {
-        "id": "http://objects.mainzed.org/ont#CalibrationObject",
-        "parent": "#",
-        "type": "geoclass",
-        "text": "CalibrationObject (ns2:CalibrationObject) [1]",
-        "data": {
-          "to": {
-            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
-              "instancecount": 1,
-              "http://www.opengis.net/ont/sf#Polygon": 1
-            },
-            "http://www.opengis.net/ont/geosparql#hasCentroid": {
-              "instancecount": 1
-            },
-            "http://www.opengis.net/ont/geosparql#hasLightDirection": {
-              "instancecount": 60,
-              "http://objects.mainzed.org/ont#LightDirection": 60
-            },
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
-              "instancecount": 1
-            },
-            "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 1
-            }
-          },
-          "from": {
-            "http://objects.mainzed.org/ont#calibrationobject": {
-              "instancecount": 0,
-              "http://objects.mainzed.org/ont#Calibration": 1
-            }
-          }
-        },
-        "instancecount": 64
       },
       {
         "id": "http://i3mainz.de/metadata/project1_sphere1_bbox",
@@ -5850,11 +5809,133 @@ var tree={
           },
           "from": {
             "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
-              "instancecount": 0
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#CalibrationObject": 1
             }
           }
         },
         "instancecount": 3
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1_centroid",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 1 Centroid (project1_sphere1_centroid)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2_centroid",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 2 Centroid (project1_sphere2_centroid)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3_centroid",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 3 Centroid (project1_sphere3_centroid)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4_centroid",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 4 Centroid (project1_sphere4_centroid)",
+        "data": {}
+      },
+      {
+        "id": "http://www.opengis.net/ont/sf#Point",
+        "parent": "#",
+        "type": "geoclass",
+        "text": "Point (sf:Point) [4]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasCentroid": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#CalibrationObject": 1
+            }
+          }
+        },
+        "instancecount": 3
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere1",
+        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 1 (project1_sphere1)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere2",
+        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 2 (project1_sphere2)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere3",
+        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 3 (project1_sphere3)",
+        "data": {}
+      },
+      {
+        "id": "http://i3mainz.de/metadata/project1_sphere4",
+        "parent": "http://objects.mainzed.org/ont#CalibrationObject",
+        "type": "geoinstance",
+        "text": "project1 Calibration Sphere 4 (project1_sphere4)",
+        "data": {}
+      },
+      {
+        "id": "http://objects.mainzed.org/ont#CalibrationObject",
+        "parent": "#",
+        "type": "geoclass",
+        "text": "CalibrationObject (ns1:CalibrationObject) [4]",
+        "data": {
+          "to": {
+            "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/sf#Polygon": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasCentroid": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/sf#Point": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasLightDirection": {
+              "instancecount": 60,
+              "http://objects.mainzed.org/ont#LightDirection": 60
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://objects.mainzed.org/ont#calibrationobject": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#Calibration": 1
+            },
+            "http://objects.mainzed.org/ont#usesLightSourceGroup": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#Calibration": 1
+            }
+          }
+        },
+        "instancecount": 64
       },
       {
         "id": "http://i3mainz.de/metadata/PixelCoordinateSystem",

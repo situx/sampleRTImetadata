@@ -1,1 +1,1 @@
-{"http://www.opengis.net/ont/geosparql#asWKT": ["POINT(2963.844889079939 1826.2021782880274)"], "http://www.w3.org/2000/01/rdf-schema#label": ["project1 Calibration Sphere 2 Centroid"]}
+{"http://www.opengis.net/ont/geosparql#asWKT": ["POINT(2963.844889079939 1826.2021782880274)"], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://www.opengis.net/ont/sf#Point"], "http://www.w3.org/2000/01/rdf-schema#label": ["project1 Calibration Sphere 2 Centroid"]}

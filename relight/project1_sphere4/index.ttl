@@ -1,6 +1,9 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere4> geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere4_bbox> ;
+<http://i3mainz.de/metadata/project1_sphere4> a <http://objects.mainzed.org/ont#CalibrationObject> ;
+    rdfs:label "project1 Calibration Sphere 4" ;
+    geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere4_bbox> ;
     geo:hasCentroid <http://i3mainz.de/metadata/project1_sphere4_centroid> ;
     geo:hasLightDirection <http://i3mainz.de/metadata/project1_sphere4_ld0>,
         <http://i3mainz.de/metadata/project1_sphere4_ld1>,

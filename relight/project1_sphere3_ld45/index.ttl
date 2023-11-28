@@ -5,5 +5,6 @@
 <http://i3mainz.de/metadata/project1_sphere3_ld45> a ns1:LightDirection ;
     rdfs:label "Light direction vector 45 for calbration object sphere 3"@en ;
     ns1:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    geo:asWKT "POINT Z(0.821926474571228 0.4193931818008423 0.38541704416275024)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 

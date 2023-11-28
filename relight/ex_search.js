@@ -669,10 +669,13 @@ var search={
   "project1 Calibration Sphere 1": "http://i3mainz.de/metadata/project1_sphere1",
   "project1 Calibration Sphere 1 Bounding Box": "http://i3mainz.de/metadata/project1_sphere1_bbox",
   "project1 Calibration Sphere 1 Centroid": "http://i3mainz.de/metadata/project1_sphere1_centroid",
+  "project1 Calibration Sphere 2": "http://i3mainz.de/metadata/project1_sphere2",
   "project1 Calibration Sphere 2 Bounding Box": "http://i3mainz.de/metadata/project1_sphere2_bbox",
   "project1 Calibration Sphere 2 Centroid": "http://i3mainz.de/metadata/project1_sphere2_centroid",
+  "project1 Calibration Sphere 3": "http://i3mainz.de/metadata/project1_sphere3",
   "project1 Calibration Sphere 3 Bounding Box": "http://i3mainz.de/metadata/project1_sphere3_bbox",
   "project1 Calibration Sphere 3 Centroid": "http://i3mainz.de/metadata/project1_sphere3_centroid",
+  "project1 Calibration Sphere 4": "http://i3mainz.de/metadata/project1_sphere4",
   "project1 Calibration Sphere 4 Bounding Box": "http://i3mainz.de/metadata/project1_sphere4_bbox",
   "project1 Calibration Sphere 4 Centroid": "http://i3mainz.de/metadata/project1_sphere4_centroid"
 }

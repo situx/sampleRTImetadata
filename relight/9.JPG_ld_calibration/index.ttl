@@ -3,5 +3,12 @@
 
 <http://i3mainz.de/metadata/9.JPG_ld_calibration> a ns1:Calibration ;
     rdfs:label "Calibration of light direction vector 9.JPG"@en ;
-    ns1:calibrationobject <http://i3mainz.de/metadata/project1_sphere1> .
+    ns1:calibrationobject <http://i3mainz.de/metadata/project1_sphere1>,
+        <http://i3mainz.de/metadata/project1_sphere2>,
+        <http://i3mainz.de/metadata/project1_sphere3>,
+        <http://i3mainz.de/metadata/project1_sphere4> ;
+    ns1:usesLightSourceGroup <http://i3mainz.de/metadata/project1_sphere1>,
+        <http://i3mainz.de/metadata/project1_sphere2>,
+        <http://i3mainz.de/metadata/project1_sphere3>,
+        <http://i3mainz.de/metadata/project1_sphere4> .
 

@@ -5,5 +5,6 @@
 <http://i3mainz.de/metadata/project1_sphere4_ld51> a ns1:LightDirection ;
     rdfs:label "Light direction vector 51 for calbration object sphere 4"@en ;
     ns1:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
+    geo:asWKT "POINT Z(-0.34355807304382324 0.9283052086830139 -0.142187237739563)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
