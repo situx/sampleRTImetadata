@@ -53,7 +53,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementProject",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementProject (ns3:MeasurementProject) [1]",
+        "text": "MeasurementProject (ns2:MeasurementProject) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurementSeries": {
@@ -3530,7 +3530,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Measurement",
         "parent": "#",
         "type": "class",
-        "text": "Measurement (ns3:Measurement) [494]",
+        "text": "Measurement (ns2:Measurement) [494]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#axisDistancePosition": {
@@ -3587,7 +3587,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#RTIDome",
         "parent": "#",
         "type": "class",
-        "text": "RTIDome (ns3:RTIDome) [1]",
+        "text": "RTIDome (ns2:RTIDome) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -3617,7 +3617,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSeries",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSeries (ns3:MeasurementSeries) [1]",
+        "text": "MeasurementSeries (ns2:MeasurementSeries) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurement": {
@@ -7101,7 +7101,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSetup",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSetup (ns3:MeasurementSetup) [494]",
+        "text": "MeasurementSetup (ns2:MeasurementSetup) [494]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -10586,7 +10586,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#M_shutter_time0",
         "parent": "#",
         "type": "class",
-        "text": "M_shutter_time0 (ns3:M_shutter_time0) [494]",
+        "text": "M_shutter_time0 (ns2:M_shutter_time0) [494]",
         "data": {
           "to": {
             "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue": {
@@ -14114,7 +14114,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Camera",
         "parent": "#",
         "type": "class",
-        "text": "Camera (ns3:Camera) [2]",
+        "text": "Camera (ns2:Camera) [2]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#cameraPosition": {
@@ -14140,21 +14140,21 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Mono8",
         "parent": "http://objects.mainzed.org/ont#PixelType",
         "type": "instance",
-        "text": "Mono8 (ns3:Mono8)",
+        "text": "Mono8 (ns2:Mono8)",
         "data": {}
       },
       {
         "id": "http://objects.mainzed.org/ont#BayerGR8",
         "parent": "http://objects.mainzed.org/ont#PixelType",
         "type": "instance",
-        "text": "BayerGR8 (ns3:BayerGR8)",
+        "text": "BayerGR8 (ns2:BayerGR8)",
         "data": {}
       },
       {
         "id": "http://objects.mainzed.org/ont#PixelType",
         "parent": "#",
         "type": "class",
-        "text": "PixelType (ns3:PixelType) [2]",
+        "text": "PixelType (ns2:PixelType) [2]",
         "data": {}
       },
       {
@@ -14336,7 +14336,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightSourceGroup",
         "parent": "#",
         "type": "class",
-        "text": "LightSourceGroup (ns3:LightSourceGroup) [25]",
+        "text": "LightSourceGroup (ns2:LightSourceGroup) [25]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -14370,7 +14370,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#RTIScanner",
         "parent": "#",
         "type": "class",
-        "text": "RTIScanner (ns3:RTIScanner) [1]",
+        "text": "RTIScanner (ns2:RTIScanner) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#hasComponent": {
