@@ -3999,6 +3999,10 @@ ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
         <http://i3mainz.de/metadata/project1_sphere4_ld8>,
         <http://i3mainz.de/metadata/project1_sphere4_ld9> .
 
+<http://www.opengis.net/ont/sf#Point> rdfs:subClassOf ns2:Geometry .
+
+<http://www.opengis.net/ont/sf#Polygon> rdfs:subClassOf ns2:Geometry .
+
 <http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
     ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
