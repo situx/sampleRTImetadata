@@ -14130,7 +14130,7 @@ var tree={
           "from": {
             "http://objects.mainzed.org/ont#usesCamera": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#Measurement": 10
+              "http://objects.mainzed.org/ont#Measurement": 484
             }
           }
         },
@@ -14353,7 +14353,7 @@ var tree={
             },
             "http://objects.mainzed.org/ont#usesLightSourceGroup": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#Measurement": 14
+              "http://objects.mainzed.org/ont#Measurement": 20
             }
           }
         },
