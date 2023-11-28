@@ -34,6 +34,11 @@ def parseRelightJSON(jsonfile,resgraph):
     resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementProject")))
     resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Measurement Project "+str(projectname),lang="en")))
     resgraph.add((URIRef(namespace+projectname.replace(" ","_")),URIRef(ontnamespace+"measurementSeries"),URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"))) 
+    resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"hasLightDirection"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef(ontnamespace+"calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
+    resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
     resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"MeasurementSeries")))  
     resgraph.add((URIRef(str(namespace+projectname.replace(" ","_"))+"_ms"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("MeasurementSeries for Measurement Project "+str(projectname),lang="en")))
     resjson={}
