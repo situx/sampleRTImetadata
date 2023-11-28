@@ -94,7 +94,7 @@ def parseRelightJSON(jsonfile,resgraph):
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(ldcounter)+" for calbration object sphere "+str(spherecounter),lang="en")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
-                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(dire[0])+" "+str(dire[1])+" "+str(dire[2])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(dire[0])+" "+str(dire[1])+" "+str(dire[2])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
                     ldcounter+=1
             if "lights" in sphere:
                 lightcounter=0
