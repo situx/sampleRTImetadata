@@ -1,25 +1,25 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns5: <https://w3id.org/function/ontology#> .
-@prefix ns6: <http://purl.org/dc/terms/> .
+@prefix ns3: <https://w3id.org/function/ontology#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns6: <http://www.opengis.net/ont/crs/> .
 @prefix ns7: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns5:executes <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> .
+    ns3:executes <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> .
 
 <http://i3mainz.de/metadata/0cb383b7-a5f2-4354-a30f-c8ee8b08a691> a <http://www.w3.org/ns/prov#Activity> .
 
 <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns5:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
+    ns3:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
 
 <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> rdfs:label "Parameter: Name: HLi" .
 
@@ -242,14 +242,14 @@
 <http://i3mainz.de/metadata/5760e663-69a1-4f88-a15a-f391e4299777> a <http://www.w3.org/ns/prov#Activity> .
 
 <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns5:executes <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> .
+    ns3:executes <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> .
 
 <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns5:executes <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> .
+    ns3:executes <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns1:Highlight ;
     rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a"@en ;
@@ -467,7 +467,7 @@
     ns2:asWKT "POINT(181.63159 252.4737)"^^ns2:wktLiteral ;
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/CalibrationImages> a ns4:Collection ;
+<http://i3mainz.de/metadata/CalibrationImages> a ns5:Collection ;
     rdfs:member <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a>,
         <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4>,
@@ -482,8 +482,8 @@
 <http://i3mainz.de/metadata/Fisch> a ns1:MeasurementProject ;
     rdfs:label "Measurement Project Fisch"@en ;
     ns1:measurementSeries <http://i3mainz.de/metadata/Fisch_ms> ;
-    ns6:created "2017/4/5 9:49:21"^^xsd:dateTime ;
-    ns6:creator "kacebe" .
+    ns4:created "2017/4/5 9:49:21"^^xsd:dateTime ;
+    ns4:creator "kacebe" .
 
 <http://i3mainz.de/metadata/Fisch_result> a ns1:LightProjection ;
     rdfs:label "Light Projection Result" ;
@@ -560,7 +560,7 @@
         <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_eaafe128-1cf9-4563-8edd-de8c78f486fa_ld>,
         <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447_ld> .
 
-<http://i3mainz.de/metadata/HighDetectionImages> a ns4:Collection ;
+<http://i3mainz.de/metadata/HighDetectionImages> a ns5:Collection ;
     rdfs:member <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
         <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59>,
@@ -609,40 +609,40 @@
     ns2:hasBoundingBox <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2_extent> .
 
 <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns5:executes <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> .
+    ns3:executes <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> .
 
 <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_exec> a <http://www.w3.org/ns/prov#Activity>,
-        ns5:Execution ;
+        ns3:Execution ;
     rdfs:label "Function execution of function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns5:executes <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> .
+    ns3:executes <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> .
 
 <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> rdfs:label "Parameter: Name: BDi" .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> a ns5:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> a ns3:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns5:required true .
+    ns3:required true .
 
 ns1:calibration a owl:ObjectProperty .
 
@@ -670,32 +670,32 @@ ns2:hasGeometry a owl:ObjectProperty .
 
 rdfs:member a owl:ObjectProperty .
 
-ns5:executes a owl:ObjectProperty .
+ns3:executes a owl:ObjectProperty .
 
-ns5:expects a owl:ObjectProperty .
+ns3:expects a owl:ObjectProperty .
 
-ns5:required a owl:DatatypeProperty .
+ns3:required a owl:DatatypeProperty .
 
-ns5:returns a owl:ObjectProperty .
+ns3:returns a owl:ObjectProperty .
 
-<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> a ns5:Function ;
+<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d> a ns3:Function ;
     rdfs:label "Function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns5:expects <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> .
+    ns3:expects <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> .
 
-<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> a ns5:Function ;
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> a ns3:Function ;
     rdfs:label "Function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
-    ns5:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> .
+    ns3:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> .
 
-<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735",
         "Output: Name: HLi" ;
-    ns5:required true .
+    ns3:required true .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> a ns1:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
@@ -1278,23 +1278,23 @@ ns5:returns a owl:ObjectProperty .
     ns2:asWKT "POINT(149.0 1169.0)"^^ns2:wktLiteral ;
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> a ns5:Function ;
+<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395> a ns3:Function ;
     rdfs:label "Function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns5:expects <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> .
+    ns3:expects <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> .
 
-<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/70f36fcd-28ef-40a4-bbbc-032e0cac6395_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 70f36fcd-28ef-40a4-bbbc-032e0cac6395" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns5:Function ;
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns3:Function ;
     rdfs:label "Function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns5:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .
+    ns3:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .
 
-<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
-    ns5:required true .
+    ns3:required true .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration> a ns1:Calibration ;
     rdfs:label "Calibration setup for highlight point measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 9dcfef6e-0bd8-405b-afa7-6ac1011d208a",
@@ -1877,13 +1877,13 @@ ns5:returns a owl:ObjectProperty .
     ns2:asWKT "POINT(168.0 208.0)"^^ns2:wktLiteral ;
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns6:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns6:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns6:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
 <http://i3mainz.de/metadata/Fisch_ms> a ns1:MeasurementSeries ;
@@ -1925,11 +1925,11 @@ ns5:returns a owl:ObjectProperty .
         <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa>,
         <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns6:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
     ns7:hasUnit ns7:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns6:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
     ns7:hasUnit ns7:pixel .
 
@@ -1943,86 +1943,86 @@ ns5:returns a owl:ObjectProperty .
     ns2:asWKT "POLYGON((56.0 100.0, 56.0 320.0, 280.0 320.0, 280.0 100.0, 56.0 100.0))"^^ns2:wktLiteral ;
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> a ns5:Function ;
+<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd> a ns3:Function ;
     rdfs:label "Function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns5:expects <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> .
+    ns3:expects <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> .
 
-<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
-    ns5:required true .
+    ns3:required true .
 
-<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> a ns5:Function ;
+<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87> a ns3:Function ;
     rdfs:label "Function ec79488e-4d33-4c8b-8b2c-5786b2f2db87" ;
-    ns5:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> ;
-    ns5:returns <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> .
+    ns3:expects <http://i3mainz.de/metadata/http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_input1> ;
+    ns3:returns <http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> .
 
-<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> a ns5:Output ;
+<http://i3mainz.de/metadata/ec79488e-4d33-4c8b-8b2c-5786b2f2db87_output1> a ns3:Output ;
     rdfs:label "Output of funtion execution for function ec79488e-4d33-4c8b-8b2c-5786b2f2db87",
         "Output: Name: BDi" ;
-    ns5:required true .
+    ns3:required true .
 
-ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
+ns6:3DCoordinateSystem rdfs:subClassOf ns6:CoordinateSystem .
 
 <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 01ebf0f3-56e2-42d3-9c05-e691faa3c587"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_17.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_17.jpg" .
 
 <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 1678afac-9ca3-438d-a8ba-cf158a7f7b59"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_19.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_19.jpg" .
 
 <http://i3mainz.de/metadata/1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 1af891ad-9a90-48a2-ab59-a1c6ab8b4a0b"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_20.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_20.jpg" .
 
 <http://i3mainz.de/metadata/271e8308-caaa-457a-af4e-a6dc72efd223> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 271e8308-caaa-457a-af4e-a6dc72efd223"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_21.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_21.jpg" .
 
 <http://i3mainz.de/metadata/2973ffaf-22b8-4592-9340-4830b0b28e5a> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 2973ffaf-22b8-4592-9340-4830b0b28e5a"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_22.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_22.jpg" .
 
 <http://i3mainz.de/metadata/35721cc4-b646-4f88-a126-89c29316de1a> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 35721cc4-b646-4f88-a126-89c29316de1a"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_23.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_23.jpg" .
 
 <http://i3mainz.de/metadata/3c46a616-f145-4ab1-afa4-cd1572d012a7> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 3c46a616-f145-4ab1-afa4-cd1572d012a7"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_24.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_24.jpg" .
 
 <http://i3mainz.de/metadata/3e7f1b78-5301-4c83-9157-c129024005fd> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 3e7f1b78-5301-4c83-9157-c129024005fd"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_25.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_25.jpg" .
 
 <http://i3mainz.de/metadata/45671633-e2b5-4d5d-a5d9-9df17a59b0b9> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 45671633-e2b5-4d5d-a5d9-9df17a59b0b9"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_26.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_26.jpg" .
 
 <http://i3mainz.de/metadata/47f96e0e-2bbe-4041-8d90-bacf43e6812b> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 47f96e0e-2bbe-4041-8d90-bacf43e6812b"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_27.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_27.jpg" .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Output Extent for Calibration Object 2" ;
@@ -2030,58 +2030,58 @@ ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/5274452b-ae9a-43a6-86de-4ed5c7318868> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 5274452b-ae9a-43a6-86de-4ed5c7318868"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_28.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_28.jpg" .
 
 <http://i3mainz.de/metadata/56ef3f2b-f2ec-4300-97ab-afa18041fd13> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 56ef3f2b-f2ec-4300-97ab-afa18041fd13"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_29.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_29.jpg" .
 
 <http://i3mainz.de/metadata/585e8982-e1c1-4965-8df5-8b8d5879a45f> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 585e8982-e1c1-4965-8df5-8b8d5879a45f"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_30.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_30.jpg" .
 
 <http://i3mainz.de/metadata/5a51d10f-c02c-49ff-9f1e-a813c5de668b> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 5a51d10f-c02c-49ff-9f1e-a813c5de668b"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_31.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_31.jpg" .
 
 <http://i3mainz.de/metadata/5a61b970-95a6-4174-bcf7-cbe4983279b1> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 5a61b970-95a6-4174-bcf7-cbe4983279b1"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_32.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_32.jpg" .
 
 <http://i3mainz.de/metadata/6981e782-9edf-4d95-85fb-405e2f4064f4> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 6981e782-9edf-4d95-85fb-405e2f4064f4"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_34.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_34.jpg" .
 
 <http://i3mainz.de/metadata/7aadf709-57ac-4bd1-ab28-67627a93e4a4> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 7aadf709-57ac-4bd1-ab28-67627a93e4a4"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_35.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_35.jpg" .
 
 <http://i3mainz.de/metadata/81fb5616-d489-414b-9f1d-d3cd5c8586fd> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 81fb5616-d489-414b-9f1d-d3cd5c8586fd"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_01.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_01.jpg" .
 
 <http://i3mainz.de/metadata/97175f81-00e7-46d7-b767-ce7dd441c431> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 97175f81-00e7-46d7-b767-ce7dd441c431"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_04.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_04.jpg" .
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Output Extent for Calibration Object 1" ;
@@ -2089,46 +2089,46 @@ ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
     ns2:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
 <http://i3mainz.de/metadata/a33a95ad-ba43-41a8-aad9-a50b9e53c7ae> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement a33a95ad-ba43-41a8-aad9-a50b9e53c7ae"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_07.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_07.jpg" .
 
 <http://i3mainz.de/metadata/bf4b4623-c6ac-417c-ab07-a3c4751150ad> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement bf4b4623-c6ac-417c-ab07-a3c4751150ad"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_10.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_10.jpg" .
 
 <http://i3mainz.de/metadata/c4344110-d4f8-40e2-97ce-5c1516a140bd> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement c4344110-d4f8-40e2-97ce-5c1516a140bd"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_11.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_11.jpg" .
 
 <http://i3mainz.de/metadata/d6168165-9647-41c7-a0ca-0a7d433cd029> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement d6168165-9647-41c7-a0ca-0a7d433cd029"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_13.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_13.jpg" .
 
 <http://i3mainz.de/metadata/dde38c61-4673-4b87-bec2-2e7f3d509006> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement dde38c61-4673-4b87-bec2-2e7f3d509006"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_14.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_14.jpg" .
 
 <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement eaafe128-1cf9-4563-8edd-de8c78f486fa"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_15.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_15.jpg" .
 
 <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447"@en ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_16.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_16.jpg" .
 
 <http://i3mainz.de/metadata/ledset_1> a ns1:LightSourceGroup ;
     rdfs:label "LightSource Group 1"@en .
@@ -2241,74 +2241,74 @@ ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
 ns1:CalibrationSphere rdfs:subClassOf ns1:CalibrationObject .
 
 <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 1098767a-d813-47ad-bd5c-ee52ece47cae"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_18.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_18.jpg" .
 
 <http://i3mainz.de/metadata/5db96a8e-c345-4009-b2a7-c7fd89a6944a> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 5db96a8e-c345-4009-b2a7-c7fd89a6944a"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_33.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_33.jpg" .
 
 <http://i3mainz.de/metadata/7fda8eac-c375-44ab-8084-bcc4f016ecf4> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 7fda8eac-c375-44ab-8084-bcc4f016ecf4"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_36.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_36.jpg" .
 
 <http://i3mainz.de/metadata/93443afd-8774-4492-8bd0-35f87d665cd2> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 93443afd-8774-4492-8bd0-35f87d665cd2"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_02.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_02.jpg" .
 
 <http://i3mainz.de/metadata/96ce0ab1-a541-4ae2-ac49-32b31beefa08> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 96ce0ab1-a541-4ae2-ac49-32b31beefa08"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_03.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_03.jpg" .
 
 <http://i3mainz.de/metadata/9c38356e-055a-4aee-bf25-69edbc45db6f> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 9c38356e-055a-4aee-bf25-69edbc45db6f"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_05.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_05.jpg" .
 
 <http://i3mainz.de/metadata/9e9f122e-6384-49b5-bd19-5bcbbf25aee2> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement 9e9f122e-6384-49b5-bd19-5bcbbf25aee2"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_06.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_06.jpg" .
 
 <http://i3mainz.de/metadata/a8a5844a-a170-4e50-96b5-ec226ff9924e> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement a8a5844a-a170-4e50-96b5-ec226ff9924e"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_08.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_08.jpg" .
 
 <http://i3mainz.de/metadata/b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement b6a4be3f-aad4-47b4-9c5f-2953ae88ef5f"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_09.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_09.jpg" .
 
 <http://i3mainz.de/metadata/c7ae008c-3701-42d6-a026-ee3c4d84f921> a ns1:Measurement,
-        ns6:Image ;
+        ns4:Image ;
     rdfs:label "Measurement c7ae008c-3701-42d6-a026-ee3c4d84f921"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;
-    ns4:definition "jpeg-exports\\fish_fossil_12.jpg" .
+    ns5:definition "jpeg-exports\\fish_fossil_12.jpg" .
 
 <http://www.w3.org/ns/prov#Activity> a owl:Class .
 
@@ -2330,14 +2330,14 @@ ns1:CalibrationSphere rdfs:subClassOf ns1:CalibrationObject .
     ns2:hasBoundingBox <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> ;
     ns2:hasGeometry <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_position> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns6:3DCoordinateSystem ;
+    ns6:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 
 ns1:Highlight rdfs:subClassOf ns1:ReferencePoint .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns6:CoordinateSystem ;
+    ns6:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 

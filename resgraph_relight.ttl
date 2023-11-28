@@ -1,11 +1,11 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns4: <http://www.opengis.net/ont/crs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns4:CoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 
 <http://i3mainz.de/metadata/project1> a ns1:MeasurementProject ;
@@ -615,22 +615,22 @@
     ns2:asWKT "POINT Z(0.9784573912620544 0.20644064247608185 0.001854129135608673)"^^ns2:wktLiteral ;
     ns2:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
 <http://i3mainz.de/metadata/project1_ms> a ns1:MeasurementSeries ;
     rdfs:label "MeasurementSeries for Measurement Project project1"@en ;
@@ -695,10 +695,10 @@
         <http://i3mainz.de/metadata/8.JPG>,
         <http://i3mainz.de/metadata/9.JPG> .
 
-ns3:3DCoordinateSystem rdfs:subClassOf ns3:CoordinateSystem .
+ns4:3DCoordinateSystem rdfs:subClassOf ns4:CoordinateSystem .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns4:3DCoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 
