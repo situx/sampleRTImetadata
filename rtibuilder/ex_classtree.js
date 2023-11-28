@@ -715,7 +715,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Highlight",
         "parent": "http://objects.mainzed.org/ont#ReferencePoint",
         "type": "geoclass",
-        "text": "Highlight (ns1:Highlight) [72]",
+        "text": "Highlight (ns2:Highlight) [72]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibration": {
@@ -744,7 +744,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#ReferencePoint",
         "parent": "#",
         "type": "class",
-        "text": "ReferencePoint (ns1:ReferencePoint)",
+        "text": "ReferencePoint (ns2:ReferencePoint)",
         "data": {}
       },
       {
@@ -772,14 +772,14 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 36,
-              "http://objects.mainzed.org/ont#Measurement": 36,
-              "http://purl.org/dc/terms/Image": 36
+              "instancecount": 10,
+              "http://objects.mainzed.org/ont#Measurement": 10,
+              "http://purl.org/dc/terms/Image": 10
             }
           },
           "from": {}
         },
-        "instancecount": 37
+        "instancecount": 11
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch",
@@ -792,7 +792,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementProject",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementProject (ns1:MeasurementProject) [1]",
+        "text": "MeasurementProject (ns2:MeasurementProject) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurementSeries": {
@@ -827,7 +827,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightProjection",
         "parent": "#",
         "type": "geoclass",
-        "text": "LightProjection (ns1:LightProjection) [1]",
+        "text": "LightProjection (ns2:LightProjection) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#hasLightDirection": {
@@ -863,7 +863,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#CalibrationObjectInput",
         "parent": "#",
         "type": "geoclass",
-        "text": "CalibrationObjectInput (ns1:CalibrationObjectInput) [2]",
+        "text": "CalibrationObjectInput (ns2:CalibrationObjectInput) [2]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
@@ -1071,7 +1071,7 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 2
+              "instancecount": 1
             },
             "https://w3id.org/function/ontology#required": {
               "instancecount": 1
@@ -1084,7 +1084,7 @@ var tree={
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 3
       },
       {
         "id": "http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration",
@@ -2098,7 +2098,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Calibration",
         "parent": "#",
         "type": "class",
-        "text": "Calibration (ns1:Calibration) [144]",
+        "text": "Calibration (ns2:Calibration) [144]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibrationobject": {
@@ -2631,7 +2631,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightDirection",
         "parent": "#",
         "type": "geoclass",
-        "text": "LightDirection (ns1:LightDirection) [72]",
+        "text": "LightDirection (ns2:LightDirection) [72]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#calibration": {
@@ -2703,6 +2703,9 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -2713,11 +2716,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch_ms",
@@ -2730,7 +2733,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#MeasurementSeries",
         "parent": "#",
         "type": "class",
-        "text": "MeasurementSeries (ns1:MeasurementSeries) [1]",
+        "text": "MeasurementSeries (ns2:MeasurementSeries) [1]",
         "data": {
           "to": {
             "http://objects.mainzed.org/ont#measurement": {
@@ -3076,7 +3079,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#Measurement",
         "parent": "#",
         "type": "class",
-        "text": "Measurement (ns1:Measurement) [36]",
+        "text": "Measurement (ns2:Measurement) [36]",
         "data": {}
       },
       {
@@ -3620,7 +3623,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#LightSourceGroup",
         "parent": "#",
         "type": "class",
-        "text": "LightSourceGroup (ns1:LightSourceGroup) [36]",
+        "text": "LightSourceGroup (ns2:LightSourceGroup) [36]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -3657,7 +3660,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#CalibrationObjectOutput",
         "parent": "#",
         "type": "geoclass",
-        "text": "CalibrationObjectOutput (ns1:CalibrationObjectOutput) [2]",
+        "text": "CalibrationObjectOutput (ns2:CalibrationObjectOutput) [2]",
         "data": {}
       },
       {
@@ -3678,7 +3681,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#CalibrationSphere",
         "parent": "http://objects.mainzed.org/ont#CalibrationObject",
         "type": "geoclass",
-        "text": "CalibrationSphere (ns1:CalibrationSphere) [2]",
+        "text": "CalibrationSphere (ns2:CalibrationSphere) [2]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#BoundingBox": {
@@ -3713,7 +3716,7 @@ var tree={
         "id": "http://objects.mainzed.org/ont#CalibrationObject",
         "parent": "#",
         "type": "class",
-        "text": "CalibrationObject (ns1:CalibrationObject)",
+        "text": "CalibrationObject (ns2:CalibrationObject)",
         "data": {}
       },
       {
