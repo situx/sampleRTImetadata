@@ -77,12 +77,14 @@ def parseRelightJSON(jsonfile,resgraph):
                     wkt+=str(point[0])+" "+str(point[1])+", "
                 wkt+=str(sphere["border"][0])+" "+str(sphere["border"][1])+"))"             
                 resgraph.add((URIRef("http://www.opengis.net/ont/sf#Polygon"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+                resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#Class")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Bounding Box")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wkt,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             if "center" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasCentroid"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid")))
                 resgraph.add((URIRef("http://www.opengis.net/ont/sf#Point"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+                resgraph.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#Class")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Point")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Centroid")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(sphere["center"][0])+" "+str(sphere["center"][1])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
