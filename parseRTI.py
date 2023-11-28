@@ -81,6 +81,7 @@ def parseRelightJSON(jsonfile,resgraph):
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_bbox"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wkt,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             if "center" in sphere:
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasCentroid"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid")))
+                resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Point")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal(str(projectname)+" Calibration Sphere "+str(spherecounter)+" Centroid")))
                 resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_centroid"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT("+str(sphere["center"][0])+" "+str(sphere["center"][1])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             if "radius" in sphere:
