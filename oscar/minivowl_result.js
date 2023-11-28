@@ -73,6 +73,13 @@ var minivowlresult={
  ],
  "links": [
   {
+   "source": 6,
+   "target": 7,
+   "valueTo": "exposureTime",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2003/12/exif/exposureTime"
+  },
+  {
    "source": 1,
    "target": 6,
    "valueTo": "setup",
@@ -81,10 +88,10 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 12,
-   "valueTo": "capturingdevice",
+   "target": 10,
+   "valueTo": "pixelType",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
+   "uriTo": "http://objects.mainzed.org/ont#pixelType"
   },
   {
    "source": 1,
@@ -92,6 +99,13 @@ var minivowlresult={
    "valueTo": "usesCamera",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#usesCamera"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "capturingdevice",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
   },
   {
    "source": 1,
@@ -106,20 +120,6 @@ var minivowlresult={
    "valueTo": "hasValue",
    "propertyTo": "class",
    "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
-  },
-  {
-   "source": 6,
-   "target": 7,
-   "valueTo": "exposureTime",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2003/12/exif/exposureTime"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "pixelType",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#pixelType"
   },
   {
    "source": 12,
