@@ -772,14 +772,14 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 10,
-              "http://objects.mainzed.org/ont#Measurement": 10,
-              "http://purl.org/dc/terms/Image": 10
+              "instancecount": 36,
+              "http://objects.mainzed.org/ont#Measurement": 36,
+              "http://purl.org/dc/terms/Image": 36
             }
           },
           "from": {}
         },
-        "instancecount": 11
+        "instancecount": 37
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch",
@@ -1071,7 +1071,7 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 1
+              "instancecount": 2
             },
             "https://w3id.org/function/ontology#required": {
               "instancecount": 1
@@ -1084,7 +1084,7 @@ var tree={
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration",
@@ -2703,9 +2703,6 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
-            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -2716,11 +2713,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 2
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch_ms",
@@ -3334,6 +3331,9 @@ var tree={
         "text": "Image (terms:Image) [36]",
         "data": {
           "to": {
+            "http://objects.mainzed.org/ont#usedForCalibrationObjectDetection": {
+              "instancecount": 1
+            },
             "http://objects.mainzed.org/ont#usedForHighDetection": {
               "instancecount": 1
             },
@@ -3354,11 +3354,11 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 0,
-              "http://www.w3.org/2004/02/skos/core#Collection": 1
+              "http://www.w3.org/2004/02/skos/core#Collection": 2
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "http://i3mainz.de/metadata/ledset_1",
