@@ -63,18 +63,18 @@ def parseRelightJSON(jsonfile,resgraph,folder=""):
                 imageid="image_"+str(imagecounter)
                 imagecounter+=1
             resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_ms"),URIRef(ontnamespace+"measurement"),URIRef(namespace+str(imageid))))
-            resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
-            resgraph.add((URIRef(namespace+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image"))) 
-            resgraph.add((URIRef(namespace+str(imageid)),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(imageid)+"_ld")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(imageid),lang="en")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration of light direction vector "+str(imageid),lang="en")))
-            resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Measurement")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://purl.org/dc/terms/Image"))) 
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(imageid)+"_ld")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(imageid),lang="en")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld"),URIRef(ontnamespace+"calibration"),URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld_calibration")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Calibration")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld_calibration"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Calibration of light direction vector "+str(imageid),lang="en")))
+            resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#inSRS"),URIRef(namespace+"DomeCoordinateSystem")))
             if "direction" in image:
                 if "x" in image["direction"] and "y" in image["direction"] and "z" in image["direction"]:
-                    resgraph.add((URIRef(namespace+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(image["direction"]["x"])+" "+str(image["direction"]["y"])+" "+str(image["direction"]["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_"+str(imageid)+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(image["direction"]["x"])+" "+str(image["direction"]["y"])+" "+str(image["direction"]["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
     if "spheres" in rjson:
         spherecounter=1
         for sphere in rjson["spheres"]:
