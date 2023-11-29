@@ -10,12 +10,11 @@ from PIL import Image, ExifTags
 namespace="http://i3mainz.de/metadata/"
 ontnamespace="http://objects.mainzed.org/ont#"
 
-def parseRelightJSON(jsonfile,resgraph):
+def parseRelightJSON(jsonfile,resgraph,folder=""):
     with open(jsonfile, 'r',encoding="utf-8") as f:
         rjson = json.load(f)
     projectname="project1"
-    folder=""
-    if "folder" in rjson:
+    if "folder" in rjson and folder="":
         folder=rjson["folder"]
     if folder==".":
         folder=""
@@ -151,7 +150,7 @@ def processEXIFImageMetadata(imagepath,imageuri,resgraph):
     return resgraph
    
 
-def parseRTIBuilderXML(xmlfile,resgraph):
+def parseRTIBuilderXML(xmlfile,resgraph,folder=""):
   
     # create element tree object
     tree = ET.parse(xmlfile)
@@ -477,7 +476,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
     #with open("resgraph_rtibuilder.json", "w") as outfile:
     #    outfile.write(json.dumps(resjson))
 
-def parseRTIOSCARXML(xmlfile,resgraph):
+def parseRTIOSCARXML(xmlfile,resgraph,folder=""):
      # create element tree object
     tree = ET.parse(xmlfile)
   
@@ -633,7 +632,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument("-i","--input",nargs='*',help="the input file(s) to parse",action="store",required=True)
 parser.add_argument("-o","--output",help="the output path(s)",action="store",default="",required=False)
 parser.add_argument("-f","--format",help="the format to parse: oscar, rtibuilder oder relight",action="store",required=True)
-parser.add_argument("-if","--imagefolder",help="the folder in which images are stored",action="store",default=".",required=False)
+parser.add_argument("-if","--imagefolder",help="the folder in which images are stored",action="store",default="",required=False)
 args, unknown=parser.parse_known_args()
 print(args)
 print("The following arguments were not recognized: "+str(unknown))    
@@ -642,11 +641,11 @@ theformat=args.format
 print(theformat)
 for inp in args.input: 
     if theformat=="rtibuilder":
-        g=parseRTIBuilderXML(inp,g)
+        g=parseRTIBuilderXML(inp,g,args.imagefolder)
         g.serialize(inp+"_rtibuilder.ttl")
     elif theformat=="oscar":
-        g=parseRTIOSCARXML(inp,g)
+        g=parseRTIOSCARXML(inp,g,args.imagefolder)
         g.serialize(inp+"_oscar.ttl")
     elif theformat=="relight":
-        g=parseRelightJSON(inp,g)
+        g=parseRelightJSON(inp,g,args.imagefolder)
         g.serialize(inp+"_relight.ttl")
