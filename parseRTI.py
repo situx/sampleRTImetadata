@@ -3,7 +3,9 @@ from rdflib import Graph
 from rdflib import URIRef, Literal
 import argparse
 import json
+import os
 import re
+from PIL import Image, ExifTags
 
 namespace="http://i3mainz.de/metadata/"
 ontnamespace="http://objects.mainzed.org/ont#"
@@ -12,6 +14,9 @@ def parseRelightJSON(jsonfile,resgraph):
     with open(jsonfile, 'r',encoding="utf-8") as f:
         rjson = json.load(f)
     projectname="project1"
+    folder=""
+    if "folder" in rjson:
+        folder=rjson["folder"]
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystem")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"PixelCoordinateSystem_axis1")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
@@ -48,6 +53,8 @@ def parseRelightJSON(jsonfile,resgraph):
         for image in rjson["images"]:
             if "filename" in image:
                 imageid=image["filename"]
+                if os.path.isfile(folder+image["filename"]):
+                    resgraph=processEXIFImageMetadata(folder+image["filename"],namespace+str(imageid),resgraph)
             else:
                 imageid="image_"+str(imagecounter)
                 imagecounter+=1
@@ -123,9 +130,20 @@ def parseRelightJSON(jsonfile,resgraph):
 def processRTIBuilderXMLMetadata():
     print("metadata")
 
-def processRTIBuilderXMLImageMetadata():
-    print("imagemetadata")
-
+def processEXIFImageMetadata(imagepath,imageuri,resgraph):
+    img = Image.open(imagepath)
+    img_exif = img.getexif()
+    print(type(img_exif))
+    if img_exif==None:
+        return resgraph
+    for key, val in img_exif.items():
+        if key in ExifTags.TAGS:
+            resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(key)),Literal(val)))
+            print(f'{ExifTags.TAGS[key]}:{val}')
+        else:
+            resgraph.add((URIRef(imageuri),URIRef(ontnamespace+str(key)),Literal(val)))
+    return resgraph
+   
 
 def parseRTIBuilderXML(xmlfile,resgraph):
   
@@ -266,8 +284,7 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                                 resgraph.add((URIRef(namespace+str("HighDetectionImages")),URIRef("http://www.w3.org/2000/01/rdf-schema#member"),URIRef(namespace+str(gitem.text))))
                                 resgraph.add((URIRef(namespace+str(gitem.text)),URIRef(ontnamespace+"usedForHighDetection"),Literal("true",datatype="http://www.w3.org/2001/XMLSchema#boolean")))
                             elif fileGroupUse=="Blend Image":
-                                print("Blend Image")
-                                
+                                print("Blend Image")                              
                 print(hitem)
                 resgraph.add((URIRef(namespace+projectname+"_result"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightProjection")))
                 resgraph.add((URIRef(namespace+projectname+"_result"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light Projection Result")))
