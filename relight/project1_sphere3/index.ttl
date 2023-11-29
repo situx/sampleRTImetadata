@@ -1,11 +1,70 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere3> a <http://objects.mainzed.org/ont#CalibrationObject> ;
+<http://i3mainz.de/metadata/project1_sphere3> a ns1:CalibrationObject ;
     rdfs:label "project1 Calibration Sphere 3" ;
-    geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere3_bbox> ;
-    geo:hasCentroid <http://i3mainz.de/metadata/project1_sphere3_centroid> ;
-    geo:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0>,
+    ns1:hasHighlight <http://i3mainz.de/metadata/project1_sphere3_highlight0>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight1>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight10>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight11>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight12>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight13>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight14>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight15>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight16>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight17>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight18>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight19>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight2>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight20>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight21>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight22>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight23>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight24>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight25>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight26>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight27>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight28>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight29>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight3>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight30>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight31>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight32>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight33>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight34>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight35>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight36>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight37>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight38>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight39>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight4>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight40>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight41>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight42>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight43>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight44>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight45>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight46>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight47>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight48>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight49>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight5>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight50>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight51>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight52>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight53>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight54>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight55>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight56>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight57>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight58>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight59>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight6>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight7>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight8>,
+        <http://i3mainz.de/metadata/project1_sphere3_highlight9> ;
+    ns1:hasLightDirection <http://i3mainz.de/metadata/project1_sphere3_ld0>,
         <http://i3mainz.de/metadata/project1_sphere3_ld1>,
         <http://i3mainz.de/metadata/project1_sphere3_ld10>,
         <http://i3mainz.de/metadata/project1_sphere3_ld11>,
@@ -64,5 +123,7 @@
         <http://i3mainz.de/metadata/project1_sphere3_ld6>,
         <http://i3mainz.de/metadata/project1_sphere3_ld7>,
         <http://i3mainz.de/metadata/project1_sphere3_ld8>,
-        <http://i3mainz.de/metadata/project1_sphere3_ld9> .
+        <http://i3mainz.de/metadata/project1_sphere3_ld9> ;
+    geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere3_bbox> ;
+    geo:hasCentroid <http://i3mainz.de/metadata/project1_sphere3_centroid> .
 

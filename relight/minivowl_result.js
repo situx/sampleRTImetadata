@@ -16,11 +16,6 @@ var minivowlresult={
    "uri": "http://objects.mainzed.org/ont#MeasurementProject"
   },
   {
-   "name": "Highlight",
-   "type": "class",
-   "uri": "http://objects.mainzed.org/ont#Highlight"
-  },
-  {
    "name": "ObjectProperty",
    "type": "class",
    "uri": "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -71,9 +66,19 @@ var minivowlresult={
    "uri": "http://www.opengis.net/ont/sf#Point"
   },
   {
+   "name": "Highlight",
+   "type": "class",
+   "uri": "http://objects.mainzed.org/ont#Highlight"
+  },
+  {
    "name": "CalibrationObject",
    "type": "class",
    "uri": "http://objects.mainzed.org/ont#CalibrationObject"
+  },
+  {
+   "name": "Class",
+   "type": "class",
+   "uri": "http://www.w3.org/2002/07/owl#Class"
   },
   {
    "name": "CoordinateSystem",
@@ -88,123 +93,130 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 7,
-   "target": 8,
+   "source": 13,
+   "target": 12,
+   "valueTo": "hasHighlight",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#hasHighlight"
+  },
+  {
+   "source": 12,
+   "target": 16,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 12,
+   "target": 15,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 16,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 15,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 7,
    "valueTo": "calibration",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#calibration"
   },
   {
-   "source": 7,
-   "target": 14,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 7,
-   "target": 15,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 2,
-   "target": 14,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 2,
-   "target": 15,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 13,
-   "target": 7,
+   "source": 4,
+   "target": 6,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasLightDirection"
+   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 8,
-   "target": 13,
-   "valueTo": "calibrationobject",
+   "source": 5,
+   "target": 6,
+   "valueTo": "hasLightDirection",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
+   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
    "source": 13,
-   "target": 12,
-   "valueTo": "hasCentroid",
+   "target": 6,
+   "valueTo": "hasLightDirection",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasCentroid"
+   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 10,
+   "source": 9,
+   "target": 4,
+   "valueTo": "measurement",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurement"
+  },
+  {
+   "source": 9,
    "target": 5,
    "valueTo": "measurement",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
-   "source": 10,
-   "target": 6,
-   "valueTo": "measurement",
+   "source": 13,
+   "target": 11,
+   "valueTo": "hasCentroid",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurement"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasCentroid"
   },
   {
-   "source": 5,
-   "target": 7,
-   "valueTo": "hasLightDirection",
+   "source": 13,
+   "target": 10,
+   "valueTo": "hasBoundingBox",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
   },
   {
-   "source": 6,
-   "target": 7,
-   "valueTo": "hasLightDirection",
+   "source": 7,
+   "target": 13,
+   "valueTo": "calibrationobject",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
+   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
   },
   {
-   "source": 14,
+   "source": 7,
+   "target": 13,
+   "valueTo": "usesLightSourceGroup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+  },
+  {
+   "source": 1,
    "target": 9,
+   "valueTo": "measurementSeries",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
+  },
+  {
+   "source": 16,
+   "target": 8,
    "valueTo": "axis",
    "propertyTo": "class",
    "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
    "source": 15,
-   "target": 9,
+   "target": 8,
    "valueTo": "axis",
    "propertyTo": "class",
    "uriTo": "http://www.opengis.net/ont/crs/axis"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "hasBoundingBox",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasBoundingBox"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "measurementSeries",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
-  },
-  {
-   "source": 8,
-   "target": 13,
-   "valueTo": "usesLightSourceGroup",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
   }
  ]
 }
