@@ -143,10 +143,12 @@ def processEXIFImageMetadata(imagepath,imageuri,resgraph):
         return resgraph
     for key, val in img_exif.items():
         if key in ExifTags.TAGS:
-            resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(ExifTags.TAGS[key])),Literal(val)))
-            print(f'{ExifTags.TAGS[key]}:{val}')
+            if val!="":
+                resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(ExifTags.TAGS[key])),Literal(val)))
+                print(f'{ExifTags.TAGS[key]}:{val}')
         else:
-            resgraph.add((URIRef(imageuri),URIRef(ontnamespace+str(key)),Literal(val)))
+            if val!="":
+                resgraph.add((URIRef(imageuri),URIRef(ontnamespace+str(key)),Literal(val)))
     return resgraph
    
 
