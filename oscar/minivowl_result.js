@@ -73,6 +73,13 @@ var minivowlresult={
  ],
  "links": [
   {
+   "source": 1,
+   "target": 11,
+   "valueTo": "usesLightSourceGroup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+  },
+  {
    "source": 6,
    "target": 7,
    "valueTo": "exposureTime",
@@ -88,31 +95,17 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 9,
-   "valueTo": "usesCamera",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "usesLightSourceGroup",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "pixelType",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#pixelType"
-  },
-  {
-   "source": 1,
    "target": 12,
    "valueTo": "capturingdevice",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
+  },
+  {
+   "source": 1,
+   "target": 9,
+   "valueTo": "usesCamera",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
   },
   {
    "source": 7,
@@ -122,6 +115,13 @@ var minivowlresult={
    "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
   },
   {
+   "source": 1,
+   "target": 10,
+   "valueTo": "pixelType",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#pixelType"
+  },
+  {
    "source": 12,
    "target": 11,
    "valueTo": "hasLightSourceGroup",
@@ -129,18 +129,18 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#hasLightSourceGroup"
   },
   {
-   "source": 0,
-   "target": 5,
-   "valueTo": "measurementSeries",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
-  },
-  {
    "source": 12,
    "target": 4,
    "valueTo": "hasComponent",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#hasComponent"
+  },
+  {
+   "source": 0,
+   "target": 5,
+   "valueTo": "measurementSeries",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
   }
  ]
 }
