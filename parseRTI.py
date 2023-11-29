@@ -17,6 +17,8 @@ def parseRelightJSON(jsonfile,resgraph):
     folder=""
     if "folder" in rjson:
         folder=rjson["folder"]
+    if folder==".":
+        folder=""
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystem")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem"),URIRef("http://www.opengis.net/ont/crs/axis"),URIRef(namespace+"PixelCoordinateSystem_axis1")))
     resgraph.add((URIRef(namespace+"PixelCoordinateSystem_axis1"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/crs/CoordinateSystemAxis")))
@@ -52,8 +54,11 @@ def parseRelightJSON(jsonfile,resgraph):
         imagecounter=1
         for image in rjson["images"]:
             if "filename" in image:
+                print("IMAGE: "+str(image))
                 imageid=image["filename"]
+                print("ThePath: "+str(folder)+str(image["filename"]))
                 if os.path.isfile(folder+image["filename"]):
+                    print(folder+image["filename"])
                     resgraph=processEXIFImageMetadata(folder+image["filename"],namespace+str(imageid),resgraph)
             else:
                 imageid="image_"+str(imagecounter)
@@ -139,7 +144,7 @@ def processEXIFImageMetadata(imagepath,imageuri,resgraph):
         return resgraph
     for key, val in img_exif.items():
         if key in ExifTags.TAGS:
-            resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(key)),Literal(val)))
+            resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(ExifTags.TAGS[key])),Literal(val)))
             print(f'{ExifTags.TAGS[key]}:{val}')
         else:
             resgraph.add((URIRef(imageuri),URIRef(ontnamespace+str(key)),Literal(val)))
@@ -626,7 +631,7 @@ def parseRTIOSCARXML(xmlfile,resgraph):
 
 parser=argparse.ArgumentParser()
 parser.add_argument("-i","--input",nargs='*',help="the input file(s) to parse",action="store",required=True)
-parser.add_argument("-o","--output",nargs='*',help="the output path(s)",action="store",default=".",required=False)
+parser.add_argument("-o","--output",help="the output path(s)",action="store",default="",required=False)
 parser.add_argument("-f","--format",help="the format to parse: oscar, rtibuilder oder relight",action="store",required=True)
 parser.add_argument("-if","--imagefolder",help="the folder in which images are stored",action="store",default=".",required=False)
 args, unknown=parser.parse_known_args()
