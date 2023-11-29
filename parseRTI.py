@@ -14,7 +14,7 @@ def parseRelightJSON(jsonfile,resgraph,folder=""):
     with open(jsonfile, 'r',encoding="utf-8") as f:
         rjson = json.load(f)
     projectname=jsonfile.replace("relight","")
-    if "folder" in rjson and folder="":
+    if "folder" in rjson and folder=="":
         folder=rjson["folder"]
     if folder==".":
         folder=""
