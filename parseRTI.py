@@ -13,7 +13,7 @@ ontnamespace="http://objects.mainzed.org/ont#"
 def parseRelightJSON(jsonfile,resgraph,folder=""):
     with open(jsonfile, 'r',encoding="utf-8") as f:
         rjson = json.load(f)
-    projectname="project1"
+    projectname=jsonfile.replace("relight","")
     if "folder" in rjson and folder="":
         folder=rjson["folder"]
     if folder==".":
