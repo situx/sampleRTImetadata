@@ -94,7 +94,7 @@ def parseRelightJSON(jsonfile,resgraph):
             if "directions" in sphere:
                 ldcounter=0
                 for dire in sphere["directions"]:
-                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef("http://www.opengis.net/ont/geosparql#hasLightDirection"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter))))
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"LightDirection")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Light direction vector "+str(ldcounter)+" for calbration object sphere "+str(spherecounter),lang="en")))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_ld"+str(ldcounter)),URIRef(ontnamespace+"calibration"),URIRef(namespace+str(str(imageid)+"_ld_calibration"))))
@@ -105,6 +105,7 @@ def parseRelightJSON(jsonfile,resgraph):
                 lightcounter=0
                 resgraph.add((URIRef(namespace+str(imageid)+"_ld_calibration"),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter))))
                 for highlight in sphere["lights"]:
+                    resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)),URIRef(ontnamespace+"hasHighlight"),URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter))))
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontnamespace+"Highlight")))
                     resgraph.add((URIRef(ontnamespace+"Highlight"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef(ontnamespace+"ReferencePoint")))  
                     resgraph.add((URIRef(namespace+projectname.replace(" ","_")+"_sphere"+str(spherecounter)+"_highlight"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Image highlight point "+str(lightcounter)+" using sphere "+str(spherecounter),lang="en")))
