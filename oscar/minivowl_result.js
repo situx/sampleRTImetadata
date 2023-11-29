@@ -73,32 +73,18 @@ var minivowlresult={
  ],
  "links": [
   {
+   "source": 1,
+   "target": 9,
+   "valueTo": "usesCamera",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
+  },
+  {
    "source": 6,
    "target": 7,
    "valueTo": "exposureTime",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2003/12/exif/exposureTime"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "usesLightSourceGroup",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
-  },
-  {
-   "source": 7,
-   "target": 8,
-   "valueTo": "hasValue",
-   "propertyTo": "class",
-   "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
-  },
-  {
-   "source": 1,
-   "target": 6,
-   "valueTo": "setup",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#setup"
   },
   {
    "source": 1,
@@ -115,11 +101,25 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#pixelType"
   },
   {
-   "source": 1,
-   "target": 9,
-   "valueTo": "usesCamera",
+   "source": 7,
+   "target": 8,
+   "valueTo": "hasValue",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
+   "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "usesLightSourceGroup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "setup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#setup"
   },
   {
    "source": 12,
