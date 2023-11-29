@@ -1071,7 +1071,7 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 2
+              "instancecount": 1
             },
             "https://w3id.org/function/ontology#required": {
               "instancecount": 1
@@ -1084,7 +1084,7 @@ var tree={
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 3
       },
       {
         "id": "http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight_calibration",
@@ -2807,9 +2807,16 @@ var tree={
             }
           },
           "from": {
+            "http://www.opengis.net/ont/geosparql#BoundingBox": {
+              "instancecount": 0,
+              "http://objects.mainzed.org/ont#CalibrationObjectOutput": 1,
+              "http://objects.mainzed.org/ont#CalibrationSphere": 1,
+              "http://www.w3.org/ns/prov#Activity": 1
+            },
             "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#CalibrationObjectInput": 1,
+              "http://objects.mainzed.org/ont#CalibrationObjectOutput": 1,
+              "http://objects.mainzed.org/ont#CalibrationSphere": 1,
               "http://www.w3.org/ns/prov#Activity": 1
             }
           }
