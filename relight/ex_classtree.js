@@ -3508,7 +3508,8 @@ var tree={
           "from": {
             "http://objects.mainzed.org/ont#hasLightDirection": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#CalibrationObject": 1
+              "http://objects.mainzed.org/ont#Measurement": 1,
+              "http://purl.org/dc/terms/Image": 1
             }
           }
         },
