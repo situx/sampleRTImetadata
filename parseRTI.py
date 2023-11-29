@@ -123,9 +123,10 @@ def parseRelightJSON(jsonfile,resgraph):
                     resgraph.add((URIRef(namespace+"ledset_"+str(lightcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(lightcounter),lang="en")))
                     lightcounter+=1                         
             spherecounter+=1
-    resgraph.serialize("resgraph_relight.ttl")
-    with open("resgraph_relight.json", "w") as outfile:
-        outfile.write(json.dumps(resjson))
+    return resgraph
+    #resgraph.serialize("resgraph_relight.ttl")
+    #with open("resgraph_relight.json", "w") as outfile:
+    #    outfile.write(json.dumps(resjson))
 
 def processRTIBuilderXMLMetadata():
     print("metadata")
@@ -466,9 +467,10 @@ def parseRTIBuilderXML(xmlfile,resgraph):
                         if "x" in hitem.attrib and "y" in hitem.attrib and "z" in hitem.attrib:
                             resgraph.add((URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("POINT Z("+str(hitem.attrib["x"])+" "+str(hitem.attrib["y"])+" "+str(hitem.attrib["z"])+")",datatype="http://www.opengis.net/ont/geosparql#wktLiteral"))) 
                         resgraph.add((URIRef(namespace+projectname+"_result"),URIRef(ontnamespace+"hasLightDirection"),URIRef(namespace+str(highlightsphereid)+"_"+str(hitem.attrib["ImageID"])+"_ld")))
-    resgraph.serialize("resgraph_rtibuilder.ttl")
-    with open("resgraph_rtibuilder.json", "w") as outfile:
-        outfile.write(json.dumps(resjson))
+    return resgraph
+    #resgraph.serialize("resgraph_rtibuilder.ttl")
+    #with open("resgraph_rtibuilder.json", "w") as outfile:
+    #    outfile.write(json.dumps(resjson))
 
 def parseRTIOSCARXML(xmlfile,resgraph):
      # create element tree object
@@ -620,19 +622,26 @@ def parseRTIOSCARXML(xmlfile,resgraph):
                         resgraph.add((URIRef(namespace+ledsetid),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("LightSource Group "+str(ledsetid),lang="en")))
                         resgraph.add((URIRef(namespace+"capturing_device_1"),URIRef(ontnamespace+"hasLightSourceGroup"),URIRef(namespace+ledsetid)))
                         resgraph.add((URIRef(measureuri),URIRef(ontnamespace+"usesLightSourceGroup"),URIRef(namespace+ledsetid)))
-    resgraph.serialize("resgraph_oscar.ttl")
-    with open("resgraph_oscar.json", "w") as outfile:
-        outfile.write(json.dumps(resjson))
+    return resgraph
 
 parser=argparse.ArgumentParser()
 parser.add_argument("-i","--input",nargs='*',help="the input file(s) to parse",action="store",required=True)
-parser.add_argument("-o","--output",nargs='*',help="the output path(s)",action="store",required=True)
-#args, unknown=parser.parse_known_args()
-#print(args)
-#print("The following arguments were not recognized: "+str(unknown))    
+parser.add_argument("-o","--output",nargs='*',help="the output path(s)",action="store",default=".",required=False)
+parser.add_argument("-f","--format",help="the format to parse: oscar, rtibuilder oder relight",action="store",required=True)
+parser.add_argument("-if","--imagefolder",help="the folder in which images are stored",action="store",default=".",required=False)
+args, unknown=parser.parse_known_args()
+print(args)
+print("The following arguments were not recognized: "+str(unknown))    
 g=Graph()
-parseRTIBuilderXML("Fisch.xml",g)
-g2=Graph()
-parseRTIOSCARXML("digitalizationResult.xml",g2)
-g3=Graph()
-parseRelightJSON("gerti.relight",g3)
+theformat=args.format
+print(theformat)
+for inp in args.input: 
+    if theformat=="rtibuilder":
+        g=parseRTIBuilderXML(inp,g)
+        g.serialize(inp+"_rtibuilder.ttl")
+    elif theformat=="oscar":
+        g=parseRTIOSCARXML(inp,g)
+        g.serialize(inp+"_oscar.ttl")
+    elif theformat=="relight":
+        g=parseRelightJSON(inp,g)
+        g.serialize(inp+"_relight.ttl")
