@@ -2703,6 +2703,9 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -2713,11 +2716,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch_ms",
@@ -3331,9 +3334,6 @@ var tree={
         "text": "Image (terms:Image) [36]",
         "data": {
           "to": {
-            "http://objects.mainzed.org/ont#usedForCalibrationObjectDetection": {
-              "instancecount": 1
-            },
             "http://objects.mainzed.org/ont#usedForHighDetection": {
               "instancecount": 1
             },
@@ -3354,11 +3354,11 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 0,
-              "http://www.w3.org/2004/02/skos/core#Collection": 2
+              "http://www.w3.org/2004/02/skos/core#Collection": 1
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://i3mainz.de/metadata/ledset_1",
