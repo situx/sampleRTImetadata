@@ -74,31 +74,17 @@ var minivowlresult={
  "links": [
   {
    "source": 1,
-   "target": 9,
-   "valueTo": "usesCamera",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
-  },
-  {
-   "source": 6,
-   "target": 7,
-   "valueTo": "exposureTime",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2003/12/exif/exposureTime"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "capturingdevice",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
-  },
-  {
-   "source": 1,
    "target": 10,
    "valueTo": "pixelType",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#pixelType"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "usesLightSourceGroup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
   },
   {
    "source": 7,
@@ -109,10 +95,24 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 11,
-   "valueTo": "usesLightSourceGroup",
+   "target": 12,
+   "valueTo": "capturingdevice",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#usesLightSourceGroup"
+   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
+  },
+  {
+   "source": 6,
+   "target": 7,
+   "valueTo": "exposureTime",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2003/12/exif/exposureTime"
+  },
+  {
+   "source": 1,
+   "target": 9,
+   "valueTo": "usesCamera",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#usesCamera"
   },
   {
    "source": 1,
