@@ -58,7 +58,7 @@ def parseRelightJSON(jsonfile,resgraph,folder=""):
                 print("ThePath: "+str(folder)+str(image["filename"]))
                 if os.path.isfile(folder+image["filename"]):
                     print(folder+image["filename"])
-                    resgraph=processEXIFImageMetadata(folder+image["filename"],namespace+str(imageid),resgraph)
+                    resgraph=processEXIFImageMetadata(folder+image["filename"],namespace+projectname.replace(" ","_")+"_"+str(imageid),resgraph)
             else:
                 imageid="image_"+str(imagecounter)
                 imagecounter+=1
