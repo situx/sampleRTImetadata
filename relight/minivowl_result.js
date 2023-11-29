@@ -93,7 +93,42 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 13,
+   "source": 12,
+   "target": 16,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 12,
+   "target": 15,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 16,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 15,
+   "valueTo": "inSRS",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
+  },
+  {
+   "source": 6,
+   "target": 7,
+   "valueTo": "calibration",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#calibration"
+  },
+  {
+   "source": 5,
    "target": 6,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
@@ -107,39 +142,11 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
   },
   {
-   "source": 5,
+   "source": 13,
    "target": 6,
    "valueTo": "hasLightDirection",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#hasLightDirection"
-  },
-  {
-   "source": 6,
-   "target": 16,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 6,
-   "target": 15,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 12,
-   "target": 16,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
-  },
-  {
-   "source": 12,
-   "target": 15,
-   "valueTo": "inSRS",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#inSRS"
   },
   {
    "source": 13,
@@ -149,11 +156,11 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#hasHighlight"
   },
   {
-   "source": 6,
-   "target": 7,
-   "valueTo": "calibration",
+   "source": 9,
+   "target": 5,
+   "valueTo": "measurement",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#calibration"
+   "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
    "source": 9,
@@ -163,18 +170,11 @@ var minivowlresult={
    "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
-   "source": 9,
-   "target": 5,
-   "valueTo": "measurement",
+   "source": 15,
+   "target": 8,
+   "valueTo": "axis",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurement"
-  },
-  {
-   "source": 7,
-   "target": 13,
-   "valueTo": "calibrationobject",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
+   "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
    "source": 16,
@@ -184,11 +184,11 @@ var minivowlresult={
    "uriTo": "http://www.opengis.net/ont/crs/axis"
   },
   {
-   "source": 15,
-   "target": 8,
-   "valueTo": "axis",
+   "source": 7,
+   "target": 13,
+   "valueTo": "calibrationobject",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/crs/axis"
+   "uriTo": "http://objects.mainzed.org/ont#calibrationobject"
   },
   {
    "source": 13,
