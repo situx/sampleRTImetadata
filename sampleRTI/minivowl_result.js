@@ -83,6 +83,13 @@ var minivowlresult={
  ],
  "links": [
   {
+   "source": 5,
+   "target": 12,
+   "valueTo": "measurementSeries",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
+  },
+  {
    "source": 11,
    "target": 12,
    "valueTo": "measurementSeries",
@@ -91,10 +98,10 @@ var minivowlresult={
   },
   {
    "source": 5,
-   "target": 12,
-   "valueTo": "measurementSeries",
+   "target": 13,
+   "valueTo": "measurement",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurementSeries"
+   "uriTo": "http://objects.mainzed.org/ont#measurement"
   },
   {
    "source": 12,
@@ -105,20 +112,13 @@ var minivowlresult={
   },
   {
    "source": 5,
-   "target": 13,
-   "valueTo": "measurement",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#measurement"
-  },
-  {
-   "source": 6,
    "target": 10,
    "valueTo": "component",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#component"
   },
   {
-   "source": 5,
+   "source": 6,
    "target": 10,
    "valueTo": "component",
    "propertyTo": "class",
