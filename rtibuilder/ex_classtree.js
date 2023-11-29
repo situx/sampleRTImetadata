@@ -772,14 +772,14 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 36,
-              "http://objects.mainzed.org/ont#Measurement": 36,
-              "http://purl.org/dc/terms/Image": 36
+              "instancecount": 10,
+              "http://objects.mainzed.org/ont#Measurement": 10,
+              "http://purl.org/dc/terms/Image": 10
             }
           },
           "from": {}
         },
-        "instancecount": 37
+        "instancecount": 11
       },
       {
         "id": "http://i3mainz.de/metadata/Fisch",
@@ -2807,16 +2807,9 @@ var tree={
             }
           },
           "from": {
-            "http://www.opengis.net/ont/geosparql#BoundingBox": {
-              "instancecount": 0,
-              "http://objects.mainzed.org/ont#CalibrationObjectOutput": 1,
-              "http://objects.mainzed.org/ont#CalibrationSphere": 1,
-              "http://www.w3.org/ns/prov#Activity": 1
-            },
             "http://www.opengis.net/ont/geosparql#hasBoundingBox": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#CalibrationObjectOutput": 1,
-              "http://objects.mainzed.org/ont#CalibrationSphere": 1,
+              "http://objects.mainzed.org/ont#CalibrationObjectInput": 1,
               "http://www.w3.org/ns/prov#Activity": 1
             }
           }
