@@ -138,14 +138,14 @@ def processRTIBuilderXMLMetadata():
 def processEXIFImageMetadata(imagepath,imageuri,resgraph):
     img = Image.open(imagepath)
     img_exif = img.getexif()
-    print(type(img_exif))
+    #print(type(img_exif))
     if img_exif==None:
         return resgraph
     for key, val in img_exif.items():
         if key in ExifTags.TAGS:
             if val!="":
                 resgraph.add((URIRef(imageuri),URIRef("http://www.w3.org/2003/12/exif/ns#"+str(ExifTags.TAGS[key])),Literal(val)))
-                print(f'{ExifTags.TAGS[key]}:{val}')
+                #print(f'{ExifTags.TAGS[key]}:{val}')
         else:
             if val!="":
                 resgraph.add((URIRef(imageuri),URIRef(ontnamespace+str(key)),Literal(val)))
