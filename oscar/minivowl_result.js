@@ -81,10 +81,10 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 10,
-   "valueTo": "pixelType",
+   "target": 12,
+   "valueTo": "capturingdevice",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#pixelType"
+   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
   },
   {
    "source": 6,
@@ -109,17 +109,17 @@ var minivowlresult={
   },
   {
    "source": 1,
+   "target": 10,
+   "valueTo": "pixelType",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#pixelType"
+  },
+  {
+   "source": 1,
    "target": 6,
    "valueTo": "setup",
    "propertyTo": "class",
    "uriTo": "http://objects.mainzed.org/ont#setup"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "capturingdevice",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
   },
   {
    "source": 12,
