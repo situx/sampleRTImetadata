@@ -73,18 +73,11 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 7,
-   "target": 8,
-   "valueTo": "hasValue",
-   "propertyTo": "class",
-   "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
-  },
-  {
    "source": 1,
-   "target": 10,
-   "valueTo": "pixelType",
+   "target": 12,
+   "valueTo": "capturingdevice",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#pixelType"
+   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
   },
   {
    "source": 1,
@@ -95,13 +88,6 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 6,
-   "valueTo": "setup",
-   "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#setup"
-  },
-  {
-   "source": 1,
    "target": 11,
    "valueTo": "usesLightSourceGroup",
    "propertyTo": "class",
@@ -109,10 +95,24 @@ var minivowlresult={
   },
   {
    "source": 1,
-   "target": 12,
-   "valueTo": "capturingdevice",
+   "target": 10,
+   "valueTo": "pixelType",
    "propertyTo": "class",
-   "uriTo": "http://objects.mainzed.org/ont#capturingdevice"
+   "uriTo": "http://objects.mainzed.org/ont#pixelType"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "setup",
+   "propertyTo": "class",
+   "uriTo": "http://objects.mainzed.org/ont#setup"
+  },
+  {
+   "source": 7,
+   "target": 8,
+   "valueTo": "hasValue",
+   "propertyTo": "class",
+   "uriTo": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
   },
   {
    "source": 6,
