@@ -2,8 +2,8 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix ns2: <https://w3id.org/function/ontology#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns4: <http://www.opengis.net/ont/crs/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -21,7 +21,9 @@
     rdfs:label "Function execution of function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
     ns2:executes <http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735> .
 
-<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> rdfs:label "Parameter: Name: HLi" .
+<http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Parameter: Name: HLi" .
 
 <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_01ebf0f3-56e2-42d3-9c05-e691faa3c587_highlight> a ns1:Highlight ;
     rdfs:label "Image highlight point 01ebf0f3-56e2-42d3-9c05-e691faa3c587 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
@@ -638,9 +640,7 @@
     rdfs:label "Input parameter 1 of function execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
     ns2:required true .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a <http://www.w3.org/ns/ldp#Resource>,
-        ns2:Parameter,
-        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/http://i3mainz.de/metadata/4b6b99fe-5e04-465e-b6d7-0e7f594f2735_input1> a ns2:Parameter ;
     rdfs:label "Input parameter 1 of function execution for function 4b6b99fe-5e04-465e-b6d7-0e7f594f2735" ;
     ns2:required true .
 
@@ -1847,13 +1847,13 @@
     geo:asWKT "POINT(168.0 208.0)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns4:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
 <http://i3mainz.de/metadata/Fisch_ms> a ns1:MeasurementSeries ;
@@ -1895,13 +1895,13 @@
         <http://i3mainz.de/metadata/eaafe128-1cf9-4563-8edd-de8c78f486fa>,
         <http://i3mainz.de/metadata/fd9c0bb3-ceb0-45cd-a3b9-f7e5c6d61447> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns4:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns4:hasUnit ns4:pixel .
+    ns3:hasUnit ns3:pixel .
 
 <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input1_extent> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Calibration Object Input Extent for Calibration Object 1" ;
@@ -2294,12 +2294,12 @@
     geo:hasBoundingBox <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> ;
     geo:hasGeometry <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_position> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns4:3DCoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns4:CoordinateSystem ;
+    ns4:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 
