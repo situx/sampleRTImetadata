@@ -1,7 +1,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> a ns1:Calibration ;
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_35721cc4-b646-4f88-a126-89c29316de1a_highlight_calibration> a ns1:Calibration,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Calibration setup for highlight point measurement 35721cc4-b646-4f88-a126-89c29316de1a using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced",
         "Highlight Point Measurement 4f32a1f3-7376-4776-b310-d7e11e837ced Calibration" ;
     ns1:calibrationobject <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced> ;

@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2> a <http://objects.mainzed.org/ont#CalibrationObjectInput>,
-        prov:Activity ;
+        <http://www.w3.org/ns/ldp#Resource>,
+        prov:Activity,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Calibration Object Input for Calibration Object 2" ;
     geo:hasBoundingBox <http://i3mainz.de/metadata/a6f24959-7dcf-4321-b656-d59d237697dd_input2_extent> .
 

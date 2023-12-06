@@ -1,7 +1,9 @@
 @prefix ns1: <https://w3id.org/function/ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a ns1:Function ;
+<http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Function,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Function 7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f" ;
     ns1:expects <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_input1> ;
     ns1:returns <http://i3mainz.de/metadata/7a54ade4-0fb1-4ca4-9da6-30d247a6cc4f_output1> .

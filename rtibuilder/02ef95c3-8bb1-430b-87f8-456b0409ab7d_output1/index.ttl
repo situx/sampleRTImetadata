@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a ns1:Output ;
+<http://i3mainz.de/metadata/02ef95c3-8bb1-430b-87f8-456b0409ab7d_output1> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Output,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Output of funtion execution for function 02ef95c3-8bb1-430b-87f8-456b0409ab7d" ;
     ns1:required true .
 

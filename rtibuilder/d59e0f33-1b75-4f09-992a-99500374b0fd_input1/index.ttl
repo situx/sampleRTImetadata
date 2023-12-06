@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a ns1:Parameter ;
+<http://i3mainz.de/metadata/http://i3mainz.de/metadata/d59e0f33-1b75-4f09-992a-99500374b0fd_input1> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Parameter,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Input parameter 1 of function execution for function d59e0f33-1b75-4f09-992a-99500374b0fd" ;
     ns1:required true .
 

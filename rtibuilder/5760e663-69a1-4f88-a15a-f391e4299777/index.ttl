@@ -1,4 +1,6 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
-<http://i3mainz.de/metadata/5760e663-69a1-4f88-a15a-f391e4299777> a prov:Activity .
+<http://i3mainz.de/metadata/5760e663-69a1-4f88-a15a-f391e4299777> a <http://www.w3.org/ns/ldp#Resource>,
+        prov:Activity,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> .
 

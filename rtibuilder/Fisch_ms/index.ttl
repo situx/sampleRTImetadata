@@ -1,7 +1,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/Fisch_ms> a ns1:MeasurementSeries ;
+<http://i3mainz.de/metadata/Fisch_ms> a ns1:MeasurementSeries,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "MeasurementSeries for Measurement Project Fisch"@en ;
     ns1:measurement <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
         <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,

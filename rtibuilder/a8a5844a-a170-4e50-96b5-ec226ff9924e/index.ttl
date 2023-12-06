@@ -5,7 +5,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://i3mainz.de/metadata/a8a5844a-a170-4e50-96b5-ec226ff9924e> a ns1:Measurement,
-        dcterms:Image ;
+        dcterms:Image,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Measurement a8a5844a-a170-4e50-96b5-ec226ff9924e"@en ;
     ns1:usedForCalibrationObjectDetection true ;
     ns1:usedForHighDetection true ;

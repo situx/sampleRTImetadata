@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://i3mainz.de/metadata/HighDetectionImages> a skos:Collection ;
+<http://i3mainz.de/metadata/HighDetectionImages> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:member <http://i3mainz.de/metadata/01ebf0f3-56e2-42d3-9c05-e691faa3c587>,
         <http://i3mainz.de/metadata/1098767a-d813-47ad-bd5c-ee52ece47cae>,
         <http://i3mainz.de/metadata/1678afac-9ca3-438d-a8ba-cf158a7f7b59>,

@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_position> rdfs:label "Calibration Object Sphere 0 Geometry" ;
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_position> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Calibration Object Sphere 0 Geometry" ;
     ns1:radius 8.5e+01 ;
     geo:asWKT "POINT(149.0 1169.0)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .

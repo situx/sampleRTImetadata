@@ -2,7 +2,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_ld> a ns1:LightDirection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Light direction vector 9e9f122e-6384-49b5-bd19-5bcbbf25aee2 using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
     ns1:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_9e9f122e-6384-49b5-bd19-5bcbbf25aee2_ld_calibration> ;
     geo:asWKT "POINT Z(-0.610333 0.03943766 0.7911626)"^^geo:wktLiteral ;

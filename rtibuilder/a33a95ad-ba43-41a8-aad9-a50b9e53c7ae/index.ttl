@@ -5,7 +5,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://i3mainz.de/metadata/a33a95ad-ba43-41a8-aad9-a50b9e53c7ae> a ns1:Measurement,
-        dcterms:Image ;
+        dcterms:Image,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Measurement a33a95ad-ba43-41a8-aad9-a50b9e53c7ae"@en ;
     ns1:usedForHighDetection true ;
     skos:definition "jpeg-exports\\fish_fossil_07.jpg" .

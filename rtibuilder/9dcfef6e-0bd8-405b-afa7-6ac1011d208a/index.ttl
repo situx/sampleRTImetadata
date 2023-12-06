@@ -4,7 +4,9 @@
 
 <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a> a <http://objects.mainzed.org/ont#CalibrationObjectOutput>,
         <http://objects.mainzed.org/ont#CalibrationSphere>,
-        prov:Activity ;
+        <http://www.w3.org/ns/ldp#Resource>,
+        prov:Activity,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Calibration Object Output for Calibration Object 1",
         "Calibration Object Sphere 1"@en ;
     geo:BoundingBox <http://i3mainz.de/metadata/9dcfef6e-0bd8-405b-afa7-6ac1011d208a_extent> ;

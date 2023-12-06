@@ -2,7 +2,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns1:Highlight ;
+<http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight> a ns1:Highlight,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Image highlight point 5a51d10f-c02c-49ff-9f1e-a813c5de668b using sphere 4f32a1f3-7376-4776-b310-d7e11e837ced"@en ;
     ns1:calibration <http://i3mainz.de/metadata/4f32a1f3-7376-4776-b310-d7e11e837ced_5a51d10f-c02c-49ff-9f1e-a813c5de668b_highlight_calibration> ;
     geo:asWKT "POINT(151.73685 1120.4474)"^^geo:wktLiteral ;
