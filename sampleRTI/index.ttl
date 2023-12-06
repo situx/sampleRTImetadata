@@ -1,0 +1,58 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://objects.mainzed.org/ont#> .
+@prefix ns2: <https://situx.github.io/sampleRTImetadata/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:RTIDome a owl:NamedIndividual .
+
+ns2:RTIDomeCalibration a ns1:Calibration,
+        owl:NamedIndividual ;
+    rdfs:label "RTI Dome Calibration"@en ;
+    ns1:calibrationobject ns2:calibrationobject1 .
+
+ns2:RTIScanner a ns1:RTIScanner,
+        owl:NamedIndividual ;
+    rdfs:label "Sample RTI Scanner"@en ;
+    ns1:component ns2:ls1 .
+
+ns2:SampleRTIDome a ns1:RTIDome,
+        owl:NamedIndividual ;
+    rdfs:label "Sample RTI Dome"@en .
+
+ns2:alibrationobject1 a owl:NamedIndividual,
+        ns2:CalibrationObject ;
+    rdfs:label "Calibration Object for the RTI Dome"@en .
+
+ns2:mp1 a <http://object.mainzed.org/ont#MeasurementProject>,
+        owl:NamedIndividual ;
+    rdfs:label "Measurement Project 1 (Scanning of an object using RTI)"@en ;
+    ns1:measurementSeries ns2:mp1_ms1 ;
+    ns1:numberofmeasurements 4 ;
+    ns2:recordingtechnology "RTI" .
+
+ns2:recordingtechnology a owl:AnnotationProperty .
+
+ns2:rti_scanning_person a owl:NamedIndividual,
+        foaf:Person ;
+    rdfs:label "RTI Scanning Person"@en .
+
+ns2:CalibrationObject a owl:Class ;
+    rdfs:label "calibration object"@en .
+
+ns2:calibrationobject1 a owl:NamedIndividual .
+
+ns2:ls1 a ns1:LightSource,
+        owl:NamedIndividual ;
+    rdfs:label "Light Source 1: Azimuth 0°"@en .
+
+ns2:mp1_ms1 a ns1:MeasurementSeries,
+        owl:NamedIndividual ;
+    rdfs:label "Measurement Series 1"@en ;
+    ns1:measurement ns2:mp1_ms1_measurement1 .
+
+ns2:mp1_ms1_measurement1 a ns1:Measurement,
+        owl:NamedIndividual ;
+    rdfs:label "Measurement 1 (Photo1)"@en .
+

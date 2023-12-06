@@ -5,7 +5,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns2:mp1 a <http://object.mainzed.org/ont#MeasurementProject>,
-        owl:NamedIndividual ;
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Measurement Project 1 (Scanning of an object using RTI)"@en ;
     ns1:measurementSeries ns2:mp1_ms1 ;
     ns1:numberofmeasurements 4 ;

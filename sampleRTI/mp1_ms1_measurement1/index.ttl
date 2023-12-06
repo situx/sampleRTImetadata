@@ -2,6 +2,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/sampleRTImetadata/mp1_ms1_measurement1> a <http://objects.mainzed.org/ont#Measurement>,
-        owl:NamedIndividual ;
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Measurement 1 (Photo1)"@en .
 
