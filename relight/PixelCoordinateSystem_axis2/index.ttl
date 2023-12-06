@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
     ns1:hasUnit ns1:pixel .
 

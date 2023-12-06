@@ -2,7 +2,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/29.JPG_ld> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/29.JPG_ld> a ns1:LightDirection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Light direction vector 29.JPG"@en ;
     ns1:calibration <http://i3mainz.de/metadata/29.JPG_ld_calibration> ;
     geo:asWKT "POINT Z(-0.6093019843101501 0.2046625018119812 0.6880307197570801)"^^geo:wktLiteral ;

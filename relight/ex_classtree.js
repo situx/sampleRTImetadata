@@ -3508,8 +3508,7 @@ var tree={
           "from": {
             "http://objects.mainzed.org/ont#hasLightDirection": {
               "instancecount": 0,
-              "http://objects.mainzed.org/ont#Measurement": 1,
-              "http://purl.org/dc/terms/Image": 1
+              "http://objects.mainzed.org/ont#CalibrationObject": 1
             }
           }
         },
@@ -4000,9 +3999,6 @@ var tree={
         "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [5]",
         "data": {
           "to": {
-            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -4013,11 +4009,11 @@ var tree={
           "from": {
             "http://www.opengis.net/ont/crs/axis": {
               "instancecount": 0,
-              "http://www.opengis.net/ont/crs/CoordinateSystem": 1
+              "http://www.opengis.net/ont/crs/3DCoordinateSystem": 1
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 2
       },
       {
         "id": "http://i3mainz.de/metadata/project1_ms",

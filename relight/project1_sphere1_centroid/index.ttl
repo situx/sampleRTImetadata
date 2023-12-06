@@ -1,7 +1,9 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere1_centroid> a <http://www.opengis.net/ont/sf#Point> ;
+<http://i3mainz.de/metadata/project1_sphere1_centroid> a <http://www.opengis.net/ont/sf#Point>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "project1 Calibration Sphere 1 Centroid" ;
     geo:asWKT "POINT(1970.1474905228824 2375.9581805764174)"^^geo:wktLiteral .
 

@@ -2,7 +2,9 @@
 @prefix ns1: <http://objects.mainzed.org/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere4_ld44> a ns1:LightDirection ;
+<http://i3mainz.de/metadata/project1_sphere4_ld44> a ns1:LightDirection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Light direction vector 44 for calbration object sphere 4"@en ;
     ns1:calibration <http://i3mainz.de/metadata/9.JPG_ld_calibration> ;
     geo:asWKT "POINT Z(-0.6017155647277832 -0.7931990623474121 0.09366703778505325)"^^geo:wktLiteral ;

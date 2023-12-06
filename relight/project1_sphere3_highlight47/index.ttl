@@ -1,7 +1,9 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/project1_sphere3_highlight47> a <http://objects.mainzed.org/ont#Highlight> ;
+<http://i3mainz.de/metadata/project1_sphere3_highlight47> a <http://objects.mainzed.org/ont#Highlight>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Image highlight point 47 using sphere 3"@en ;
     geo:asWKT "POINT(2876.1584415584416 627.6767414403778)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/PixelCoordinateSystem> .
