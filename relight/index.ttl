@@ -1,8 +1,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <http://objects.mainzed.org/ont#> .
-@prefix ns2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -975,22 +975,22 @@
     geo:asWKT "POINT Z(0.8679607510566711 -0.3554009199142456 0.26114708185195923)"^^geo:wktLiteral ;
     geo:inSRS <http://i3mainz.de/metadata/DomeCoordinateSystem> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis1> a ns2:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System X Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis2> a ns2:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Y Axis" .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> a ns2:CoordinateSystemAxis ;
     rdfs:label "Dome Coordinate System Z Axis" .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis1> a ns2:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System X Axis" ;
-    ns2:hasUnit ns2:pixel .
+    ns3:hasUnit ns3:pixel .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns3:CoordinateSystemAxis ;
+<http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> a ns2:CoordinateSystemAxis ;
     rdfs:label "Pixel Coordinate System Y Axis" ;
-    ns2:hasUnit ns2:pixel .
+    ns3:hasUnit ns3:pixel .
 
 <http://i3mainz.de/metadata/project1_ms> a ns1:MeasurementSeries ;
     rdfs:label "MeasurementSeries for Measurement Project project1"@en ;
@@ -4227,8 +4227,8 @@
     geo:hasBoundingBox <http://i3mainz.de/metadata/project1_sphere4_bbox> ;
     geo:hasCentroid <http://i3mainz.de/metadata/project1_sphere4_centroid> .
 
-<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns3:CoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/PixelCoordinateSystem> a ns2:CoordinateSystem ;
+    ns2:axis <http://i3mainz.de/metadata/PixelCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/PixelCoordinateSystem_axis2> .
 
 <http://i3mainz.de/metadata/9.JPG_ld_calibration> a ns1:Calibration ;
@@ -4242,8 +4242,8 @@
         <http://i3mainz.de/metadata/project1_sphere3>,
         <http://i3mainz.de/metadata/project1_sphere4> .
 
-<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns3:3DCoordinateSystem ;
-    ns3:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
+<http://i3mainz.de/metadata/DomeCoordinateSystem> a ns2:3DCoordinateSystem ;
+    ns2:axis <http://i3mainz.de/metadata/DomeCoordinateSystem_axis1>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis2>,
         <http://i3mainz.de/metadata/DomeCoordinateSystem_axis3> .
 
