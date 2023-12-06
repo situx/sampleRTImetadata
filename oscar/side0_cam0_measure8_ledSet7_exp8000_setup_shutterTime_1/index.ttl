@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://i3mainz.de/metadata/side0_cam0_measure8_ledSet7_exp8000_setup_shutterTime_1> a <http://objects.mainzed.org/ont#M_shutter_time0> ;
+<http://i3mainz.de/metadata/side0_cam0_measure8_ledSet7_exp8000_setup_shutterTime_1> a <http://objects.mainzed.org/ont#M_shutter_time0>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Shutter Time Measure for Measurement measure_8 (Camera 0 LED Set ledset_7 Exp 8000)" ;
     ns1:hasValue <http://i3mainz.de/metadata/side0_cam0_measure8_ledSet7_exp8000_setup_shutterTime_1_value> .
 

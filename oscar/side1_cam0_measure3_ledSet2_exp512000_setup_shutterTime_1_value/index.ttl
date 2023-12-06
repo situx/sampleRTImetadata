@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://i3mainz.de/metadata/side1_cam0_measure3_ledSet2_exp512000_setup_shutterTime_1_value> a ns1:Measure ;
+<http://i3mainz.de/metadata/side1_cam0_measure3_ledSet2_exp512000_setup_shutterTime_1_value> a ns1:Measure,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Shutter Time Measure Value for Measurement measure_3 (Camera 0 LED Set ledset_2 Exp 512000)"@en ;
     ns1:hasNumericalValue 512000 ;
     ns1:hasUnit ns1:seconds-Time .
